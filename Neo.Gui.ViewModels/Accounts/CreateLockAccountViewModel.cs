@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 
+using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
+
 using Neo.Core;
 using Neo.Cryptography.ECC;
 using Neo.SmartContract;
@@ -17,9 +20,7 @@ using Neo.Gui.Base.Dialogs.Interfaces;
 using Neo.Gui.Base.Dialogs.Results.Wallets;
 using Neo.Gui.Base.Managers;
 
-using Neo.Gui.Wpf.MVVM;
-
-namespace Neo.Gui.Wpf.Views.Accounts
+namespace Neo.Gui.ViewModels.Accounts
 {
     public class CreateLockAccountViewModel : ViewModelBase, IDialogViewModel<CreateLockAccountDialogResult>
     {
@@ -73,10 +74,10 @@ namespace Neo.Gui.Wpf.Views.Accounts
 
                 this.selectedAccount = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent property
-                NotifyPropertyChanged(nameof(this.CreateEnabled));
+                RaisePropertyChanged(nameof(this.CreateEnabled));
             }
         }
 
@@ -95,7 +96,7 @@ namespace Neo.Gui.Wpf.Views.Accounts
 
                 this.unlockDate = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
@@ -108,7 +109,7 @@ namespace Neo.Gui.Wpf.Views.Accounts
 
                 this.unlockHour = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
@@ -121,7 +122,7 @@ namespace Neo.Gui.Wpf.Views.Accounts
 
                 this.unlockMinute = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
