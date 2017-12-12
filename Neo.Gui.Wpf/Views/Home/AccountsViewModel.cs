@@ -4,6 +4,7 @@ using System.Windows.Input;
 
 using Neo.Gui.Base.Controllers;
 using Neo.Gui.Base.Data;
+using Neo.Gui.Base.Dialogs.LoadParameters.Accounts;
 using Neo.Gui.Base.Helpers.Interfaces;
 using Neo.Gui.Base.Messages;
 using Neo.Gui.Base.Messaging.Interfaces;
@@ -14,7 +15,6 @@ using Neo.Gui.Base.Dialogs.Results.Wallets;
 using Neo.Gui.Base.Dialogs.Results.Voting;
 
 using Neo.Gui.Wpf.MVVM;
-using Neo.Gui.Wpf.Views.Accounts;
 using Neo.Gui.Wpf.Views.Voting;
 
 namespace Neo.Gui.Wpf.Views.Home

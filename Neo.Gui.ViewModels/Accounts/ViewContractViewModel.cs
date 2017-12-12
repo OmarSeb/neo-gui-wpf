@@ -1,15 +1,17 @@
 ﻿using System;
 using System.Linq;
 
+using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
+
 using Neo.Wallets;
 
 using Neo.Gui.Base.Dialogs.Interfaces;
+using Neo.Gui.Base.Dialogs.LoadParameters.Accounts;
 using Neo.Gui.Base.Dialogs.Results.Wallets;
 using Neo.Gui.Base.MVVM;
 
-using Neo.Gui.Wpf.MVVM;
-
-namespace Neo.Gui.Wpf.Views.Accounts
+namespace Neo.Gui.ViewModels.Accounts
 {
     public class ViewContractViewModel : ViewModelBase, IDialogViewModel<ViewContractDialogResult>, ILoadable
     {
@@ -57,10 +59,10 @@ namespace Neo.Gui.Wpf.Views.Accounts
             this.RedeemScriptHex = contract.Script.ToHexString();
 
             // Update properties
-            NotifyPropertyChanged(nameof(this.Address));
-            NotifyPropertyChanged(nameof(this.ScriptHash));
-            NotifyPropertyChanged(nameof(this.ParameterList));
-            NotifyPropertyChanged(nameof(this.RedeemScriptHex));
+            RaisePropertyChanged(nameof(this.Address));
+            RaisePropertyChanged(nameof(this.ScriptHash));
+            RaisePropertyChanged(nameof(this.ParameterList));
+            RaisePropertyChanged(nameof(this.RedeemScriptHex));
         }
         #endregion
     }

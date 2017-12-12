@@ -2,6 +2,9 @@
 using System.Collections.ObjectModel;
 using System.Linq;
 
+using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
+
 using Neo.Core;
 using Neo.Wallets;
 
@@ -13,9 +16,7 @@ using Neo.Gui.Base.Messages;
 using Neo.Gui.Base.Messaging.Interfaces;
 using Neo.Gui.Base.Services;
 
-using Neo.Gui.Wpf.MVVM;
-
-namespace Neo.Gui.Wpf.Views.Assets
+namespace Neo.Gui.ViewModels.Assets
 {
     public class AssetDistributionViewModel : ViewModelBase, IDialogViewModel<AssetDistributionDialogResult>
     {
@@ -59,7 +60,7 @@ namespace Neo.Gui.Wpf.Views.Assets
 
                 this.asset = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
@@ -72,7 +73,7 @@ namespace Neo.Gui.Wpf.Views.Assets
 
                 this.assetId = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update asset details
                 this.UpdateAssetDetails();
@@ -88,7 +89,7 @@ namespace Neo.Gui.Wpf.Views.Assets
 
                 this.assetIdEnabled = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
@@ -101,7 +102,7 @@ namespace Neo.Gui.Wpf.Views.Assets
 
                 this.owner = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
@@ -114,7 +115,7 @@ namespace Neo.Gui.Wpf.Views.Assets
 
                 this.admin = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
@@ -127,7 +128,7 @@ namespace Neo.Gui.Wpf.Views.Assets
 
                 this.total = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
@@ -140,7 +141,7 @@ namespace Neo.Gui.Wpf.Views.Assets
 
                 this.issued = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
@@ -153,7 +154,7 @@ namespace Neo.Gui.Wpf.Views.Assets
 
                 this.distributionEnabled = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
@@ -183,10 +184,10 @@ namespace Neo.Gui.Wpf.Views.Assets
 
         public void UpdateConfirmButtonEnabled()
         {
-            NotifyPropertyChanged(nameof(this.ConfirmEnabled));
+            RaisePropertyChanged(nameof(this.ConfirmEnabled));
         }
 
-        internal void SetAsset(AssetState assetState)
+        public void SetAsset(AssetState assetState)
         {
             if (assetState == null) return;
 

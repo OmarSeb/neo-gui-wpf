@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 
+using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
+
 using Neo.Gui.Base.Dialogs.Interfaces;
 using Neo.Gui.Base.Dialogs.Results.Wallets;
 using Neo.Gui.Base.Extensions;
 using Neo.Gui.Base.Messages;
 using Neo.Gui.Base.Messaging.Interfaces;
 
-using Neo.Gui.Wpf.MVVM;
-
-namespace Neo.Gui.Wpf.Views.Accounts
+namespace Neo.Gui.ViewModels.Accounts
 {
     public class ImportPrivateKeyViewModel : ViewModelBase, IDialogViewModel<ImportPrivateKeyDialogResult>
     {
@@ -31,10 +32,10 @@ namespace Neo.Gui.Wpf.Views.Accounts
                 if (this.privateKeyWif == value) return;
 
                 this.privateKeyWif = value;
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent properties
-                NotifyPropertyChanged(nameof(this.OkEnabled));
+                RaisePropertyChanged(nameof(this.OkEnabled));
             }
         }
 

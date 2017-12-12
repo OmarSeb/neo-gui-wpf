@@ -2,6 +2,9 @@
 using System.Collections.ObjectModel;
 using System.Linq;
 
+using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
+
 using Neo.Core;
 using Neo.Cryptography.ECC;
 using Neo.Wallets;
@@ -15,9 +18,7 @@ using Neo.Gui.Base.Dialogs.Results.Wallets;
 using Neo.Gui.Base.Dialogs.Interfaces;
 using Neo.Gui.Base.Managers;
 
-using Neo.Gui.Wpf.MVVM;
-
-namespace Neo.Gui.Wpf.Views.Accounts
+namespace Neo.Gui.ViewModels.Accounts
 {
     public class CreateMultiSigContractViewModel : ViewModelBase, IDialogViewModel<CreateMultiSigContractDialogResult>
     {
@@ -64,10 +65,10 @@ namespace Neo.Gui.Wpf.Views.Accounts
 
                 this.minimumSignatureNumber = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent property
-                NotifyPropertyChanged(nameof(this.ConfirmEnabled));
+                RaisePropertyChanged(nameof(this.ConfirmEnabled));
             }
         }
 
@@ -80,7 +81,7 @@ namespace Neo.Gui.Wpf.Views.Accounts
 
                 this.minimumSignatureNumberMaxValue = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
@@ -95,10 +96,10 @@ namespace Neo.Gui.Wpf.Views.Accounts
 
                 this.selectedPublicKey = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent property
-                NotifyPropertyChanged(nameof(this.RemovePublicKeyEnabled));
+                RaisePropertyChanged(nameof(this.RemovePublicKeyEnabled));
             }
         }
 
@@ -111,10 +112,10 @@ namespace Neo.Gui.Wpf.Views.Accounts
 
                 this.newPublicKey = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent property
-                NotifyPropertyChanged(nameof(this.AddPublicKeyEnabled));
+                RaisePropertyChanged(nameof(this.AddPublicKeyEnabled));
             }
         }
 

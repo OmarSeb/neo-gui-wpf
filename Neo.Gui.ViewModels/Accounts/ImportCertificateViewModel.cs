@@ -3,14 +3,15 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 
+using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
+
 using Neo.Gui.Base.Dialogs.Interfaces;
 using Neo.Gui.Base.Dialogs.Results.Wallets;
 using Neo.Gui.Base.Messages;
 using Neo.Gui.Base.Messaging.Interfaces;
 
-using Neo.Gui.Wpf.MVVM;
-
-namespace Neo.Gui.Wpf.Views.Accounts
+namespace Neo.Gui.ViewModels.Accounts
 {
     public class ImportCertificateViewModel : ViewModelBase, IDialogViewModel<ImportCertificateDialogResult>
     {
@@ -44,10 +45,10 @@ namespace Neo.Gui.Wpf.Views.Accounts
 
                 this.selectedCertificate = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent property
-                NotifyPropertyChanged(nameof(this.OkEnabled));
+                RaisePropertyChanged(nameof(this.OkEnabled));
             }
         }
         

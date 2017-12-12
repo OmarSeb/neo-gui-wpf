@@ -3,6 +3,9 @@ using System.Collections.ObjectModel;
 using System.Globalization;
 using System.Linq;
 
+using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
+
 using Neo.Core;
 using Neo.Cryptography.ECC;
 using Neo.SmartContract;
@@ -14,9 +17,7 @@ using Neo.Gui.Base.Dialogs.Results;
 using Neo.Gui.Base.Messages;
 using Neo.Gui.Base.Messaging.Interfaces;
 
-using Neo.Gui.Wpf.MVVM;
-
-namespace Neo.Gui.Wpf.Views.Assets
+namespace Neo.Gui.ViewModels.Assets
 {
     public class AssetRegistrationViewModel : ViewModelBase, IDialogViewModel<AssetRegistrationDialogResult>
     {
@@ -72,11 +73,11 @@ namespace Neo.Gui.Wpf.Views.Assets
 
                 this.selectedAssetType = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent property
-                NotifyPropertyChanged(nameof(this.OkEnabled));
-                NotifyPropertyChanged(nameof(this.PrecisionEnabled));
+                RaisePropertyChanged(nameof(this.OkEnabled));
+                RaisePropertyChanged(nameof(this.PrecisionEnabled));
 
                 if (!this.PrecisionEnabled)
                 {
@@ -96,10 +97,10 @@ namespace Neo.Gui.Wpf.Views.Assets
 
                 this.selectedOwner = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent property
-                NotifyPropertyChanged(nameof(this.OkEnabled));
+                RaisePropertyChanged(nameof(this.OkEnabled));
             }
         }
 
@@ -112,10 +113,10 @@ namespace Neo.Gui.Wpf.Views.Assets
 
                 this.selectedAdmin = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent property
-                NotifyPropertyChanged(nameof(this.OkEnabled));
+                RaisePropertyChanged(nameof(this.OkEnabled));
             }
         }
 
@@ -128,10 +129,10 @@ namespace Neo.Gui.Wpf.Views.Assets
 
                 this.selectedIssuer = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent property
-                NotifyPropertyChanged(nameof(this.OkEnabled));
+                RaisePropertyChanged(nameof(this.OkEnabled));
             }
         }
 
@@ -144,10 +145,10 @@ namespace Neo.Gui.Wpf.Views.Assets
 
                 this.name = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent property
-                NotifyPropertyChanged(nameof(this.OkEnabled));
+                RaisePropertyChanged(nameof(this.OkEnabled));
             }
         }
 
@@ -160,11 +161,11 @@ namespace Neo.Gui.Wpf.Views.Assets
 
                 this.totalIsLimited = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent properties
-                NotifyPropertyChanged(nameof(this.TotalLimit));
-                NotifyPropertyChanged(nameof(this.OkEnabled));
+                RaisePropertyChanged(nameof(this.TotalLimit));
+                RaisePropertyChanged(nameof(this.OkEnabled));
 
                 CheckForm();
             }
@@ -179,10 +180,10 @@ namespace Neo.Gui.Wpf.Views.Assets
 
                 this.totalLimit = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent property
-                NotifyPropertyChanged(nameof(this.OkEnabled));
+                RaisePropertyChanged(nameof(this.OkEnabled));
             }
         }
 
@@ -195,7 +196,7 @@ namespace Neo.Gui.Wpf.Views.Assets
 
                 this.precision = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 

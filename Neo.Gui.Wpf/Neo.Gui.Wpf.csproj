@@ -323,22 +323,18 @@
     <Compile Include="Views\Accounts\CreateMultiSigContractView.xaml.cs">
       <DependentUpon>CreateMultiSigContractView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Accounts\CreateMultiSigContractViewModel.cs" />
     <Compile Include="Views\Accounts\ImportCertificateView.xaml.cs">
       <DependentUpon>ImportCertificateView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Accounts\ImportCustomContractView.xaml.cs">
       <DependentUpon>ImportCustomContractView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Accounts\ImportCustomContractViewModel.cs" />
     <Compile Include="Views\Accounts\CreateLockAccountView.xaml.cs">
       <DependentUpon>CreateLockAccountView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Accounts\ImportCertificateViewModel.cs" />
     <Compile Include="Views\Assets\AssetDistributionView.xaml.cs">
       <DependentUpon>AssetDistributionView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Assets\AssetDistributionViewModel.cs" />
     <Compile Include="Controls\TransactionPropertyGrid.xaml.cs">
       <DependentUpon>TransactionPropertyGrid.xaml</DependentUpon>
     </Compile>
@@ -384,9 +380,6 @@
     <Compile Include="Controls\NeoWindow.cs" />
     <Compile Include="MVVM\RelayCommand.cs" />
     <Compile Include="MVVM\ViewModelBase.cs" />
-    <Compile Include="Views\Accounts\ImportPrivateKeyViewModel.cs" />
-    <Compile Include="Views\Accounts\ViewContractViewModel.cs" />
-    <Compile Include="Views\Assets\AssetRegistrationViewModel.cs" />
     <Compile Include="Views\Contracts\InvokeContractViewModel.cs" />
     <Compile Include="Views\Development\ContractParametersViewModel.cs" />
     <Compile Include="Views\Development\TransactionBuilderViewModel.cs" />
@@ -414,7 +407,6 @@
     <Compile Include="Views\Wallets\CertificateApplicationViewModel.cs" />
     <Compile Include="Views\Wallets\ClaimViewModel.cs" />
     <Compile Include="Views\Wallets\ChangePasswordViewModel.cs" />
-    <Compile Include="Views\Accounts\ViewPrivateKeyViewModel.cs" />
     <Compile Include="Views\Settings\SettingsViewModel.cs" />
     <Compile Include="Views\Accounts\ViewContractView.xaml.cs">
       <DependentUpon>ViewContractView.xaml</DependentUpon>

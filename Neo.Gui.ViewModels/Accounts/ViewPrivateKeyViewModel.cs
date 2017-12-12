@@ -1,16 +1,18 @@
 ﻿using System;
 using System.Linq;
 
+using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
+
 using Neo.Wallets;
 
 using Neo.Gui.Base.Controllers;
 using Neo.Gui.Base.Dialogs.Interfaces;
+using Neo.Gui.Base.Dialogs.LoadParameters.Accounts;
 using Neo.Gui.Base.Dialogs.Results.Wallets;
 using Neo.Gui.Base.MVVM;
 
-using Neo.Gui.Wpf.MVVM;
-
-namespace Neo.Gui.Wpf.Views.Accounts
+namespace Neo.Gui.ViewModels.Accounts
 {
     public class ViewPrivateKeyViewModel : ViewModelBase, IDialogViewModel<ViewPrivateKeyDialogResult>, ILoadable
     {
@@ -68,10 +70,10 @@ namespace Neo.Gui.Wpf.Views.Accounts
             this.PrivateKeyWif = key.Export();
 
             // Update properties
-            NotifyPropertyChanged(nameof(this.Address));
-            NotifyPropertyChanged(nameof(this.PublicKeyHex));
-            NotifyPropertyChanged(nameof(this.PrivateKeyHex));
-            NotifyPropertyChanged(nameof(this.PrivateKeyWif));
+            RaisePropertyChanged(nameof(this.Address));
+            RaisePropertyChanged(nameof(this.PublicKeyHex));
+            RaisePropertyChanged(nameof(this.PrivateKeyHex));
+            RaisePropertyChanged(nameof(this.PrivateKeyWif));
         }
         
         #endregion

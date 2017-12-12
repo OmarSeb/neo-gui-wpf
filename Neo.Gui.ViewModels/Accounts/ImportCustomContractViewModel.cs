@@ -2,6 +2,9 @@
 using System.Collections.ObjectModel;
 using System.Linq;
 
+using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
+
 using Neo.Core;
 using Neo.Cryptography.ECC;
 using Neo.SmartContract;
@@ -13,9 +16,7 @@ using Neo.Gui.Base.Dialogs.Results.Wallets;
 using Neo.Gui.Base.Messages;
 using Neo.Gui.Base.Messaging.Interfaces;
 
-using Neo.Gui.Wpf.MVVM;
-
-namespace Neo.Gui.Wpf.Views.Accounts
+namespace Neo.Gui.ViewModels.Accounts
 {
     public class ImportCustomContractViewModel : ViewModelBase, IDialogViewModel<ImportCustomContractDialogResult>
     {
@@ -47,10 +48,10 @@ namespace Neo.Gui.Wpf.Views.Accounts
 
                 this.selectedRelatedAccount = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent property
-                NotifyPropertyChanged(nameof(this.ConfirmEnabled));
+                RaisePropertyChanged(nameof(this.ConfirmEnabled));
             }
         }
 
@@ -63,10 +64,10 @@ namespace Neo.Gui.Wpf.Views.Accounts
 
                 this.parameterList = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent property
-                NotifyPropertyChanged(nameof(this.ConfirmEnabled));
+                RaisePropertyChanged(nameof(this.ConfirmEnabled));
             }
         }
 
@@ -79,10 +80,10 @@ namespace Neo.Gui.Wpf.Views.Accounts
 
                 this.script = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent property
-                NotifyPropertyChanged(nameof(this.ConfirmEnabled));
+                RaisePropertyChanged(nameof(this.ConfirmEnabled));
             }
         }
 
