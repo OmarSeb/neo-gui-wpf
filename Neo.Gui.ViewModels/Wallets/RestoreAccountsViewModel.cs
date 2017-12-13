@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Windows.Input;
+
+using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
 
 using Neo.Wallets;
 
@@ -11,9 +15,7 @@ using Neo.Gui.Base.Dialogs.Results;
 using Neo.Gui.Base.Messages;
 using Neo.Gui.Base.Messaging.Interfaces;
 
-using Neo.Gui.Wpf.MVVM;
-
-namespace Neo.Gui.Wpf.Views.Wallets
+namespace Neo.Gui.ViewModels.Wallets
 {
     public class RestoreAccountsViewModel : ViewModelBase, IDialogViewModel<RestoreAccountsDialogResult>
     {
@@ -34,7 +36,7 @@ namespace Neo.Gui.Wpf.Views.Wallets
         
         public bool OkEnabled => this.Accounts.Any(account => account.IsSelected);
 
-        public RelayCommand OkCommand => new RelayCommand(this.Ok);
+        public ICommand OkCommand => new RelayCommand(this.Ok);
 
         #region IDialogViewModel implementation 
         public event EventHandler Close;
@@ -46,7 +48,7 @@ namespace Neo.Gui.Wpf.Views.Wallets
 
         internal void UpdateOkEnabled()
         {
-            NotifyPropertyChanged(nameof(this.OkEnabled));
+            RaisePropertyChanged(nameof(this.OkEnabled));
         }
 
 

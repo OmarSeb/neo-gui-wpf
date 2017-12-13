@@ -2,7 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
-
+using System.Windows.Input;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 
@@ -54,7 +54,7 @@ namespace Neo.Gui.ViewModels.Accounts
         
         public bool OkEnabled => this.SelectedCertificate != null;
 
-        public RelayCommand OkCommand => new RelayCommand(this.Ok);
+        public ICommand OkCommand => new RelayCommand(this.Ok);
 
         #region IDialogViewModel implementation 
         public event EventHandler Close;

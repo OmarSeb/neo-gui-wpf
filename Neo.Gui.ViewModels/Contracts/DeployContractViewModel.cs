@@ -1,5 +1,9 @@
 ﻿using System;
 using System.Linq;
+using System.Windows.Input;
+
+using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
 
 using Neo.Core;
 using Neo.SmartContract;
@@ -12,9 +16,7 @@ using Neo.Gui.Base.Messages;
 using Neo.Gui.Base.Messaging.Interfaces;
 using Neo.Gui.Base.Services;
 
-using Neo.Gui.Wpf.MVVM;
-
-namespace Neo.Gui.Wpf.Views.Contracts
+namespace Neo.Gui.ViewModels.Contracts
 {
     public class DeployContractViewModel : ViewModelBase, IDialogViewModel<DeployContractDialogResult>
     {
@@ -53,10 +55,10 @@ namespace Neo.Gui.Wpf.Views.Contracts
 
                 this.name = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent property
-                NotifyPropertyChanged(nameof(this.DeployEnabled));
+                RaisePropertyChanged(nameof(this.DeployEnabled));
             }
         }
 
@@ -69,10 +71,10 @@ namespace Neo.Gui.Wpf.Views.Contracts
 
                 this.version = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent property
-                NotifyPropertyChanged(nameof(this.DeployEnabled));
+                RaisePropertyChanged(nameof(this.DeployEnabled));
             }
         }
 
@@ -85,10 +87,10 @@ namespace Neo.Gui.Wpf.Views.Contracts
 
                 this.author = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent property
-                NotifyPropertyChanged(nameof(this.DeployEnabled));
+                RaisePropertyChanged(nameof(this.DeployEnabled));
             }
         }
 
@@ -101,10 +103,10 @@ namespace Neo.Gui.Wpf.Views.Contracts
 
                 this.email = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent property
-                NotifyPropertyChanged(nameof(this.DeployEnabled));
+                RaisePropertyChanged(nameof(this.DeployEnabled));
             }
         }
 
@@ -117,10 +119,10 @@ namespace Neo.Gui.Wpf.Views.Contracts
 
                 this.description = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent property
-                NotifyPropertyChanged(nameof(this.DeployEnabled));
+                RaisePropertyChanged(nameof(this.DeployEnabled));
             }
         }
 
@@ -133,10 +135,10 @@ namespace Neo.Gui.Wpf.Views.Contracts
 
                 this.parameterList = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent property
-                NotifyPropertyChanged(nameof(this.DeployEnabled));
+                RaisePropertyChanged(nameof(this.DeployEnabled));
             }
         }
 
@@ -149,10 +151,10 @@ namespace Neo.Gui.Wpf.Views.Contracts
 
                 this.returnTypeStr = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent property
-                NotifyPropertyChanged(nameof(this.DeployEnabled));
+                RaisePropertyChanged(nameof(this.DeployEnabled));
             }
         }
 
@@ -165,11 +167,11 @@ namespace Neo.Gui.Wpf.Views.Contracts
 
                 this.code = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent properties
-                NotifyPropertyChanged(nameof(this.ScriptHash));
-                NotifyPropertyChanged(nameof(this.DeployEnabled));
+                RaisePropertyChanged(nameof(this.ScriptHash));
+                RaisePropertyChanged(nameof(this.DeployEnabled));
             }
         }
 
@@ -203,7 +205,7 @@ namespace Neo.Gui.Wpf.Views.Contracts
 
                 this.needsStorage = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
@@ -215,11 +217,11 @@ namespace Neo.Gui.Wpf.Views.Contracts
             !string.IsNullOrEmpty(this.Description) &&
             !string.IsNullOrEmpty(this.Code);
 
-        public RelayCommand LoadCommand => new RelayCommand(this.Load);
+        public ICommand LoadCommand => new RelayCommand(this.Load);
 
-        public RelayCommand DeployCommand => new RelayCommand(this.Deploy);
+        public ICommand DeployCommand => new RelayCommand(this.Deploy);
 
-        public RelayCommand CancelCommand => new RelayCommand(() => this.Close(this, EventArgs.Empty));
+        public ICommand CancelCommand => new RelayCommand(() => this.Close(this, EventArgs.Empty));
 
         #region IDialogViewModel implementation 
         public event EventHandler Close;

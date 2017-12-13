@@ -319,7 +319,6 @@
     <Compile Include="Views\AboutView.xaml.cs">
       <DependentUpon>AboutView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\AboutViewModel.cs" />
     <Compile Include="Views\Accounts\CreateMultiSigContractView.xaml.cs">
       <DependentUpon>CreateMultiSigContractView.xaml</DependentUpon>
     </Compile>
@@ -340,6 +339,8 @@
     </Compile>
     <Compile Include="Implementations\Managers\ThemeManager.cs" />
     <Compile Include="RegistrationModules\DialogsRegistrationModule.cs" />
+    <Compile Include="Views\Contracts\InvokeContractViewModel.cs" />
+    <Compile Include="Views\Contracts\ParametersEditorViewModel.cs" />
     <Compile Include="Views\Home\TransactionsView.xaml.cs">
       <DependentUpon>TransactionsView.xaml</DependentUpon>
     </Compile>
@@ -355,7 +356,6 @@
       <DependentUpon>HomeView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Home\HomeViewModel.cs" />
-    <Compile Include="Views\Home\TransactionsViewModel.cs" />
     <Compile Include="MarkupExtensions\DataContextBindingExtension.cs" />
     <Compile Include="Views\SplashScreen.xaml.cs">
       <DependentUpon>SplashScreen.xaml</DependentUpon>
@@ -375,13 +375,9 @@
     <Compile Include="Views\Contracts\DeployContractView.xaml.cs">
       <DependentUpon>DeployContractView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Contracts\DeployContractViewModel.cs" />
-    <Compile Include="Views\Contracts\ParametersEditorViewModel.cs" />
     <Compile Include="Controls\NeoWindow.cs" />
     <Compile Include="MVVM\RelayCommand.cs" />
     <Compile Include="MVVM\ViewModelBase.cs" />
-    <Compile Include="Views\Contracts\InvokeContractViewModel.cs" />
-    <Compile Include="Views\Development\ContractParametersViewModel.cs" />
     <Compile Include="Views\Development\TransactionBuilderViewModel.cs" />
     <Compile Include="Views\Transactions\SigningView.xaml.cs">
       <DependentUpon>SigningView.xaml</DependentUpon>
@@ -396,8 +392,6 @@
     <Compile Include="Views\Transactions\PayToViewModel.cs" />
     <Compile Include="Views\Transactions\SigningViewModel.cs" />
     <Compile Include="RegistrationModules\ViewModelsRegistrationModule.cs" />
-    <Compile Include="Views\Voting\ElectionViewModel.cs" />
-    <Compile Include="Views\Voting\VotingViewModel.cs" />
     <Compile Include="Views\Wallets\TradeView.xaml.cs">
       <DependentUpon>TradeView.xaml</DependentUpon>
     </Compile>
@@ -405,9 +399,6 @@
       <DependentUpon>TradeVerificationView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Wallets\CertificateApplicationViewModel.cs" />
-    <Compile Include="Views\Wallets\ClaimViewModel.cs" />
-    <Compile Include="Views\Wallets\ChangePasswordViewModel.cs" />
-    <Compile Include="Views\Settings\SettingsViewModel.cs" />
     <Compile Include="Views\Accounts\ViewContractView.xaml.cs">
       <DependentUpon>ViewContractView.xaml</DependentUpon>
     </Compile>
@@ -450,8 +441,6 @@
     <Compile Include="Views\Wallets\ClaimView.xaml.cs">
       <DependentUpon>ClaimView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Wallets\CreateWalletViewModel.cs" />
-    <Compile Include="Views\Wallets\OpenWalletViewModel.cs" />
     <Compile Include="Views\Updater\UpdateViewModel.cs" />
     <Compile Include="Views\Wallets\CreateWalletView.xaml.cs">
       <DependentUpon>CreateWalletView.xaml</DependentUpon>
@@ -478,16 +467,12 @@
     <Compile Include="Wrappers\TransactionOutputWrapper.cs" />
     <Compile Include="Wrappers\TransactionWrapper.cs" />
     <Compile Include="Wrappers\WitnessWrapper.cs" />
-    <Compile Include="Views\Wallets\TradeVerificationViewModel.cs" />
-    <Compile Include="Views\Wallets\TradeViewModel.cs" />
     <Compile Include="Views\Wallets\TransferView.xaml.cs">
       <DependentUpon>TransferView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Wallets\RestoreAccountsView.xaml.cs">
       <DependentUpon>RestoreAccountsView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Wallets\RestoreAccountsViewModel.cs" />
-    <Compile Include="Views\Wallets\TransferViewModel.cs" />
     <Compile Include="Implementations\Helpers\VersionHelper.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

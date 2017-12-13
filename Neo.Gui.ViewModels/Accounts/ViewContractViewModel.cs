@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-
+using System.Windows.Input;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 
@@ -24,7 +24,7 @@ namespace Neo.Gui.ViewModels.Accounts
 
         public string RedeemScriptHex { get; private set; }
 
-        public RelayCommand CloseCommand => new RelayCommand(() => this.Close(this, EventArgs.Empty));
+        public ICommand CloseCommand => new RelayCommand(() => this.Close(this, EventArgs.Empty));
         #endregion
 
         #region IDialogViewModel Implementation 

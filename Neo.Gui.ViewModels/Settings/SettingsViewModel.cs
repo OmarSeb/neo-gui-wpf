@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Windows.Input;
+
+using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
 
 using Neo.Gui.Base.Controllers;
 using Neo.Gui.Base.Dialogs.Interfaces;
@@ -11,9 +15,7 @@ using Neo.Gui.Base.Helpers.Interfaces;
 using Neo.Gui.Base.Managers;
 using Neo.Gui.Base.Theming;
 
-using Neo.Gui.Wpf.MVVM;
-
-namespace Neo.Gui.Wpf.Views.Settings
+namespace Neo.Gui.ViewModels.Settings
 {
     public class SettingsViewModel : ViewModelBase, IDialogViewModel<SettingsDialogResult>
     {
@@ -60,8 +62,8 @@ namespace Neo.Gui.Wpf.Views.Settings
             this.LoadNEP5Settings();
             this.LoadAppearanceSettings();
 
-            NotifyPropertyChanged(nameof(this.NEP5SettingsChanged));
-            NotifyPropertyChanged(nameof(this.AppearanceSettingsChanged));
+            RaisePropertyChanged(nameof(this.NEP5SettingsChanged));
+            RaisePropertyChanged(nameof(this.AppearanceSettingsChanged));
         }
 
         private void LoadNEP5Settings()
@@ -115,10 +117,10 @@ namespace Neo.Gui.Wpf.Views.Settings
 
                 this.nep5ContractsList = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent property
-                NotifyPropertyChanged(nameof(this.NEP5SettingsChanged));
+                RaisePropertyChanged(nameof(this.NEP5SettingsChanged));
             }
         }
 
@@ -141,10 +143,10 @@ namespace Neo.Gui.Wpf.Views.Settings
 
                 this.selectedStyle = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent property
-                NotifyPropertyChanged(nameof(this.AppearanceSettingsChanged));
+                RaisePropertyChanged(nameof(this.AppearanceSettingsChanged));
             }
         }
 
@@ -157,12 +159,12 @@ namespace Neo.Gui.Wpf.Views.Settings
 
                 this.themeAccentBaseColorHex = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent properties
-                NotifyPropertyChanged(nameof(this.AppearanceSettingsChanged));
+                RaisePropertyChanged(nameof(this.AppearanceSettingsChanged));
 
-                NotifyPropertyChanged(nameof(this.ThemeAccentBaseColor));
+                RaisePropertyChanged(nameof(this.ThemeAccentBaseColor));
             }
         }
 
@@ -192,12 +194,12 @@ namespace Neo.Gui.Wpf.Views.Settings
 
                 this.themeHighlightColorHex = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent properties
-                NotifyPropertyChanged(nameof(this.AppearanceSettingsChanged));
+                RaisePropertyChanged(nameof(this.AppearanceSettingsChanged));
 
-                NotifyPropertyChanged(nameof(this.ThemeHighlightColor));
+                RaisePropertyChanged(nameof(this.ThemeHighlightColor));
             }
         }
 
@@ -227,12 +229,12 @@ namespace Neo.Gui.Wpf.Views.Settings
 
                 this.themeWindowBorderColorHex = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent properties
-                NotifyPropertyChanged(nameof(this.AppearanceSettingsChanged));
+                RaisePropertyChanged(nameof(this.AppearanceSettingsChanged));
 
-                NotifyPropertyChanged(nameof(this.ThemeWindowBorderColor));
+                RaisePropertyChanged(nameof(this.ThemeWindowBorderColor));
             }
         }
 
@@ -267,9 +269,9 @@ namespace Neo.Gui.Wpf.Views.Settings
 
         #endregion Appearance Properties
 
-        public RelayCommand OkCommand => new RelayCommand(this.Ok);
+        public ICommand OkCommand => new RelayCommand(this.Ok);
 
-        public RelayCommand CancelCommand => new RelayCommand(this.Cancel);
+        public ICommand CancelCommand => new RelayCommand(this.Cancel);
 
         #region IDialogViewModel implementation 
         public event EventHandler Close;
@@ -318,7 +320,7 @@ namespace Neo.Gui.Wpf.Views.Settings
             
             // Update settings' current values
             this.currentNEP5ContractsList = this.NEP5ContractsList;
-            NotifyPropertyChanged(nameof(this.NEP5SettingsChanged));
+            RaisePropertyChanged(nameof(this.NEP5SettingsChanged));
         }
 
         private  void ApplyAppearanceSettings()
@@ -386,7 +388,7 @@ namespace Neo.Gui.Wpf.Views.Settings
             this.currentThemeHighlightColorHex = this.ThemeHighlightColorHex;
             this.currentThemeWindowBorderColorHex = this.ThemeWindowBorderColorHex;
 
-            NotifyPropertyChanged(nameof(this.AppearanceSettingsChanged));
+            RaisePropertyChanged(nameof(this.AppearanceSettingsChanged));
         }
     }
 }

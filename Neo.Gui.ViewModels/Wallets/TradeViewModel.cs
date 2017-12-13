@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Windows.Input;
+
+using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
 
 using Neo.Core;
 using Neo.IO.Json;
@@ -10,6 +14,7 @@ using Neo.SmartContract;
 using Neo.Gui.Base.Controllers;
 using Neo.Gui.Base.Data;
 using Neo.Gui.Base.Dialogs.Interfaces;
+using Neo.Gui.Base.Dialogs.LoadParameters.Wallets;
 using Neo.Gui.Base.Dialogs.Results;
 using Neo.Gui.Base.Globalization;
 using Neo.Gui.Base.Services;
@@ -17,9 +22,7 @@ using Neo.Gui.Base.MVVM;
 using Neo.Gui.Base.Dialogs.Results.Wallets;
 using Neo.Gui.Base.Managers;
 
-using Neo.Gui.Wpf.MVVM;
-
-namespace Neo.Gui.Wpf.Views.Wallets
+namespace Neo.Gui.ViewModels.Wallets
 {
     public class TradeViewModel : ViewModelBase, IDialogViewModel<TradeDialogResult>
     {
@@ -60,10 +63,10 @@ namespace Neo.Gui.Wpf.Views.Wallets
 
                 this.payToAddress = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent properties
-                NotifyPropertyChanged(nameof(this.ScriptHash));
+                RaisePropertyChanged(nameof(this.ScriptHash));
                 
                 try
                 {
@@ -87,10 +90,10 @@ namespace Neo.Gui.Wpf.Views.Wallets
 
                 this.scriptHash = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent property
-                NotifyPropertyChanged(nameof(this.ItemsListEnabled));
+                RaisePropertyChanged(nameof(this.ItemsListEnabled));
             }
         }
 
@@ -105,7 +108,7 @@ namespace Neo.Gui.Wpf.Views.Wallets
 
                 this.myRequest = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
@@ -118,10 +121,10 @@ namespace Neo.Gui.Wpf.Views.Wallets
 
                 this.counterPartyRequest = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent property
-                NotifyPropertyChanged(nameof(this.ValidateEnabled));
+                RaisePropertyChanged(nameof(this.ValidateEnabled));
             }
         }
 
@@ -138,7 +141,7 @@ namespace Neo.Gui.Wpf.Views.Wallets
 
                 this.mergeEnabled = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
@@ -151,13 +154,13 @@ namespace Neo.Gui.Wpf.Views.Wallets
 
                 this.selectedTabIndex = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
-        public RelayCommand InitiateCommand => new RelayCommand(this.Initiate);
+        public ICommand InitiateCommand => new RelayCommand(this.Initiate);
 
-        public RelayCommand ValidateCommand => new RelayCommand(this.Validate);
+        public ICommand ValidateCommand => new RelayCommand(this.Validate);
 
         public RelayCommand MergeCommand => new RelayCommand(this.Merge);
 
@@ -171,7 +174,7 @@ namespace Neo.Gui.Wpf.Views.Wallets
 
         public void UpdateInitiateButtonEnabled()
         {
-            NotifyPropertyChanged(nameof(this.InitiateEnabled));
+            RaisePropertyChanged(nameof(this.InitiateEnabled));
         }
 
         private void Initiate()
@@ -190,7 +193,7 @@ namespace Neo.Gui.Wpf.Views.Wallets
             this.SelectedTabIndex = 1;
         }
 
-        private async void Validate()
+        private void Validate()
         {
             IEnumerable<CoinReference> inputs;
             IEnumerable<TransactionOutput> outputs;

@@ -1,5 +1,9 @@
 ﻿using System;
 using System.Linq;
+using System.Windows.Input;
+
+using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
 
 using Neo.Core;
 using Neo.VM;
@@ -11,10 +15,9 @@ using Neo.Gui.Base.Extensions;
 using Neo.Gui.Base.Messages;
 using Neo.Gui.Base.Messaging.Interfaces;
 using Neo.Gui.Base.MVVM;
+using Neo.Gui.Wpf.Views.Voting;
 
-using Neo.Gui.Wpf.MVVM;
-
-namespace Neo.Gui.Wpf.Views.Voting
+namespace Neo.Gui.ViewModels.Voting
 {
     public class VotingViewModel : ViewModelBase, IDialogViewModel<VotingDialogResult>, ILoadable
     {
@@ -44,13 +47,13 @@ namespace Neo.Gui.Wpf.Views.Voting
 
                 this.votes = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
-        public RelayCommand OkCommand => new RelayCommand(this.Ok);
+        public ICommand OkCommand => new RelayCommand(this.Ok);
 
-        public RelayCommand CancelCommand => new RelayCommand(this.Cancel);
+        public ICommand CancelCommand => new RelayCommand(this.Cancel);
 
         #region IDialogViewModel implementation 
         public event EventHandler Close;
@@ -89,7 +92,7 @@ namespace Neo.Gui.Wpf.Views.Voting
             this.Votes = voteStrings.ToMultiLineString();
 
             // Update bindable properties
-            NotifyPropertyChanged(nameof(this.Address));
+            RaisePropertyChanged(nameof(this.Address));
         }
 
         private InvocationTransaction GenerateTransaction()

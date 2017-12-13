@@ -2,19 +2,22 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Windows.Input;
+
+using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
 
 using Neo.Core;
 
 using Neo.Gui.Base.Controllers;
 using Neo.Gui.Base.Data;
 using Neo.Gui.Base.Dialogs.Interfaces;
+using Neo.Gui.Base.Dialogs.LoadParameters.Wallets;
 using Neo.Gui.Base.Dialogs.Results.Wallets;
 using Neo.Gui.Base.MVVM;
 using Neo.Gui.Base.Services;
 
-using Neo.Gui.Wpf.MVVM;
-
-namespace Neo.Gui.Wpf.Views.Wallets
+namespace Neo.Gui.ViewModels.Wallets
 {
     public class TradeVerificationViewModel : ViewModelBase, IDialogViewModel<TradeVerificationDialogResult>, ILoadable
     {
@@ -26,9 +29,9 @@ namespace Neo.Gui.Wpf.Views.Wallets
         #region Public Properties 
         public ObservableCollection<TransactionOutputItem> Items { get; }
 
-        public RelayCommand AcceptCommand => new RelayCommand(this.Accept);
+        public ICommand AcceptCommand => new RelayCommand(this.Accept);
 
-        public RelayCommand RefuseCommand => new RelayCommand(() => this.Close(this, EventArgs.Empty));
+        public ICommand RefuseCommand => new RelayCommand(() => this.Close(this, EventArgs.Empty));
         #endregion
 
         #region Constructor 

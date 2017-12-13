@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Globalization;
 using System.Linq;
+using System.Windows.Input;
 
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
@@ -213,7 +214,7 @@ namespace Neo.Gui.ViewModels.Assets
             // Check if form is valid
             !this.formValid;
 
-        public RelayCommand OkCommand => new RelayCommand(this.Ok);
+        public ICommand OkCommand => new RelayCommand(this.Ok);
 
         #region IDialogViewModel implementation 
         public event EventHandler Close;

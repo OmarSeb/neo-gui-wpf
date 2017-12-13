@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Windows.Input;
 
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
@@ -160,9 +161,9 @@ namespace Neo.Gui.ViewModels.Assets
 
         public bool ConfirmEnabled => this.Items.Count > 0;
 
-        public RelayCommand ConfirmCommand => new RelayCommand(this.Confirm);
+        public ICommand ConfirmCommand => new RelayCommand(this.Confirm);
 
-        public RelayCommand CancelCommand => new RelayCommand(() => this.Close(this, EventArgs.Empty));
+        public ICommand CancelCommand => new RelayCommand(() => this.Close(this, EventArgs.Empty));
 
         #region IDialogViewModel implementation 
         public event EventHandler Close;

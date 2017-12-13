@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Windows.Input;
 
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
@@ -34,7 +35,7 @@ namespace Neo.Gui.ViewModels.Accounts
         public string PrivateKeyWif { get; private set; }
         #endregion Public Properties
 
-        public RelayCommand CloseCommand => new RelayCommand(() => this.Close(this, EventArgs.Empty));
+        public ICommand CloseCommand => new RelayCommand(() => this.Close(this, EventArgs.Empty));
         
         #region IDialogViewModel implementation 
         public event EventHandler Close;

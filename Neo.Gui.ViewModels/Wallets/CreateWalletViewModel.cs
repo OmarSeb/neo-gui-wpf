@@ -1,12 +1,14 @@
 ﻿using System;
+using System.Windows.Input;
+
+using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
 
 using Neo.Gui.Base.Dialogs.Interfaces;
 using Neo.Gui.Base.Dialogs.Results;
 using Neo.Gui.Base.Services;
 
-using Neo.Gui.Wpf.MVVM;
-
-namespace Neo.Gui.Wpf.Views.Wallets
+namespace Neo.Gui.ViewModels.Wallets
 {
     public class CreateWalletViewModel : ViewModelBase, IDialogViewModel<CreateWalletDialogResult>
     {
@@ -34,10 +36,10 @@ namespace Neo.Gui.Wpf.Views.Wallets
 
                 this.walletPath = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent property
-                NotifyPropertyChanged(nameof(this.ConfirmEnabled));
+                RaisePropertyChanged(nameof(this.ConfirmEnabled));
             }
         }
 
@@ -60,9 +62,9 @@ namespace Neo.Gui.Wpf.Views.Wallets
             }
         }
 
-        public RelayCommand GetWalletPathCommand => new RelayCommand(this.GetWalletPath);
+        public ICommand GetWalletPathCommand => new RelayCommand(this.GetWalletPath);
 
-        public RelayCommand ConfirmCommand => new RelayCommand(this.Confirm);
+        public ICommand ConfirmCommand => new RelayCommand(this.Confirm);
 
         #region IDialogViewModel implementation 
         public event EventHandler Close;
@@ -77,7 +79,7 @@ namespace Neo.Gui.Wpf.Views.Wallets
             this.password = updatedPassword;
 
             // Update dependent property
-            NotifyPropertyChanged(nameof(this.ConfirmEnabled));
+            RaisePropertyChanged(nameof(this.ConfirmEnabled));
         }
 
         public void UpdateReEnteredPassword(string updatedReEnteredPassword)
@@ -85,7 +87,7 @@ namespace Neo.Gui.Wpf.Views.Wallets
             this.reEnteredPassword = updatedReEnteredPassword;
 
             // Update dependent property
-            NotifyPropertyChanged(nameof(this.ConfirmEnabled));
+            RaisePropertyChanged(nameof(this.ConfirmEnabled));
         }
 
         private void GetWalletPath()

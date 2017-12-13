@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Windows.Input;
 
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
@@ -126,13 +127,13 @@ namespace Neo.Gui.ViewModels.Accounts
 
         public bool ConfirmEnabled => this.MinimumSignatureNumber > 0;
 
-        public RelayCommand AddPublicKeyCommand => new RelayCommand(this.AddPublicKey);
+        public ICommand AddPublicKeyCommand => new RelayCommand(this.AddPublicKey);
 
-        public RelayCommand RemovePublicKeyCommand => new RelayCommand(this.RemovePublicKey);
+        public ICommand RemovePublicKeyCommand => new RelayCommand(this.RemovePublicKey);
 
-        public RelayCommand ConfirmCommand => new RelayCommand(this.Confirm);
+        public ICommand ConfirmCommand => new RelayCommand(this.Confirm);
 
-        public RelayCommand CancelCommand => new RelayCommand(() => this.Close(this, EventArgs.Empty));
+        public ICommand CancelCommand => new RelayCommand(() => this.Close(this, EventArgs.Empty));
 
         private void Confirm()
         {

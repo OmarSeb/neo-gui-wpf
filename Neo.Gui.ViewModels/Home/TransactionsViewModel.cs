@@ -1,5 +1,8 @@
 ﻿using System.Windows.Input;
 
+using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
+
 using Neo.Gui.Base.Collections;
 using Neo.Gui.Base.Data;
 using Neo.Gui.Base.Helpers.Interfaces;
@@ -8,9 +11,7 @@ using Neo.Gui.Base.Messages;
 using Neo.Gui.Base.Messaging.Interfaces;
 using Neo.Gui.Base.MVVM;
 
-using Neo.Gui.Wpf.MVVM;
-
-namespace Neo.Gui.Wpf.Views.Home
+namespace Neo.Gui.ViewModels.Home
 {
     public class TransactionsViewModel : 
         ViewModelBase,
@@ -40,10 +41,10 @@ namespace Neo.Gui.Wpf.Views.Home
 
                 this.selectedTransaction = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent properties
-                NotifyPropertyChanged(nameof(this.CopyTransactionIdEnabled));
+                RaisePropertyChanged(nameof(this.CopyTransactionIdEnabled));
             }
         }
 

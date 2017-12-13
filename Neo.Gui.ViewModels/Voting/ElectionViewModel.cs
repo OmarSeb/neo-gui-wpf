@@ -1,6 +1,10 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Windows.Input;
+
+using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
 
 using Neo.Core;
 using Neo.Cryptography.ECC;
@@ -13,9 +17,7 @@ using Neo.Gui.Base.Dialogs.Results;
 using Neo.Gui.Base.Messages;
 using Neo.Gui.Base.Messaging.Interfaces;
 
-using Neo.Gui.Wpf.MVVM;
-
-namespace Neo.Gui.Wpf.Views.Voting
+namespace Neo.Gui.ViewModels.Voting
 {
     public class ElectionViewModel : ViewModelBase, IDialogViewModel<ElectionDialogResult>
     {
@@ -49,16 +51,16 @@ namespace Neo.Gui.Wpf.Views.Voting
 
                 this.selectedBookKeeper = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent properties
-                NotifyPropertyChanged(nameof(this.OkEnabled));
+                RaisePropertyChanged(nameof(this.OkEnabled));
             }
         }
 
         public bool OkEnabled => this.SelectedBookKeeper != null;
         
-        public RelayCommand OkCommand => new RelayCommand(this.Ok);
+        public ICommand OkCommand => new RelayCommand(this.Ok);
         
         #region IDialogViewModel implementation 
         public event EventHandler Close;

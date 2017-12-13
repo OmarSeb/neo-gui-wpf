@@ -3,6 +3,9 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows.Input;
 
+using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
+
 using Neo.Network;
 using Neo.SmartContract;
 
@@ -12,9 +15,7 @@ using Neo.Gui.Base.Globalization;
 using Neo.Gui.Base.Managers;
 using Neo.Gui.Base.Services;
 
-using Neo.Gui.Wpf.MVVM;
-
-namespace Neo.Gui.Wpf.Views.Development
+namespace Neo.Gui.ViewModels.Development
 {
     public class ContractParametersViewModel : ViewModelBase
     {
@@ -75,10 +76,10 @@ namespace Neo.Gui.Wpf.Views.Development
 
                 this.selectedScriptHashAddress = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent properties
-                NotifyPropertyChanged(nameof(this.Parameters));
+                RaisePropertyChanged(nameof(this.Parameters));
             }
         }
 
@@ -91,7 +92,7 @@ namespace Neo.Gui.Wpf.Views.Development
 
                 this.selectedParameter = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent properties
                 if (this.selectedParameter == null) return;
@@ -111,7 +112,7 @@ namespace Neo.Gui.Wpf.Views.Development
 
                 this.currentValue = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
@@ -124,7 +125,7 @@ namespace Neo.Gui.Wpf.Views.Development
 
                 this.newValue = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
@@ -137,7 +138,7 @@ namespace Neo.Gui.Wpf.Views.Development
 
                 this.showEnabled = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
@@ -150,7 +151,7 @@ namespace Neo.Gui.Wpf.Views.Development
 
                 this.broadcastVisible = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
@@ -193,7 +194,7 @@ namespace Neo.Gui.Wpf.Views.Development
 
             this.BroadcastVisible = context.Completed;
 
-            NotifyPropertyChanged(nameof(this.Parameters));
+            RaisePropertyChanged(nameof(this.Parameters));
         }
 
         private void Show()

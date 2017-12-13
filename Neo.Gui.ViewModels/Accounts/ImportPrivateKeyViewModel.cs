@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Windows.Input;
 
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
@@ -49,9 +50,9 @@ namespace Neo.Gui.ViewModels.Accounts
             }
         }
 
-        public RelayCommand OkCommand => new RelayCommand(this.Ok);
+        public ICommand OkCommand => new RelayCommand(this.Ok);
 
-        public RelayCommand CancelCommand => new RelayCommand(() => this.Close(this, EventArgs.Empty));
+        public ICommand CancelCommand => new RelayCommand(() => this.Close(this, EventArgs.Empty));
         #endregion
 
         #region Constructor 

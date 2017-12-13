@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Windows.Input;
+
+using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
 
 using Neo.Gui.Base.Controllers;
 using Neo.Gui.Base.Dialogs.Interfaces;
@@ -6,9 +10,7 @@ using Neo.Gui.Base.Dialogs.Results;
 using Neo.Gui.Base.Globalization;
 using Neo.Gui.Base.Services;
 
-using Neo.Gui.Wpf.MVVM;
-
-namespace Neo.Gui.Wpf.Views.Wallets
+namespace Neo.Gui.ViewModels.Wallets
 {
     public class ChangePasswordViewModel : ViewModelBase, IDialogViewModel<ChangePasswordDialogResult>
     {
@@ -32,9 +34,9 @@ namespace Neo.Gui.Wpf.Views.Wallets
             !string.IsNullOrEmpty(this.newPassword) &&
             this.newPassword == this.reEnteredNewPassword;
 
-        public RelayCommand ChangePasswordCommand => new RelayCommand(this.ChangePassword);
+        public ICommand ChangePasswordCommand => new RelayCommand(this.ChangePassword);
 
-        public RelayCommand CancelCommand => new RelayCommand(this.Cancel);
+        public ICommand CancelCommand => new RelayCommand(this.Cancel);
 
         #region IDialogViewModel implementation 
         public event EventHandler Close;
@@ -49,7 +51,7 @@ namespace Neo.Gui.Wpf.Views.Wallets
             this.oldPassword = updatedPassword;
 
             // Update dependent property
-            NotifyPropertyChanged(nameof(this.ChangePasswordEnabled));
+            RaisePropertyChanged(nameof(this.ChangePasswordEnabled));
         }
 
         public void UpdateNewPassword(string updatedPassword)
@@ -57,7 +59,7 @@ namespace Neo.Gui.Wpf.Views.Wallets
             this.newPassword = updatedPassword;
 
             // Update dependent property
-            NotifyPropertyChanged(nameof(this.ChangePasswordEnabled));
+            RaisePropertyChanged(nameof(this.ChangePasswordEnabled));
         }
 
         public void UpdateReEnteredNewPassword(string updatedPassword)
@@ -65,7 +67,7 @@ namespace Neo.Gui.Wpf.Views.Wallets
             this.reEnteredNewPassword = updatedPassword;
 
             // Update dependent property
-            NotifyPropertyChanged(nameof(this.ChangePasswordEnabled));
+            RaisePropertyChanged(nameof(this.ChangePasswordEnabled));
         }
 
         private void ChangePassword()

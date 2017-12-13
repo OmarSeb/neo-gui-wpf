@@ -4,6 +4,10 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Numerics;
 using System.Text;
+using System.Windows.Input;
+
+using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
 
 using Neo.Core;
 using Neo.SmartContract;
@@ -18,9 +22,7 @@ using Neo.Gui.Base.Messaging.Interfaces;
 using Neo.Gui.Base.Globalization;
 using Neo.Gui.Base.Managers;
 
-using Neo.Gui.Wpf.MVVM;
-
-namespace Neo.Gui.Wpf.Views.Wallets
+namespace Neo.Gui.ViewModels.Wallets
 {
     public class TransferViewModel : ViewModelBase, IDialogViewModel<TransferDialogResult>
     {
@@ -46,11 +48,11 @@ namespace Neo.Gui.Wpf.Views.Wallets
 
         public bool OkEnabled => this.Items.Count > 0;
 
-        public RelayCommand RemarkCommand => new RelayCommand(this.Remark);
+        public ICommand RemarkCommand => new RelayCommand(this.Remark);
 
-        public RelayCommand OkCommand => new RelayCommand(this.Ok);
+        public ICommand OkCommand => new RelayCommand(this.Ok);
 
-        public RelayCommand CancelCommand => new RelayCommand(() => this.Close(this, EventArgs.Empty));
+        public ICommand CancelCommand => new RelayCommand(() => this.Close(this, EventArgs.Empty));
 
         #region IDialogViewModel implementation 
         public event EventHandler Close;
@@ -91,7 +93,7 @@ namespace Neo.Gui.Wpf.Views.Wallets
 
         public void UpdateOkButtonEnabled()
         {
-            NotifyPropertyChanged(nameof(this.OkEnabled));
+            RaisePropertyChanged(nameof(this.OkEnabled));
         }
 
         private Transaction GenerateTransaction()

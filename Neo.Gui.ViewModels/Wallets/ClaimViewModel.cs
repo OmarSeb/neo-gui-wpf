@@ -1,5 +1,9 @@
 ﻿using System;
 using System.Linq;
+using System.Windows.Input;
+
+using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
 
 using Neo.Gui.Base.Controllers;
 using Neo.Gui.Base.Dialogs.Interfaces;
@@ -8,9 +12,7 @@ using Neo.Gui.Base.Messages;
 using Neo.Gui.Base.Messaging.Interfaces;
 using Neo.Gui.Base.MVVM;
 
-using Neo.Gui.Wpf.MVVM;
-
-namespace Neo.Gui.Wpf.Views.Wallets
+namespace Neo.Gui.ViewModels.Wallets
 {
     public class ClaimViewModel :
         ViewModelBase,
@@ -51,7 +53,7 @@ namespace Neo.Gui.Wpf.Views.Wallets
 
                 this.availableGas = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
@@ -64,7 +66,7 @@ namespace Neo.Gui.Wpf.Views.Wallets
 
                 this.unavailableGas = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
@@ -77,13 +79,13 @@ namespace Neo.Gui.Wpf.Views.Wallets
 
                 this.claimEnabled = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
         #endregion Public Properties
 
-        public RelayCommand ClaimCommand => new RelayCommand(this.Claim);
+        public ICommand ClaimCommand => new RelayCommand(this.Claim);
 
         #region IDialogViewModel Implementation 
         public event EventHandler Close;
