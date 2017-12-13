@@ -1,6 +1,9 @@
 using System.IO;
 using System.Windows.Input;
 
+using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
+
 using Neo.Core;
 using Neo.SmartContract;
 using Neo.VM;
@@ -15,9 +18,7 @@ using Neo.Gui.Base.MVVM;
 using Neo.Gui.Base.Globalization;
 using Neo.Gui.Base.Managers;
 
-using Neo.Gui.Wpf.MVVM;
-
-namespace Neo.Gui.Wpf.Views.Home
+namespace Neo.Gui.ViewModels.Home
 {
     public class AssetsViewModel : 
         ViewModelBase,
@@ -50,11 +51,11 @@ namespace Neo.Gui.Wpf.Views.Home
 
                 this.selectedAsset = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent properties
-                NotifyPropertyChanged(nameof(this.ViewCertificateEnabled));
-                NotifyPropertyChanged(nameof(this.DeleteAssetEnabled));
+                RaisePropertyChanged(nameof(this.ViewCertificateEnabled));
+                RaisePropertyChanged(nameof(this.DeleteAssetEnabled));
             }
         }
 

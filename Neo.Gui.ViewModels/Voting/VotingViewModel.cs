@@ -10,12 +10,12 @@ using Neo.VM;
 
 using Neo.Gui.Base.Controllers;
 using Neo.Gui.Base.Dialogs.Interfaces;
+using Neo.Gui.Base.Dialogs.LoadParameters.Voting;
 using Neo.Gui.Base.Dialogs.Results.Voting;
 using Neo.Gui.Base.Extensions;
 using Neo.Gui.Base.Messages;
 using Neo.Gui.Base.Messaging.Interfaces;
 using Neo.Gui.Base.MVVM;
-using Neo.Gui.Wpf.Views.Voting;
 
 namespace Neo.Gui.ViewModels.Voting
 {

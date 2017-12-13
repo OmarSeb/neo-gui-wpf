@@ -2,6 +2,9 @@
 using System.Collections.ObjectModel;
 using System.Windows.Input;
 
+using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
+
 using Neo.Gui.Base.Controllers;
 using Neo.Gui.Base.Data;
 using Neo.Gui.Base.Dialogs.LoadParameters.Accounts;
@@ -11,13 +14,11 @@ using Neo.Gui.Base.Messaging.Interfaces;
 using Neo.Gui.Base.MVVM;
 using Neo.Gui.Base.Globalization;
 using Neo.Gui.Base.Managers;
+using Neo.Gui.Base.Dialogs.LoadParameters.Voting;
 using Neo.Gui.Base.Dialogs.Results.Wallets;
 using Neo.Gui.Base.Dialogs.Results.Voting;
 
-using Neo.Gui.Wpf.MVVM;
-using Neo.Gui.Wpf.Views.Voting;
-
-namespace Neo.Gui.Wpf.Views.Home
+namespace Neo.Gui.ViewModels.Home
 {
     public class AccountsViewModel : 
         ViewModelBase, 
@@ -52,14 +53,14 @@ namespace Neo.Gui.Wpf.Views.Home
 
                 this.selectedAccount = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent properties
-                NotifyPropertyChanged(nameof(this.ViewPrivateKeyEnabled));
-                NotifyPropertyChanged(nameof(this.ViewContractEnabled));
-                NotifyPropertyChanged(nameof(this.ShowVotingDialogEnabled));
-                NotifyPropertyChanged(nameof(this.CopyAddressToClipboardEnabled));
-                NotifyPropertyChanged(nameof(this.DeleteAccountEnabled));
+                RaisePropertyChanged(nameof(this.ViewPrivateKeyEnabled));
+                RaisePropertyChanged(nameof(this.ViewContractEnabled));
+                RaisePropertyChanged(nameof(this.ShowVotingDialogEnabled));
+                RaisePropertyChanged(nameof(this.CopyAddressToClipboardEnabled));
+                RaisePropertyChanged(nameof(this.DeleteAccountEnabled));
             }
         }
 
@@ -130,7 +131,7 @@ namespace Neo.Gui.Wpf.Views.Home
         #region IMessageHandler implementation 
         public void HandleMessage(CurrentWalletHasChangedMessage message)
         {
-            this.NotifyPropertyChanged(nameof(this.MenuItemsEnabled));
+            RaisePropertyChanged(nameof(this.MenuItemsEnabled));
         }
 
         public void HandleMessage(ClearAccountsMessage message)
