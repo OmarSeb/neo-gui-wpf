@@ -339,8 +339,6 @@
     </Compile>
     <Compile Include="Implementations\Managers\ThemeManager.cs" />
     <Compile Include="RegistrationModules\DialogsRegistrationModule.cs" />
-    <Compile Include="Views\Contracts\InvokeContractViewModel.cs" />
-    <Compile Include="Views\Contracts\ParametersEditorViewModel.cs" />
     <Compile Include="Views\Home\TransactionsView.xaml.cs">
       <DependentUpon>TransactionsView.xaml</DependentUpon>
     </Compile>
@@ -353,7 +351,6 @@
     <Compile Include="Views\Home\HomeView.xaml.cs">
       <DependentUpon>HomeView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Home\HomeViewModel.cs" />
     <Compile Include="MarkupExtensions\DataContextBindingExtension.cs" />
     <Compile Include="Views\SplashScreen.xaml.cs">
       <DependentUpon>SplashScreen.xaml</DependentUpon>
@@ -367,8 +364,8 @@
     <Compile Include="Controls\InputBox.xaml.cs">
       <DependentUpon>InputBox.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Contracts\ParametersEditorView.xaml.cs">
-      <DependentUpon>ParametersEditorView.xaml</DependentUpon>
+    <Compile Include="Views\Contracts\ContractParametersEditorView.xaml.cs">
+      <DependentUpon>ContractParametersEditorView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Contracts\DeployContractView.xaml.cs">
       <DependentUpon>DeployContractView.xaml</DependentUpon>
@@ -602,7 +599,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\Contracts\ParametersEditorView.xaml">
+    <Page Include="Views\Contracts\ContractParametersEditorView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

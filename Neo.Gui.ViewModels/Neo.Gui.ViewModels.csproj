@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Contracts\InvokeContractViewModel.cs" />
     <Compile Remove="Contracts\ParametersEditorViewModel.cs" />
   </ItemGroup>
 

@@ -2,21 +2,32 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Globalization;
+using System.Linq;
 using System.Numerics;
 using System.Windows.Input;
+
+using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
 
 using Neo.Cryptography.ECC;
 using Neo.SmartContract;
 
 using Neo.Gui.Base.Data;
+using Neo.Gui.Base.Dialogs.Interfaces;
+using Neo.Gui.Base.Dialogs.LoadParameters.Contracts;
+using Neo.Gui.Base.Dialogs.Results.Contracts;
+using Neo.Gui.Base.Managers;
+using Neo.Gui.Base.MVVM;
 using Neo.Gui.Base.Services;
 
-using Neo.Gui.Wpf.MVVM;
-
-namespace Neo.Gui.Wpf.Views.Contracts
+namespace Neo.Gui.ViewModels.Contracts
 {
-    public class ParametersEditorViewModel : ViewModelBase
+    public class ContractParametersEditorViewModel :
+        ViewModelBase,
+        IDialogViewModel<ContractParametersEditorDialogResult>,
+        ILoadable
     {
+        private readonly IDialogManager dialogManager;
         private readonly IDispatchService dispatchService;
 
         /// <summary>
@@ -30,8 +41,11 @@ namespace Neo.Gui.Wpf.Views.Contracts
         private string currentValue;
         private string newValue;
 
-        public ParametersEditorViewModel(IDispatchService dispatchService)
+        public ContractParametersEditorViewModel(
+            IDialogManager dialogManager,
+            IDispatchService dispatchService)
         {
+            this.dialogManager = dialogManager;
             this.dispatchService = dispatchService;
 
             this.Parameters = new ObservableCollection<DisplayContractParameter>();
@@ -48,12 +62,12 @@ namespace Neo.Gui.Wpf.Views.Contracts
 
                 this.selectedParameter = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent properties
-                NotifyPropertyChanged(nameof(this.RemoveEnabled));
-                NotifyPropertyChanged(nameof(this.NewValueEnabled));
-                NotifyPropertyChanged(nameof(this.EditArrayEnabled));
+                RaisePropertyChanged(nameof(this.RemoveEnabled));
+                RaisePropertyChanged(nameof(this.NewValueEnabled));
+                RaisePropertyChanged(nameof(this.EditArrayEnabled));
 
                 this.CurrentValue = this.SelectedParameter != null
                     ? this.SelectedParameter.Value
@@ -72,7 +86,7 @@ namespace Neo.Gui.Wpf.Views.Contracts
 
                 this.currentValue = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
@@ -85,11 +99,11 @@ namespace Neo.Gui.Wpf.Views.Contracts
 
                 this.newValue = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent properties
-                NotifyPropertyChanged(nameof(this.UpdateEnabled));
-                NotifyPropertyChanged(nameof(this.AddEnabled));
+                RaisePropertyChanged(nameof(this.UpdateEnabled));
+                RaisePropertyChanged(nameof(this.AddEnabled));
             }
         }
 
@@ -113,12 +127,31 @@ namespace Neo.Gui.Wpf.Views.Contracts
 
         public ICommand UpdateCommand => new RelayCommand(this.Update);
 
+        #region IDialogViewModel implementation 
+        public event EventHandler Close;
 
-        public async void Load(IList<ContractParameter> parameterList)
+        public event EventHandler<ContractParametersEditorDialogResult> SetDialogResultAndClose;
+
+        public ContractParametersEditorDialogResult DialogResult { get; private set; }
+        #endregion
+
+
+        #region ILoadable implementation 
+        public void OnLoad(params object[] parameters)
+        {
+            if (!parameters.Any()) return;
+
+            var loadParameters = parameters[0] as ContractParametersEditorLoadParameters;
+
+            this.Load(loadParameters.ContractParameters);
+        }
+        #endregion
+
+        private void Load(IList<ContractParameter> parameterList)
         {
             this.parameters = parameterList;
 
-            await this.dispatchService.InvokeOnMainUIThread(() =>
+            this.dispatchService.InvokeOnMainUIThread(() =>
             {
                 this.Parameters.Clear();
 
@@ -128,12 +161,12 @@ namespace Neo.Gui.Wpf.Views.Contracts
                 {
                     this.Parameters.Add(new DisplayContractParameter(i, this.parameters[i]));
                 }
-            });
 
-            // Update dependent property
-            NotifyPropertyChanged(nameof(this.ParameterListEditingEnabled));
-            NotifyPropertyChanged(nameof(this.AddEnabled));
-            NotifyPropertyChanged(nameof(this.RemoveEnabled));
+                // Update dependent property
+                RaisePropertyChanged(nameof(this.ParameterListEditingEnabled));
+                RaisePropertyChanged(nameof(this.AddEnabled));
+                RaisePropertyChanged(nameof(this.RemoveEnabled));
+            });
         }
 
         private void Add()
@@ -172,10 +205,11 @@ namespace Neo.Gui.Wpf.Views.Contracts
 
             var parameter = this.SelectedParameter.Parameter;
 
-            var view = new ParametersEditorView((IList<ContractParameter>) parameter.Value);
-            view.ShowDialog();
+            this.dialogManager.ShowDialog<ContractParametersEditorDialogResult, ContractParametersEditorLoadParameters>(
+                new LoadParameters<ContractParametersEditorLoadParameters>(
+                    new ContractParametersEditorLoadParameters((IList<ContractParameter>) parameter.Value)));
 
-            // TODO Ensure listview updates with the new Value value
+            // TODO Ensure listview updates with the this Value property's new value
             //listView1.SelectedItems[0].SubItems["value"].Text = parameter.ToString();
 
             this.CurrentValue = this.SelectedParameter.Value;

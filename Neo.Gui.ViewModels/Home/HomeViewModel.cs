@@ -1,7 +1,12 @@
 using System;
+using System.Windows.Input;
+
+using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
 
 using Neo.Gui.Base.Controllers;
 using Neo.Gui.Base.Dialogs.Interfaces;
+using Neo.Gui.Base.Dialogs.LoadParameters.Contracts;
 using Neo.Gui.Base.Dialogs.Results;
 using Neo.Gui.Base.Dialogs.Results.Contracts;
 using Neo.Gui.Base.Dialogs.Results.Settings;
@@ -16,10 +21,7 @@ using Neo.Gui.Base.Globalization;
 using Neo.Gui.Base.Managers;
 using Neo.Gui.Base.Services;
 
-using Neo.Gui.Wpf.MVVM;
-using Neo.Gui.Wpf.Views.Contracts;
-
-namespace Neo.Gui.Wpf.Views.Home
+namespace Neo.Gui.ViewModels.Home
 {
     public class HomeViewModel :
         ViewModelBase,
@@ -66,7 +68,7 @@ namespace Neo.Gui.Wpf.Views.Home
 
                 this.heightStatus = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
@@ -79,7 +81,7 @@ namespace Neo.Gui.Wpf.Views.Home
 
                 this.nodeCount = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
@@ -92,7 +94,7 @@ namespace Neo.Gui.Wpf.Views.Home
 
                 this.nextBlockProgressIsIndeterminate = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
@@ -105,10 +107,10 @@ namespace Neo.Gui.Wpf.Views.Home
 
                 this.nextBlockProgressFraction = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent property
-                NotifyPropertyChanged(nameof(this.NextBlockProgressPercentage));
+                RaisePropertyChanged(nameof(this.NextBlockProgressPercentage));
             }
         }
 
@@ -123,7 +125,7 @@ namespace Neo.Gui.Wpf.Views.Home
 
                 this.newVersionLabel = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
@@ -136,7 +138,7 @@ namespace Neo.Gui.Wpf.Views.Home
 
                 this.newVersionVisible = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
@@ -146,54 +148,54 @@ namespace Neo.Gui.Wpf.Views.Home
             set
             {
                 this.blockStatus = value;
-                this.NotifyPropertyChanged(nameof(this.BlockStatus));
+                RaisePropertyChanged(nameof(this.BlockStatus));
             }
         }
-        public RelayCommand CreateWalletCommand => new RelayCommand(this.CreateWallet);
+        public ICommand CreateWalletCommand => new RelayCommand(this.CreateWallet);
 
-        public RelayCommand OpenWalletCommand => new RelayCommand(this.OpenWallet);
+        public ICommand OpenWalletCommand => new RelayCommand(this.OpenWallet);
 
-        public RelayCommand CloseWalletCommand => new RelayCommand(() => this.walletController.CloseWallet());
+        public ICommand CloseWalletCommand => new RelayCommand(() => this.walletController.CloseWallet());
 
-        public RelayCommand ChangePasswordCommand => new RelayCommand(() => this.dialogManager.ShowDialog<ChangePasswordDialogResult>());
+        public ICommand ChangePasswordCommand => new RelayCommand(() => this.dialogManager.ShowDialog<ChangePasswordDialogResult>());
 
-        public RelayCommand RebuildIndexCommand => new RelayCommand(this.RebuildIndex);
+        public ICommand RebuildIndexCommand => new RelayCommand(this.RebuildIndex);
 
-        public RelayCommand RestoreAccountsCommand => new RelayCommand(() => this.dialogManager.ShowDialog<RestoreAccountsDialogResult>());
+        public ICommand RestoreAccountsCommand => new RelayCommand(() => this.dialogManager.ShowDialog<RestoreAccountsDialogResult>());
 
-        public RelayCommand ExitCommand => new RelayCommand(() => this.messagePublisher.Publish(new ExitAppMessage()));
+        public ICommand ExitCommand => new RelayCommand(() => this.messagePublisher.Publish(new ExitAppMessage()));
 
-        public RelayCommand TransferCommand => new RelayCommand(() => this.dialogManager.ShowDialog<TransferDialogResult>());
+        public ICommand TransferCommand => new RelayCommand(() => this.dialogManager.ShowDialog<TransferDialogResult>());
 
-        public RelayCommand ShowTransactionDialogCommand => new RelayCommand(() => this.dialogManager.ShowDialog<TradeDialogResult>());
+        public ICommand ShowTransactionDialogCommand => new RelayCommand(() => this.dialogManager.ShowDialog<TradeDialogResult>());
 
-        public RelayCommand ShowSigningDialogCommand => new RelayCommand(() => this.dialogManager.ShowDialog<SigningDialogResult>());
+        public ICommand ShowSigningDialogCommand => new RelayCommand(() => this.dialogManager.ShowDialog<SigningDialogResult>());
 
-        public RelayCommand ClaimCommand => new RelayCommand(() => this.dialogManager.ShowDialog<ClaimDialogResult>());
+        public ICommand ClaimCommand => new RelayCommand(() => this.dialogManager.ShowDialog<ClaimDialogResult>());
 
-        public RelayCommand RequestCertificateCommand => new RelayCommand(() => this.dialogManager.ShowDialog<CertificateApplicationDialogResult>());
+        public ICommand RequestCertificateCommand => new RelayCommand(() => this.dialogManager.ShowDialog<CertificateApplicationDialogResult>());
 
-        public RelayCommand AssetRegistrationCommand => new RelayCommand(() => this.dialogManager.ShowDialog<AssetRegistrationDialogResult>());
+        public ICommand AssetRegistrationCommand => new RelayCommand(() => this.dialogManager.ShowDialog<AssetRegistrationDialogResult>());
 
-        public RelayCommand DistributeAssetCommand => new RelayCommand(() => this.dialogManager.ShowDialog<AssetDistributionDialogResult>());
+        public ICommand DistributeAssetCommand => new RelayCommand(() => this.dialogManager.ShowDialog<AssetDistributionDialogResult>());
 
-        public RelayCommand DeployContractCommand => new RelayCommand(() => this.dialogManager.ShowDialog<DeployContractDialogResult>());
+        public ICommand DeployContractCommand => new RelayCommand(() => this.dialogManager.ShowDialog<DeployContractDialogResult>());
 
-        public RelayCommand InvokeContractCommand => new RelayCommand(InvokeContract);
+        public ICommand InvokeContractCommand => new RelayCommand(InvokeContract);
 
-        public RelayCommand ShowElectionDialogCommand => new RelayCommand(() => this.dialogManager.ShowDialog<ElectionDialogResult>());
+        public ICommand ShowElectionDialogCommand => new RelayCommand(() => this.dialogManager.ShowDialog<ElectionDialogResult>());
 
-        public RelayCommand ShowSettingsCommand => new RelayCommand(() => this.dialogManager.ShowDialog<SettingsDialogResult>());
+        public ICommand ShowSettingsCommand => new RelayCommand(() => this.dialogManager.ShowDialog<SettingsDialogResult>());
 
-        public RelayCommand CheckForHelpCommand => new RelayCommand(() => { });
+        public ICommand CheckForHelpCommand => new RelayCommand(() => { });
 
-        public RelayCommand ShowOfficialWebsiteCommand => new RelayCommand(() => this.processHelper.OpenInExternalBrowser(OfficialWebsiteUrl));
+        public ICommand ShowOfficialWebsiteCommand => new RelayCommand(() => this.processHelper.OpenInExternalBrowser(OfficialWebsiteUrl));
 
-        public RelayCommand ShowDeveloperToolsCommand => new RelayCommand(ShowDeveloperTools);
+        public ICommand ShowDeveloperToolsCommand => new RelayCommand(ShowDeveloperTools);
 
-        public RelayCommand AboutNeoCommand => new RelayCommand(() => this.dialogManager.ShowDialog<AboutDialogResult>());
+        public ICommand AboutNeoCommand => new RelayCommand(() => this.dialogManager.ShowDialog<AboutDialogResult>());
 
-        public RelayCommand ShowUpdateDialogCommand => new RelayCommand(() => this.dialogManager.ShowDialog<UpdateDialogResult>());
+        public ICommand ShowUpdateDialogCommand => new RelayCommand(() => this.dialogManager.ShowDialog<UpdateDialogResult>());
         #endregion Public Properies
 
         #region Constructor
@@ -242,7 +244,7 @@ namespace Neo.Gui.Wpf.Views.Home
 
         public void HandleMessage(CurrentWalletHasChangedMessage message)
         {
-            this.NotifyPropertyChanged(nameof(this.WalletIsOpen));
+            RaisePropertyChanged(nameof(this.WalletIsOpen));
         }
 
         public void HandleMessage(InvokeContractMessage message)

@@ -3,6 +3,9 @@ using System.Linq;
 using System.Text;
 using System.Windows.Input;
 
+using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
+
 using Neo.Core;
 using Neo.IO.Json;
 using Neo.SmartContract;
@@ -14,15 +17,17 @@ using Neo.Gui.Base.Managers;
 using Neo.Gui.Base.MVVM;
 using Neo.Gui.Base.Services;
 using Neo.Gui.Base.Controllers;
+using Neo.Gui.Base.Dialogs.LoadParameters.Contracts;
 using Neo.Gui.Base.Messages;
 using Neo.Gui.Base.Messaging.Interfaces;
 using Neo.Gui.Base.Globalization;
 
-using Neo.Gui.Wpf.MVVM;
-
-namespace Neo.Gui.Wpf.Views.Contracts
+namespace Neo.Gui.ViewModels.Contracts
 {
-    public class InvokeContractViewModel : ViewModelBase, IDialogViewModel<InvokeContractDialogResult>, ILoadable
+    public class InvokeContractViewModel :
+        ViewModelBase,
+        IDialogViewModel<InvokeContractDialogResult>,
+        ILoadable
     {
         private static readonly Fixed8 NetworkFee = Fixed8.FromDecimal(0.001m);
 
@@ -74,10 +79,10 @@ namespace Neo.Gui.Wpf.Views.Contracts
 
                 this.scriptHashStr = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent properties
-                NotifyPropertyChanged(nameof(this.GetContractEnabled));
+                RaisePropertyChanged(nameof(this.GetContractEnabled));
             }
         }
 
@@ -100,7 +105,7 @@ namespace Neo.Gui.Wpf.Views.Contracts
 
                 this.editParametersEnabled = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
@@ -114,11 +119,11 @@ namespace Neo.Gui.Wpf.Views.Contracts
 
                 this.customScript = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
 
                 // Update dependent properties
                 this.InvokeEnabled = false;
-                NotifyPropertyChanged(nameof(this.TestEnabled));
+                RaisePropertyChanged(nameof(this.TestEnabled));
             }
         }
 
@@ -131,7 +136,7 @@ namespace Neo.Gui.Wpf.Views.Contracts
 
                 this.results = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
@@ -144,7 +149,7 @@ namespace Neo.Gui.Wpf.Views.Contracts
 
                 this.fee = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
@@ -159,7 +164,7 @@ namespace Neo.Gui.Wpf.Views.Contracts
 
                 this.invokeEnabled = value;
 
-                NotifyPropertyChanged();
+                RaisePropertyChanged();
             }
         }
 
@@ -247,10 +252,10 @@ namespace Neo.Gui.Wpf.Views.Contracts
             this.ContractParameters = string.Join(", ", contractState.ParameterList);
 
             // Update bindable properties
-            NotifyPropertyChanged(nameof(this.ContractName));
-            NotifyPropertyChanged(nameof(this.ContractVersion));
-            NotifyPropertyChanged(nameof(this.ContractAuthor));
-            NotifyPropertyChanged(nameof(this.ContractParameters));
+            RaisePropertyChanged(nameof(this.ContractName));
+            RaisePropertyChanged(nameof(this.ContractVersion));
+            RaisePropertyChanged(nameof(this.ContractAuthor));
+            RaisePropertyChanged(nameof(this.ContractParameters));
 
             this.EditParametersEnabled = this.parameters.Length > 0;
 
@@ -259,8 +264,9 @@ namespace Neo.Gui.Wpf.Views.Contracts
 
         private void EditParameters()
         {
-            var view = new ParametersEditorView(this.parameters);
-            view.ShowDialog();
+            this.dialogManager.ShowDialog<ContractParametersEditorDialogResult, ContractParametersEditorLoadParameters>(
+                new LoadParameters<ContractParametersEditorLoadParameters>(
+                    new ContractParametersEditorLoadParameters(this.parameters)));
 
             UpdateCustomScript();
         }
