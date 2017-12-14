@@ -5,12 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Contracts\ParametersEditorViewModel.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="MvvmLightLibsStd10" Version="5.4.0.1-alpha" />
-    <PackageReference Include="Neo" Version="2.4.1" />
+    <PackageReference Include="Neo" Version="2.5.0" />
     <PackageReference Include="Neo.VM" Version="2.0.3" />
   </ItemGroup>
 
