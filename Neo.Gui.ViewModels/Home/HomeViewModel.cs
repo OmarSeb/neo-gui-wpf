@@ -161,8 +161,6 @@ namespace Neo.Gui.ViewModels.Home
 
         public ICommand RebuildIndexCommand => new RelayCommand(this.RebuildIndex);
 
-        public ICommand RestoreAccountsCommand => new RelayCommand(() => this.dialogManager.ShowDialog<RestoreAccountsDialogResult>());
-
         public ICommand ExitCommand => new RelayCommand(() => this.messagePublisher.Publish(new ExitAppMessage()));
 
         public ICommand TransferCommand => new RelayCommand(() => this.dialogManager.ShowDialog<TransferDialogResult>());

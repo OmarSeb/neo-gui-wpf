@@ -465,9 +465,6 @@
     <Compile Include="Views\Wallets\TransferView.xaml.cs">
       <DependentUpon>TransferView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Wallets\RestoreAccountsView.xaml.cs">
-      <DependentUpon>RestoreAccountsView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Implementations\Helpers\VersionHelper.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -616,10 +613,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\Wallets\TransferView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\Wallets\RestoreAccountsView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
