@@ -272,7 +272,7 @@ namespace Neo.Gui.ViewModels.Home
             var status = message.Status;
 
             // TODO
-            this.HeightStatus = status.WalletHeight + "/" + status.BlockChainHeight + "/" + status.BlockChainHeaderHeight;
+            this.HeightStatus = $"{status.WalletHeight}/{status.BlockChainHeight}/{status.BlockChainHeaderHeight}";
             this.NextBlockProgressIsIndeterminate = status.NextBlockProgressIsIndeterminate;
             this.NextBlockProgressFraction = status.NextBlockProgressFraction;
 
