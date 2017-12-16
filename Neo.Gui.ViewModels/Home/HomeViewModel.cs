@@ -176,7 +176,7 @@ namespace Neo.Gui.ViewModels.Home
 
         public ICommand DeployContractCommand => new RelayCommand(() => this.dialogManager.ShowDialog<DeployContractDialogResult>());
 
-        public ICommand InvokeContractCommand => new RelayCommand(InvokeContract);
+        public RelayCommand InvokeContractCommand => new RelayCommand(() => this.messagePublisher.Publish(new InvokeContractMessage(null)));
 
         public ICommand ShowElectionDialogCommand => new RelayCommand(() => this.dialogManager.ShowDialog<ElectionDialogResult>());
 
@@ -186,7 +186,7 @@ namespace Neo.Gui.ViewModels.Home
 
         public ICommand ShowOfficialWebsiteCommand => new RelayCommand(() => this.processHelper.OpenInExternalBrowser(OfficialWebsiteUrl));
 
-        public ICommand ShowDeveloperToolsCommand => new RelayCommand(ShowDeveloperTools);
+        public RelayCommand ShowDeveloperToolsCommand => new RelayCommand(() => this.dialogManager.ShowDialog<DeveloperToolsDialogResult>());
 
         public ICommand AboutNeoCommand => new RelayCommand(() => this.dialogManager.ShowDialog<AboutDialogResult>());
 
@@ -275,11 +275,6 @@ namespace Neo.Gui.ViewModels.Home
         #endregion
 
         #region Private Methods 
-        private void InvokeContract()
-        {
-            this.messagePublisher.Publish(new InvokeContractMessage(null));
-        }
-
         private void CreateWallet()
         {
             var result = this.dialogManager.ShowDialog<CreateWalletDialogResult>();
@@ -327,10 +322,7 @@ namespace Neo.Gui.ViewModels.Home
             this.settingsManager.Save();
         }
 
-        private void ShowDeveloperTools()
         {
-            this.dialogManager.ShowDialog<DeveloperToolsDialogResult>();
-        }
         #endregion
     }
 }
