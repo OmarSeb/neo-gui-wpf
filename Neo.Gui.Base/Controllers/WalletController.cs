@@ -280,7 +280,15 @@ namespace Neo.Gui.Base.Controllers
 
             return this.currentWallet.GetAccounts();
         }
-        
+
+        public IEnumerable<WalletAccount> GetStandardAccounts()
+        {
+            this.ThrowIfWalletIsNotOpen();
+
+            return this.currentWallet.GetAccounts().Where(account =>
+                !account.WatchOnly && account.Contract.IsStandard);
+        }
+
         public IEnumerable<Coin> GetCoins()
         {
             // TODO - ISSUE #37 [AboimPinto]: at this point the return should not be a object from the NEO assemblies but a DTO only know by the application with only the necessary fields.

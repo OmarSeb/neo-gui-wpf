@@ -46,6 +46,8 @@ namespace Neo.Gui.Base.Controllers
 
         IEnumerable<WalletAccount> GetAccounts();
 
+        IEnumerable<WalletAccount> GetStandardAccounts();
+
         IEnumerable<Coin> GetCoins();
 
         IEnumerable<Coin> GetUnclaimedCoins();

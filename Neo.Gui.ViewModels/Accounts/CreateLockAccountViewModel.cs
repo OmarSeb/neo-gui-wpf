@@ -42,7 +42,9 @@ namespace Neo.Gui.ViewModels.Accounts
             this.dialogManager = dialogManager;
             this.messagePublisher = messagePublisher;
 
-            this.KeyPairs = new ObservableCollection<KeyPair>(walletController.GetAccounts().Where(p => !p.WatchOnly && p.Contract.IsStandard).Select(p => p.GetKey()).ToArray());
+            this.KeyPairs = new ObservableCollection<KeyPair>(
+                walletController.GetStandardAccounts()
+                    .Select(p => p.GetKey()).ToArray());
 
             this.Hours = new List<int>();
 

@@ -35,9 +35,8 @@ namespace Neo.Gui.Wpf.Views.Wallets
             this.fileManager = fileManager;
             this.fileDialogService = fileDialogService;
 
-            this.KeyPairs = walletController.GetAccounts()
-                .Where(p => !p.WatchOnly && p.Contract.IsStandard)
-                    .Select(p => p.GetKey()).ToArray();
+            this.KeyPairs = walletController.GetStandardAccounts()
+                .Select(p => p.GetKey()).ToArray();
         }
 
         public KeyPair[] KeyPairs { get; }
