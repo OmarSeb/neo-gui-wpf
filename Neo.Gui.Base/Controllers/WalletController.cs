@@ -228,6 +228,9 @@ namespace Neo.Gui.Base.Controllers
             this.ThrowIfWalletIsNotOpen();
 
             var newAccount = this.currentWallet.CreateAccount();
+            
+            var nep6Wallet = this.currentWallet as NEP6Wallet;
+            nep6Wallet?.Save();
 
             this.AddAccountItem(newAccount);
         }
@@ -418,9 +421,13 @@ namespace Neo.Gui.Base.Controllers
                 while (true)
                 {
                     var address = reader.ReadLine();
+
                     if (address == null) break;
+
                     address = address.Trim();
+
                     if (string.IsNullOrEmpty(address)) continue;
+
                     UInt160 scriptHash;
                     try
                     {
@@ -430,7 +437,12 @@ namespace Neo.Gui.Base.Controllers
                     {
                         continue;
                     }
+
                     var account = this.currentWallet.CreateAccount(scriptHash);
+
+                    var nep6Wallet = this.currentWallet as NEP6Wallet;
+                    nep6Wallet?.Save();
+
                     this.AddAccountItem(account);
                 }
             }
@@ -746,17 +758,16 @@ namespace Neo.Gui.Base.Controllers
             }
         }
 
-        private bool AddContract(Contract contract)
+        private void AddContract(Contract contract)
         {
-            if (contract == null) return false;
+            if (contract == null) return;
 
             var account = this.currentWallet.CreateAccount(contract);
 
-            if (account == null) return false;
+            var nep6Wallet = this.currentWallet as NEP6Wallet;
+            nep6Wallet?.Save();
 
             this.AddAccountItem(account);
-
-            return true;
         }
 
         private void AddAccountItem(WalletAccount account)
