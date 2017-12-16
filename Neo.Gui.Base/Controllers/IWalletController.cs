@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Neo.Core;
 using Neo.Cryptography.ECC;
 using Neo.Gui.Base.Data;
+using Neo.Implementations.Wallets.EntityFramework;
 using Neo.Network;
 using Neo.SmartContract;
 using Neo.Wallets;
@@ -19,21 +20,19 @@ namespace Neo.Gui.Base.Controllers
 
         bool WalletIsSynchronized { get; }
 
-        bool WalletNeedUpgrade(string walletPath);
+        bool WalletCanBeMigrated(string walletPath);
 
-        void UpgradeWallet(string walletPath);
+        string MigrateWallet(string walletPath, string password, string newWalletPath = null);
 
         void CreateWallet(string walletPath, string password);
 
-        void OpenWallet(string walletPath, string password, bool repairMode);
+        void OpenWallet(string walletPath, string password);
 
         void CloseWallet();
 
         bool ChangePassword(string oldPassword, string newPassword);
 
-        void RebuildCurrentWallet();
-
-        void CreateNewKey();
+        void CreateNewAccount();
 
         bool Sign(ContractParametersContext context);
 
@@ -45,21 +44,7 @@ namespace Neo.Gui.Base.Controllers
 
         IEnumerable<UInt160> GetNEP5WatchScriptHashes();
 
-        KeyPair GetKeyByScriptHash(UInt160 scriptHash);
-
-        KeyPair GetKey(ECPoint publicKey);
-
-        KeyPair GetKey(UInt160 publicKeyHash);
-
-        IEnumerable<KeyPair> GetKeys();
-
-        IEnumerable<UInt160> GetAddresses();
-
-        VerificationContract GetContract(UInt160 scriptHash);
-
-        IEnumerable<VerificationContract> GetContracts();
-
-        IEnumerable<VerificationContract> GetContracts(UInt160 publicKeyHash);
+        IEnumerable<WalletAccount> GetAccounts();
 
         IEnumerable<Coin> GetCoins();
 
@@ -89,7 +74,7 @@ namespace Neo.Gui.Base.Controllers
         
         Fixed8 CalculateUnavailableBonusGas(uint height);
 
-        bool WalletContainsAddress(UInt160 scriptHash);
+        bool Contains(UInt160 scriptHash);
 
         BigDecimal GetAvailable(UIntBase assetId);
 
@@ -97,7 +82,7 @@ namespace Neo.Gui.Base.Controllers
 
         void ImportWatchOnlyAddress(string addressToImport);
 
-        void DeleteAccount(AccountItem account);
+        bool DeleteAccount(AccountItem account);
 
         Transaction MakeTransaction(Transaction transaction, UInt160 changeAddress = null, Fixed8 fee = default(Fixed8));
 

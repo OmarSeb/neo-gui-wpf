@@ -43,7 +43,6 @@ namespace Neo.Gui.ViewModels.Home
         private readonly ISettingsManager settingsManager;
         private readonly IMessagePublisher messagePublisher;
         private readonly IMessageSubscriber messageSubscriber;
-        private readonly IDispatchService dispatchService;
 
         private bool nextBlockProgressIsIndeterminate;
         private double nextBlockProgressFraction;
@@ -159,8 +158,6 @@ namespace Neo.Gui.ViewModels.Home
 
         public ICommand ChangePasswordCommand => new RelayCommand(() => this.dialogManager.ShowDialog<ChangePasswordDialogResult>());
 
-        public ICommand RebuildIndexCommand => new RelayCommand(this.RebuildIndex);
-
         public ICommand ExitCommand => new RelayCommand(() => this.messagePublisher.Publish(new ExitAppMessage()));
 
         public ICommand TransferCommand => new RelayCommand(() => this.dialogManager.ShowDialog<TransferDialogResult>());
@@ -199,12 +196,11 @@ namespace Neo.Gui.ViewModels.Home
         #region Constructor
         public HomeViewModel(
             IWalletController walletController,
-            IDialogManager dialogManager, 
+            IDialogManager dialogManager,
             IProcessHelper processHelper,
             ISettingsManager settingsManager,
             IMessagePublisher messagePublisher,
-            IMessageSubscriber messageSubscriber, 
-            IDispatchService dispatchService)
+            IMessageSubscriber messageSubscriber)
         {
             this.walletController = walletController;
             this.dialogManager = dialogManager;
@@ -212,7 +208,6 @@ namespace Neo.Gui.ViewModels.Home
             this.settingsManager = settingsManager;
             this.messagePublisher = messagePublisher;
             this.messageSubscriber = messageSubscriber;
-            this.dispatchService = dispatchService;
         }
         #endregion
 
@@ -305,32 +300,31 @@ namespace Neo.Gui.ViewModels.Home
 
             if (result == null) return;
 
-            if (string.IsNullOrEmpty(result.WalletPath) || string.IsNullOrEmpty(result.Password)) return;
+            var walletPath = result.WalletPath;
+            var password = result.Password;
 
-            if (this.walletController.WalletNeedUpgrade(result.WalletPath))
+            if (string.IsNullOrEmpty(walletPath) || string.IsNullOrEmpty(password)) return;
+
+            if (this.walletController.WalletCanBeMigrated(walletPath))
             {
-                //var migrationApproved = this.dialogManager.ShowDialog<YesOrNoDialogResult>("ApproveWalletMigrationDialog");
+                var migrationApproved = this.dialogManager.ShowMessageDialog(Strings.MigrateWalletCaption, Strings.MigrateWalletMessage, MessageDialogType.YesNo);
 
-                //if (!migrationApproved.Yes) return;
+                if (migrationApproved == MessageDialogResult.Yes)
+                {
+                    // Try migrate wallet
+                    var newWalletPath = this.walletController.MigrateWallet(walletPath, password);
 
-                //this.walletController.UpgradeWallet(result.WalletPath);
+                    if (!string.IsNullOrEmpty(newWalletPath))
+                    {
+                        walletPath = newWalletPath;
+                    }
+                }
             }
 
-            this.walletController.OpenWallet(result.WalletPath, result.Password, result.OpenInRepairMode);
+            this.walletController.OpenWallet(walletPath, password);
 
-            this.settingsManager.LastWalletPath = result.WalletPath;
+            this.settingsManager.LastWalletPath = walletPath;
             this.settingsManager.Save();
-        }
-
-        private async void RebuildIndex()
-        {
-            await this.dispatchService.InvokeOnMainUIThread(() =>
-            {
-                this.messagePublisher.Publish(new ClearAssetsMessage());
-                this.messagePublisher.Publish(new ClearTransactionsMessage());
-            });
-
-            this.walletController.RebuildCurrentWallet();
         }
 
         private void ShowDeveloperTools()

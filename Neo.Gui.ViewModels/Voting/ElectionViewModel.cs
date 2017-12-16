@@ -34,8 +34,8 @@ namespace Neo.Gui.ViewModels.Voting
             if (!walletController.WalletIsOpen) return;
 
             // Load book keepers
-            var bookKeepers = walletController.GetContracts().Where(p => p.IsStandard).Select(p =>
-                walletController.GetKey(p.PublicKeyHash).PublicKey);
+            var bookKeepers = walletController.GetAccounts().Where(p =>
+                !p.WatchOnly && p.Contract.IsStandard).Select(p => p.GetKey().PublicKey);
 
             this.BookKeepers = new ObservableCollection<ECPoint>(bookKeepers);
         }
