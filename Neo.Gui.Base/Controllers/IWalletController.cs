@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+
 using Neo.Core;
-using Neo.Cryptography.ECC;
-using Neo.Gui.Base.Data;
-using Neo.Implementations.Wallets.EntityFramework;
 using Neo.Network;
 using Neo.SmartContract;
 using Neo.Wallets;
+
+using Neo.Gui.Base.Data;
 
 namespace Neo.Gui.Base.Controllers
 {
@@ -22,6 +22,10 @@ namespace Neo.Gui.Base.Controllers
 
         bool WalletCanBeMigrated(string walletPath);
 
+        /// <summary>
+        /// Migrates to newer wallet format. This method does not open the migrated wallet.
+        /// </summary>
+        /// <returns>File path of new migrated wallet</returns>
         string MigrateWallet(string walletPath, string password, string newWalletPath = null);
 
         void CreateWallet(string walletPath, string password);
@@ -44,8 +48,19 @@ namespace Neo.Gui.Base.Controllers
 
         IEnumerable<UInt160> GetNEP5WatchScriptHashes();
 
+        /// <summary>
+        /// Gets all accounts in wallets.
+        /// </summary>
         IEnumerable<WalletAccount> GetAccounts();
 
+        /// <summary>
+        /// Gets accounts that are not watch-only (i.e. standard and non-standard contract accounts).
+        /// </summary>
+        IEnumerable<WalletAccount> GetNonWatchOnlyAccounts();
+
+        /// <summary>
+        /// Gets standard contract accounts.
+        /// </summary>
         IEnumerable<WalletAccount> GetStandardAccounts();
 
         IEnumerable<Coin> GetCoins();
@@ -76,7 +91,7 @@ namespace Neo.Gui.Base.Controllers
         
         Fixed8 CalculateUnavailableBonusGas(uint height);
 
-        bool Contains(UInt160 scriptHash);
+        bool WalletContainsAccount(UInt160 scriptHash);
 
         BigDecimal GetAvailable(UIntBase assetId);
 

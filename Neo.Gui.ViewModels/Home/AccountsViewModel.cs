@@ -64,7 +64,7 @@ namespace Neo.Gui.ViewModels.Home
             }
         }
 
-        public bool MenuItemsEnabled => this.walletController.WalletIsOpen;
+        public bool WalletIsOpen => this.walletController.WalletIsOpen;
 
         public bool ViewPrivateKeyEnabled => this.SelectedAccount?.Account.Contract != null && this.SelectedAccount.Account.Contract.IsStandard;
 
@@ -123,7 +123,7 @@ namespace Neo.Gui.ViewModels.Home
         #region IMessageHandler implementation 
         public void HandleMessage(CurrentWalletHasChangedMessage message)
         {
-            RaisePropertyChanged(nameof(this.MenuItemsEnabled));
+            RaisePropertyChanged(nameof(this.WalletIsOpen));
         }
 
         public void HandleMessage(ClearAccountsMessage message)

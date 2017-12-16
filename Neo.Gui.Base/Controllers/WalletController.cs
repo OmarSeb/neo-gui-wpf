@@ -4,22 +4,27 @@ using System.IO;
 using System.Linq;
 using System.Numerics;
 using System.Timers;
+
 using Neo.Core;
 using Neo.Cryptography.ECC;
-using Neo.Gui.Base.Certificates;
-using Neo.Gui.Base.Data;
-using Neo.Gui.Base.Extensions;
-using Neo.Gui.Base.Globalization;
-using Neo.Gui.Base.Messages;
-using Neo.Gui.Base.Messaging.Interfaces;
-using Neo.Gui.Base.Services;
-using Neo.Implementations.Wallets.EntityFramework;
 using Neo.Implementations.Wallets.NEP6;
 using Neo.Network;
 using Neo.SmartContract;
 using Neo.VM;
 using Neo.Wallets;
+
+using Neo.Gui.Base.Certificates;
+using Neo.Gui.Base.Data;
+using Neo.Gui.Base.Exceptions;
+using Neo.Gui.Base.Extensions;
+using Neo.Gui.Base.Globalization;
+using Neo.Gui.Base.Managers;
+using Neo.Gui.Base.Messages;
+using Neo.Gui.Base.Messaging.Interfaces;
+using Neo.Gui.Base.Services;
+
 using CryptographicException = System.Security.Cryptography.CryptographicException;
+using DeprecatedWallet = Neo.Implementations.Wallets.EntityFramework.UserWallet;
 
 namespace Neo.Gui.Base.Controllers
 {
@@ -138,6 +143,7 @@ namespace Neo.Gui.Base.Controllers
             if (string.IsNullOrEmpty(newWalletPath))
             {
                 newWalletPath = Path.ChangeExtension(walletPath, ".json");
+                newWalletPath = FileManager.GetAvailableFilePath(newWalletPath);
             }
 
             NEP6Wallet nep6Wallet;
@@ -155,7 +161,7 @@ namespace Neo.Gui.Base.Controllers
             nep6Wallet.Save();
             nep6Wallet.Dispose();
 
-            this.notificationService.ShowErrorNotification(Strings.MigrateWalletSucceedMessage);
+            this.notificationService.ShowInformationNotification(Strings.MigrateWalletSucceedMessage + newWalletPath);
 
             return newWalletPath;
         }
@@ -174,10 +180,10 @@ namespace Neo.Gui.Base.Controllers
             Wallet wallet;
             if (Path.GetExtension(walletPath) == ".db3")
             {
-                UserWallet userWallet;
+                DeprecatedWallet userWallet;
                 try
                 {
-                    userWallet = UserWallet.Open(walletPath, password);
+                    userWallet = DeprecatedWallet.Open(walletPath, password);
                 }
                 catch (CryptographicException)
                 {
@@ -204,7 +210,7 @@ namespace Neo.Gui.Base.Controllers
             if (wallet == null)
             {
                 // TODO Localise text
-                this.notificationService.ShowErrorNotification("Could not open wallet! Something went wrong while opening");
+                this.notificationService.ShowErrorNotification("Could not open wallet! An error occurred while opening");
                 return;
             }
             
@@ -227,12 +233,12 @@ namespace Neo.Gui.Base.Controllers
         {
             this.ThrowIfWalletIsNotOpen();
 
-            var newAccount = this.currentWallet.CreateAccount();
-            
+            var account = this.currentWallet.CreateAccount();
+
+            this.AddAccountItem(account);
+
             var nep6Wallet = this.currentWallet as NEP6Wallet;
             nep6Wallet?.Save();
-
-            this.AddAccountItem(newAccount);
         }
 
         public bool Sign(ContractParametersContext context)
@@ -281,11 +287,18 @@ namespace Neo.Gui.Base.Controllers
             return this.currentWallet.GetAccounts();
         }
 
+        public IEnumerable<WalletAccount> GetNonWatchOnlyAccounts()
+        {
+            this.ThrowIfWalletIsNotOpen();
+
+            return this.GetAccounts().Where(account => !account.WatchOnly);
+        }
+
         public IEnumerable<WalletAccount> GetStandardAccounts()
         {
             this.ThrowIfWalletIsNotOpen();
 
-            return this.currentWallet.GetAccounts().Where(account =>
+            return this.GetAccounts().Where(account =>
                 !account.WatchOnly && account.Contract.IsStandard);
         }
 
@@ -293,7 +306,7 @@ namespace Neo.Gui.Base.Controllers
         {
             // TODO - ISSUE #37 [AboimPinto]: at this point the return should not be a object from the NEO assemblies but a DTO only know by the application with only the necessary fields.
 
-            if (!this.WalletIsOpen) return Enumerable.Empty<Coin>();
+            this.ThrowIfWalletIsNotOpen();
 
             return this.currentWallet.GetCoins();
         }
@@ -395,7 +408,7 @@ namespace Neo.Gui.Base.Controllers
             return this.CalculateBonus(references, height);
         }
 
-        public bool Contains(UInt160 scriptHash)
+        public bool WalletContainsAccount(UInt160 scriptHash)
         {
             this.ThrowIfWalletIsNotOpen();
 
@@ -448,11 +461,11 @@ namespace Neo.Gui.Base.Controllers
 
                     var account = this.currentWallet.CreateAccount(scriptHash);
 
-                    var nep6Wallet = this.currentWallet as NEP6Wallet;
-                    nep6Wallet?.Save();
-
                     this.AddAccountItem(account);
                 }
+
+                var nep6Wallet = this.currentWallet as NEP6Wallet;
+                nep6Wallet?.Save();
             }
         }
 
@@ -547,8 +560,13 @@ namespace Neo.Gui.Base.Controllers
 
             foreach (var contract in message.Contracts)
             {
-                this.AddContract(contract);
+                var account = this.currentWallet.CreateAccount(contract);
+
+                this.AddAccountItem(account);
             }
+
+            var nep6Wallet = this.currentWallet as NEP6Wallet;
+            nep6Wallet?.Save();
         }
 
         public void HandleMessage(AddContractMessage message)
@@ -557,7 +575,12 @@ namespace Neo.Gui.Base.Controllers
 
             if (message.Contract == null) return;
 
-            this.AddContract(message.Contract);
+            var account = this.currentWallet.CreateAccount(message.Contract);
+
+            this.AddAccountItem(account);
+
+            var nep6Wallet = this.currentWallet as NEP6Wallet;
+            nep6Wallet?.Save();
         }
 
         public void HandleMessage(ImportPrivateKeyMessage message)
@@ -581,6 +604,9 @@ namespace Neo.Gui.Base.Controllers
 
                 this.AddAccountItem(account);
             }
+            
+            var nep6Wallet = this.currentWallet as NEP6Wallet;
+            nep6Wallet?.Save();
         }
 
         public void HandleMessage(ImportCertificateMessage message)
@@ -600,6 +626,9 @@ namespace Neo.Gui.Base.Controllers
             }
 
             this.AddAccountItem(account);
+
+            var nep6Wallet = this.currentWallet as NEP6Wallet;
+            nep6Wallet?.Save();
         }
 
         public void HandleMessage(SignTransactionAndShowInformationMessage message)
@@ -661,14 +690,13 @@ namespace Neo.Gui.Base.Controllers
         #region Private Methods
 
         /// <summary>
-        /// Throws an <see cref="InvalidOperationException" /> if a wallet is not open.
+        /// Throws <see cref="WalletIsNotOpenException" /> if a wallet is not open.
         /// </summary>
         private void ThrowIfWalletIsNotOpen()
         {
-            if (!this.WalletIsOpen)
-            {
-                throw new InvalidOperationException("Wallet is not open!");
-            }
+            if (this.WalletIsOpen) return;
+
+            throw new WalletIsNotOpenException();
         }
         
         private void Refresh(object sender, ElapsedEventArgs e)
@@ -685,14 +713,13 @@ namespace Neo.Gui.Base.Controllers
                 this.messagePublisher.Publish(new WalletStatusMessage(walletStatus));
 
                 // Update wallet
-                if (this.WalletIsOpen)
-                {
-                    this.UpdateAccountBalances();
+                if (!this.WalletIsOpen) return;
 
-                    this.UpdateFirstClassAssetBalances();
+                this.UpdateAccountBalances();
 
-                    this.UpdateNEP5TokenBalances(blockChainStatus.TimeSinceLastBlock);
-                }
+                this.UpdateFirstClassAssetBalances();
+
+                this.UpdateNEP5TokenBalances(blockChainStatus.TimeSinceLastBlock);
             }
         }
 
@@ -712,6 +739,8 @@ namespace Neo.Gui.Base.Controllers
                 disposableWallet?.Dispose();
             }
 
+            this.accounts.Clear();
+            this.transactions.Clear();
             this.messagePublisher.Publish(new ClearAccountsMessage());
             this.messagePublisher.Publish(new ClearAssetsMessage());
             this.messagePublisher.Publish(new ClearTransactionsMessage());
@@ -722,6 +751,7 @@ namespace Neo.Gui.Base.Controllers
             if (this.WalletIsOpen)
             {
                 // Load accounts
+
                 foreach (var account in this.GetAccounts())
                 {
                     this.AddAccountItem(account);
@@ -746,29 +776,22 @@ namespace Neo.Gui.Base.Controllers
                 }
 
                 this.currentWallet.BalanceChanged += this.CurrentWalletBalanceChanged;
+
+                this.SetWalletBalanceChangedFlag();
+                this.checkNep5Balance = true;
             }
 
             this.messagePublisher.Publish(new CurrentWalletHasChangedMessage());
-
-            this.SetWalletBalanceChangedFlag();
-            this.checkNep5Balance = true;
         }
 
-        private void CurrentWalletBalanceChanged(object sender, EventArgs e)
+        private void CurrentWalletBalanceChanged(object sender, BalanceEventArgs e)
         {
+            // TODO Check this logic is correct
+            var transactionHeight = e.Height ?? this.blockchainController.BlockHeight;
+            
+            this.AddTransaction(e.Transaction, transactionHeight, e.Time);
+
             this.SetWalletBalanceChangedFlag();
-        }
-
-        private void AddContract(Contract contract)
-        {
-            if (contract == null) return;
-
-            var account = this.currentWallet.CreateAccount(contract);
-
-            var nep6Wallet = this.currentWallet as NEP6Wallet;
-            nep6Wallet?.Save();
-
-            this.AddAccountItem(account);
         }
 
         private void AddAccountItem(WalletAccount account)
@@ -1039,6 +1062,8 @@ namespace Neo.Gui.Base.Controllers
 
                 transactionItem.SetConfirmations((int)confirmations);
             }
+
+            this.messagePublisher.Publish(new TransactionsHaveChangedMessage(this.transactions));
         }
 
         private bool GetWalletBalanceChangedFlag()

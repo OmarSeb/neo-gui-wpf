@@ -225,7 +225,7 @@ namespace Neo.Gui.ViewModels.Wallets
 
             try
             {
-                if (inputs.Select(p => this.walletController.GetTransaction(p.PrevHash).Outputs[p.PrevIndex].ScriptHash).Distinct().Any(p => this.walletController.Contains(p)))
+                if (inputs.Select(p => this.walletController.GetTransaction(p.PrevHash).Outputs[p.PrevIndex].ScriptHash).Distinct().Any(p => this.walletController.WalletContainsAccount(p)))
                 {
                     this.dialogManager.ShowMessageDialog(Strings.Failed, Strings.TradeFailedInvalidDataMessage);
                     return;
@@ -237,7 +237,7 @@ namespace Neo.Gui.ViewModels.Wallets
                 return;
             }
 
-            outputs = outputs.Where(p => this.walletController.Contains(p.ScriptHash));
+            outputs = outputs.Where(p => this.walletController.WalletContainsAccount(p.ScriptHash));
 
             var dialogResult = this.dialogManager.ShowDialog<TradeVerificationDialogResult, TradeVerificationLoadParameters>(
                 new LoadParameters<TradeVerificationLoadParameters>(new TradeVerificationLoadParameters(outputs)));
