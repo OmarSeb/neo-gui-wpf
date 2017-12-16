@@ -471,7 +471,7 @@ namespace Neo.Gui.Base.Controllers
 
             this.accounts.Remove(accountToDelete);
 
-            this.SetWalletBalanceChanged();
+            this.SetWalletBalanceChangedFlag();
 
             return true;
         }
@@ -641,17 +641,16 @@ namespace Neo.Gui.Base.Controllers
 
         public void HandleMessage(BlockchainPersistCompletedMessage message)
         {
-            if (this.WalletIsOpen)
+            if (!this.WalletIsOpen) return;
+
+            this.checkNep5Balance = true;
+
+            var coins = this.GetCoins();
+
+            if (coins.Any(coin => !coin.State.HasFlag(CoinState.Spent) &&
+                coin.Output.AssetId.Equals(Blockchain.GoverningToken.Hash)))
             {
-                this.checkNep5Balance = true;
-
-                var coins = this.GetCoins();
-
-                if (coins.Any(coin => !coin.State.HasFlag(CoinState.Spent) &&
-                    coin.Output.AssetId.Equals(Blockchain.GoverningToken.Hash)))
-                {
-                    this.balanceChanged = true;
-                }
+                this.SetWalletBalanceChangedFlag();
             }
 
             this.RefreshTransactionConfirmations();
@@ -704,6 +703,10 @@ namespace Neo.Gui.Base.Controllers
                 // Dispose current wallet
                 this.currentWallet.BalanceChanged -= this.CurrentWalletBalanceChanged;
 
+                // Save NEP-6 wallet just in case something was not saved
+                var nep6Wallet = this.currentWallet as NEP6Wallet;
+                nep6Wallet?.Save();
+
                 // Dispose of wallet if required
                 var disposableWallet = this.currentWallet as IDisposable;
                 disposableWallet?.Dispose();
@@ -715,12 +718,19 @@ namespace Neo.Gui.Base.Controllers
 
             this.currentWallet = wallet;
 
+            // Setup wallet if required
             if (this.WalletIsOpen)
             {
-                // Setup wallet
-                var transactions = this.currentWallet.GetTransactions();
+                // Load accounts
+                foreach (var account in this.GetAccounts())
+                {
+                    this.AddAccountItem(account);
+                }
 
-                foreach (var i in transactions.Select(p => new
+                // Load transactions
+                var walletTransactions = this.currentWallet.GetTransactions();
+
+                foreach (var i in walletTransactions.Select(p => new
                 {
                     Transaction = Blockchain.Default.GetTransaction(p, out int height),
                     Height = (uint) height
@@ -732,38 +742,21 @@ namespace Neo.Gui.Base.Controllers
                     Time = Blockchain.Default.GetHeader(p.Height).Timestamp
                 }).OrderBy(p => p.Time))
                 {
-                    AddTransaction(i.Transaction, i.Height, i.Time);
+                    this.AddTransaction(i.Transaction, i.Height, i.Time);
                 }
 
                 this.currentWallet.BalanceChanged += this.CurrentWalletBalanceChanged;
-                
             }
 
             this.messagePublisher.Publish(new CurrentWalletHasChangedMessage());
-            this.LoadWallet();
 
-            this.balanceChanged = true;
+            this.SetWalletBalanceChangedFlag();
             this.checkNep5Balance = true;
         }
 
-        /*private void CurrentWalletTransactionsChanged(object sender, IEnumerable<TransactionInfo> transactions)
-        {
-            this.UpdateTransactions(transactions);
-        }*/
-
         private void CurrentWalletBalanceChanged(object sender, EventArgs e)
         {
-            this.balanceChanged = true;
-        }
-
-        private void LoadWallet()
-        {
-            if (!this.WalletIsOpen) return;
-
-            foreach (var account in this.GetAccounts())
-            {
-                this.AddAccountItem(account);
-            }
+            this.SetWalletBalanceChangedFlag();
         }
 
         private void AddContract(Contract contract)
@@ -823,7 +816,7 @@ namespace Neo.Gui.Base.Controllers
         {
             if (this.WalletIsSynchronized) return;
             
-            if (balanceChanged)
+            if (this.GetWalletBalanceChangedFlag())
             {
                 var coins = this.GetCoins().Where(p => !p.State.HasFlag(CoinState.Spent)).ToList();
                 var bonusAvailable = Blockchain.CalculateBonus(this.GetUnclaimedCoins().Select(p => p.Reference));
@@ -907,7 +900,7 @@ namespace Neo.Gui.Base.Controllers
                     }
                 }
 
-                this.SetWalletBalanceChanged();
+                this.ClearWalletBalanceChangedFlag();
             }
 
 
@@ -1048,9 +1041,19 @@ namespace Neo.Gui.Base.Controllers
             }
         }
 
-        private void SetWalletBalanceChanged()
+        private bool GetWalletBalanceChangedFlag()
+        {
+            return this.balanceChanged;
+        }
+
+        private void SetWalletBalanceChangedFlag()
         {
             this.balanceChanged = true;
+        }
+
+        private void ClearWalletBalanceChangedFlag()
+        {
+            this.balanceChanged = false;
         }
 
         private AssetItem GetAsset(UInt160 scriptHash)
