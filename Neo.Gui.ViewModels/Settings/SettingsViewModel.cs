@@ -143,10 +143,23 @@ namespace Neo.Gui.ViewModels.Settings
 
                 this.selectedStyle = value;
 
-                RaisePropertyChanged();
+                // Build new theme instance
+                var newTheme = new Theme
+                {
+                    Style = this.selectedStyle,
+                    AccentBaseColor = themeManager.CurrentTheme.AccentBaseColor,
+                    HighlightColor = themeManager.CurrentTheme.AccentBaseColor,
+                    WindowBorderColor = themeManager.CurrentTheme.AccentBaseColor
+                };
 
-                // Update dependent property
-                RaisePropertyChanged(nameof(this.AppearanceSettingsChanged));
+                // Change Theme at runtime (Modifying accent still requires a restart)
+                themeManager.SetTheme(newTheme);
+                // Export and save as JSON in settings
+                var newThemeJson = Theme.ExportToJson(newTheme);
+                this.settingsManager.AppTheme = newThemeJson;
+                this.settingsManager.Save();
+
+                RaisePropertyChanged();
             }
         }
 
