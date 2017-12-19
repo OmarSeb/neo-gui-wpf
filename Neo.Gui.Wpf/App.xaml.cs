@@ -149,6 +149,9 @@ namespace Neo.Gui.Wpf
                         {
                             messagePublisher.Publish(new NewVersionAvailableMessage(newerVersion));
                         }
+
+                        // Add current Neo network (MainNet / TestNet / PrivateNet)
+                        messagePublisher.Publish(new NeoNetworkIdentifiedMessage(Settings.Default.NeoNetwork.ToString()));
                         
                         // Close splash screen
                         splashScreen.Close();

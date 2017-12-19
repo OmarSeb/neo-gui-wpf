@@ -31,7 +31,8 @@ namespace Neo.Gui.ViewModels.Home
         IMessageHandler<InvokeContractMessage>,
         IMessageHandler<NewVersionAvailableMessage>,
         IMessageHandler<UpdateApplicationMessage>,
-        IMessageHandler<WalletStatusMessage>
+        IMessageHandler<WalletStatusMessage>,
+        IMessageHandler<NeoNetworkIdentifiedMessage>
     {
         #region Private Fields
         private const string OfficialWebsiteUrl = "https://neo.org/";
@@ -48,6 +49,7 @@ namespace Neo.Gui.ViewModels.Home
 
         private string newVersionLabel;
         private bool newVersionVisible;
+        private string neoNetworkLabel;
 
         private string heightStatus;
         private uint nodeCount;
@@ -66,6 +68,18 @@ namespace Neo.Gui.ViewModels.Home
 
                 this.heightStatus = value;
 
+                RaisePropertyChanged();
+            }
+        }
+
+        public string NeoNetworkLabel
+        {
+            get => this.neoNetworkLabel;
+            set
+            {
+                if (this.neoNetworkLabel == value) return;
+
+                this.neoNetworkLabel = value;
                 RaisePropertyChanged();
             }
         }
@@ -257,6 +271,11 @@ namespace Neo.Gui.ViewModels.Home
         {
             this.NewVersionLabel = $"{Strings.DownloadNewVersion}: {message.NewVersion}";
             this.NewVersionVisible = true;
+        }
+
+        public void HandleMessage(NeoNetworkIdentifiedMessage message)
+        {
+            NeoNetworkLabel = $"{Strings.NetworkIdentified}: {message.NeoNetwork}";
         }
 
         public void HandleMessage(WalletStatusMessage message)
