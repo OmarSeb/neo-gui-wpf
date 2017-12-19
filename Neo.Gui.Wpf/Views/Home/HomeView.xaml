@@ -141,9 +141,11 @@
                 </StatusBarItem.Content>
             </StatusBarItem>
 
-            <StatusBarItem HorizontalAlignment="Right">
+        <StatusBarItem HorizontalAlignment="Right">
                 <StatusBarItem.Content>
                     <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding NeoNetworkLabel}"/>
+                        <Rectangle VerticalAlignment="Stretch" Width="1" Margin="5,2" Stroke="White" />
                         <TextBlock Text="{Binding BlockStatus}" Margin="0 0 8 0" />
                         <ProgressBar Minimum="0" Maximum="100" SmallChange="1" Value="{Binding NextBlockProgressPercentage, Mode=OneWay}" IsIndeterminate="{Binding NextBlockProgressIsIndeterminate}" Height="14" Width="100" />
                     </StackPanel>

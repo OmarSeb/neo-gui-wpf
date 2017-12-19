@@ -8,10 +8,12 @@ namespace Neo.Gui.Wpf.Properties
         public PathsSettings Paths { get; }
 
         public P2PSettings P2P { get; }
-        
+
         public BrowserSettings Urls { get; }
 
         public ContractSettings Contracts { get; }
+
+        public NeoNetwork NeoNetwork { get; }
 
         public Settings()
         {
@@ -26,10 +28,25 @@ namespace Neo.Gui.Wpf.Properties
             this.Paths = new PathsSettings(section.GetSection("Paths"));
 
             this.P2P = new P2PSettings(section.GetSection("P2P"));
-            
+
             this.Urls = new BrowserSettings(section.GetSection("Urls"));
 
+            this.NeoNetwork = GetNeoNetwork();
+
             this.Contracts = new ContractSettings(section.GetSection("Contracts"));
+        }
+
+        private NeoNetwork GetNeoNetwork()
+        {
+            switch (this.Urls.AddressUrl)
+            {
+                case "https://www.antchain.xyz/address/{0}":
+                    return NeoNetwork.MainNet;
+                case "http://testnet.antchain.xyz/address/{0}":
+                    return NeoNetwork.TestNet;
+                default:
+                    return NeoNetwork.PrivateNetwork;
+            }
         }
     }
 
@@ -83,5 +100,11 @@ namespace Neo.Gui.Wpf.Properties
         {
             this.NEP5 = section.GetSection("NEP5").GetChildren().Select(p => UInt160.Parse(p.Value)).ToArray();
         }
+    }
+
+
+    enum NeoNetwork
+    {
+        MainNet, TestNet, PrivateNetwork
     }
 }

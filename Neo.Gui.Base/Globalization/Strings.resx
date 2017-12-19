@@ -853,4 +853,7 @@ Note: updated files cannot be openned by clients in older versions!</value>
   <data name="WatchOnly" xml:space="preserve">
     <value>Watch Only</value>
   </data>
+  <data name="NetworkIdentified" xml:space="preserve">
+    <value>Connected to</value>
+  </data>
 </root>

@@ -1304,6 +1304,15 @@ namespace Neo.Gui.Base.Globalization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Connected to.
+        /// </summary>
+        public static string NetworkIdentified {
+            get {
+                return ResourceManager.GetString("NetworkIdentified", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Newest Version.
         /// </summary>
         public static string NewestVersion {
