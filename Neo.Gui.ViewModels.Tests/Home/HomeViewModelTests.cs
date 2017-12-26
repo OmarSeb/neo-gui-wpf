@@ -1,23 +1,27 @@
-﻿using Xunit;
-using Neo.Gui.Base.Messaging.Interfaces;
-using Neo.Gui.Base.Messages;
-using Neo.Gui.Base.Controllers;
-using Neo.Gui.Base.Globalization;
+﻿using System;
+using Xunit;
+
 using Moq;
+
+using Neo.Gui.Globalization.Resources;
+
+using Neo.Gui.Base.Controllers;
 using Neo.Gui.Base.Dialogs.LoadParameters.Contracts;
-using Neo.Gui.Base.Managers;
-using Neo.Gui.Base.MVVM;
-using Neo.Gui.Base.Dialogs.Results.Contracts;
 using Neo.Gui.Base.Dialogs.Results;
+using Neo.Gui.Base.Dialogs.Results.Contracts;
 using Neo.Gui.Base.Dialogs.Results.Wallets;
 using Neo.Gui.Base.Dialogs.Results.Development;
 using Neo.Gui.Base.Dialogs.Results.Settings;
-using Neo.Gui.ViewModels.Home;
-using Neo.Gui.Base.Dialogs.LoadParameters.Contracts;
 using Neo.Gui.Base.Dialogs.Results.Assets;
 using Neo.Gui.Base.Dialogs.Results.Transactions;
 using Neo.Gui.Base.Dialogs.Results.Voting;
 using Neo.Gui.Base.Helpers;
+using Neo.Gui.Base.Managers;
+using Neo.Gui.Base.Messaging.Interfaces;
+using Neo.Gui.Base.Messages;
+using Neo.Gui.Base.Status;
+
+using Neo.Gui.ViewModels.Home;
 
 namespace Neo.Gui.ViewModels.Tests.Home
 {
@@ -71,7 +75,8 @@ namespace Neo.Gui.ViewModels.Tests.Home
             uint blockChainHeaderHeight = 0;
             bool nextBlockProgressIsIndeterminate = false;
             double nextBlockProgressFraction = 0;
-            uint nodeCount = 1;
+            TimeSpan timeSinceLastBlock = TimeSpan.Zero;
+            int nodeCount = 1;
 
             var expectedHeightStatus = $"{walletHeight}/{blockChainHeight}/{blockChainHeaderHeight}";
 
@@ -82,11 +87,13 @@ namespace Neo.Gui.ViewModels.Tests.Home
             walletStatusMessageHandler.HandleMessage(new WalletStatusMessage(
                 new WalletStatus(
                     walletHeight, 
-                    blockChainHeight, 
-                    blockChainHeaderHeight, 
-                    nextBlockProgressIsIndeterminate, 
-                    nextBlockProgressFraction, 
-                    nodeCount)));
+                    new BlockchainStatus(
+                        blockChainHeight, 
+                        blockChainHeaderHeight, 
+                        nextBlockProgressIsIndeterminate, 
+                        nextBlockProgressFraction,
+                        timeSinceLastBlock),
+                    new NetworkStatus(nodeCount))));
 
             // Assert
             Assert.Equal(expectedHeightStatus, viewModel.HeightStatus);
@@ -146,7 +153,7 @@ namespace Neo.Gui.ViewModels.Tests.Home
             InvokeContractMessageHandler.HandleMessage(new InvokeContractMessage(new Core.InvocationTransaction()));
 
             // Assert
-            dialogManagerMock.Verify(x => x.ShowDialog<InvokeContractDialogResult, InvokeContractLoadParameters>(It.IsAny<LoadParameters<InvokeContractLoadParameters>>()));
+            dialogManagerMock.Verify(x => x.ShowDialog<InvokeContractDialogResult, InvokeContractLoadParameters>(It.IsAny<InvokeContractLoadParameters>()));
         }
 
         [Fact]
@@ -155,6 +162,7 @@ namespace Neo.Gui.ViewModels.Tests.Home
             // Arrange
             var walletPath = "walletPath";
             var walletPassword = "walletPassword";
+            var createWalletWithAccount = true;
             var createWalletDialogResult = new CreateWalletDialogResult(walletPath, walletPassword);
 
             var walletControllerMock = this.AutoMockContainer.GetMock<IWalletController>();
@@ -173,7 +181,7 @@ namespace Neo.Gui.ViewModels.Tests.Home
 
             // Assert
             dialogManagerMock.Verify(x => x.ShowDialog<CreateWalletDialogResult>());
-            walletControllerMock.Verify(x => x.CreateWallet(walletPath, walletPassword));
+            walletControllerMock.Verify(x => x.CreateWallet(walletPath, walletPassword, createWalletWithAccount));
             settingsManagerMock.VerifySet(x => x.LastWalletPath = walletPath);
             settingsManagerMock.Verify(x => x.Save(), Times.Once);
         }

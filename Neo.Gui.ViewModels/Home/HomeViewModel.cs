@@ -19,7 +19,7 @@ using Neo.Gui.Base.Dialogs.Results.Voting;
 using Neo.Gui.Base.Messages;
 using Neo.Gui.Base.Messaging.Interfaces;
 using Neo.Gui.Base.MVVM;
-using Neo.Gui.Base.Globalization;
+using Neo.Gui.Globalization.Resources;
 using Neo.Gui.Base.Helpers;
 using Neo.Gui.Base.Managers;
 
@@ -34,8 +34,7 @@ namespace Neo.Gui.ViewModels.Home
         IMessageHandler<InvokeContractMessage>,
         IMessageHandler<NewVersionAvailableMessage>,
         IMessageHandler<UpdateApplicationMessage>,
-        IMessageHandler<WalletStatusMessage>,
-        IMessageHandler<NeoNetworkIdentifiedMessage>
+        IMessageHandler<WalletStatusMessage>
     {
         #region Private Fields
         private const string OfficialWebsiteUrl = "https://neo.org/";
@@ -52,10 +51,9 @@ namespace Neo.Gui.ViewModels.Home
 
         private string newVersionLabel;
         private bool newVersionVisible;
-        private string neoNetworkLabel;
 
         private string heightStatus;
-        private uint nodeCount;
+        private int nodeCount;
         private string blockStatus;
         #endregion
         
@@ -75,19 +73,7 @@ namespace Neo.Gui.ViewModels.Home
             }
         }
 
-        public string NeoNetworkLabel
-        {
-            get => this.neoNetworkLabel;
-            set
-            {
-                if (this.neoNetworkLabel == value) return;
-
-                this.neoNetworkLabel = value;
-                RaisePropertyChanged();
-            }
-        }
-
-        public uint NodeCount
+        public int NodeCount
         {
             get => this.nodeCount;
             set
@@ -236,7 +222,7 @@ namespace Neo.Gui.ViewModels.Home
         #endregion
 
         #region ILoadable Implementation 
-        public void OnLoad(params object[] parameters)
+        public void OnLoad()
         {
             this.messageSubscriber.Subscribe(this);
         }
@@ -259,7 +245,7 @@ namespace Neo.Gui.ViewModels.Home
         public void HandleMessage(InvokeContractMessage message)
         {
             this.dialogManager.ShowDialog<InvokeContractDialogResult, InvokeContractLoadParameters>(
-                new LoadParameters<InvokeContractLoadParameters>(new InvokeContractLoadParameters(message.Transaction)));
+                new InvokeContractLoadParameters(message.Transaction));
         }
 
         public void HandleMessage(UpdateApplicationMessage message)
@@ -276,21 +262,16 @@ namespace Neo.Gui.ViewModels.Home
             this.NewVersionVisible = true;
         }
 
-        public void HandleMessage(NeoNetworkIdentifiedMessage message)
-        {
-            NeoNetworkLabel = $"{Strings.NetworkIdentified}: {message.NeoNetwork}";
-        }
-
         public void HandleMessage(WalletStatusMessage message)
         {
             var status = message.Status;
 
             // TODO
-            this.HeightStatus = $"{status.WalletHeight}/{status.BlockChainHeight}/{status.BlockChainHeaderHeight}";
-            this.NextBlockProgressIsIndeterminate = status.NextBlockProgressIsIndeterminate;
-            this.NextBlockProgressFraction = status.NextBlockProgressFraction;
+            this.HeightStatus = $"{status.WalletHeight}/{status.BlockchainStatus.Height}/{status.BlockchainStatus.HeaderHeight}";
+            this.NextBlockProgressIsIndeterminate = status.BlockchainStatus.NextBlockProgressIsIndeterminate;
+            this.NextBlockProgressFraction = status.BlockchainStatus.NextBlockProgressFraction;
 
-            this.NodeCount = status.NodeCount;
+            this.NodeCount = status.NetworkStatus.NodeCount;
             this.BlockStatus = $"{Strings.WaitingForNextBlock}:"; // TODO Update property to return actual status
         }
         #endregion

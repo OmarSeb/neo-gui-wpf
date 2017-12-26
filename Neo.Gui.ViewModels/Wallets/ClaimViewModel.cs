@@ -96,7 +96,7 @@ namespace Neo.Gui.ViewModels.Wallets
         #endregion
 
         #region ILoadable implementation
-        public void OnLoad(params object[] parameters)
+        public void OnLoad()
         {
             this.messageSubscriber.Subscribe(this);
 
@@ -144,7 +144,7 @@ namespace Neo.Gui.ViewModels.Wallets
 
         public void HandleMessage(WalletStatusMessage message)
         {
-            this.CalculateBonusUnavailable(message.Status.BlockChainHeight + 1);
+            this.CalculateBonusUnavailable(message.Status.BlockchainStatus.Height + 1);
         }
 
         #endregion
