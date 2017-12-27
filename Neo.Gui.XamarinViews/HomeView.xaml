@@ -5,38 +5,66 @@
              xmlns:controls="clr-namespace:Neo.Gui.XamarinViews.Controls;assembly=Neo.Gui.XamarinViews"
              x:Class="Neo.Gui.HomeView"
              BackgroundColor="White"
-             Title="Create Wallet">
+             Title="Your Wallets">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="LightGray">
-        <Entry Text="Wallet Name : " Margin="20" ></Entry>
-            <Button BackgroundColor="#80cd32" Margin="50" HorizontalOptions="CenterAndExpand" Text="Create" TextColor="White" VerticalOptions="EndAndExpand"></Button>
-            </StackLayout>
+        <StackLayout Padding="0,10">
+            <!-- Wallet Creation Mock -->
+            
+            <!--<Grid Margin="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+           
+            
+                <Label Grid.Row="0" Grid.Column="0" Text="Wallet Name: " HorizontalOptions="Start" VerticalOptions="CenterAndExpand" TextColor="Black"  FontSize="18" />
+                <Entry Grid.Row="0" Grid.Column="1"  ></Entry>
+
+
+                <Label Grid.Row="1" Grid.Column="0" Text="Password:" HorizontalOptions="Start"  VerticalOptions="CenterAndExpand" TextColor="Black"  FontSize="18" />
+                <Entry  Grid.Row="1" Grid.Column="1" Text="Password"  IsPassword="True"></Entry>
+
+
+                <Label  Grid.Row="2" Grid.Column="0" Text="Repeat Password:" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" TextColor="Black"  FontSize="18" />
+                <Entry  Grid.Row="2" Grid.Column="1" Text="Password" IsPassword="True" ></Entry>
+          
+            </Grid>
+            <Button BackgroundColor="#80cd32" Margin="50" HorizontalOptions="CenterAndExpand" Text="Create" TextColor="White" VerticalOptions="EndAndExpand"></Button>-->
+            <!--</StackLayout>-->
         <!--<StackLayout>-->
-            <!--<StackLayout Orientation="Horizontal">
-                <Label Text="New Wallet" HorizontalOptions="Start" TextColor="Black"  FontSize="18" Margin="20,20,0,0" FontAttributes="Bold"/>
-                <Label Text="NEO: 0" HorizontalOptions="EndAndExpand" FontSize="15" Margin="0,20,20,0"/>
+            
+            <!-- Wallet List Mock -->
+            
+            <StackLayout Orientation="Horizontal">
+                <Label Text="New Wallet" HorizontalOptions="Start" TextColor="Black"  FontSize="18" Margin="20,0,0,0" />
+                <Label Text="Est. Value:" HorizontalOptions="EndAndExpand" FontSize="15" Margin="0,0,20,0"/>
 
             </StackLayout>
             
             <StackLayout Orientation="Horizontal">
             <Label Text="N° Address: 0" HorizontalOptions="Start" FontSize="15" Margin="30,0,0,0"/>
-                <Label Text="GAS: 0" HorizontalOptions="EndAndExpand" FontSize="15" Margin="0,0,20,0"/>
+                <Label Text="0$" HorizontalOptions="EndAndExpand" FontSize="15" Margin="0,0,20,0"/>
                 
             </StackLayout>
-            <BoxView HeightRequest="1" Color="Black" HorizontalOptions="FillAndExpand"></BoxView>-->
-            <!--<StackLayout Orientation="Horizontal">
-                <Label Text="PhyrosWallet" HorizontalOptions="Start" TextColor="Black"  FontSize="18" Margin="20,10,0,0" FontAttributes="Bold"/>
-                <Label Text="NEO: 78" HorizontalOptions="EndAndExpand" FontSize="15" Margin="0,10,20,0"/>
+            <BoxView HeightRequest="1" Color="Black" HorizontalOptions="FillAndExpand"></BoxView>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="PhyrosWallet" HorizontalOptions="Start" TextColor="Black"  FontSize="18" Margin="20,0,0,0" />
+                <Label Text="Est. Value:" HorizontalOptions="EndAndExpand" FontSize="15" Margin="0,0,20,0"/>
 
             </StackLayout>
 
             <StackLayout Orientation="Horizontal">
                 <Label Text="N° Address: 3" HorizontalOptions="Start" FontSize="15" Margin="30,0,0,0"/>
-                <Label Text="GAS: 7.120422" HorizontalOptions="EndAndExpand" FontSize="15" Margin="0,0,20,0"/>
+                <Label Text="1718.62$" HorizontalOptions="EndAndExpand" FontSize="15" Margin="0,0,20,0"/>
 
             </StackLayout>
-            <BoxView HeightRequest="1" Color="Black" HorizontalOptions="FillAndExpand"></BoxView>-->
-            <!--<controls:ImageCircle x:Name="Circle" HeightRequest="55" WidthRequest="55" VerticalOptions="EndAndExpand" HorizontalOptions="EndAndExpand" Margin="40"/>-->
-        <!--</StackLayout>-->
+            <BoxView HeightRequest="1" Color="Black" HorizontalOptions="FillAndExpand"></BoxView>
+            <controls:ImageCircle x:Name="Circle" HeightRequest="55" WidthRequest="55" VerticalOptions="EndAndExpand" HorizontalOptions="EndAndExpand" Margin="30,30"/>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
