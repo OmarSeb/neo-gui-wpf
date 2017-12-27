@@ -8,6 +8,7 @@
     <PackageReference Include="MvvmLightLibsStd10" Version="5.4.0.1-alpha" />
     <PackageReference Include="Neo" Version="2.5.2" />
     <PackageReference Include="Neo.VM" Version="2.0.4" />
+    <PackageReference Include="Prism.Forms" Version="6.3.0" />
   </ItemGroup>
 
   <ItemGroup>

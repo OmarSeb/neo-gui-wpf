@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Neo.Gui.XamarinViews;
 
 namespace Neo.Gui.Droid
 {
@@ -20,7 +21,7 @@ namespace Neo.Gui.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            LoadApplication(new XamarinViews.App());
+            LoadApplication(new App());
         }
     }
 }

@@ -4,6 +4,8 @@ using System.Windows.Input;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 
+using Prism.Navigation;
+
 using Neo.Gui.Base.Controllers;
 using Neo.Gui.Base.Dialogs.Interfaces;
 using Neo.Gui.Base.Dialogs.LoadParameters.Contracts;
@@ -22,11 +24,13 @@ using Neo.Gui.Base.MVVM;
 using Neo.Gui.Globalization.Resources;
 using Neo.Gui.Base.Helpers;
 using Neo.Gui.Base.Managers;
+using Xamarin.Forms;
 
 namespace Neo.Gui.ViewModels.Home
 {
     public class HomeViewModel :
         ViewModelBase,
+        INavigationAware,
         ILoadable,
         IUnloadable,
         IDialogViewModel<HomeDialogResult>,
@@ -211,6 +215,23 @@ namespace Neo.Gui.ViewModels.Home
             this.messagePublisher = messagePublisher;
             this.messageSubscriber = messageSubscriber;
         }
+
+        protected INavigationService _navigationService { get; }
+
+        public HomeViewModel(INavigationService navigationService)
+        {
+            _navigationService = navigationService;
+            TitleColor = Color.Red;
+        }
+
+        private Color titleColor;
+
+        public Color TitleColor
+        {
+            get { return titleColor; }
+            //set { backgroundColor = value; }
+            set { Set(ref titleColor, value); }
+        }
         #endregion
 
         #region IDialogViewModel implementation 
@@ -325,5 +346,20 @@ namespace Neo.Gui.ViewModels.Home
         }
         
         #endregion
+
+        public void OnNavigatedFrom(NavigationParameters parameters)
+        {
+            //throw new NotImplementedException();
+        }
+
+        public void OnNavigatedTo(NavigationParameters parameters)
+        {
+            //throw new NotImplementedException();
+        }
+
+        public void OnNavigatingTo(NavigationParameters parameters)
+        {
+            //throw new NotImplementedException();
+        }
     }
 }

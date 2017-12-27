@@ -7,9 +7,9 @@ using Xamarin.Forms;
 
 namespace Neo.Gui
 {
-    public partial class MainPage : ContentPage
+    public partial class HomeView : ContentPage
     {
-        public MainPage()
+        public HomeView()
         {
             InitializeComponent();
         }

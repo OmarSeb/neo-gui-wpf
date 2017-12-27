@@ -5,7 +5,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.6.2" />
+    <PackageReference Include="Prism.Autofac.Forms" Version="6.3.0" />
+    <PackageReference Include="Prism.Forms" Version="6.3.0" />
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.121934" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Neo.Gui.Base\Neo.Gui.Base.csproj" />
+    <ProjectReference Include="..\Neo.Gui.ViewModels\Neo.Gui.ViewModels.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="HomeView.xaml.cs">
+      <DependentUpon>HomeView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
 </Project>
