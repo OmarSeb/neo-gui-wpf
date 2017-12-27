@@ -12,6 +12,7 @@ namespace Neo.Gui
         public HomeView()
         {
             InitializeComponent();
+          //  Circle.Source = ImageSource.FromFile("plusButton.png");
         }
     }
 }
