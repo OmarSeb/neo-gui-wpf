@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="Autofac" Version="4.6.2" />
+    <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie" Version="2.3.4" />
     <PackageReference Include="Prism.Autofac.Forms" Version="6.3.0" />
     <PackageReference Include="Prism.Forms" Version="6.3.0" />
     <PackageReference Include="Xamarin.FFImageLoading" Version="2.3.2" />

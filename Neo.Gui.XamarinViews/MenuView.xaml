@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             x:Class="Neo.Gui.XamarinViews.MenuView"
+             BackgroundColor="#EDEDED" Title="Master">
+    <ContentPage.Content>
+        <StackLayout >
+            <forms:CachedImage x:Name="NeoLogo" HeightRequest="75" WidthRequest="75" HorizontalOptions="CenterAndExpand" Margin="20"/>
+            <ScrollView> 
+                <StackLayout Spacing="0">
+                    <Label TextColor="Gray" FontSize="12" Text="WALLET" Margin="20,10"></Label>
+                    <BoxView Color="LightGray" HeightRequest="1" HorizontalOptions="FillAndExpand" Margin="0" />
+                    <StackLayout HorizontalOptions="FillAndExpand" Margin="0" Padding="20,0" Spacing="20" HeightRequest="40" Orientation="Horizontal" BackgroundColor="White" >
+                        <Label Text="X" VerticalTextAlignment="Center" TextColor="Green" ></Label>
+                        <Label Text="Wallet1" VerticalTextAlignment="Center" TextColor="Green" ></Label>
+                    </StackLayout>
+                    <BoxView Color="LightGray" HeightRequest="1" HorizontalOptions="FillAndExpand" Margin="40,0,0,0" />
+                
+                    <StackLayout HorizontalOptions="FillAndExpand" Margin="0" Padding="20,0" Spacing="20" HeightRequest="40" Orientation="Horizontal" BackgroundColor="White" >
+                        <Label Text="X" VerticalTextAlignment="Center" TextColor="Green" ></Label>
+                        <Label Text="Add Wallet" VerticalTextAlignment="Center" TextColor="Green" ></Label>
+                    </StackLayout>
+                    <BoxView Color="LightGray" HeightRequest="1" HorizontalOptions="FillAndExpand" Margin="0" />
+                    <!--<StackLayout Padding="0" Margin="0">
+                        <Label TextColor="Gray" FontSize="13" Text="WALLET"></Label>
+                        <BoxView Color="Gray" HeightRequest="1" HorizontalOptions="FillAndExpand"></BoxView>
+                        <StackLayout HorizontalOptions="FillAndExpand"  Margin="0" Padding="10" HeightRequest="40" Orientation="Horizontal" BackgroundColor="White" >
+                            <Label Text="X" VerticalTextAlignment="Center" TextColor="Green" ></Label>
+                            <Label Text="Wallet1" VerticalTextAlignment="Center" TextColor="Green" ></Label>
+                        </StackLayout>
+                        <BoxView Color="Gray" HeightRequest="1" HorizontalOptions="FillAndExpand"></BoxView>
+                        <StackLayout HorizontalOptions="FillAndExpand"  Orientation="Horizontal" BackgroundColor="White" Padding="20">
+                            <Label Text="X"></Label>
+                            <Label Text="New Wallet"  TextColor="Green" ></Label>
+                        </StackLayout>
+                        <BoxView Color="Gray" HeightRequest="1" HorizontalOptions="FillAndExpand"></BoxView>
+                    </StackLayout>
+                    <StackLayout Spacing="0">
+                        <Label TextColor="Gray" FontSize="13" Text="Tools" Margin="20,0"></Label>
+                        <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal" BackgroundColor="White" Padding="20">
+                            <Label Text="X"></Label>
+                            <Label Text="Quick address lookup"  TextColor="Green" ></Label>
+                        </StackLayout>
+                        <BoxView Color="Black" HeightRequest="1" HorizontalOptions="FillAndExpand"></BoxView>
+                        <StackLayout HorizontalOptions="FillAndExpand"  Orientation="Horizontal" BackgroundColor="White" Padding="20">
+                           
+                            <Label Text="X"></Label>
+                            <Label Text="Gas calculation"  TextColor="Green" ></Label>
+                        </StackLayout>
+                        <BoxView Color="Gray" HeightRequest="1" HorizontalOptions="FillAndExpand"></BoxView>
+                    </StackLayout>-->
+
+
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

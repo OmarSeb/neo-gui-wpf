@@ -120,6 +120,15 @@
     <Reference Include="Autofac, Version=4.6.2.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Autofac.4.6.2\lib\netstandard1.1\Autofac.dll</HintPath>
     </Reference>
+    <Reference Include="Lottie.Forms, Version=1.0.6552.26958, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Com.Airbnb.Xamarin.Forms.Lottie.2.4.0\lib\xamarinios\Lottie.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Lottie.Forms.iOS, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Com.Airbnb.Xamarin.Forms.Lottie.2.4.0\lib\xamarinios\Lottie.Forms.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Lottie.iOS, Version=1.0.6552.26959, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Com.Airbnb.iOS.Lottie.2.1.5.0\lib\xamarinios\Lottie.iOS.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.IO.Compression" />
     <Reference Include="System.Net.Http" />

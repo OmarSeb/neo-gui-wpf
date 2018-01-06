@@ -26,6 +26,2133 @@ namespace Neo.Gui.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Lottie.Forms.Droid.Resource.Animation.abc_fade_in = global::Neo.Gui.Droid.Resource.Animation.abc_fade_in;
+			global::Lottie.Forms.Droid.Resource.Animation.abc_fade_out = global::Neo.Gui.Droid.Resource.Animation.abc_fade_out;
+			global::Lottie.Forms.Droid.Resource.Animation.abc_grow_fade_in_from_bottom = global::Neo.Gui.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::Lottie.Forms.Droid.Resource.Animation.abc_popup_enter = global::Neo.Gui.Droid.Resource.Animation.abc_popup_enter;
+			global::Lottie.Forms.Droid.Resource.Animation.abc_popup_exit = global::Neo.Gui.Droid.Resource.Animation.abc_popup_exit;
+			global::Lottie.Forms.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom = global::Neo.Gui.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::Lottie.Forms.Droid.Resource.Animation.abc_slide_in_bottom = global::Neo.Gui.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::Lottie.Forms.Droid.Resource.Animation.abc_slide_in_top = global::Neo.Gui.Droid.Resource.Animation.abc_slide_in_top;
+			global::Lottie.Forms.Droid.Resource.Animation.abc_slide_out_bottom = global::Neo.Gui.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::Lottie.Forms.Droid.Resource.Animation.abc_slide_out_top = global::Neo.Gui.Droid.Resource.Animation.abc_slide_out_top;
+			global::Lottie.Forms.Droid.Resource.Animation.design_bottom_sheet_slide_in = global::Neo.Gui.Droid.Resource.Animation.design_bottom_sheet_slide_in;
+			global::Lottie.Forms.Droid.Resource.Animation.design_bottom_sheet_slide_out = global::Neo.Gui.Droid.Resource.Animation.design_bottom_sheet_slide_out;
+			global::Lottie.Forms.Droid.Resource.Animation.design_fab_in = global::Neo.Gui.Droid.Resource.Animation.design_fab_in;
+			global::Lottie.Forms.Droid.Resource.Animation.design_fab_out = global::Neo.Gui.Droid.Resource.Animation.design_fab_out;
+			global::Lottie.Forms.Droid.Resource.Animation.design_snackbar_in = global::Neo.Gui.Droid.Resource.Animation.design_snackbar_in;
+			global::Lottie.Forms.Droid.Resource.Animation.design_snackbar_out = global::Neo.Gui.Droid.Resource.Animation.design_snackbar_out;
+			global::Lottie.Forms.Droid.Resource.Animator.design_appbar_state_list_animator = global::Neo.Gui.Droid.Resource.Animator.design_appbar_state_list_animator;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionBarDivider = global::Neo.Gui.Droid.Resource.Attribute.actionBarDivider;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionBarItemBackground = global::Neo.Gui.Droid.Resource.Attribute.actionBarItemBackground;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionBarPopupTheme = global::Neo.Gui.Droid.Resource.Attribute.actionBarPopupTheme;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionBarSize = global::Neo.Gui.Droid.Resource.Attribute.actionBarSize;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionBarSplitStyle = global::Neo.Gui.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionBarStyle = global::Neo.Gui.Droid.Resource.Attribute.actionBarStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionBarTabBarStyle = global::Neo.Gui.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionBarTabStyle = global::Neo.Gui.Droid.Resource.Attribute.actionBarTabStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionBarTabTextStyle = global::Neo.Gui.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionBarTheme = global::Neo.Gui.Droid.Resource.Attribute.actionBarTheme;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionBarWidgetTheme = global::Neo.Gui.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionButtonStyle = global::Neo.Gui.Droid.Resource.Attribute.actionButtonStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionDropDownStyle = global::Neo.Gui.Droid.Resource.Attribute.actionDropDownStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionLayout = global::Neo.Gui.Droid.Resource.Attribute.actionLayout;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionMenuTextAppearance = global::Neo.Gui.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionMenuTextColor = global::Neo.Gui.Droid.Resource.Attribute.actionMenuTextColor;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionModeBackground = global::Neo.Gui.Droid.Resource.Attribute.actionModeBackground;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionModeCloseButtonStyle = global::Neo.Gui.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionModeCloseDrawable = global::Neo.Gui.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionModeCopyDrawable = global::Neo.Gui.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionModeCutDrawable = global::Neo.Gui.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionModeFindDrawable = global::Neo.Gui.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionModePasteDrawable = global::Neo.Gui.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionModePopupWindowStyle = global::Neo.Gui.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionModeSelectAllDrawable = global::Neo.Gui.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionModeShareDrawable = global::Neo.Gui.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionModeSplitBackground = global::Neo.Gui.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionModeStyle = global::Neo.Gui.Droid.Resource.Attribute.actionModeStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionModeWebSearchDrawable = global::Neo.Gui.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionOverflowButtonStyle = global::Neo.Gui.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionOverflowMenuStyle = global::Neo.Gui.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionProviderClass = global::Neo.Gui.Droid.Resource.Attribute.actionProviderClass;
+			global::Lottie.Forms.Droid.Resource.Attribute.actionViewClass = global::Neo.Gui.Droid.Resource.Attribute.actionViewClass;
+			global::Lottie.Forms.Droid.Resource.Attribute.activityChooserViewStyle = global::Neo.Gui.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.alertDialogButtonGroupStyle = global::Neo.Gui.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.alertDialogCenterButtons = global::Neo.Gui.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::Lottie.Forms.Droid.Resource.Attribute.alertDialogStyle = global::Neo.Gui.Droid.Resource.Attribute.alertDialogStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.alertDialogTheme = global::Neo.Gui.Droid.Resource.Attribute.alertDialogTheme;
+			global::Lottie.Forms.Droid.Resource.Attribute.allowStacking = global::Neo.Gui.Droid.Resource.Attribute.allowStacking;
+			global::Lottie.Forms.Droid.Resource.Attribute.alpha = global::Neo.Gui.Droid.Resource.Attribute.alpha;
+			global::Lottie.Forms.Droid.Resource.Attribute.arrowHeadLength = global::Neo.Gui.Droid.Resource.Attribute.arrowHeadLength;
+			global::Lottie.Forms.Droid.Resource.Attribute.arrowShaftLength = global::Neo.Gui.Droid.Resource.Attribute.arrowShaftLength;
+			global::Lottie.Forms.Droid.Resource.Attribute.autoCompleteTextViewStyle = global::Neo.Gui.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.background = global::Neo.Gui.Droid.Resource.Attribute.background;
+			global::Lottie.Forms.Droid.Resource.Attribute.backgroundSplit = global::Neo.Gui.Droid.Resource.Attribute.backgroundSplit;
+			global::Lottie.Forms.Droid.Resource.Attribute.backgroundStacked = global::Neo.Gui.Droid.Resource.Attribute.backgroundStacked;
+			global::Lottie.Forms.Droid.Resource.Attribute.backgroundTint = global::Neo.Gui.Droid.Resource.Attribute.backgroundTint;
+			global::Lottie.Forms.Droid.Resource.Attribute.backgroundTintMode = global::Neo.Gui.Droid.Resource.Attribute.backgroundTintMode;
+			global::Lottie.Forms.Droid.Resource.Attribute.barLength = global::Neo.Gui.Droid.Resource.Attribute.barLength;
+			global::Lottie.Forms.Droid.Resource.Attribute.behavior_autoHide = global::Neo.Gui.Droid.Resource.Attribute.behavior_autoHide;
+			global::Lottie.Forms.Droid.Resource.Attribute.behavior_hideable = global::Neo.Gui.Droid.Resource.Attribute.behavior_hideable;
+			global::Lottie.Forms.Droid.Resource.Attribute.behavior_overlapTop = global::Neo.Gui.Droid.Resource.Attribute.behavior_overlapTop;
+			global::Lottie.Forms.Droid.Resource.Attribute.behavior_peekHeight = global::Neo.Gui.Droid.Resource.Attribute.behavior_peekHeight;
+			global::Lottie.Forms.Droid.Resource.Attribute.behavior_skipCollapsed = global::Neo.Gui.Droid.Resource.Attribute.behavior_skipCollapsed;
+			global::Lottie.Forms.Droid.Resource.Attribute.borderWidth = global::Neo.Gui.Droid.Resource.Attribute.borderWidth;
+			global::Lottie.Forms.Droid.Resource.Attribute.borderlessButtonStyle = global::Neo.Gui.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.bottomSheetDialogTheme = global::Neo.Gui.Droid.Resource.Attribute.bottomSheetDialogTheme;
+			global::Lottie.Forms.Droid.Resource.Attribute.bottomSheetStyle = global::Neo.Gui.Droid.Resource.Attribute.bottomSheetStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.buttonBarButtonStyle = global::Neo.Gui.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.buttonBarNegativeButtonStyle = global::Neo.Gui.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.buttonBarNeutralButtonStyle = global::Neo.Gui.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.buttonBarPositiveButtonStyle = global::Neo.Gui.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.buttonBarStyle = global::Neo.Gui.Droid.Resource.Attribute.buttonBarStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.buttonGravity = global::Neo.Gui.Droid.Resource.Attribute.buttonGravity;
+			global::Lottie.Forms.Droid.Resource.Attribute.buttonPanelSideLayout = global::Neo.Gui.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::Lottie.Forms.Droid.Resource.Attribute.buttonStyle = global::Neo.Gui.Droid.Resource.Attribute.buttonStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.buttonStyleSmall = global::Neo.Gui.Droid.Resource.Attribute.buttonStyleSmall;
+			global::Lottie.Forms.Droid.Resource.Attribute.buttonTint = global::Neo.Gui.Droid.Resource.Attribute.buttonTint;
+			global::Lottie.Forms.Droid.Resource.Attribute.buttonTintMode = global::Neo.Gui.Droid.Resource.Attribute.buttonTintMode;
+			global::Lottie.Forms.Droid.Resource.Attribute.cardBackgroundColor = global::Neo.Gui.Droid.Resource.Attribute.cardBackgroundColor;
+			global::Lottie.Forms.Droid.Resource.Attribute.cardCornerRadius = global::Neo.Gui.Droid.Resource.Attribute.cardCornerRadius;
+			global::Lottie.Forms.Droid.Resource.Attribute.cardElevation = global::Neo.Gui.Droid.Resource.Attribute.cardElevation;
+			global::Lottie.Forms.Droid.Resource.Attribute.cardMaxElevation = global::Neo.Gui.Droid.Resource.Attribute.cardMaxElevation;
+			global::Lottie.Forms.Droid.Resource.Attribute.cardPreventCornerOverlap = global::Neo.Gui.Droid.Resource.Attribute.cardPreventCornerOverlap;
+			global::Lottie.Forms.Droid.Resource.Attribute.cardUseCompatPadding = global::Neo.Gui.Droid.Resource.Attribute.cardUseCompatPadding;
+			global::Lottie.Forms.Droid.Resource.Attribute.checkboxStyle = global::Neo.Gui.Droid.Resource.Attribute.checkboxStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.checkedTextViewStyle = global::Neo.Gui.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.closeIcon = global::Neo.Gui.Droid.Resource.Attribute.closeIcon;
+			global::Lottie.Forms.Droid.Resource.Attribute.closeItemLayout = global::Neo.Gui.Droid.Resource.Attribute.closeItemLayout;
+			global::Lottie.Forms.Droid.Resource.Attribute.collapseContentDescription = global::Neo.Gui.Droid.Resource.Attribute.collapseContentDescription;
+			global::Lottie.Forms.Droid.Resource.Attribute.collapseIcon = global::Neo.Gui.Droid.Resource.Attribute.collapseIcon;
+			global::Lottie.Forms.Droid.Resource.Attribute.collapsedTitleGravity = global::Neo.Gui.Droid.Resource.Attribute.collapsedTitleGravity;
+			global::Lottie.Forms.Droid.Resource.Attribute.collapsedTitleTextAppearance = global::Neo.Gui.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::Lottie.Forms.Droid.Resource.Attribute.color = global::Neo.Gui.Droid.Resource.Attribute.color;
+			global::Lottie.Forms.Droid.Resource.Attribute.colorAccent = global::Neo.Gui.Droid.Resource.Attribute.colorAccent;
+			global::Lottie.Forms.Droid.Resource.Attribute.colorBackgroundFloating = global::Neo.Gui.Droid.Resource.Attribute.colorBackgroundFloating;
+			global::Lottie.Forms.Droid.Resource.Attribute.colorButtonNormal = global::Neo.Gui.Droid.Resource.Attribute.colorButtonNormal;
+			global::Lottie.Forms.Droid.Resource.Attribute.colorControlActivated = global::Neo.Gui.Droid.Resource.Attribute.colorControlActivated;
+			global::Lottie.Forms.Droid.Resource.Attribute.colorControlHighlight = global::Neo.Gui.Droid.Resource.Attribute.colorControlHighlight;
+			global::Lottie.Forms.Droid.Resource.Attribute.colorControlNormal = global::Neo.Gui.Droid.Resource.Attribute.colorControlNormal;
+			global::Lottie.Forms.Droid.Resource.Attribute.colorPrimary = global::Neo.Gui.Droid.Resource.Attribute.colorPrimary;
+			global::Lottie.Forms.Droid.Resource.Attribute.colorPrimaryDark = global::Neo.Gui.Droid.Resource.Attribute.colorPrimaryDark;
+			global::Lottie.Forms.Droid.Resource.Attribute.colorSwitchThumbNormal = global::Neo.Gui.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::Lottie.Forms.Droid.Resource.Attribute.commitIcon = global::Neo.Gui.Droid.Resource.Attribute.commitIcon;
+			global::Lottie.Forms.Droid.Resource.Attribute.contentInsetEnd = global::Neo.Gui.Droid.Resource.Attribute.contentInsetEnd;
+			global::Lottie.Forms.Droid.Resource.Attribute.contentInsetEndWithActions = global::Neo.Gui.Droid.Resource.Attribute.contentInsetEndWithActions;
+			global::Lottie.Forms.Droid.Resource.Attribute.contentInsetLeft = global::Neo.Gui.Droid.Resource.Attribute.contentInsetLeft;
+			global::Lottie.Forms.Droid.Resource.Attribute.contentInsetRight = global::Neo.Gui.Droid.Resource.Attribute.contentInsetRight;
+			global::Lottie.Forms.Droid.Resource.Attribute.contentInsetStart = global::Neo.Gui.Droid.Resource.Attribute.contentInsetStart;
+			global::Lottie.Forms.Droid.Resource.Attribute.contentInsetStartWithNavigation = global::Neo.Gui.Droid.Resource.Attribute.contentInsetStartWithNavigation;
+			global::Lottie.Forms.Droid.Resource.Attribute.contentPadding = global::Neo.Gui.Droid.Resource.Attribute.contentPadding;
+			global::Lottie.Forms.Droid.Resource.Attribute.contentPaddingBottom = global::Neo.Gui.Droid.Resource.Attribute.contentPaddingBottom;
+			global::Lottie.Forms.Droid.Resource.Attribute.contentPaddingLeft = global::Neo.Gui.Droid.Resource.Attribute.contentPaddingLeft;
+			global::Lottie.Forms.Droid.Resource.Attribute.contentPaddingRight = global::Neo.Gui.Droid.Resource.Attribute.contentPaddingRight;
+			global::Lottie.Forms.Droid.Resource.Attribute.contentPaddingTop = global::Neo.Gui.Droid.Resource.Attribute.contentPaddingTop;
+			global::Lottie.Forms.Droid.Resource.Attribute.contentScrim = global::Neo.Gui.Droid.Resource.Attribute.contentScrim;
+			global::Lottie.Forms.Droid.Resource.Attribute.controlBackground = global::Neo.Gui.Droid.Resource.Attribute.controlBackground;
+			global::Lottie.Forms.Droid.Resource.Attribute.counterEnabled = global::Neo.Gui.Droid.Resource.Attribute.counterEnabled;
+			global::Lottie.Forms.Droid.Resource.Attribute.counterMaxLength = global::Neo.Gui.Droid.Resource.Attribute.counterMaxLength;
+			global::Lottie.Forms.Droid.Resource.Attribute.counterOverflowTextAppearance = global::Neo.Gui.Droid.Resource.Attribute.counterOverflowTextAppearance;
+			global::Lottie.Forms.Droid.Resource.Attribute.counterTextAppearance = global::Neo.Gui.Droid.Resource.Attribute.counterTextAppearance;
+			global::Lottie.Forms.Droid.Resource.Attribute.customNavigationLayout = global::Neo.Gui.Droid.Resource.Attribute.customNavigationLayout;
+			global::Lottie.Forms.Droid.Resource.Attribute.defaultQueryHint = global::Neo.Gui.Droid.Resource.Attribute.defaultQueryHint;
+			global::Lottie.Forms.Droid.Resource.Attribute.dialogPreferredPadding = global::Neo.Gui.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::Lottie.Forms.Droid.Resource.Attribute.dialogTheme = global::Neo.Gui.Droid.Resource.Attribute.dialogTheme;
+			global::Lottie.Forms.Droid.Resource.Attribute.displayOptions = global::Neo.Gui.Droid.Resource.Attribute.displayOptions;
+			global::Lottie.Forms.Droid.Resource.Attribute.divider = global::Neo.Gui.Droid.Resource.Attribute.divider;
+			global::Lottie.Forms.Droid.Resource.Attribute.dividerHorizontal = global::Neo.Gui.Droid.Resource.Attribute.dividerHorizontal;
+			global::Lottie.Forms.Droid.Resource.Attribute.dividerPadding = global::Neo.Gui.Droid.Resource.Attribute.dividerPadding;
+			global::Lottie.Forms.Droid.Resource.Attribute.dividerVertical = global::Neo.Gui.Droid.Resource.Attribute.dividerVertical;
+			global::Lottie.Forms.Droid.Resource.Attribute.drawableSize = global::Neo.Gui.Droid.Resource.Attribute.drawableSize;
+			global::Lottie.Forms.Droid.Resource.Attribute.drawerArrowStyle = global::Neo.Gui.Droid.Resource.Attribute.drawerArrowStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.dropDownListViewStyle = global::Neo.Gui.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.dropdownListPreferredItemHeight = global::Neo.Gui.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::Lottie.Forms.Droid.Resource.Attribute.editTextBackground = global::Neo.Gui.Droid.Resource.Attribute.editTextBackground;
+			global::Lottie.Forms.Droid.Resource.Attribute.editTextColor = global::Neo.Gui.Droid.Resource.Attribute.editTextColor;
+			global::Lottie.Forms.Droid.Resource.Attribute.editTextStyle = global::Neo.Gui.Droid.Resource.Attribute.editTextStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.elevation = global::Neo.Gui.Droid.Resource.Attribute.elevation;
+			global::Lottie.Forms.Droid.Resource.Attribute.errorEnabled = global::Neo.Gui.Droid.Resource.Attribute.errorEnabled;
+			global::Lottie.Forms.Droid.Resource.Attribute.errorTextAppearance = global::Neo.Gui.Droid.Resource.Attribute.errorTextAppearance;
+			global::Lottie.Forms.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable = global::Neo.Gui.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::Lottie.Forms.Droid.Resource.Attribute.expanded = global::Neo.Gui.Droid.Resource.Attribute.expanded;
+			global::Lottie.Forms.Droid.Resource.Attribute.expandedTitleGravity = global::Neo.Gui.Droid.Resource.Attribute.expandedTitleGravity;
+			global::Lottie.Forms.Droid.Resource.Attribute.expandedTitleMargin = global::Neo.Gui.Droid.Resource.Attribute.expandedTitleMargin;
+			global::Lottie.Forms.Droid.Resource.Attribute.expandedTitleMarginBottom = global::Neo.Gui.Droid.Resource.Attribute.expandedTitleMarginBottom;
+			global::Lottie.Forms.Droid.Resource.Attribute.expandedTitleMarginEnd = global::Neo.Gui.Droid.Resource.Attribute.expandedTitleMarginEnd;
+			global::Lottie.Forms.Droid.Resource.Attribute.expandedTitleMarginStart = global::Neo.Gui.Droid.Resource.Attribute.expandedTitleMarginStart;
+			global::Lottie.Forms.Droid.Resource.Attribute.expandedTitleMarginTop = global::Neo.Gui.Droid.Resource.Attribute.expandedTitleMarginTop;
+			global::Lottie.Forms.Droid.Resource.Attribute.expandedTitleTextAppearance = global::Neo.Gui.Droid.Resource.Attribute.expandedTitleTextAppearance;
+			global::Lottie.Forms.Droid.Resource.Attribute.externalRouteEnabledDrawable = global::Neo.Gui.Droid.Resource.Attribute.externalRouteEnabledDrawable;
+			global::Lottie.Forms.Droid.Resource.Attribute.fabSize = global::Neo.Gui.Droid.Resource.Attribute.fabSize;
+			global::Lottie.Forms.Droid.Resource.Attribute.foregroundInsidePadding = global::Neo.Gui.Droid.Resource.Attribute.foregroundInsidePadding;
+			global::Lottie.Forms.Droid.Resource.Attribute.gapBetweenBars = global::Neo.Gui.Droid.Resource.Attribute.gapBetweenBars;
+			global::Lottie.Forms.Droid.Resource.Attribute.goIcon = global::Neo.Gui.Droid.Resource.Attribute.goIcon;
+			global::Lottie.Forms.Droid.Resource.Attribute.headerLayout = global::Neo.Gui.Droid.Resource.Attribute.headerLayout;
+			global::Lottie.Forms.Droid.Resource.Attribute.height = global::Neo.Gui.Droid.Resource.Attribute.height;
+			global::Lottie.Forms.Droid.Resource.Attribute.hideOnContentScroll = global::Neo.Gui.Droid.Resource.Attribute.hideOnContentScroll;
+			global::Lottie.Forms.Droid.Resource.Attribute.hintAnimationEnabled = global::Neo.Gui.Droid.Resource.Attribute.hintAnimationEnabled;
+			global::Lottie.Forms.Droid.Resource.Attribute.hintEnabled = global::Neo.Gui.Droid.Resource.Attribute.hintEnabled;
+			global::Lottie.Forms.Droid.Resource.Attribute.hintTextAppearance = global::Neo.Gui.Droid.Resource.Attribute.hintTextAppearance;
+			global::Lottie.Forms.Droid.Resource.Attribute.homeAsUpIndicator = global::Neo.Gui.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::Lottie.Forms.Droid.Resource.Attribute.homeLayout = global::Neo.Gui.Droid.Resource.Attribute.homeLayout;
+			global::Lottie.Forms.Droid.Resource.Attribute.icon = global::Neo.Gui.Droid.Resource.Attribute.icon;
+			global::Lottie.Forms.Droid.Resource.Attribute.iconifiedByDefault = global::Neo.Gui.Droid.Resource.Attribute.iconifiedByDefault;
+			global::Lottie.Forms.Droid.Resource.Attribute.imageButtonStyle = global::Neo.Gui.Droid.Resource.Attribute.imageButtonStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.indeterminateProgressStyle = global::Neo.Gui.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.initialActivityCount = global::Neo.Gui.Droid.Resource.Attribute.initialActivityCount;
+			global::Lottie.Forms.Droid.Resource.Attribute.insetForeground = global::Neo.Gui.Droid.Resource.Attribute.insetForeground;
+			global::Lottie.Forms.Droid.Resource.Attribute.isLightTheme = global::Neo.Gui.Droid.Resource.Attribute.isLightTheme;
+			global::Lottie.Forms.Droid.Resource.Attribute.itemBackground = global::Neo.Gui.Droid.Resource.Attribute.itemBackground;
+			global::Lottie.Forms.Droid.Resource.Attribute.itemIconTint = global::Neo.Gui.Droid.Resource.Attribute.itemIconTint;
+			global::Lottie.Forms.Droid.Resource.Attribute.itemPadding = global::Neo.Gui.Droid.Resource.Attribute.itemPadding;
+			global::Lottie.Forms.Droid.Resource.Attribute.itemTextAppearance = global::Neo.Gui.Droid.Resource.Attribute.itemTextAppearance;
+			global::Lottie.Forms.Droid.Resource.Attribute.itemTextColor = global::Neo.Gui.Droid.Resource.Attribute.itemTextColor;
+			global::Lottie.Forms.Droid.Resource.Attribute.keylines = global::Neo.Gui.Droid.Resource.Attribute.keylines;
+			global::Lottie.Forms.Droid.Resource.Attribute.layout = global::Neo.Gui.Droid.Resource.Attribute.layout;
+			global::Lottie.Forms.Droid.Resource.Attribute.layoutManager = global::Neo.Gui.Droid.Resource.Attribute.layoutManager;
+			global::Lottie.Forms.Droid.Resource.Attribute.layout_anchor = global::Neo.Gui.Droid.Resource.Attribute.layout_anchor;
+			global::Lottie.Forms.Droid.Resource.Attribute.layout_anchorGravity = global::Neo.Gui.Droid.Resource.Attribute.layout_anchorGravity;
+			global::Lottie.Forms.Droid.Resource.Attribute.layout_behavior = global::Neo.Gui.Droid.Resource.Attribute.layout_behavior;
+			global::Lottie.Forms.Droid.Resource.Attribute.layout_collapseMode = global::Neo.Gui.Droid.Resource.Attribute.layout_collapseMode;
+			global::Lottie.Forms.Droid.Resource.Attribute.layout_collapseParallaxMultiplier = global::Neo.Gui.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::Lottie.Forms.Droid.Resource.Attribute.layout_dodgeInsetEdges = global::Neo.Gui.Droid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::Lottie.Forms.Droid.Resource.Attribute.layout_insetEdge = global::Neo.Gui.Droid.Resource.Attribute.layout_insetEdge;
+			global::Lottie.Forms.Droid.Resource.Attribute.layout_keyline = global::Neo.Gui.Droid.Resource.Attribute.layout_keyline;
+			global::Lottie.Forms.Droid.Resource.Attribute.layout_scrollFlags = global::Neo.Gui.Droid.Resource.Attribute.layout_scrollFlags;
+			global::Lottie.Forms.Droid.Resource.Attribute.layout_scrollInterpolator = global::Neo.Gui.Droid.Resource.Attribute.layout_scrollInterpolator;
+			global::Lottie.Forms.Droid.Resource.Attribute.listChoiceBackgroundIndicator = global::Neo.Gui.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::Lottie.Forms.Droid.Resource.Attribute.listDividerAlertDialog = global::Neo.Gui.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::Lottie.Forms.Droid.Resource.Attribute.listItemLayout = global::Neo.Gui.Droid.Resource.Attribute.listItemLayout;
+			global::Lottie.Forms.Droid.Resource.Attribute.listLayout = global::Neo.Gui.Droid.Resource.Attribute.listLayout;
+			global::Lottie.Forms.Droid.Resource.Attribute.listMenuViewStyle = global::Neo.Gui.Droid.Resource.Attribute.listMenuViewStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.listPopupWindowStyle = global::Neo.Gui.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.listPreferredItemHeight = global::Neo.Gui.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::Lottie.Forms.Droid.Resource.Attribute.listPreferredItemHeightLarge = global::Neo.Gui.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::Lottie.Forms.Droid.Resource.Attribute.listPreferredItemHeightSmall = global::Neo.Gui.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::Lottie.Forms.Droid.Resource.Attribute.listPreferredItemPaddingLeft = global::Neo.Gui.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::Lottie.Forms.Droid.Resource.Attribute.listPreferredItemPaddingRight = global::Neo.Gui.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::Lottie.Forms.Droid.Resource.Attribute.logo = global::Neo.Gui.Droid.Resource.Attribute.logo;
+			global::Lottie.Forms.Droid.Resource.Attribute.logoDescription = global::Neo.Gui.Droid.Resource.Attribute.logoDescription;
+			global::Lottie.Forms.Droid.Resource.Attribute.lottie_autoPlay = global::Neo.Gui.Droid.Resource.Attribute.lottie_autoPlay;
+			global::Lottie.Forms.Droid.Resource.Attribute.lottie_cacheStrategy = global::Neo.Gui.Droid.Resource.Attribute.lottie_cacheStrategy;
+			global::Lottie.Forms.Droid.Resource.Attribute.lottie_colorFilter = global::Neo.Gui.Droid.Resource.Attribute.lottie_colorFilter;
+			global::Lottie.Forms.Droid.Resource.Attribute.lottie_enableMergePathsForKitKatAndAbove = global::Neo.Gui.Droid.Resource.Attribute.lottie_enableMergePathsForKitKatAndAbove;
+			global::Lottie.Forms.Droid.Resource.Attribute.lottie_fileName = global::Neo.Gui.Droid.Resource.Attribute.lottie_fileName;
+			global::Lottie.Forms.Droid.Resource.Attribute.lottie_imageAssetsFolder = global::Neo.Gui.Droid.Resource.Attribute.lottie_imageAssetsFolder;
+			global::Lottie.Forms.Droid.Resource.Attribute.lottie_loop = global::Neo.Gui.Droid.Resource.Attribute.lottie_loop;
+			global::Lottie.Forms.Droid.Resource.Attribute.lottie_progress = global::Neo.Gui.Droid.Resource.Attribute.lottie_progress;
+			global::Lottie.Forms.Droid.Resource.Attribute.lottie_scale = global::Neo.Gui.Droid.Resource.Attribute.lottie_scale;
+			global::Lottie.Forms.Droid.Resource.Attribute.maxActionInlineWidth = global::Neo.Gui.Droid.Resource.Attribute.maxActionInlineWidth;
+			global::Lottie.Forms.Droid.Resource.Attribute.maxButtonHeight = global::Neo.Gui.Droid.Resource.Attribute.maxButtonHeight;
+			global::Lottie.Forms.Droid.Resource.Attribute.measureWithLargestChild = global::Neo.Gui.Droid.Resource.Attribute.measureWithLargestChild;
+			global::Lottie.Forms.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable = global::Neo.Gui.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable;
+			global::Lottie.Forms.Droid.Resource.Attribute.mediaRouteButtonStyle = global::Neo.Gui.Droid.Resource.Attribute.mediaRouteButtonStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.mediaRouteCloseDrawable = global::Neo.Gui.Droid.Resource.Attribute.mediaRouteCloseDrawable;
+			global::Lottie.Forms.Droid.Resource.Attribute.mediaRouteControlPanelThemeOverlay = global::Neo.Gui.Droid.Resource.Attribute.mediaRouteControlPanelThemeOverlay;
+			global::Lottie.Forms.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable = global::Neo.Gui.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable;
+			global::Lottie.Forms.Droid.Resource.Attribute.mediaRoutePauseDrawable = global::Neo.Gui.Droid.Resource.Attribute.mediaRoutePauseDrawable;
+			global::Lottie.Forms.Droid.Resource.Attribute.mediaRoutePlayDrawable = global::Neo.Gui.Droid.Resource.Attribute.mediaRoutePlayDrawable;
+			global::Lottie.Forms.Droid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable = global::Neo.Gui.Droid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable;
+			global::Lottie.Forms.Droid.Resource.Attribute.mediaRouteSpeakerIconDrawable = global::Neo.Gui.Droid.Resource.Attribute.mediaRouteSpeakerIconDrawable;
+			global::Lottie.Forms.Droid.Resource.Attribute.mediaRouteStopDrawable = global::Neo.Gui.Droid.Resource.Attribute.mediaRouteStopDrawable;
+			global::Lottie.Forms.Droid.Resource.Attribute.mediaRouteTheme = global::Neo.Gui.Droid.Resource.Attribute.mediaRouteTheme;
+			global::Lottie.Forms.Droid.Resource.Attribute.mediaRouteTvIconDrawable = global::Neo.Gui.Droid.Resource.Attribute.mediaRouteTvIconDrawable;
+			global::Lottie.Forms.Droid.Resource.Attribute.menu = global::Neo.Gui.Droid.Resource.Attribute.menu;
+			global::Lottie.Forms.Droid.Resource.Attribute.multiChoiceItemLayout = global::Neo.Gui.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::Lottie.Forms.Droid.Resource.Attribute.navigationContentDescription = global::Neo.Gui.Droid.Resource.Attribute.navigationContentDescription;
+			global::Lottie.Forms.Droid.Resource.Attribute.navigationIcon = global::Neo.Gui.Droid.Resource.Attribute.navigationIcon;
+			global::Lottie.Forms.Droid.Resource.Attribute.navigationMode = global::Neo.Gui.Droid.Resource.Attribute.navigationMode;
+			global::Lottie.Forms.Droid.Resource.Attribute.overlapAnchor = global::Neo.Gui.Droid.Resource.Attribute.overlapAnchor;
+			global::Lottie.Forms.Droid.Resource.Attribute.paddingBottomNoButtons = global::Neo.Gui.Droid.Resource.Attribute.paddingBottomNoButtons;
+			global::Lottie.Forms.Droid.Resource.Attribute.paddingEnd = global::Neo.Gui.Droid.Resource.Attribute.paddingEnd;
+			global::Lottie.Forms.Droid.Resource.Attribute.paddingStart = global::Neo.Gui.Droid.Resource.Attribute.paddingStart;
+			global::Lottie.Forms.Droid.Resource.Attribute.paddingTopNoTitle = global::Neo.Gui.Droid.Resource.Attribute.paddingTopNoTitle;
+			global::Lottie.Forms.Droid.Resource.Attribute.panelBackground = global::Neo.Gui.Droid.Resource.Attribute.panelBackground;
+			global::Lottie.Forms.Droid.Resource.Attribute.panelMenuListTheme = global::Neo.Gui.Droid.Resource.Attribute.panelMenuListTheme;
+			global::Lottie.Forms.Droid.Resource.Attribute.panelMenuListWidth = global::Neo.Gui.Droid.Resource.Attribute.panelMenuListWidth;
+			global::Lottie.Forms.Droid.Resource.Attribute.passwordToggleContentDescription = global::Neo.Gui.Droid.Resource.Attribute.passwordToggleContentDescription;
+			global::Lottie.Forms.Droid.Resource.Attribute.passwordToggleDrawable = global::Neo.Gui.Droid.Resource.Attribute.passwordToggleDrawable;
+			global::Lottie.Forms.Droid.Resource.Attribute.passwordToggleEnabled = global::Neo.Gui.Droid.Resource.Attribute.passwordToggleEnabled;
+			global::Lottie.Forms.Droid.Resource.Attribute.passwordToggleTint = global::Neo.Gui.Droid.Resource.Attribute.passwordToggleTint;
+			global::Lottie.Forms.Droid.Resource.Attribute.passwordToggleTintMode = global::Neo.Gui.Droid.Resource.Attribute.passwordToggleTintMode;
+			global::Lottie.Forms.Droid.Resource.Attribute.popupMenuStyle = global::Neo.Gui.Droid.Resource.Attribute.popupMenuStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.popupTheme = global::Neo.Gui.Droid.Resource.Attribute.popupTheme;
+			global::Lottie.Forms.Droid.Resource.Attribute.popupWindowStyle = global::Neo.Gui.Droid.Resource.Attribute.popupWindowStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.preserveIconSpacing = global::Neo.Gui.Droid.Resource.Attribute.preserveIconSpacing;
+			global::Lottie.Forms.Droid.Resource.Attribute.pressedTranslationZ = global::Neo.Gui.Droid.Resource.Attribute.pressedTranslationZ;
+			global::Lottie.Forms.Droid.Resource.Attribute.progressBarPadding = global::Neo.Gui.Droid.Resource.Attribute.progressBarPadding;
+			global::Lottie.Forms.Droid.Resource.Attribute.progressBarStyle = global::Neo.Gui.Droid.Resource.Attribute.progressBarStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.queryBackground = global::Neo.Gui.Droid.Resource.Attribute.queryBackground;
+			global::Lottie.Forms.Droid.Resource.Attribute.queryHint = global::Neo.Gui.Droid.Resource.Attribute.queryHint;
+			global::Lottie.Forms.Droid.Resource.Attribute.radioButtonStyle = global::Neo.Gui.Droid.Resource.Attribute.radioButtonStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.ratingBarStyle = global::Neo.Gui.Droid.Resource.Attribute.ratingBarStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.ratingBarStyleIndicator = global::Neo.Gui.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::Lottie.Forms.Droid.Resource.Attribute.ratingBarStyleSmall = global::Neo.Gui.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::Lottie.Forms.Droid.Resource.Attribute.reverseLayout = global::Neo.Gui.Droid.Resource.Attribute.reverseLayout;
+			global::Lottie.Forms.Droid.Resource.Attribute.rippleColor = global::Neo.Gui.Droid.Resource.Attribute.rippleColor;
+			global::Lottie.Forms.Droid.Resource.Attribute.scrimAnimationDuration = global::Neo.Gui.Droid.Resource.Attribute.scrimAnimationDuration;
+			global::Lottie.Forms.Droid.Resource.Attribute.scrimVisibleHeightTrigger = global::Neo.Gui.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
+			global::Lottie.Forms.Droid.Resource.Attribute.searchHintIcon = global::Neo.Gui.Droid.Resource.Attribute.searchHintIcon;
+			global::Lottie.Forms.Droid.Resource.Attribute.searchIcon = global::Neo.Gui.Droid.Resource.Attribute.searchIcon;
+			global::Lottie.Forms.Droid.Resource.Attribute.searchViewStyle = global::Neo.Gui.Droid.Resource.Attribute.searchViewStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.seekBarStyle = global::Neo.Gui.Droid.Resource.Attribute.seekBarStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.selectableItemBackground = global::Neo.Gui.Droid.Resource.Attribute.selectableItemBackground;
+			global::Lottie.Forms.Droid.Resource.Attribute.selectableItemBackgroundBorderless = global::Neo.Gui.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::Lottie.Forms.Droid.Resource.Attribute.showAsAction = global::Neo.Gui.Droid.Resource.Attribute.showAsAction;
+			global::Lottie.Forms.Droid.Resource.Attribute.showDividers = global::Neo.Gui.Droid.Resource.Attribute.showDividers;
+			global::Lottie.Forms.Droid.Resource.Attribute.showText = global::Neo.Gui.Droid.Resource.Attribute.showText;
+			global::Lottie.Forms.Droid.Resource.Attribute.showTitle = global::Neo.Gui.Droid.Resource.Attribute.showTitle;
+			global::Lottie.Forms.Droid.Resource.Attribute.singleChoiceItemLayout = global::Neo.Gui.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::Lottie.Forms.Droid.Resource.Attribute.spanCount = global::Neo.Gui.Droid.Resource.Attribute.spanCount;
+			global::Lottie.Forms.Droid.Resource.Attribute.spinBars = global::Neo.Gui.Droid.Resource.Attribute.spinBars;
+			global::Lottie.Forms.Droid.Resource.Attribute.spinnerDropDownItemStyle = global::Neo.Gui.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.spinnerStyle = global::Neo.Gui.Droid.Resource.Attribute.spinnerStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.splitTrack = global::Neo.Gui.Droid.Resource.Attribute.splitTrack;
+			global::Lottie.Forms.Droid.Resource.Attribute.srcCompat = global::Neo.Gui.Droid.Resource.Attribute.srcCompat;
+			global::Lottie.Forms.Droid.Resource.Attribute.stackFromEnd = global::Neo.Gui.Droid.Resource.Attribute.stackFromEnd;
+			global::Lottie.Forms.Droid.Resource.Attribute.state_above_anchor = global::Neo.Gui.Droid.Resource.Attribute.state_above_anchor;
+			global::Lottie.Forms.Droid.Resource.Attribute.state_collapsed = global::Neo.Gui.Droid.Resource.Attribute.state_collapsed;
+			global::Lottie.Forms.Droid.Resource.Attribute.state_collapsible = global::Neo.Gui.Droid.Resource.Attribute.state_collapsible;
+			global::Lottie.Forms.Droid.Resource.Attribute.statusBarBackground = global::Neo.Gui.Droid.Resource.Attribute.statusBarBackground;
+			global::Lottie.Forms.Droid.Resource.Attribute.statusBarScrim = global::Neo.Gui.Droid.Resource.Attribute.statusBarScrim;
+			global::Lottie.Forms.Droid.Resource.Attribute.subMenuArrow = global::Neo.Gui.Droid.Resource.Attribute.subMenuArrow;
+			global::Lottie.Forms.Droid.Resource.Attribute.submitBackground = global::Neo.Gui.Droid.Resource.Attribute.submitBackground;
+			global::Lottie.Forms.Droid.Resource.Attribute.subtitle = global::Neo.Gui.Droid.Resource.Attribute.subtitle;
+			global::Lottie.Forms.Droid.Resource.Attribute.subtitleTextAppearance = global::Neo.Gui.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::Lottie.Forms.Droid.Resource.Attribute.subtitleTextColor = global::Neo.Gui.Droid.Resource.Attribute.subtitleTextColor;
+			global::Lottie.Forms.Droid.Resource.Attribute.subtitleTextStyle = global::Neo.Gui.Droid.Resource.Attribute.subtitleTextStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.suggestionRowLayout = global::Neo.Gui.Droid.Resource.Attribute.suggestionRowLayout;
+			global::Lottie.Forms.Droid.Resource.Attribute.switchMinWidth = global::Neo.Gui.Droid.Resource.Attribute.switchMinWidth;
+			global::Lottie.Forms.Droid.Resource.Attribute.switchPadding = global::Neo.Gui.Droid.Resource.Attribute.switchPadding;
+			global::Lottie.Forms.Droid.Resource.Attribute.switchStyle = global::Neo.Gui.Droid.Resource.Attribute.switchStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.switchTextAppearance = global::Neo.Gui.Droid.Resource.Attribute.switchTextAppearance;
+			global::Lottie.Forms.Droid.Resource.Attribute.tabBackground = global::Neo.Gui.Droid.Resource.Attribute.tabBackground;
+			global::Lottie.Forms.Droid.Resource.Attribute.tabContentStart = global::Neo.Gui.Droid.Resource.Attribute.tabContentStart;
+			global::Lottie.Forms.Droid.Resource.Attribute.tabGravity = global::Neo.Gui.Droid.Resource.Attribute.tabGravity;
+			global::Lottie.Forms.Droid.Resource.Attribute.tabIndicatorColor = global::Neo.Gui.Droid.Resource.Attribute.tabIndicatorColor;
+			global::Lottie.Forms.Droid.Resource.Attribute.tabIndicatorHeight = global::Neo.Gui.Droid.Resource.Attribute.tabIndicatorHeight;
+			global::Lottie.Forms.Droid.Resource.Attribute.tabMaxWidth = global::Neo.Gui.Droid.Resource.Attribute.tabMaxWidth;
+			global::Lottie.Forms.Droid.Resource.Attribute.tabMinWidth = global::Neo.Gui.Droid.Resource.Attribute.tabMinWidth;
+			global::Lottie.Forms.Droid.Resource.Attribute.tabMode = global::Neo.Gui.Droid.Resource.Attribute.tabMode;
+			global::Lottie.Forms.Droid.Resource.Attribute.tabPadding = global::Neo.Gui.Droid.Resource.Attribute.tabPadding;
+			global::Lottie.Forms.Droid.Resource.Attribute.tabPaddingBottom = global::Neo.Gui.Droid.Resource.Attribute.tabPaddingBottom;
+			global::Lottie.Forms.Droid.Resource.Attribute.tabPaddingEnd = global::Neo.Gui.Droid.Resource.Attribute.tabPaddingEnd;
+			global::Lottie.Forms.Droid.Resource.Attribute.tabPaddingStart = global::Neo.Gui.Droid.Resource.Attribute.tabPaddingStart;
+			global::Lottie.Forms.Droid.Resource.Attribute.tabPaddingTop = global::Neo.Gui.Droid.Resource.Attribute.tabPaddingTop;
+			global::Lottie.Forms.Droid.Resource.Attribute.tabSelectedTextColor = global::Neo.Gui.Droid.Resource.Attribute.tabSelectedTextColor;
+			global::Lottie.Forms.Droid.Resource.Attribute.tabTextAppearance = global::Neo.Gui.Droid.Resource.Attribute.tabTextAppearance;
+			global::Lottie.Forms.Droid.Resource.Attribute.tabTextColor = global::Neo.Gui.Droid.Resource.Attribute.tabTextColor;
+			global::Lottie.Forms.Droid.Resource.Attribute.textAllCaps = global::Neo.Gui.Droid.Resource.Attribute.textAllCaps;
+			global::Lottie.Forms.Droid.Resource.Attribute.textAppearanceLargePopupMenu = global::Neo.Gui.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::Lottie.Forms.Droid.Resource.Attribute.textAppearanceListItem = global::Neo.Gui.Droid.Resource.Attribute.textAppearanceListItem;
+			global::Lottie.Forms.Droid.Resource.Attribute.textAppearanceListItemSmall = global::Neo.Gui.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::Lottie.Forms.Droid.Resource.Attribute.textAppearancePopupMenuHeader = global::Neo.Gui.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::Lottie.Forms.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle = global::Neo.Gui.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::Lottie.Forms.Droid.Resource.Attribute.textAppearanceSearchResultTitle = global::Neo.Gui.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::Lottie.Forms.Droid.Resource.Attribute.textAppearanceSmallPopupMenu = global::Neo.Gui.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::Lottie.Forms.Droid.Resource.Attribute.textColorAlertDialogListItem = global::Neo.Gui.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::Lottie.Forms.Droid.Resource.Attribute.textColorError = global::Neo.Gui.Droid.Resource.Attribute.textColorError;
+			global::Lottie.Forms.Droid.Resource.Attribute.textColorSearchUrl = global::Neo.Gui.Droid.Resource.Attribute.textColorSearchUrl;
+			global::Lottie.Forms.Droid.Resource.Attribute.theme = global::Neo.Gui.Droid.Resource.Attribute.theme;
+			global::Lottie.Forms.Droid.Resource.Attribute.thickness = global::Neo.Gui.Droid.Resource.Attribute.thickness;
+			global::Lottie.Forms.Droid.Resource.Attribute.thumbTextPadding = global::Neo.Gui.Droid.Resource.Attribute.thumbTextPadding;
+			global::Lottie.Forms.Droid.Resource.Attribute.thumbTint = global::Neo.Gui.Droid.Resource.Attribute.thumbTint;
+			global::Lottie.Forms.Droid.Resource.Attribute.thumbTintMode = global::Neo.Gui.Droid.Resource.Attribute.thumbTintMode;
+			global::Lottie.Forms.Droid.Resource.Attribute.tickMark = global::Neo.Gui.Droid.Resource.Attribute.tickMark;
+			global::Lottie.Forms.Droid.Resource.Attribute.tickMarkTint = global::Neo.Gui.Droid.Resource.Attribute.tickMarkTint;
+			global::Lottie.Forms.Droid.Resource.Attribute.tickMarkTintMode = global::Neo.Gui.Droid.Resource.Attribute.tickMarkTintMode;
+			global::Lottie.Forms.Droid.Resource.Attribute.title = global::Neo.Gui.Droid.Resource.Attribute.title;
+			global::Lottie.Forms.Droid.Resource.Attribute.titleEnabled = global::Neo.Gui.Droid.Resource.Attribute.titleEnabled;
+			global::Lottie.Forms.Droid.Resource.Attribute.titleMargin = global::Neo.Gui.Droid.Resource.Attribute.titleMargin;
+			global::Lottie.Forms.Droid.Resource.Attribute.titleMarginBottom = global::Neo.Gui.Droid.Resource.Attribute.titleMarginBottom;
+			global::Lottie.Forms.Droid.Resource.Attribute.titleMarginEnd = global::Neo.Gui.Droid.Resource.Attribute.titleMarginEnd;
+			global::Lottie.Forms.Droid.Resource.Attribute.titleMarginStart = global::Neo.Gui.Droid.Resource.Attribute.titleMarginStart;
+			global::Lottie.Forms.Droid.Resource.Attribute.titleMarginTop = global::Neo.Gui.Droid.Resource.Attribute.titleMarginTop;
+			global::Lottie.Forms.Droid.Resource.Attribute.titleMargins = global::Neo.Gui.Droid.Resource.Attribute.titleMargins;
+			global::Lottie.Forms.Droid.Resource.Attribute.titleTextAppearance = global::Neo.Gui.Droid.Resource.Attribute.titleTextAppearance;
+			global::Lottie.Forms.Droid.Resource.Attribute.titleTextColor = global::Neo.Gui.Droid.Resource.Attribute.titleTextColor;
+			global::Lottie.Forms.Droid.Resource.Attribute.titleTextStyle = global::Neo.Gui.Droid.Resource.Attribute.titleTextStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.toolbarId = global::Neo.Gui.Droid.Resource.Attribute.toolbarId;
+			global::Lottie.Forms.Droid.Resource.Attribute.toolbarNavigationButtonStyle = global::Neo.Gui.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.toolbarStyle = global::Neo.Gui.Droid.Resource.Attribute.toolbarStyle;
+			global::Lottie.Forms.Droid.Resource.Attribute.track = global::Neo.Gui.Droid.Resource.Attribute.track;
+			global::Lottie.Forms.Droid.Resource.Attribute.trackTint = global::Neo.Gui.Droid.Resource.Attribute.trackTint;
+			global::Lottie.Forms.Droid.Resource.Attribute.trackTintMode = global::Neo.Gui.Droid.Resource.Attribute.trackTintMode;
+			global::Lottie.Forms.Droid.Resource.Attribute.useCompatPadding = global::Neo.Gui.Droid.Resource.Attribute.useCompatPadding;
+			global::Lottie.Forms.Droid.Resource.Attribute.voiceIcon = global::Neo.Gui.Droid.Resource.Attribute.voiceIcon;
+			global::Lottie.Forms.Droid.Resource.Attribute.windowActionBar = global::Neo.Gui.Droid.Resource.Attribute.windowActionBar;
+			global::Lottie.Forms.Droid.Resource.Attribute.windowActionBarOverlay = global::Neo.Gui.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::Lottie.Forms.Droid.Resource.Attribute.windowActionModeOverlay = global::Neo.Gui.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::Lottie.Forms.Droid.Resource.Attribute.windowFixedHeightMajor = global::Neo.Gui.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::Lottie.Forms.Droid.Resource.Attribute.windowFixedHeightMinor = global::Neo.Gui.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::Lottie.Forms.Droid.Resource.Attribute.windowFixedWidthMajor = global::Neo.Gui.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::Lottie.Forms.Droid.Resource.Attribute.windowFixedWidthMinor = global::Neo.Gui.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::Lottie.Forms.Droid.Resource.Attribute.windowMinWidthMajor = global::Neo.Gui.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::Lottie.Forms.Droid.Resource.Attribute.windowMinWidthMinor = global::Neo.Gui.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::Lottie.Forms.Droid.Resource.Attribute.windowNoTitle = global::Neo.Gui.Droid.Resource.Attribute.windowNoTitle;
+			global::Lottie.Forms.Droid.Resource.Boolean.abc_action_bar_embed_tabs = global::Neo.Gui.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::Lottie.Forms.Droid.Resource.Boolean.abc_allow_stacked_button_bar = global::Neo.Gui.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::Lottie.Forms.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::Neo.Gui.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::Lottie.Forms.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::Neo.Gui.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
+			global::Lottie.Forms.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::Neo.Gui.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
+			global::Lottie.Forms.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark = global::Neo.Gui.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::Lottie.Forms.Droid.Resource.Color.abc_background_cache_hint_selector_material_light = global::Neo.Gui.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::Lottie.Forms.Droid.Resource.Color.abc_btn_colored_borderless_text_material = global::Neo.Gui.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::Lottie.Forms.Droid.Resource.Color.abc_btn_colored_text_material = global::Neo.Gui.Droid.Resource.Color.abc_btn_colored_text_material;
+			global::Lottie.Forms.Droid.Resource.Color.abc_color_highlight_material = global::Neo.Gui.Droid.Resource.Color.abc_color_highlight_material;
+			global::Lottie.Forms.Droid.Resource.Color.abc_hint_foreground_material_dark = global::Neo.Gui.Droid.Resource.Color.abc_hint_foreground_material_dark;
+			global::Lottie.Forms.Droid.Resource.Color.abc_hint_foreground_material_light = global::Neo.Gui.Droid.Resource.Color.abc_hint_foreground_material_light;
+			global::Lottie.Forms.Droid.Resource.Color.abc_input_method_navigation_guard = global::Neo.Gui.Droid.Resource.Color.abc_input_method_navigation_guard;
+			global::Lottie.Forms.Droid.Resource.Color.abc_primary_text_disable_only_material_dark = global::Neo.Gui.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::Lottie.Forms.Droid.Resource.Color.abc_primary_text_disable_only_material_light = global::Neo.Gui.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::Lottie.Forms.Droid.Resource.Color.abc_primary_text_material_dark = global::Neo.Gui.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::Lottie.Forms.Droid.Resource.Color.abc_primary_text_material_light = global::Neo.Gui.Droid.Resource.Color.abc_primary_text_material_light;
+			global::Lottie.Forms.Droid.Resource.Color.abc_search_url_text = global::Neo.Gui.Droid.Resource.Color.abc_search_url_text;
+			global::Lottie.Forms.Droid.Resource.Color.abc_search_url_text_normal = global::Neo.Gui.Droid.Resource.Color.abc_search_url_text_normal;
+			global::Lottie.Forms.Droid.Resource.Color.abc_search_url_text_pressed = global::Neo.Gui.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::Lottie.Forms.Droid.Resource.Color.abc_search_url_text_selected = global::Neo.Gui.Droid.Resource.Color.abc_search_url_text_selected;
+			global::Lottie.Forms.Droid.Resource.Color.abc_secondary_text_material_dark = global::Neo.Gui.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::Lottie.Forms.Droid.Resource.Color.abc_secondary_text_material_light = global::Neo.Gui.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::Lottie.Forms.Droid.Resource.Color.abc_tint_btn_checkable = global::Neo.Gui.Droid.Resource.Color.abc_tint_btn_checkable;
+			global::Lottie.Forms.Droid.Resource.Color.abc_tint_default = global::Neo.Gui.Droid.Resource.Color.abc_tint_default;
+			global::Lottie.Forms.Droid.Resource.Color.abc_tint_edittext = global::Neo.Gui.Droid.Resource.Color.abc_tint_edittext;
+			global::Lottie.Forms.Droid.Resource.Color.abc_tint_seek_thumb = global::Neo.Gui.Droid.Resource.Color.abc_tint_seek_thumb;
+			global::Lottie.Forms.Droid.Resource.Color.abc_tint_spinner = global::Neo.Gui.Droid.Resource.Color.abc_tint_spinner;
+			global::Lottie.Forms.Droid.Resource.Color.abc_tint_switch_thumb = global::Neo.Gui.Droid.Resource.Color.abc_tint_switch_thumb;
+			global::Lottie.Forms.Droid.Resource.Color.abc_tint_switch_track = global::Neo.Gui.Droid.Resource.Color.abc_tint_switch_track;
+			global::Lottie.Forms.Droid.Resource.Color.accent_material_dark = global::Neo.Gui.Droid.Resource.Color.accent_material_dark;
+			global::Lottie.Forms.Droid.Resource.Color.accent_material_light = global::Neo.Gui.Droid.Resource.Color.accent_material_light;
+			global::Lottie.Forms.Droid.Resource.Color.background_floating_material_dark = global::Neo.Gui.Droid.Resource.Color.background_floating_material_dark;
+			global::Lottie.Forms.Droid.Resource.Color.background_floating_material_light = global::Neo.Gui.Droid.Resource.Color.background_floating_material_light;
+			global::Lottie.Forms.Droid.Resource.Color.background_material_dark = global::Neo.Gui.Droid.Resource.Color.background_material_dark;
+			global::Lottie.Forms.Droid.Resource.Color.background_material_light = global::Neo.Gui.Droid.Resource.Color.background_material_light;
+			global::Lottie.Forms.Droid.Resource.Color.bright_foreground_disabled_material_dark = global::Neo.Gui.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::Lottie.Forms.Droid.Resource.Color.bright_foreground_disabled_material_light = global::Neo.Gui.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::Lottie.Forms.Droid.Resource.Color.bright_foreground_inverse_material_dark = global::Neo.Gui.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::Lottie.Forms.Droid.Resource.Color.bright_foreground_inverse_material_light = global::Neo.Gui.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::Lottie.Forms.Droid.Resource.Color.bright_foreground_material_dark = global::Neo.Gui.Droid.Resource.Color.bright_foreground_material_dark;
+			global::Lottie.Forms.Droid.Resource.Color.bright_foreground_material_light = global::Neo.Gui.Droid.Resource.Color.bright_foreground_material_light;
+			global::Lottie.Forms.Droid.Resource.Color.button_material_dark = global::Neo.Gui.Droid.Resource.Color.button_material_dark;
+			global::Lottie.Forms.Droid.Resource.Color.button_material_light = global::Neo.Gui.Droid.Resource.Color.button_material_light;
+			global::Lottie.Forms.Droid.Resource.Color.cardview_dark_background = global::Neo.Gui.Droid.Resource.Color.cardview_dark_background;
+			global::Lottie.Forms.Droid.Resource.Color.cardview_light_background = global::Neo.Gui.Droid.Resource.Color.cardview_light_background;
+			global::Lottie.Forms.Droid.Resource.Color.cardview_shadow_end_color = global::Neo.Gui.Droid.Resource.Color.cardview_shadow_end_color;
+			global::Lottie.Forms.Droid.Resource.Color.cardview_shadow_start_color = global::Neo.Gui.Droid.Resource.Color.cardview_shadow_start_color;
+			global::Lottie.Forms.Droid.Resource.Color.design_bottom_navigation_shadow_color = global::Neo.Gui.Droid.Resource.Color.design_bottom_navigation_shadow_color;
+			global::Lottie.Forms.Droid.Resource.Color.design_error = global::Neo.Gui.Droid.Resource.Color.design_error;
+			global::Lottie.Forms.Droid.Resource.Color.design_fab_shadow_end_color = global::Neo.Gui.Droid.Resource.Color.design_fab_shadow_end_color;
+			global::Lottie.Forms.Droid.Resource.Color.design_fab_shadow_mid_color = global::Neo.Gui.Droid.Resource.Color.design_fab_shadow_mid_color;
+			global::Lottie.Forms.Droid.Resource.Color.design_fab_shadow_start_color = global::Neo.Gui.Droid.Resource.Color.design_fab_shadow_start_color;
+			global::Lottie.Forms.Droid.Resource.Color.design_fab_stroke_end_inner_color = global::Neo.Gui.Droid.Resource.Color.design_fab_stroke_end_inner_color;
+			global::Lottie.Forms.Droid.Resource.Color.design_fab_stroke_end_outer_color = global::Neo.Gui.Droid.Resource.Color.design_fab_stroke_end_outer_color;
+			global::Lottie.Forms.Droid.Resource.Color.design_fab_stroke_top_inner_color = global::Neo.Gui.Droid.Resource.Color.design_fab_stroke_top_inner_color;
+			global::Lottie.Forms.Droid.Resource.Color.design_fab_stroke_top_outer_color = global::Neo.Gui.Droid.Resource.Color.design_fab_stroke_top_outer_color;
+			global::Lottie.Forms.Droid.Resource.Color.design_snackbar_background_color = global::Neo.Gui.Droid.Resource.Color.design_snackbar_background_color;
+			global::Lottie.Forms.Droid.Resource.Color.design_textinput_error_color_dark = global::Neo.Gui.Droid.Resource.Color.design_textinput_error_color_dark;
+			global::Lottie.Forms.Droid.Resource.Color.design_textinput_error_color_light = global::Neo.Gui.Droid.Resource.Color.design_textinput_error_color_light;
+			global::Lottie.Forms.Droid.Resource.Color.design_tint_password_toggle = global::Neo.Gui.Droid.Resource.Color.design_tint_password_toggle;
+			global::Lottie.Forms.Droid.Resource.Color.dim_foreground_disabled_material_dark = global::Neo.Gui.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::Lottie.Forms.Droid.Resource.Color.dim_foreground_disabled_material_light = global::Neo.Gui.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::Lottie.Forms.Droid.Resource.Color.dim_foreground_material_dark = global::Neo.Gui.Droid.Resource.Color.dim_foreground_material_dark;
+			global::Lottie.Forms.Droid.Resource.Color.dim_foreground_material_light = global::Neo.Gui.Droid.Resource.Color.dim_foreground_material_light;
+			global::Lottie.Forms.Droid.Resource.Color.foreground_material_dark = global::Neo.Gui.Droid.Resource.Color.foreground_material_dark;
+			global::Lottie.Forms.Droid.Resource.Color.foreground_material_light = global::Neo.Gui.Droid.Resource.Color.foreground_material_light;
+			global::Lottie.Forms.Droid.Resource.Color.highlighted_text_material_dark = global::Neo.Gui.Droid.Resource.Color.highlighted_text_material_dark;
+			global::Lottie.Forms.Droid.Resource.Color.highlighted_text_material_light = global::Neo.Gui.Droid.Resource.Color.highlighted_text_material_light;
+			global::Lottie.Forms.Droid.Resource.Color.material_blue_grey_800 = global::Neo.Gui.Droid.Resource.Color.material_blue_grey_800;
+			global::Lottie.Forms.Droid.Resource.Color.material_blue_grey_900 = global::Neo.Gui.Droid.Resource.Color.material_blue_grey_900;
+			global::Lottie.Forms.Droid.Resource.Color.material_blue_grey_950 = global::Neo.Gui.Droid.Resource.Color.material_blue_grey_950;
+			global::Lottie.Forms.Droid.Resource.Color.material_deep_teal_200 = global::Neo.Gui.Droid.Resource.Color.material_deep_teal_200;
+			global::Lottie.Forms.Droid.Resource.Color.material_deep_teal_500 = global::Neo.Gui.Droid.Resource.Color.material_deep_teal_500;
+			global::Lottie.Forms.Droid.Resource.Color.material_grey_100 = global::Neo.Gui.Droid.Resource.Color.material_grey_100;
+			global::Lottie.Forms.Droid.Resource.Color.material_grey_300 = global::Neo.Gui.Droid.Resource.Color.material_grey_300;
+			global::Lottie.Forms.Droid.Resource.Color.material_grey_50 = global::Neo.Gui.Droid.Resource.Color.material_grey_50;
+			global::Lottie.Forms.Droid.Resource.Color.material_grey_600 = global::Neo.Gui.Droid.Resource.Color.material_grey_600;
+			global::Lottie.Forms.Droid.Resource.Color.material_grey_800 = global::Neo.Gui.Droid.Resource.Color.material_grey_800;
+			global::Lottie.Forms.Droid.Resource.Color.material_grey_850 = global::Neo.Gui.Droid.Resource.Color.material_grey_850;
+			global::Lottie.Forms.Droid.Resource.Color.material_grey_900 = global::Neo.Gui.Droid.Resource.Color.material_grey_900;
+			global::Lottie.Forms.Droid.Resource.Color.notification_action_color_filter = global::Neo.Gui.Droid.Resource.Color.notification_action_color_filter;
+			global::Lottie.Forms.Droid.Resource.Color.notification_icon_bg_color = global::Neo.Gui.Droid.Resource.Color.notification_icon_bg_color;
+			global::Lottie.Forms.Droid.Resource.Color.notification_material_background_media_default_color = global::Neo.Gui.Droid.Resource.Color.notification_material_background_media_default_color;
+			global::Lottie.Forms.Droid.Resource.Color.primary_dark_material_dark = global::Neo.Gui.Droid.Resource.Color.primary_dark_material_dark;
+			global::Lottie.Forms.Droid.Resource.Color.primary_dark_material_light = global::Neo.Gui.Droid.Resource.Color.primary_dark_material_light;
+			global::Lottie.Forms.Droid.Resource.Color.primary_material_dark = global::Neo.Gui.Droid.Resource.Color.primary_material_dark;
+			global::Lottie.Forms.Droid.Resource.Color.primary_material_light = global::Neo.Gui.Droid.Resource.Color.primary_material_light;
+			global::Lottie.Forms.Droid.Resource.Color.primary_text_default_material_dark = global::Neo.Gui.Droid.Resource.Color.primary_text_default_material_dark;
+			global::Lottie.Forms.Droid.Resource.Color.primary_text_default_material_light = global::Neo.Gui.Droid.Resource.Color.primary_text_default_material_light;
+			global::Lottie.Forms.Droid.Resource.Color.primary_text_disabled_material_dark = global::Neo.Gui.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::Lottie.Forms.Droid.Resource.Color.primary_text_disabled_material_light = global::Neo.Gui.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::Lottie.Forms.Droid.Resource.Color.ripple_material_dark = global::Neo.Gui.Droid.Resource.Color.ripple_material_dark;
+			global::Lottie.Forms.Droid.Resource.Color.ripple_material_light = global::Neo.Gui.Droid.Resource.Color.ripple_material_light;
+			global::Lottie.Forms.Droid.Resource.Color.secondary_text_default_material_dark = global::Neo.Gui.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::Lottie.Forms.Droid.Resource.Color.secondary_text_default_material_light = global::Neo.Gui.Droid.Resource.Color.secondary_text_default_material_light;
+			global::Lottie.Forms.Droid.Resource.Color.secondary_text_disabled_material_dark = global::Neo.Gui.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::Lottie.Forms.Droid.Resource.Color.secondary_text_disabled_material_light = global::Neo.Gui.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::Lottie.Forms.Droid.Resource.Color.switch_thumb_disabled_material_dark = global::Neo.Gui.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::Lottie.Forms.Droid.Resource.Color.switch_thumb_disabled_material_light = global::Neo.Gui.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::Lottie.Forms.Droid.Resource.Color.switch_thumb_material_dark = global::Neo.Gui.Droid.Resource.Color.switch_thumb_material_dark;
+			global::Lottie.Forms.Droid.Resource.Color.switch_thumb_material_light = global::Neo.Gui.Droid.Resource.Color.switch_thumb_material_light;
+			global::Lottie.Forms.Droid.Resource.Color.switch_thumb_normal_material_dark = global::Neo.Gui.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::Lottie.Forms.Droid.Resource.Color.switch_thumb_normal_material_light = global::Neo.Gui.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_action_bar_content_inset_material = global::Neo.Gui.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::Neo.Gui.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_action_bar_default_height_material = global::Neo.Gui.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material = global::Neo.Gui.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material = global::Neo.Gui.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_action_bar_elevation_material = global::Neo.Gui.Droid.Resource.Dimension.abc_action_bar_elevation_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::Neo.Gui.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::Neo.Gui.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::Neo.Gui.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_action_bar_progress_bar_size = global::Neo.Gui.Droid.Resource.Dimension.abc_action_bar_progress_bar_size;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_action_bar_stacked_max_height = global::Neo.Gui.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::Neo.Gui.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::Neo.Gui.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::Neo.Gui.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_action_button_min_height_material = global::Neo.Gui.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_action_button_min_width_material = global::Neo.Gui.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material = global::Neo.Gui.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height = global::Neo.Gui.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_button_inset_horizontal_material = global::Neo.Gui.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_button_inset_vertical_material = global::Neo.Gui.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_button_padding_horizontal_material = global::Neo.Gui.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_button_padding_vertical_material = global::Neo.Gui.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::Neo.Gui.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_config_prefDialogWidth = global::Neo.Gui.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_control_corner_material = global::Neo.Gui.Droid.Resource.Dimension.abc_control_corner_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_control_inset_material = global::Neo.Gui.Droid.Resource.Dimension.abc_control_inset_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_control_padding_material = global::Neo.Gui.Droid.Resource.Dimension.abc_control_padding_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_dialog_fixed_height_major = global::Neo.Gui.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_dialog_fixed_height_minor = global::Neo.Gui.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_dialog_fixed_width_major = global::Neo.Gui.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_dialog_fixed_width_minor = global::Neo.Gui.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::Neo.Gui.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::Neo.Gui.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_dialog_min_width_major = global::Neo.Gui.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_dialog_min_width_minor = global::Neo.Gui.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_dialog_padding_material = global::Neo.Gui.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_dialog_padding_top_material = global::Neo.Gui.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_dialog_title_divider_material = global::Neo.Gui.Droid.Resource.Dimension.abc_dialog_title_divider_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_disabled_alpha_material_dark = global::Neo.Gui.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_disabled_alpha_material_light = global::Neo.Gui.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_dropdownitem_icon_width = global::Neo.Gui.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left = global::Neo.Gui.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right = global::Neo.Gui.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material = global::Neo.Gui.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::Neo.Gui.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_edit_text_inset_top_material = global::Neo.Gui.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_floating_window_z = global::Neo.Gui.Droid.Resource.Dimension.abc_floating_window_z;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material = global::Neo.Gui.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_panel_menu_list_width = global::Neo.Gui.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_progress_bar_height_material = global::Neo.Gui.Droid.Resource.Dimension.abc_progress_bar_height_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_search_view_preferred_height = global::Neo.Gui.Droid.Resource.Dimension.abc_search_view_preferred_height;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_search_view_preferred_width = global::Neo.Gui.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_seekbar_track_background_height_material = global::Neo.Gui.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material = global::Neo.Gui.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_select_dialog_padding_start_material = global::Neo.Gui.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_switch_padding = global::Neo.Gui.Droid.Resource.Dimension.abc_switch_padding;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_text_size_body_1_material = global::Neo.Gui.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_text_size_body_2_material = global::Neo.Gui.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_text_size_button_material = global::Neo.Gui.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_text_size_caption_material = global::Neo.Gui.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_text_size_display_1_material = global::Neo.Gui.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_text_size_display_2_material = global::Neo.Gui.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_text_size_display_3_material = global::Neo.Gui.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_text_size_display_4_material = global::Neo.Gui.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_text_size_headline_material = global::Neo.Gui.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_text_size_large_material = global::Neo.Gui.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_text_size_medium_material = global::Neo.Gui.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_text_size_menu_header_material = global::Neo.Gui.Droid.Resource.Dimension.abc_text_size_menu_header_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_text_size_menu_material = global::Neo.Gui.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_text_size_small_material = global::Neo.Gui.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_text_size_subhead_material = global::Neo.Gui.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::Neo.Gui.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_text_size_title_material = global::Neo.Gui.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::Lottie.Forms.Droid.Resource.Dimension.abc_text_size_title_material_toolbar = global::Neo.Gui.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::Lottie.Forms.Droid.Resource.Dimension.cardview_compat_inset_shadow = global::Neo.Gui.Droid.Resource.Dimension.cardview_compat_inset_shadow;
+			global::Lottie.Forms.Droid.Resource.Dimension.cardview_default_elevation = global::Neo.Gui.Droid.Resource.Dimension.cardview_default_elevation;
+			global::Lottie.Forms.Droid.Resource.Dimension.cardview_default_radius = global::Neo.Gui.Droid.Resource.Dimension.cardview_default_radius;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_appbar_elevation = global::Neo.Gui.Droid.Resource.Dimension.design_appbar_elevation;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::Neo.Gui.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_bottom_navigation_active_text_size = global::Neo.Gui.Droid.Resource.Dimension.design_bottom_navigation_active_text_size;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_bottom_navigation_elevation = global::Neo.Gui.Droid.Resource.Dimension.design_bottom_navigation_elevation;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_bottom_navigation_height = global::Neo.Gui.Droid.Resource.Dimension.design_bottom_navigation_height;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_bottom_navigation_item_max_width = global::Neo.Gui.Droid.Resource.Dimension.design_bottom_navigation_item_max_width;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_bottom_navigation_item_min_width = global::Neo.Gui.Droid.Resource.Dimension.design_bottom_navigation_item_min_width;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_bottom_navigation_margin = global::Neo.Gui.Droid.Resource.Dimension.design_bottom_navigation_margin;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_bottom_navigation_shadow_height = global::Neo.Gui.Droid.Resource.Dimension.design_bottom_navigation_shadow_height;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_bottom_navigation_text_size = global::Neo.Gui.Droid.Resource.Dimension.design_bottom_navigation_text_size;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation = global::Neo.Gui.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min = global::Neo.Gui.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_fab_border_width = global::Neo.Gui.Droid.Resource.Dimension.design_fab_border_width;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_fab_elevation = global::Neo.Gui.Droid.Resource.Dimension.design_fab_elevation;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_fab_image_size = global::Neo.Gui.Droid.Resource.Dimension.design_fab_image_size;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_fab_size_mini = global::Neo.Gui.Droid.Resource.Dimension.design_fab_size_mini;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_fab_size_normal = global::Neo.Gui.Droid.Resource.Dimension.design_fab_size_normal;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_fab_translation_z_pressed = global::Neo.Gui.Droid.Resource.Dimension.design_fab_translation_z_pressed;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_navigation_elevation = global::Neo.Gui.Droid.Resource.Dimension.design_navigation_elevation;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_navigation_icon_padding = global::Neo.Gui.Droid.Resource.Dimension.design_navigation_icon_padding;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_navigation_icon_size = global::Neo.Gui.Droid.Resource.Dimension.design_navigation_icon_size;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_navigation_max_width = global::Neo.Gui.Droid.Resource.Dimension.design_navigation_max_width;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_navigation_padding_bottom = global::Neo.Gui.Droid.Resource.Dimension.design_navigation_padding_bottom;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_navigation_separator_vertical_padding = global::Neo.Gui.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_snackbar_action_inline_max_width = global::Neo.Gui.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_snackbar_background_corner_radius = global::Neo.Gui.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_snackbar_elevation = global::Neo.Gui.Droid.Resource.Dimension.design_snackbar_elevation;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::Neo.Gui.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_snackbar_max_width = global::Neo.Gui.Droid.Resource.Dimension.design_snackbar_max_width;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_snackbar_min_width = global::Neo.Gui.Droid.Resource.Dimension.design_snackbar_min_width;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_snackbar_padding_horizontal = global::Neo.Gui.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_snackbar_padding_vertical = global::Neo.Gui.Droid.Resource.Dimension.design_snackbar_padding_vertical;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::Neo.Gui.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_snackbar_text_size = global::Neo.Gui.Droid.Resource.Dimension.design_snackbar_text_size;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_tab_max_width = global::Neo.Gui.Droid.Resource.Dimension.design_tab_max_width;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_tab_scrollable_min_width = global::Neo.Gui.Droid.Resource.Dimension.design_tab_scrollable_min_width;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_tab_text_size = global::Neo.Gui.Droid.Resource.Dimension.design_tab_text_size;
+			global::Lottie.Forms.Droid.Resource.Dimension.design_tab_text_size_2line = global::Neo.Gui.Droid.Resource.Dimension.design_tab_text_size_2line;
+			global::Lottie.Forms.Droid.Resource.Dimension.disabled_alpha_material_dark = global::Neo.Gui.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::Lottie.Forms.Droid.Resource.Dimension.disabled_alpha_material_light = global::Neo.Gui.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::Lottie.Forms.Droid.Resource.Dimension.highlight_alpha_material_colored = global::Neo.Gui.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::Lottie.Forms.Droid.Resource.Dimension.highlight_alpha_material_dark = global::Neo.Gui.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::Lottie.Forms.Droid.Resource.Dimension.highlight_alpha_material_light = global::Neo.Gui.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::Lottie.Forms.Droid.Resource.Dimension.hint_alpha_material_dark = global::Neo.Gui.Droid.Resource.Dimension.hint_alpha_material_dark;
+			global::Lottie.Forms.Droid.Resource.Dimension.hint_alpha_material_light = global::Neo.Gui.Droid.Resource.Dimension.hint_alpha_material_light;
+			global::Lottie.Forms.Droid.Resource.Dimension.hint_pressed_alpha_material_dark = global::Neo.Gui.Droid.Resource.Dimension.hint_pressed_alpha_material_dark;
+			global::Lottie.Forms.Droid.Resource.Dimension.hint_pressed_alpha_material_light = global::Neo.Gui.Droid.Resource.Dimension.hint_pressed_alpha_material_light;
+			global::Lottie.Forms.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::Neo.Gui.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::Lottie.Forms.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::Neo.Gui.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::Lottie.Forms.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::Neo.Gui.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::Lottie.Forms.Droid.Resource.Dimension.mr_controller_volume_group_list_item_height = global::Neo.Gui.Droid.Resource.Dimension.mr_controller_volume_group_list_item_height;
+			global::Lottie.Forms.Droid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size = global::Neo.Gui.Droid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size;
+			global::Lottie.Forms.Droid.Resource.Dimension.mr_controller_volume_group_list_max_height = global::Neo.Gui.Droid.Resource.Dimension.mr_controller_volume_group_list_max_height;
+			global::Lottie.Forms.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top = global::Neo.Gui.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top;
+			global::Lottie.Forms.Droid.Resource.Dimension.mr_dialog_fixed_width_major = global::Neo.Gui.Droid.Resource.Dimension.mr_dialog_fixed_width_major;
+			global::Lottie.Forms.Droid.Resource.Dimension.mr_dialog_fixed_width_minor = global::Neo.Gui.Droid.Resource.Dimension.mr_dialog_fixed_width_minor;
+			global::Lottie.Forms.Droid.Resource.Dimension.notification_action_icon_size = global::Neo.Gui.Droid.Resource.Dimension.notification_action_icon_size;
+			global::Lottie.Forms.Droid.Resource.Dimension.notification_action_text_size = global::Neo.Gui.Droid.Resource.Dimension.notification_action_text_size;
+			global::Lottie.Forms.Droid.Resource.Dimension.notification_big_circle_margin = global::Neo.Gui.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::Lottie.Forms.Droid.Resource.Dimension.notification_content_margin_start = global::Neo.Gui.Droid.Resource.Dimension.notification_content_margin_start;
+			global::Lottie.Forms.Droid.Resource.Dimension.notification_large_icon_height = global::Neo.Gui.Droid.Resource.Dimension.notification_large_icon_height;
+			global::Lottie.Forms.Droid.Resource.Dimension.notification_large_icon_width = global::Neo.Gui.Droid.Resource.Dimension.notification_large_icon_width;
+			global::Lottie.Forms.Droid.Resource.Dimension.notification_main_column_padding_top = global::Neo.Gui.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::Lottie.Forms.Droid.Resource.Dimension.notification_media_narrow_margin = global::Neo.Gui.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::Lottie.Forms.Droid.Resource.Dimension.notification_right_icon_size = global::Neo.Gui.Droid.Resource.Dimension.notification_right_icon_size;
+			global::Lottie.Forms.Droid.Resource.Dimension.notification_right_side_padding_top = global::Neo.Gui.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::Lottie.Forms.Droid.Resource.Dimension.notification_small_icon_background_padding = global::Neo.Gui.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::Lottie.Forms.Droid.Resource.Dimension.notification_small_icon_size_as_large = global::Neo.Gui.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Lottie.Forms.Droid.Resource.Dimension.notification_subtext_size = global::Neo.Gui.Droid.Resource.Dimension.notification_subtext_size;
+			global::Lottie.Forms.Droid.Resource.Dimension.notification_top_pad = global::Neo.Gui.Droid.Resource.Dimension.notification_top_pad;
+			global::Lottie.Forms.Droid.Resource.Dimension.notification_top_pad_large_text = global::Neo.Gui.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::Neo.Gui.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_action_bar_item_background_material = global::Neo.Gui.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_btn_borderless_material = global::Neo.Gui.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_btn_check_material = global::Neo.Gui.Droid.Resource.Drawable.abc_btn_check_material;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::Neo.Gui.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::Neo.Gui.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_btn_colored_material = global::Neo.Gui.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_btn_default_mtrl_shape = global::Neo.Gui.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_btn_radio_material = global::Neo.Gui.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::Neo.Gui.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::Neo.Gui.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::Neo.Gui.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::Neo.Gui.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_cab_background_internal_bg = global::Neo.Gui.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_cab_background_top_material = global::Neo.Gui.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::Neo.Gui.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_control_background_material = global::Neo.Gui.Droid.Resource.Drawable.abc_control_background_material;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_dialog_material_background = global::Neo.Gui.Droid.Resource.Drawable.abc_dialog_material_background;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_edit_text_material = global::Neo.Gui.Droid.Resource.Drawable.abc_edit_text_material;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_ic_ab_back_material = global::Neo.Gui.Droid.Resource.Drawable.abc_ic_ab_back_material;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::Neo.Gui.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_ic_clear_material = global::Neo.Gui.Droid.Resource.Drawable.abc_ic_clear_material;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::Neo.Gui.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_ic_go_search_api_material = global::Neo.Gui.Droid.Resource.Drawable.abc_ic_go_search_api_material;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::Neo.Gui.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::Neo.Gui.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_ic_menu_overflow_material = global::Neo.Gui.Droid.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::Neo.Gui.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::Neo.Gui.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::Neo.Gui.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_ic_search_api_material = global::Neo.Gui.Droid.Resource.Drawable.abc_ic_search_api_material;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_ic_star_black_16dp = global::Neo.Gui.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_ic_star_black_36dp = global::Neo.Gui.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_ic_star_black_48dp = global::Neo.Gui.Droid.Resource.Drawable.abc_ic_star_black_48dp;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_ic_star_half_black_16dp = global::Neo.Gui.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_ic_star_half_black_36dp = global::Neo.Gui.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_ic_star_half_black_48dp = global::Neo.Gui.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_ic_voice_search_api_material = global::Neo.Gui.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_item_background_holo_dark = global::Neo.Gui.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_item_background_holo_light = global::Neo.Gui.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha = global::Neo.Gui.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_list_focused_holo = global::Neo.Gui.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_list_longpressed_holo = global::Neo.Gui.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_list_pressed_holo_dark = global::Neo.Gui.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_list_pressed_holo_light = global::Neo.Gui.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::Neo.Gui.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::Neo.Gui.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::Neo.Gui.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light = global::Neo.Gui.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_list_selector_holo_dark = global::Neo.Gui.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_list_selector_holo_light = global::Neo.Gui.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::Neo.Gui.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_popup_background_mtrl_mult = global::Neo.Gui.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_ratingbar_indicator_material = global::Neo.Gui.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_ratingbar_material = global::Neo.Gui.Droid.Resource.Drawable.abc_ratingbar_material;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_ratingbar_small_material = global::Neo.Gui.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::Neo.Gui.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::Neo.Gui.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::Neo.Gui.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::Neo.Gui.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::Neo.Gui.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_seekbar_thumb_material = global::Neo.Gui.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_seekbar_tick_mark_material = global::Neo.Gui.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_seekbar_track_material = global::Neo.Gui.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::Neo.Gui.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_spinner_textfield_background_material = global::Neo.Gui.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_switch_thumb_material = global::Neo.Gui.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha = global::Neo.Gui.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_tab_indicator_material = global::Neo.Gui.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::Neo.Gui.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_text_cursor_material = global::Neo.Gui.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::Neo.Gui.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::Neo.Gui.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::Neo.Gui.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::Neo.Gui.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::Neo.Gui.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::Neo.Gui.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::Neo.Gui.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::Neo.Gui.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::Neo.Gui.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::Neo.Gui.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_textfield_search_material = global::Neo.Gui.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::Lottie.Forms.Droid.Resource.Drawable.abc_vector_test = global::Neo.Gui.Droid.Resource.Drawable.abc_vector_test;
+			global::Lottie.Forms.Droid.Resource.Drawable.avd_hide_password = global::Neo.Gui.Droid.Resource.Drawable.avd_hide_password;
+			global::Lottie.Forms.Droid.Resource.Drawable.avd_show_password = global::Neo.Gui.Droid.Resource.Drawable.avd_show_password;
+			global::Lottie.Forms.Droid.Resource.Drawable.design_bottom_navigation_item_background = global::Neo.Gui.Droid.Resource.Drawable.design_bottom_navigation_item_background;
+			global::Lottie.Forms.Droid.Resource.Drawable.design_fab_background = global::Neo.Gui.Droid.Resource.Drawable.design_fab_background;
+			global::Lottie.Forms.Droid.Resource.Drawable.design_ic_visibility = global::Neo.Gui.Droid.Resource.Drawable.design_ic_visibility;
+			global::Lottie.Forms.Droid.Resource.Drawable.design_ic_visibility_off = global::Neo.Gui.Droid.Resource.Drawable.design_ic_visibility_off;
+			global::Lottie.Forms.Droid.Resource.Drawable.design_password_eye = global::Neo.Gui.Droid.Resource.Drawable.design_password_eye;
+			global::Lottie.Forms.Droid.Resource.Drawable.design_snackbar_background = global::Neo.Gui.Droid.Resource.Drawable.design_snackbar_background;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_audiotrack_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_audiotrack_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_audiotrack_light = global::Neo.Gui.Droid.Resource.Drawable.ic_audiotrack_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_dialog_close_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_dialog_close_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_dialog_close_light = global::Neo.Gui.Droid.Resource.Drawable.ic_dialog_close_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_collapse_00 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_collapse_00;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_collapse_01 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_collapse_01;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_collapse_02 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_collapse_02;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_collapse_03 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_collapse_03;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_collapse_04 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_collapse_04;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_collapse_05 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_collapse_05;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_collapse_06 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_collapse_06;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_collapse_07 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_collapse_07;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_collapse_08 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_collapse_08;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_collapse_09 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_collapse_09;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_collapse_10 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_collapse_10;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_collapse_11 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_collapse_11;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_collapse_12 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_collapse_12;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_collapse_13 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_collapse_13;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_collapse_14 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_collapse_14;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_collapse_15 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_collapse_15;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_expand_00 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_expand_00;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_expand_01 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_expand_01;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_expand_02 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_expand_02;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_expand_03 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_expand_03;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_expand_04 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_expand_04;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_expand_05 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_expand_05;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_expand_06 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_expand_06;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_expand_07 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_expand_07;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_expand_08 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_expand_08;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_expand_09 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_expand_09;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_expand_10 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_expand_10;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_expand_11 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_expand_11;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_expand_12 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_expand_12;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_expand_13 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_expand_13;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_expand_14 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_expand_14;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_group_expand_15 = global::Neo.Gui.Droid.Resource.Drawable.ic_group_expand_15;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_media_pause_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_media_pause_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_media_pause_light = global::Neo.Gui.Droid.Resource.Drawable.ic_media_pause_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_media_play_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_media_play_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_media_play_light = global::Neo.Gui.Droid.Resource.Drawable.ic_media_play_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_media_stop_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_media_stop_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_media_stop_light = global::Neo.Gui.Droid.Resource.Drawable.ic_media_stop_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_00_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_00_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_00_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_00_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_01_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_01_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_01_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_01_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_02_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_02_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_02_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_02_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_03_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_03_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_03_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_03_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_04_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_04_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_04_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_04_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_05_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_05_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_05_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_05_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_06_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_06_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_06_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_06_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_07_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_07_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_07_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_07_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_08_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_08_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_08_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_08_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_09_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_09_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_09_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_09_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_10_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_10_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_10_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_10_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_11_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_11_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_11_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_11_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_12_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_12_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_12_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_12_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_13_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_13_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_13_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_13_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_14_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_14_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_14_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_14_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_15_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_15_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_15_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_15_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_16_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_16_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_16_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_16_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_17_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_17_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_17_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_17_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_18_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_18_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_18_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_18_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_19_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_19_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_19_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_19_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_20_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_20_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_20_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_20_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_21_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_21_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_21_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_21_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_22_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_22_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connected_22_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connected_22_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_00_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_00_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_00_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_00_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_01_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_01_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_01_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_01_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_02_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_02_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_02_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_02_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_03_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_03_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_03_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_03_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_04_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_04_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_04_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_04_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_05_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_05_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_05_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_05_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_06_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_06_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_06_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_06_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_07_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_07_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_07_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_07_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_08_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_08_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_08_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_08_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_09_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_09_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_09_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_09_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_10_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_10_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_10_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_10_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_11_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_11_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_11_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_11_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_12_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_12_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_12_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_12_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_13_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_13_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_13_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_13_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_14_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_14_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_14_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_14_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_15_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_15_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_15_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_15_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_16_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_16_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_16_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_16_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_17_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_17_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_17_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_17_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_18_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_18_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_18_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_18_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_19_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_19_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_19_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_19_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_20_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_20_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_20_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_20_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_21_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_21_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_21_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_21_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_22_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_22_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_connecting_22_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_connecting_22_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_disabled_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_disabled_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_disabled_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_disabled_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_disconnected_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_disconnected_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_disconnected_light = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_disconnected_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_mr_button_grey = global::Neo.Gui.Droid.Resource.Drawable.ic_mr_button_grey;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_vol_type_speaker_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_vol_type_speaker_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_vol_type_speaker_group_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_vol_type_speaker_group_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_vol_type_speaker_group_light = global::Neo.Gui.Droid.Resource.Drawable.ic_vol_type_speaker_group_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_vol_type_speaker_light = global::Neo.Gui.Droid.Resource.Drawable.ic_vol_type_speaker_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_vol_type_tv_dark = global::Neo.Gui.Droid.Resource.Drawable.ic_vol_type_tv_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.ic_vol_type_tv_light = global::Neo.Gui.Droid.Resource.Drawable.ic_vol_type_tv_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.mr_button_connected_dark = global::Neo.Gui.Droid.Resource.Drawable.mr_button_connected_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.mr_button_connected_light = global::Neo.Gui.Droid.Resource.Drawable.mr_button_connected_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.mr_button_connecting_dark = global::Neo.Gui.Droid.Resource.Drawable.mr_button_connecting_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.mr_button_connecting_light = global::Neo.Gui.Droid.Resource.Drawable.mr_button_connecting_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.mr_button_dark = global::Neo.Gui.Droid.Resource.Drawable.mr_button_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.mr_button_light = global::Neo.Gui.Droid.Resource.Drawable.mr_button_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.mr_dialog_close_dark = global::Neo.Gui.Droid.Resource.Drawable.mr_dialog_close_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.mr_dialog_close_light = global::Neo.Gui.Droid.Resource.Drawable.mr_dialog_close_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.mr_dialog_material_background_dark = global::Neo.Gui.Droid.Resource.Drawable.mr_dialog_material_background_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.mr_dialog_material_background_light = global::Neo.Gui.Droid.Resource.Drawable.mr_dialog_material_background_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.mr_group_collapse = global::Neo.Gui.Droid.Resource.Drawable.mr_group_collapse;
+			global::Lottie.Forms.Droid.Resource.Drawable.mr_group_expand = global::Neo.Gui.Droid.Resource.Drawable.mr_group_expand;
+			global::Lottie.Forms.Droid.Resource.Drawable.mr_media_pause_dark = global::Neo.Gui.Droid.Resource.Drawable.mr_media_pause_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.mr_media_pause_light = global::Neo.Gui.Droid.Resource.Drawable.mr_media_pause_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.mr_media_play_dark = global::Neo.Gui.Droid.Resource.Drawable.mr_media_play_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.mr_media_play_light = global::Neo.Gui.Droid.Resource.Drawable.mr_media_play_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.mr_media_stop_dark = global::Neo.Gui.Droid.Resource.Drawable.mr_media_stop_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.mr_media_stop_light = global::Neo.Gui.Droid.Resource.Drawable.mr_media_stop_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.mr_vol_type_audiotrack_dark = global::Neo.Gui.Droid.Resource.Drawable.mr_vol_type_audiotrack_dark;
+			global::Lottie.Forms.Droid.Resource.Drawable.mr_vol_type_audiotrack_light = global::Neo.Gui.Droid.Resource.Drawable.mr_vol_type_audiotrack_light;
+			global::Lottie.Forms.Droid.Resource.Drawable.navigation_empty_icon = global::Neo.Gui.Droid.Resource.Drawable.navigation_empty_icon;
+			global::Lottie.Forms.Droid.Resource.Drawable.notification_action_background = global::Neo.Gui.Droid.Resource.Drawable.notification_action_background;
+			global::Lottie.Forms.Droid.Resource.Drawable.notification_bg = global::Neo.Gui.Droid.Resource.Drawable.notification_bg;
+			global::Lottie.Forms.Droid.Resource.Drawable.notification_bg_low = global::Neo.Gui.Droid.Resource.Drawable.notification_bg_low;
+			global::Lottie.Forms.Droid.Resource.Drawable.notification_bg_low_normal = global::Neo.Gui.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::Lottie.Forms.Droid.Resource.Drawable.notification_bg_low_pressed = global::Neo.Gui.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::Lottie.Forms.Droid.Resource.Drawable.notification_bg_normal = global::Neo.Gui.Droid.Resource.Drawable.notification_bg_normal;
+			global::Lottie.Forms.Droid.Resource.Drawable.notification_bg_normal_pressed = global::Neo.Gui.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::Lottie.Forms.Droid.Resource.Drawable.notification_icon_background = global::Neo.Gui.Droid.Resource.Drawable.notification_icon_background;
+			global::Lottie.Forms.Droid.Resource.Drawable.notification_template_icon_bg = global::Neo.Gui.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::Lottie.Forms.Droid.Resource.Drawable.notification_template_icon_low_bg = global::Neo.Gui.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::Lottie.Forms.Droid.Resource.Drawable.notification_tile_bg = global::Neo.Gui.Droid.Resource.Drawable.notification_tile_bg;
+			global::Lottie.Forms.Droid.Resource.Drawable.notify_panel_notification_icon_bg = global::Neo.Gui.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Lottie.Forms.Droid.Resource.Id.action0 = global::Neo.Gui.Droid.Resource.Id.action0;
+			global::Lottie.Forms.Droid.Resource.Id.action_bar = global::Neo.Gui.Droid.Resource.Id.action_bar;
+			global::Lottie.Forms.Droid.Resource.Id.action_bar_activity_content = global::Neo.Gui.Droid.Resource.Id.action_bar_activity_content;
+			global::Lottie.Forms.Droid.Resource.Id.action_bar_container = global::Neo.Gui.Droid.Resource.Id.action_bar_container;
+			global::Lottie.Forms.Droid.Resource.Id.action_bar_root = global::Neo.Gui.Droid.Resource.Id.action_bar_root;
+			global::Lottie.Forms.Droid.Resource.Id.action_bar_spinner = global::Neo.Gui.Droid.Resource.Id.action_bar_spinner;
+			global::Lottie.Forms.Droid.Resource.Id.action_bar_subtitle = global::Neo.Gui.Droid.Resource.Id.action_bar_subtitle;
+			global::Lottie.Forms.Droid.Resource.Id.action_bar_title = global::Neo.Gui.Droid.Resource.Id.action_bar_title;
+			global::Lottie.Forms.Droid.Resource.Id.action_container = global::Neo.Gui.Droid.Resource.Id.action_container;
+			global::Lottie.Forms.Droid.Resource.Id.action_context_bar = global::Neo.Gui.Droid.Resource.Id.action_context_bar;
+			global::Lottie.Forms.Droid.Resource.Id.action_divider = global::Neo.Gui.Droid.Resource.Id.action_divider;
+			global::Lottie.Forms.Droid.Resource.Id.action_image = global::Neo.Gui.Droid.Resource.Id.action_image;
+			global::Lottie.Forms.Droid.Resource.Id.action_menu_divider = global::Neo.Gui.Droid.Resource.Id.action_menu_divider;
+			global::Lottie.Forms.Droid.Resource.Id.action_menu_presenter = global::Neo.Gui.Droid.Resource.Id.action_menu_presenter;
+			global::Lottie.Forms.Droid.Resource.Id.action_mode_bar = global::Neo.Gui.Droid.Resource.Id.action_mode_bar;
+			global::Lottie.Forms.Droid.Resource.Id.action_mode_bar_stub = global::Neo.Gui.Droid.Resource.Id.action_mode_bar_stub;
+			global::Lottie.Forms.Droid.Resource.Id.action_mode_close_button = global::Neo.Gui.Droid.Resource.Id.action_mode_close_button;
+			global::Lottie.Forms.Droid.Resource.Id.action_text = global::Neo.Gui.Droid.Resource.Id.action_text;
+			global::Lottie.Forms.Droid.Resource.Id.actions = global::Neo.Gui.Droid.Resource.Id.actions;
+			global::Lottie.Forms.Droid.Resource.Id.activity_chooser_view_content = global::Neo.Gui.Droid.Resource.Id.activity_chooser_view_content;
+			global::Lottie.Forms.Droid.Resource.Id.add = global::Neo.Gui.Droid.Resource.Id.add;
+			global::Lottie.Forms.Droid.Resource.Id.alertTitle = global::Neo.Gui.Droid.Resource.Id.alertTitle;
+			global::Lottie.Forms.Droid.Resource.Id.all = global::Neo.Gui.Droid.Resource.Id.all;
+			global::Lottie.Forms.Droid.Resource.Id.always = global::Neo.Gui.Droid.Resource.Id.always;
+			global::Lottie.Forms.Droid.Resource.Id.auto = global::Neo.Gui.Droid.Resource.Id.auto;
+			global::Lottie.Forms.Droid.Resource.Id.beginning = global::Neo.Gui.Droid.Resource.Id.beginning;
+			global::Lottie.Forms.Droid.Resource.Id.bottom = global::Neo.Gui.Droid.Resource.Id.bottom;
+			global::Lottie.Forms.Droid.Resource.Id.buttonPanel = global::Neo.Gui.Droid.Resource.Id.buttonPanel;
+			global::Lottie.Forms.Droid.Resource.Id.cancel_action = global::Neo.Gui.Droid.Resource.Id.cancel_action;
+			global::Lottie.Forms.Droid.Resource.Id.center = global::Neo.Gui.Droid.Resource.Id.center;
+			global::Lottie.Forms.Droid.Resource.Id.center_horizontal = global::Neo.Gui.Droid.Resource.Id.center_horizontal;
+			global::Lottie.Forms.Droid.Resource.Id.center_vertical = global::Neo.Gui.Droid.Resource.Id.center_vertical;
+			global::Lottie.Forms.Droid.Resource.Id.checkbox = global::Neo.Gui.Droid.Resource.Id.checkbox;
+			global::Lottie.Forms.Droid.Resource.Id.chronometer = global::Neo.Gui.Droid.Resource.Id.chronometer;
+			global::Lottie.Forms.Droid.Resource.Id.clip_horizontal = global::Neo.Gui.Droid.Resource.Id.clip_horizontal;
+			global::Lottie.Forms.Droid.Resource.Id.clip_vertical = global::Neo.Gui.Droid.Resource.Id.clip_vertical;
+			global::Lottie.Forms.Droid.Resource.Id.collapseActionView = global::Neo.Gui.Droid.Resource.Id.collapseActionView;
+			global::Lottie.Forms.Droid.Resource.Id.contentPanel = global::Neo.Gui.Droid.Resource.Id.contentPanel;
+			global::Lottie.Forms.Droid.Resource.Id.custom = global::Neo.Gui.Droid.Resource.Id.custom;
+			global::Lottie.Forms.Droid.Resource.Id.customPanel = global::Neo.Gui.Droid.Resource.Id.customPanel;
+			global::Lottie.Forms.Droid.Resource.Id.decor_content_parent = global::Neo.Gui.Droid.Resource.Id.decor_content_parent;
+			global::Lottie.Forms.Droid.Resource.Id.default_activity_button = global::Neo.Gui.Droid.Resource.Id.default_activity_button;
+			global::Lottie.Forms.Droid.Resource.Id.design_bottom_sheet = global::Neo.Gui.Droid.Resource.Id.design_bottom_sheet;
+			global::Lottie.Forms.Droid.Resource.Id.design_menu_item_action_area = global::Neo.Gui.Droid.Resource.Id.design_menu_item_action_area;
+			global::Lottie.Forms.Droid.Resource.Id.design_menu_item_action_area_stub = global::Neo.Gui.Droid.Resource.Id.design_menu_item_action_area_stub;
+			global::Lottie.Forms.Droid.Resource.Id.design_menu_item_text = global::Neo.Gui.Droid.Resource.Id.design_menu_item_text;
+			global::Lottie.Forms.Droid.Resource.Id.design_navigation_view = global::Neo.Gui.Droid.Resource.Id.design_navigation_view;
+			global::Lottie.Forms.Droid.Resource.Id.disableHome = global::Neo.Gui.Droid.Resource.Id.disableHome;
+			global::Lottie.Forms.Droid.Resource.Id.edit_query = global::Neo.Gui.Droid.Resource.Id.edit_query;
+			global::Lottie.Forms.Droid.Resource.Id.end = global::Neo.Gui.Droid.Resource.Id.end;
+			global::Lottie.Forms.Droid.Resource.Id.end_padder = global::Neo.Gui.Droid.Resource.Id.end_padder;
+			global::Lottie.Forms.Droid.Resource.Id.enterAlways = global::Neo.Gui.Droid.Resource.Id.enterAlways;
+			global::Lottie.Forms.Droid.Resource.Id.enterAlwaysCollapsed = global::Neo.Gui.Droid.Resource.Id.enterAlwaysCollapsed;
+			global::Lottie.Forms.Droid.Resource.Id.exitUntilCollapsed = global::Neo.Gui.Droid.Resource.Id.exitUntilCollapsed;
+			global::Lottie.Forms.Droid.Resource.Id.expand_activities_button = global::Neo.Gui.Droid.Resource.Id.expand_activities_button;
+			global::Lottie.Forms.Droid.Resource.Id.expanded_menu = global::Neo.Gui.Droid.Resource.Id.expanded_menu;
+			global::Lottie.Forms.Droid.Resource.Id.fill = global::Neo.Gui.Droid.Resource.Id.fill;
+			global::Lottie.Forms.Droid.Resource.Id.fill_horizontal = global::Neo.Gui.Droid.Resource.Id.fill_horizontal;
+			global::Lottie.Forms.Droid.Resource.Id.fill_vertical = global::Neo.Gui.Droid.Resource.Id.fill_vertical;
+			global::Lottie.Forms.Droid.Resource.Id.@fixed = global::Neo.Gui.Droid.Resource.Id.@fixed;
+			global::Lottie.Forms.Droid.Resource.Id.home = global::Neo.Gui.Droid.Resource.Id.home;
+			global::Lottie.Forms.Droid.Resource.Id.homeAsUp = global::Neo.Gui.Droid.Resource.Id.homeAsUp;
+			global::Lottie.Forms.Droid.Resource.Id.icon = global::Neo.Gui.Droid.Resource.Id.icon;
+			global::Lottie.Forms.Droid.Resource.Id.icon_group = global::Neo.Gui.Droid.Resource.Id.icon_group;
+			global::Lottie.Forms.Droid.Resource.Id.ifRoom = global::Neo.Gui.Droid.Resource.Id.ifRoom;
+			global::Lottie.Forms.Droid.Resource.Id.image = global::Neo.Gui.Droid.Resource.Id.image;
+			global::Lottie.Forms.Droid.Resource.Id.info = global::Neo.Gui.Droid.Resource.Id.info;
+			global::Lottie.Forms.Droid.Resource.Id.item_touch_helper_previous_elevation = global::Neo.Gui.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::Lottie.Forms.Droid.Resource.Id.largeLabel = global::Neo.Gui.Droid.Resource.Id.largeLabel;
+			global::Lottie.Forms.Droid.Resource.Id.left = global::Neo.Gui.Droid.Resource.Id.left;
+			global::Lottie.Forms.Droid.Resource.Id.line1 = global::Neo.Gui.Droid.Resource.Id.line1;
+			global::Lottie.Forms.Droid.Resource.Id.line3 = global::Neo.Gui.Droid.Resource.Id.line3;
+			global::Lottie.Forms.Droid.Resource.Id.listMode = global::Neo.Gui.Droid.Resource.Id.listMode;
+			global::Lottie.Forms.Droid.Resource.Id.list_item = global::Neo.Gui.Droid.Resource.Id.list_item;
+			global::Lottie.Forms.Droid.Resource.Id.lottie_layer_name = global::Neo.Gui.Droid.Resource.Id.lottie_layer_name;
+			global::Lottie.Forms.Droid.Resource.Id.masked = global::Neo.Gui.Droid.Resource.Id.masked;
+			global::Lottie.Forms.Droid.Resource.Id.media_actions = global::Neo.Gui.Droid.Resource.Id.media_actions;
+			global::Lottie.Forms.Droid.Resource.Id.middle = global::Neo.Gui.Droid.Resource.Id.middle;
+			global::Lottie.Forms.Droid.Resource.Id.mini = global::Neo.Gui.Droid.Resource.Id.mini;
+			global::Lottie.Forms.Droid.Resource.Id.mr_art = global::Neo.Gui.Droid.Resource.Id.mr_art;
+			global::Lottie.Forms.Droid.Resource.Id.mr_chooser_list = global::Neo.Gui.Droid.Resource.Id.mr_chooser_list;
+			global::Lottie.Forms.Droid.Resource.Id.mr_chooser_route_desc = global::Neo.Gui.Droid.Resource.Id.mr_chooser_route_desc;
+			global::Lottie.Forms.Droid.Resource.Id.mr_chooser_route_icon = global::Neo.Gui.Droid.Resource.Id.mr_chooser_route_icon;
+			global::Lottie.Forms.Droid.Resource.Id.mr_chooser_route_name = global::Neo.Gui.Droid.Resource.Id.mr_chooser_route_name;
+			global::Lottie.Forms.Droid.Resource.Id.mr_chooser_title = global::Neo.Gui.Droid.Resource.Id.mr_chooser_title;
+			global::Lottie.Forms.Droid.Resource.Id.mr_close = global::Neo.Gui.Droid.Resource.Id.mr_close;
+			global::Lottie.Forms.Droid.Resource.Id.mr_control_divider = global::Neo.Gui.Droid.Resource.Id.mr_control_divider;
+			global::Lottie.Forms.Droid.Resource.Id.mr_control_playback_ctrl = global::Neo.Gui.Droid.Resource.Id.mr_control_playback_ctrl;
+			global::Lottie.Forms.Droid.Resource.Id.mr_control_subtitle = global::Neo.Gui.Droid.Resource.Id.mr_control_subtitle;
+			global::Lottie.Forms.Droid.Resource.Id.mr_control_title = global::Neo.Gui.Droid.Resource.Id.mr_control_title;
+			global::Lottie.Forms.Droid.Resource.Id.mr_control_title_container = global::Neo.Gui.Droid.Resource.Id.mr_control_title_container;
+			global::Lottie.Forms.Droid.Resource.Id.mr_custom_control = global::Neo.Gui.Droid.Resource.Id.mr_custom_control;
+			global::Lottie.Forms.Droid.Resource.Id.mr_default_control = global::Neo.Gui.Droid.Resource.Id.mr_default_control;
+			global::Lottie.Forms.Droid.Resource.Id.mr_dialog_area = global::Neo.Gui.Droid.Resource.Id.mr_dialog_area;
+			global::Lottie.Forms.Droid.Resource.Id.mr_expandable_area = global::Neo.Gui.Droid.Resource.Id.mr_expandable_area;
+			global::Lottie.Forms.Droid.Resource.Id.mr_group_expand_collapse = global::Neo.Gui.Droid.Resource.Id.mr_group_expand_collapse;
+			global::Lottie.Forms.Droid.Resource.Id.mr_media_main_control = global::Neo.Gui.Droid.Resource.Id.mr_media_main_control;
+			global::Lottie.Forms.Droid.Resource.Id.mr_name = global::Neo.Gui.Droid.Resource.Id.mr_name;
+			global::Lottie.Forms.Droid.Resource.Id.mr_playback_control = global::Neo.Gui.Droid.Resource.Id.mr_playback_control;
+			global::Lottie.Forms.Droid.Resource.Id.mr_title_bar = global::Neo.Gui.Droid.Resource.Id.mr_title_bar;
+			global::Lottie.Forms.Droid.Resource.Id.mr_volume_control = global::Neo.Gui.Droid.Resource.Id.mr_volume_control;
+			global::Lottie.Forms.Droid.Resource.Id.mr_volume_group_list = global::Neo.Gui.Droid.Resource.Id.mr_volume_group_list;
+			global::Lottie.Forms.Droid.Resource.Id.mr_volume_item_icon = global::Neo.Gui.Droid.Resource.Id.mr_volume_item_icon;
+			global::Lottie.Forms.Droid.Resource.Id.mr_volume_slider = global::Neo.Gui.Droid.Resource.Id.mr_volume_slider;
+			global::Lottie.Forms.Droid.Resource.Id.multiply = global::Neo.Gui.Droid.Resource.Id.multiply;
+			global::Lottie.Forms.Droid.Resource.Id.navigation_header_container = global::Neo.Gui.Droid.Resource.Id.navigation_header_container;
+			global::Lottie.Forms.Droid.Resource.Id.never = global::Neo.Gui.Droid.Resource.Id.never;
+			global::Lottie.Forms.Droid.Resource.Id.none = global::Neo.Gui.Droid.Resource.Id.none;
+			global::Lottie.Forms.Droid.Resource.Id.normal = global::Neo.Gui.Droid.Resource.Id.normal;
+			global::Lottie.Forms.Droid.Resource.Id.notification_background = global::Neo.Gui.Droid.Resource.Id.notification_background;
+			global::Lottie.Forms.Droid.Resource.Id.notification_main_column = global::Neo.Gui.Droid.Resource.Id.notification_main_column;
+			global::Lottie.Forms.Droid.Resource.Id.notification_main_column_container = global::Neo.Gui.Droid.Resource.Id.notification_main_column_container;
+			global::Lottie.Forms.Droid.Resource.Id.parallax = global::Neo.Gui.Droid.Resource.Id.parallax;
+			global::Lottie.Forms.Droid.Resource.Id.parentPanel = global::Neo.Gui.Droid.Resource.Id.parentPanel;
+			global::Lottie.Forms.Droid.Resource.Id.pin = global::Neo.Gui.Droid.Resource.Id.pin;
+			global::Lottie.Forms.Droid.Resource.Id.progress_circular = global::Neo.Gui.Droid.Resource.Id.progress_circular;
+			global::Lottie.Forms.Droid.Resource.Id.progress_horizontal = global::Neo.Gui.Droid.Resource.Id.progress_horizontal;
+			global::Lottie.Forms.Droid.Resource.Id.radio = global::Neo.Gui.Droid.Resource.Id.radio;
+			global::Lottie.Forms.Droid.Resource.Id.right = global::Neo.Gui.Droid.Resource.Id.right;
+			global::Lottie.Forms.Droid.Resource.Id.right_icon = global::Neo.Gui.Droid.Resource.Id.right_icon;
+			global::Lottie.Forms.Droid.Resource.Id.right_side = global::Neo.Gui.Droid.Resource.Id.right_side;
+			global::Lottie.Forms.Droid.Resource.Id.screen = global::Neo.Gui.Droid.Resource.Id.screen;
+			global::Lottie.Forms.Droid.Resource.Id.scroll = global::Neo.Gui.Droid.Resource.Id.scroll;
+			global::Lottie.Forms.Droid.Resource.Id.scrollIndicatorDown = global::Neo.Gui.Droid.Resource.Id.scrollIndicatorDown;
+			global::Lottie.Forms.Droid.Resource.Id.scrollIndicatorUp = global::Neo.Gui.Droid.Resource.Id.scrollIndicatorUp;
+			global::Lottie.Forms.Droid.Resource.Id.scrollView = global::Neo.Gui.Droid.Resource.Id.scrollView;
+			global::Lottie.Forms.Droid.Resource.Id.scrollable = global::Neo.Gui.Droid.Resource.Id.scrollable;
+			global::Lottie.Forms.Droid.Resource.Id.search_badge = global::Neo.Gui.Droid.Resource.Id.search_badge;
+			global::Lottie.Forms.Droid.Resource.Id.search_bar = global::Neo.Gui.Droid.Resource.Id.search_bar;
+			global::Lottie.Forms.Droid.Resource.Id.search_button = global::Neo.Gui.Droid.Resource.Id.search_button;
+			global::Lottie.Forms.Droid.Resource.Id.search_close_btn = global::Neo.Gui.Droid.Resource.Id.search_close_btn;
+			global::Lottie.Forms.Droid.Resource.Id.search_edit_frame = global::Neo.Gui.Droid.Resource.Id.search_edit_frame;
+			global::Lottie.Forms.Droid.Resource.Id.search_go_btn = global::Neo.Gui.Droid.Resource.Id.search_go_btn;
+			global::Lottie.Forms.Droid.Resource.Id.search_mag_icon = global::Neo.Gui.Droid.Resource.Id.search_mag_icon;
+			global::Lottie.Forms.Droid.Resource.Id.search_plate = global::Neo.Gui.Droid.Resource.Id.search_plate;
+			global::Lottie.Forms.Droid.Resource.Id.search_src_text = global::Neo.Gui.Droid.Resource.Id.search_src_text;
+			global::Lottie.Forms.Droid.Resource.Id.search_voice_btn = global::Neo.Gui.Droid.Resource.Id.search_voice_btn;
+			global::Lottie.Forms.Droid.Resource.Id.select_dialog_listview = global::Neo.Gui.Droid.Resource.Id.select_dialog_listview;
+			global::Lottie.Forms.Droid.Resource.Id.shortcut = global::Neo.Gui.Droid.Resource.Id.shortcut;
+			global::Lottie.Forms.Droid.Resource.Id.showCustom = global::Neo.Gui.Droid.Resource.Id.showCustom;
+			global::Lottie.Forms.Droid.Resource.Id.showHome = global::Neo.Gui.Droid.Resource.Id.showHome;
+			global::Lottie.Forms.Droid.Resource.Id.showTitle = global::Neo.Gui.Droid.Resource.Id.showTitle;
+			global::Lottie.Forms.Droid.Resource.Id.smallLabel = global::Neo.Gui.Droid.Resource.Id.smallLabel;
+			global::Lottie.Forms.Droid.Resource.Id.snackbar_action = global::Neo.Gui.Droid.Resource.Id.snackbar_action;
+			global::Lottie.Forms.Droid.Resource.Id.snackbar_text = global::Neo.Gui.Droid.Resource.Id.snackbar_text;
+			global::Lottie.Forms.Droid.Resource.Id.snap = global::Neo.Gui.Droid.Resource.Id.snap;
+			global::Lottie.Forms.Droid.Resource.Id.spacer = global::Neo.Gui.Droid.Resource.Id.spacer;
+			global::Lottie.Forms.Droid.Resource.Id.split_action_bar = global::Neo.Gui.Droid.Resource.Id.split_action_bar;
+			global::Lottie.Forms.Droid.Resource.Id.src_atop = global::Neo.Gui.Droid.Resource.Id.src_atop;
+			global::Lottie.Forms.Droid.Resource.Id.src_in = global::Neo.Gui.Droid.Resource.Id.src_in;
+			global::Lottie.Forms.Droid.Resource.Id.src_over = global::Neo.Gui.Droid.Resource.Id.src_over;
+			global::Lottie.Forms.Droid.Resource.Id.start = global::Neo.Gui.Droid.Resource.Id.start;
+			global::Lottie.Forms.Droid.Resource.Id.status_bar_latest_event_content = global::Neo.Gui.Droid.Resource.Id.status_bar_latest_event_content;
+			global::Lottie.Forms.Droid.Resource.Id.strong = global::Neo.Gui.Droid.Resource.Id.strong;
+			global::Lottie.Forms.Droid.Resource.Id.submenuarrow = global::Neo.Gui.Droid.Resource.Id.submenuarrow;
+			global::Lottie.Forms.Droid.Resource.Id.submit_area = global::Neo.Gui.Droid.Resource.Id.submit_area;
+			global::Lottie.Forms.Droid.Resource.Id.tabMode = global::Neo.Gui.Droid.Resource.Id.tabMode;
+			global::Lottie.Forms.Droid.Resource.Id.text = global::Neo.Gui.Droid.Resource.Id.text;
+			global::Lottie.Forms.Droid.Resource.Id.text2 = global::Neo.Gui.Droid.Resource.Id.text2;
+			global::Lottie.Forms.Droid.Resource.Id.textSpacerNoButtons = global::Neo.Gui.Droid.Resource.Id.textSpacerNoButtons;
+			global::Lottie.Forms.Droid.Resource.Id.textSpacerNoTitle = global::Neo.Gui.Droid.Resource.Id.textSpacerNoTitle;
+			global::Lottie.Forms.Droid.Resource.Id.text_input_password_toggle = global::Neo.Gui.Droid.Resource.Id.text_input_password_toggle;
+			global::Lottie.Forms.Droid.Resource.Id.textinput_counter = global::Neo.Gui.Droid.Resource.Id.textinput_counter;
+			global::Lottie.Forms.Droid.Resource.Id.textinput_error = global::Neo.Gui.Droid.Resource.Id.textinput_error;
+			global::Lottie.Forms.Droid.Resource.Id.time = global::Neo.Gui.Droid.Resource.Id.time;
+			global::Lottie.Forms.Droid.Resource.Id.title = global::Neo.Gui.Droid.Resource.Id.title;
+			global::Lottie.Forms.Droid.Resource.Id.titleDividerNoCustom = global::Neo.Gui.Droid.Resource.Id.titleDividerNoCustom;
+			global::Lottie.Forms.Droid.Resource.Id.title_template = global::Neo.Gui.Droid.Resource.Id.title_template;
+			global::Lottie.Forms.Droid.Resource.Id.top = global::Neo.Gui.Droid.Resource.Id.top;
+			global::Lottie.Forms.Droid.Resource.Id.topPanel = global::Neo.Gui.Droid.Resource.Id.topPanel;
+			global::Lottie.Forms.Droid.Resource.Id.touch_outside = global::Neo.Gui.Droid.Resource.Id.touch_outside;
+			global::Lottie.Forms.Droid.Resource.Id.transition_current_scene = global::Neo.Gui.Droid.Resource.Id.transition_current_scene;
+			global::Lottie.Forms.Droid.Resource.Id.transition_scene_layoutid_cache = global::Neo.Gui.Droid.Resource.Id.transition_scene_layoutid_cache;
+			global::Lottie.Forms.Droid.Resource.Id.up = global::Neo.Gui.Droid.Resource.Id.up;
+			global::Lottie.Forms.Droid.Resource.Id.useLogo = global::Neo.Gui.Droid.Resource.Id.useLogo;
+			global::Lottie.Forms.Droid.Resource.Id.view_offset_helper = global::Neo.Gui.Droid.Resource.Id.view_offset_helper;
+			global::Lottie.Forms.Droid.Resource.Id.visible = global::Neo.Gui.Droid.Resource.Id.visible;
+			global::Lottie.Forms.Droid.Resource.Id.volume_item_container = global::Neo.Gui.Droid.Resource.Id.volume_item_container;
+			global::Lottie.Forms.Droid.Resource.Id.weak = global::Neo.Gui.Droid.Resource.Id.weak;
+			global::Lottie.Forms.Droid.Resource.Id.withText = global::Neo.Gui.Droid.Resource.Id.withText;
+			global::Lottie.Forms.Droid.Resource.Id.wrap_content = global::Neo.Gui.Droid.Resource.Id.wrap_content;
+			global::Lottie.Forms.Droid.Resource.Integer.abc_config_activityDefaultDur = global::Neo.Gui.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::Lottie.Forms.Droid.Resource.Integer.abc_config_activityShortDur = global::Neo.Gui.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::Lottie.Forms.Droid.Resource.Integer.app_bar_elevation_anim_duration = global::Neo.Gui.Droid.Resource.Integer.app_bar_elevation_anim_duration;
+			global::Lottie.Forms.Droid.Resource.Integer.bottom_sheet_slide_duration = global::Neo.Gui.Droid.Resource.Integer.bottom_sheet_slide_duration;
+			global::Lottie.Forms.Droid.Resource.Integer.cancel_button_image_alpha = global::Neo.Gui.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::Lottie.Forms.Droid.Resource.Integer.design_snackbar_text_max_lines = global::Neo.Gui.Droid.Resource.Integer.design_snackbar_text_max_lines;
+			global::Lottie.Forms.Droid.Resource.Integer.hide_password_duration = global::Neo.Gui.Droid.Resource.Integer.hide_password_duration;
+			global::Lottie.Forms.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms = global::Neo.Gui.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms;
+			global::Lottie.Forms.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms = global::Neo.Gui.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms;
+			global::Lottie.Forms.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms = global::Neo.Gui.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms;
+			global::Lottie.Forms.Droid.Resource.Integer.show_password_duration = global::Neo.Gui.Droid.Resource.Integer.show_password_duration;
+			global::Lottie.Forms.Droid.Resource.Integer.status_bar_notification_info_maxnum = global::Neo.Gui.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Lottie.Forms.Droid.Resource.Interpolator.mr_fast_out_slow_in = global::Neo.Gui.Droid.Resource.Interpolator.mr_fast_out_slow_in;
+			global::Lottie.Forms.Droid.Resource.Interpolator.mr_linear_out_slow_in = global::Neo.Gui.Droid.Resource.Interpolator.mr_linear_out_slow_in;
+			global::Lottie.Forms.Droid.Resource.Layout.abc_action_bar_title_item = global::Neo.Gui.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::Lottie.Forms.Droid.Resource.Layout.abc_action_bar_up_container = global::Neo.Gui.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::Lottie.Forms.Droid.Resource.Layout.abc_action_bar_view_list_nav_layout = global::Neo.Gui.Droid.Resource.Layout.abc_action_bar_view_list_nav_layout;
+			global::Lottie.Forms.Droid.Resource.Layout.abc_action_menu_item_layout = global::Neo.Gui.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::Lottie.Forms.Droid.Resource.Layout.abc_action_menu_layout = global::Neo.Gui.Droid.Resource.Layout.abc_action_menu_layout;
+			global::Lottie.Forms.Droid.Resource.Layout.abc_action_mode_bar = global::Neo.Gui.Droid.Resource.Layout.abc_action_mode_bar;
+			global::Lottie.Forms.Droid.Resource.Layout.abc_action_mode_close_item_material = global::Neo.Gui.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::Lottie.Forms.Droid.Resource.Layout.abc_activity_chooser_view = global::Neo.Gui.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::Lottie.Forms.Droid.Resource.Layout.abc_activity_chooser_view_list_item = global::Neo.Gui.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::Lottie.Forms.Droid.Resource.Layout.abc_alert_dialog_button_bar_material = global::Neo.Gui.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::Lottie.Forms.Droid.Resource.Layout.abc_alert_dialog_material = global::Neo.Gui.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::Lottie.Forms.Droid.Resource.Layout.abc_alert_dialog_title_material = global::Neo.Gui.Droid.Resource.Layout.abc_alert_dialog_title_material;
+			global::Lottie.Forms.Droid.Resource.Layout.abc_dialog_title_material = global::Neo.Gui.Droid.Resource.Layout.abc_dialog_title_material;
+			global::Lottie.Forms.Droid.Resource.Layout.abc_expanded_menu_layout = global::Neo.Gui.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::Lottie.Forms.Droid.Resource.Layout.abc_list_menu_item_checkbox = global::Neo.Gui.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::Lottie.Forms.Droid.Resource.Layout.abc_list_menu_item_icon = global::Neo.Gui.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::Lottie.Forms.Droid.Resource.Layout.abc_list_menu_item_layout = global::Neo.Gui.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::Lottie.Forms.Droid.Resource.Layout.abc_list_menu_item_radio = global::Neo.Gui.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::Lottie.Forms.Droid.Resource.Layout.abc_popup_menu_header_item_layout = global::Neo.Gui.Droid.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::Lottie.Forms.Droid.Resource.Layout.abc_popup_menu_item_layout = global::Neo.Gui.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::Lottie.Forms.Droid.Resource.Layout.abc_screen_content_include = global::Neo.Gui.Droid.Resource.Layout.abc_screen_content_include;
+			global::Lottie.Forms.Droid.Resource.Layout.abc_screen_simple = global::Neo.Gui.Droid.Resource.Layout.abc_screen_simple;
+			global::Lottie.Forms.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode = global::Neo.Gui.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::Lottie.Forms.Droid.Resource.Layout.abc_screen_toolbar = global::Neo.Gui.Droid.Resource.Layout.abc_screen_toolbar;
+			global::Lottie.Forms.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line = global::Neo.Gui.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::Lottie.Forms.Droid.Resource.Layout.abc_search_view = global::Neo.Gui.Droid.Resource.Layout.abc_search_view;
+			global::Lottie.Forms.Droid.Resource.Layout.abc_select_dialog_material = global::Neo.Gui.Droid.Resource.Layout.abc_select_dialog_material;
+			global::Lottie.Forms.Droid.Resource.Layout.design_bottom_navigation_item = global::Neo.Gui.Droid.Resource.Layout.design_bottom_navigation_item;
+			global::Lottie.Forms.Droid.Resource.Layout.design_bottom_sheet_dialog = global::Neo.Gui.Droid.Resource.Layout.design_bottom_sheet_dialog;
+			global::Lottie.Forms.Droid.Resource.Layout.design_layout_snackbar = global::Neo.Gui.Droid.Resource.Layout.design_layout_snackbar;
+			global::Lottie.Forms.Droid.Resource.Layout.design_layout_snackbar_include = global::Neo.Gui.Droid.Resource.Layout.design_layout_snackbar_include;
+			global::Lottie.Forms.Droid.Resource.Layout.design_layout_tab_icon = global::Neo.Gui.Droid.Resource.Layout.design_layout_tab_icon;
+			global::Lottie.Forms.Droid.Resource.Layout.design_layout_tab_text = global::Neo.Gui.Droid.Resource.Layout.design_layout_tab_text;
+			global::Lottie.Forms.Droid.Resource.Layout.design_menu_item_action_area = global::Neo.Gui.Droid.Resource.Layout.design_menu_item_action_area;
+			global::Lottie.Forms.Droid.Resource.Layout.design_navigation_item = global::Neo.Gui.Droid.Resource.Layout.design_navigation_item;
+			global::Lottie.Forms.Droid.Resource.Layout.design_navigation_item_header = global::Neo.Gui.Droid.Resource.Layout.design_navigation_item_header;
+			global::Lottie.Forms.Droid.Resource.Layout.design_navigation_item_separator = global::Neo.Gui.Droid.Resource.Layout.design_navigation_item_separator;
+			global::Lottie.Forms.Droid.Resource.Layout.design_navigation_item_subheader = global::Neo.Gui.Droid.Resource.Layout.design_navigation_item_subheader;
+			global::Lottie.Forms.Droid.Resource.Layout.design_navigation_menu = global::Neo.Gui.Droid.Resource.Layout.design_navigation_menu;
+			global::Lottie.Forms.Droid.Resource.Layout.design_navigation_menu_item = global::Neo.Gui.Droid.Resource.Layout.design_navigation_menu_item;
+			global::Lottie.Forms.Droid.Resource.Layout.design_text_input_password_icon = global::Neo.Gui.Droid.Resource.Layout.design_text_input_password_icon;
+			global::Lottie.Forms.Droid.Resource.Layout.mr_chooser_dialog = global::Neo.Gui.Droid.Resource.Layout.mr_chooser_dialog;
+			global::Lottie.Forms.Droid.Resource.Layout.mr_chooser_list_item = global::Neo.Gui.Droid.Resource.Layout.mr_chooser_list_item;
+			global::Lottie.Forms.Droid.Resource.Layout.mr_controller_material_dialog_b = global::Neo.Gui.Droid.Resource.Layout.mr_controller_material_dialog_b;
+			global::Lottie.Forms.Droid.Resource.Layout.mr_controller_volume_item = global::Neo.Gui.Droid.Resource.Layout.mr_controller_volume_item;
+			global::Lottie.Forms.Droid.Resource.Layout.mr_playback_control = global::Neo.Gui.Droid.Resource.Layout.mr_playback_control;
+			global::Lottie.Forms.Droid.Resource.Layout.mr_volume_control = global::Neo.Gui.Droid.Resource.Layout.mr_volume_control;
+			global::Lottie.Forms.Droid.Resource.Layout.notification_action = global::Neo.Gui.Droid.Resource.Layout.notification_action;
+			global::Lottie.Forms.Droid.Resource.Layout.notification_action_tombstone = global::Neo.Gui.Droid.Resource.Layout.notification_action_tombstone;
+			global::Lottie.Forms.Droid.Resource.Layout.notification_media_action = global::Neo.Gui.Droid.Resource.Layout.notification_media_action;
+			global::Lottie.Forms.Droid.Resource.Layout.notification_media_cancel_action = global::Neo.Gui.Droid.Resource.Layout.notification_media_cancel_action;
+			global::Lottie.Forms.Droid.Resource.Layout.notification_template_big_media = global::Neo.Gui.Droid.Resource.Layout.notification_template_big_media;
+			global::Lottie.Forms.Droid.Resource.Layout.notification_template_big_media_custom = global::Neo.Gui.Droid.Resource.Layout.notification_template_big_media_custom;
+			global::Lottie.Forms.Droid.Resource.Layout.notification_template_big_media_narrow = global::Neo.Gui.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::Lottie.Forms.Droid.Resource.Layout.notification_template_big_media_narrow_custom = global::Neo.Gui.Droid.Resource.Layout.notification_template_big_media_narrow_custom;
+			global::Lottie.Forms.Droid.Resource.Layout.notification_template_custom_big = global::Neo.Gui.Droid.Resource.Layout.notification_template_custom_big;
+			global::Lottie.Forms.Droid.Resource.Layout.notification_template_icon_group = global::Neo.Gui.Droid.Resource.Layout.notification_template_icon_group;
+			global::Lottie.Forms.Droid.Resource.Layout.notification_template_lines_media = global::Neo.Gui.Droid.Resource.Layout.notification_template_lines_media;
+			global::Lottie.Forms.Droid.Resource.Layout.notification_template_media = global::Neo.Gui.Droid.Resource.Layout.notification_template_media;
+			global::Lottie.Forms.Droid.Resource.Layout.notification_template_media_custom = global::Neo.Gui.Droid.Resource.Layout.notification_template_media_custom;
+			global::Lottie.Forms.Droid.Resource.Layout.notification_template_part_chronometer = global::Neo.Gui.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::Lottie.Forms.Droid.Resource.Layout.notification_template_part_time = global::Neo.Gui.Droid.Resource.Layout.notification_template_part_time;
+			global::Lottie.Forms.Droid.Resource.Layout.select_dialog_item_material = global::Neo.Gui.Droid.Resource.Layout.select_dialog_item_material;
+			global::Lottie.Forms.Droid.Resource.Layout.select_dialog_multichoice_material = global::Neo.Gui.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::Lottie.Forms.Droid.Resource.Layout.select_dialog_singlechoice_material = global::Neo.Gui.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::Lottie.Forms.Droid.Resource.Layout.support_simple_spinner_dropdown_item = global::Neo.Gui.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::Lottie.Forms.Droid.Resource.String.ApplicationName = global::Neo.Gui.Droid.Resource.String.ApplicationName;
+			global::Lottie.Forms.Droid.Resource.String.Hello = global::Neo.Gui.Droid.Resource.String.Hello;
+			global::Lottie.Forms.Droid.Resource.String.abc_action_bar_home_description = global::Neo.Gui.Droid.Resource.String.abc_action_bar_home_description;
+			global::Lottie.Forms.Droid.Resource.String.abc_action_bar_home_description_format = global::Neo.Gui.Droid.Resource.String.abc_action_bar_home_description_format;
+			global::Lottie.Forms.Droid.Resource.String.abc_action_bar_home_subtitle_description_format = global::Neo.Gui.Droid.Resource.String.abc_action_bar_home_subtitle_description_format;
+			global::Lottie.Forms.Droid.Resource.String.abc_action_bar_up_description = global::Neo.Gui.Droid.Resource.String.abc_action_bar_up_description;
+			global::Lottie.Forms.Droid.Resource.String.abc_action_menu_overflow_description = global::Neo.Gui.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::Lottie.Forms.Droid.Resource.String.abc_action_mode_done = global::Neo.Gui.Droid.Resource.String.abc_action_mode_done;
+			global::Lottie.Forms.Droid.Resource.String.abc_activity_chooser_view_see_all = global::Neo.Gui.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::Lottie.Forms.Droid.Resource.String.abc_activitychooserview_choose_application = global::Neo.Gui.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::Lottie.Forms.Droid.Resource.String.abc_capital_off = global::Neo.Gui.Droid.Resource.String.abc_capital_off;
+			global::Lottie.Forms.Droid.Resource.String.abc_capital_on = global::Neo.Gui.Droid.Resource.String.abc_capital_on;
+			global::Lottie.Forms.Droid.Resource.String.abc_font_family_body_1_material = global::Neo.Gui.Droid.Resource.String.abc_font_family_body_1_material;
+			global::Lottie.Forms.Droid.Resource.String.abc_font_family_body_2_material = global::Neo.Gui.Droid.Resource.String.abc_font_family_body_2_material;
+			global::Lottie.Forms.Droid.Resource.String.abc_font_family_button_material = global::Neo.Gui.Droid.Resource.String.abc_font_family_button_material;
+			global::Lottie.Forms.Droid.Resource.String.abc_font_family_caption_material = global::Neo.Gui.Droid.Resource.String.abc_font_family_caption_material;
+			global::Lottie.Forms.Droid.Resource.String.abc_font_family_display_1_material = global::Neo.Gui.Droid.Resource.String.abc_font_family_display_1_material;
+			global::Lottie.Forms.Droid.Resource.String.abc_font_family_display_2_material = global::Neo.Gui.Droid.Resource.String.abc_font_family_display_2_material;
+			global::Lottie.Forms.Droid.Resource.String.abc_font_family_display_3_material = global::Neo.Gui.Droid.Resource.String.abc_font_family_display_3_material;
+			global::Lottie.Forms.Droid.Resource.String.abc_font_family_display_4_material = global::Neo.Gui.Droid.Resource.String.abc_font_family_display_4_material;
+			global::Lottie.Forms.Droid.Resource.String.abc_font_family_headline_material = global::Neo.Gui.Droid.Resource.String.abc_font_family_headline_material;
+			global::Lottie.Forms.Droid.Resource.String.abc_font_family_menu_material = global::Neo.Gui.Droid.Resource.String.abc_font_family_menu_material;
+			global::Lottie.Forms.Droid.Resource.String.abc_font_family_subhead_material = global::Neo.Gui.Droid.Resource.String.abc_font_family_subhead_material;
+			global::Lottie.Forms.Droid.Resource.String.abc_font_family_title_material = global::Neo.Gui.Droid.Resource.String.abc_font_family_title_material;
+			global::Lottie.Forms.Droid.Resource.String.abc_search_hint = global::Neo.Gui.Droid.Resource.String.abc_search_hint;
+			global::Lottie.Forms.Droid.Resource.String.abc_searchview_description_clear = global::Neo.Gui.Droid.Resource.String.abc_searchview_description_clear;
+			global::Lottie.Forms.Droid.Resource.String.abc_searchview_description_query = global::Neo.Gui.Droid.Resource.String.abc_searchview_description_query;
+			global::Lottie.Forms.Droid.Resource.String.abc_searchview_description_search = global::Neo.Gui.Droid.Resource.String.abc_searchview_description_search;
+			global::Lottie.Forms.Droid.Resource.String.abc_searchview_description_submit = global::Neo.Gui.Droid.Resource.String.abc_searchview_description_submit;
+			global::Lottie.Forms.Droid.Resource.String.abc_searchview_description_voice = global::Neo.Gui.Droid.Resource.String.abc_searchview_description_voice;
+			global::Lottie.Forms.Droid.Resource.String.abc_shareactionprovider_share_with = global::Neo.Gui.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::Lottie.Forms.Droid.Resource.String.abc_shareactionprovider_share_with_application = global::Neo.Gui.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::Lottie.Forms.Droid.Resource.String.abc_toolbar_collapse_description = global::Neo.Gui.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::Lottie.Forms.Droid.Resource.String.appbar_scrolling_view_behavior = global::Neo.Gui.Droid.Resource.String.appbar_scrolling_view_behavior;
+			global::Lottie.Forms.Droid.Resource.String.bottom_sheet_behavior = global::Neo.Gui.Droid.Resource.String.bottom_sheet_behavior;
+			global::Lottie.Forms.Droid.Resource.String.character_counter_pattern = global::Neo.Gui.Droid.Resource.String.character_counter_pattern;
+			global::Lottie.Forms.Droid.Resource.String.mr_button_content_description = global::Neo.Gui.Droid.Resource.String.mr_button_content_description;
+			global::Lottie.Forms.Droid.Resource.String.mr_cast_button_connected = global::Neo.Gui.Droid.Resource.String.mr_cast_button_connected;
+			global::Lottie.Forms.Droid.Resource.String.mr_cast_button_connecting = global::Neo.Gui.Droid.Resource.String.mr_cast_button_connecting;
+			global::Lottie.Forms.Droid.Resource.String.mr_cast_button_disconnected = global::Neo.Gui.Droid.Resource.String.mr_cast_button_disconnected;
+			global::Lottie.Forms.Droid.Resource.String.mr_chooser_searching = global::Neo.Gui.Droid.Resource.String.mr_chooser_searching;
+			global::Lottie.Forms.Droid.Resource.String.mr_chooser_title = global::Neo.Gui.Droid.Resource.String.mr_chooser_title;
+			global::Lottie.Forms.Droid.Resource.String.mr_controller_album_art = global::Neo.Gui.Droid.Resource.String.mr_controller_album_art;
+			global::Lottie.Forms.Droid.Resource.String.mr_controller_casting_screen = global::Neo.Gui.Droid.Resource.String.mr_controller_casting_screen;
+			global::Lottie.Forms.Droid.Resource.String.mr_controller_close_description = global::Neo.Gui.Droid.Resource.String.mr_controller_close_description;
+			global::Lottie.Forms.Droid.Resource.String.mr_controller_collapse_group = global::Neo.Gui.Droid.Resource.String.mr_controller_collapse_group;
+			global::Lottie.Forms.Droid.Resource.String.mr_controller_disconnect = global::Neo.Gui.Droid.Resource.String.mr_controller_disconnect;
+			global::Lottie.Forms.Droid.Resource.String.mr_controller_expand_group = global::Neo.Gui.Droid.Resource.String.mr_controller_expand_group;
+			global::Lottie.Forms.Droid.Resource.String.mr_controller_no_info_available = global::Neo.Gui.Droid.Resource.String.mr_controller_no_info_available;
+			global::Lottie.Forms.Droid.Resource.String.mr_controller_no_media_selected = global::Neo.Gui.Droid.Resource.String.mr_controller_no_media_selected;
+			global::Lottie.Forms.Droid.Resource.String.mr_controller_pause = global::Neo.Gui.Droid.Resource.String.mr_controller_pause;
+			global::Lottie.Forms.Droid.Resource.String.mr_controller_play = global::Neo.Gui.Droid.Resource.String.mr_controller_play;
+			global::Lottie.Forms.Droid.Resource.String.mr_controller_stop = global::Neo.Gui.Droid.Resource.String.mr_controller_stop;
+			global::Lottie.Forms.Droid.Resource.String.mr_controller_stop_casting = global::Neo.Gui.Droid.Resource.String.mr_controller_stop_casting;
+			global::Lottie.Forms.Droid.Resource.String.mr_controller_volume_slider = global::Neo.Gui.Droid.Resource.String.mr_controller_volume_slider;
+			global::Lottie.Forms.Droid.Resource.String.mr_system_route_name = global::Neo.Gui.Droid.Resource.String.mr_system_route_name;
+			global::Lottie.Forms.Droid.Resource.String.mr_user_route_category_name = global::Neo.Gui.Droid.Resource.String.mr_user_route_category_name;
+			global::Lottie.Forms.Droid.Resource.String.password_toggle_content_description = global::Neo.Gui.Droid.Resource.String.password_toggle_content_description;
+			global::Lottie.Forms.Droid.Resource.String.path_password_eye = global::Neo.Gui.Droid.Resource.String.path_password_eye;
+			global::Lottie.Forms.Droid.Resource.String.path_password_eye_mask_strike_through = global::Neo.Gui.Droid.Resource.String.path_password_eye_mask_strike_through;
+			global::Lottie.Forms.Droid.Resource.String.path_password_eye_mask_visible = global::Neo.Gui.Droid.Resource.String.path_password_eye_mask_visible;
+			global::Lottie.Forms.Droid.Resource.String.path_password_strike_through = global::Neo.Gui.Droid.Resource.String.path_password_strike_through;
+			global::Lottie.Forms.Droid.Resource.String.search_menu_title = global::Neo.Gui.Droid.Resource.String.search_menu_title;
+			global::Lottie.Forms.Droid.Resource.String.status_bar_notification_info_overflow = global::Neo.Gui.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::Lottie.Forms.Droid.Resource.Style.AlertDialog_AppCompat = global::Neo.Gui.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::Lottie.Forms.Droid.Resource.Style.AlertDialog_AppCompat_Light = global::Neo.Gui.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::Lottie.Forms.Droid.Resource.Style.Animation_AppCompat_Dialog = global::Neo.Gui.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::Lottie.Forms.Droid.Resource.Style.Animation_AppCompat_DropDownUp = global::Neo.Gui.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::Lottie.Forms.Droid.Resource.Style.Animation_Design_BottomSheetDialog = global::Neo.Gui.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
+			global::Lottie.Forms.Droid.Resource.Style.Base_AlertDialog_AppCompat = global::Neo.Gui.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::Lottie.Forms.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light = global::Neo.Gui.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Animation_AppCompat_Dialog = global::Neo.Gui.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::Neo.Gui.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::Lottie.Forms.Droid.Resource.Style.Base_CardView = global::Neo.Gui.Droid.Resource.Style.Base_CardView;
+			global::Lottie.Forms.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat = global::Neo.Gui.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::Lottie.Forms.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::Neo.Gui.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Lottie.Forms.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::Neo.Gui.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Theme_AppCompat = global::Neo.Gui.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::Neo.Gui.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Theme_AppCompat_Dialog = global::Neo.Gui.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::Neo.Gui.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::Neo.Gui.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::Neo.Gui.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::Neo.Gui.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Theme_AppCompat_Light = global::Neo.Gui.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::Neo.Gui.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::Neo.Gui.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::Neo.Gui.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::Neo.Gui.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::Neo.Gui.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::Neo.Gui.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::Lottie.Forms.Droid.Resource.Style.Base_ThemeOverlay_AppCompat = global::Neo.Gui.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::Lottie.Forms.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::Neo.Gui.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::Lottie.Forms.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::Neo.Gui.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::Lottie.Forms.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::Neo.Gui.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Lottie.Forms.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::Neo.Gui.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::Lottie.Forms.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::Neo.Gui.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Lottie.Forms.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::Neo.Gui.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::Lottie.Forms.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::Neo.Gui.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
+			global::Lottie.Forms.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::Neo.Gui.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
+			global::Lottie.Forms.Droid.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog = global::Neo.Gui.Droid.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog;
+			global::Lottie.Forms.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::Neo.Gui.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
+			global::Lottie.Forms.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::Neo.Gui.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText;
+			global::Lottie.Forms.Droid.Resource.Style.Base_V21_Theme_AppCompat = global::Neo.Gui.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::Lottie.Forms.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::Neo.Gui.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::Lottie.Forms.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light = global::Neo.Gui.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::Lottie.Forms.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::Neo.Gui.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::Lottie.Forms.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::Neo.Gui.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::Lottie.Forms.Droid.Resource.Style.Base_V22_Theme_AppCompat = global::Neo.Gui.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::Lottie.Forms.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light = global::Neo.Gui.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::Lottie.Forms.Droid.Resource.Style.Base_V23_Theme_AppCompat = global::Neo.Gui.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::Lottie.Forms.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light = global::Neo.Gui.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::Lottie.Forms.Droid.Resource.Style.Base_V7_Theme_AppCompat = global::Neo.Gui.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::Lottie.Forms.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::Neo.Gui.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::Lottie.Forms.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light = global::Neo.Gui.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::Lottie.Forms.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::Neo.Gui.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::Lottie.Forms.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::Neo.Gui.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::Lottie.Forms.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::Neo.Gui.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::Lottie.Forms.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::Neo.Gui.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_Button = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_EditText = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_ListView = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_SearchView = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_Spinner = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::Neo.Gui.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_Design_AppBarLayout = global::Neo.Gui.Droid.Resource.Style.Base_Widget_Design_AppBarLayout;
+			global::Lottie.Forms.Droid.Resource.Style.Base_Widget_Design_TabLayout = global::Neo.Gui.Droid.Resource.Style.Base_Widget_Design_TabLayout;
+			global::Lottie.Forms.Droid.Resource.Style.CardView = global::Neo.Gui.Droid.Resource.Style.CardView;
+			global::Lottie.Forms.Droid.Resource.Style.CardView_Dark = global::Neo.Gui.Droid.Resource.Style.CardView_Dark;
+			global::Lottie.Forms.Droid.Resource.Style.CardView_Light = global::Neo.Gui.Droid.Resource.Style.CardView_Light;
+			global::Lottie.Forms.Droid.Resource.Style.Platform_AppCompat = global::Neo.Gui.Droid.Resource.Style.Platform_AppCompat;
+			global::Lottie.Forms.Droid.Resource.Style.Platform_AppCompat_Light = global::Neo.Gui.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::Lottie.Forms.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat = global::Neo.Gui.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::Lottie.Forms.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::Neo.Gui.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::Lottie.Forms.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::Neo.Gui.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::Lottie.Forms.Droid.Resource.Style.Platform_V11_AppCompat = global::Neo.Gui.Droid.Resource.Style.Platform_V11_AppCompat;
+			global::Lottie.Forms.Droid.Resource.Style.Platform_V11_AppCompat_Light = global::Neo.Gui.Droid.Resource.Style.Platform_V11_AppCompat_Light;
+			global::Lottie.Forms.Droid.Resource.Style.Platform_V14_AppCompat = global::Neo.Gui.Droid.Resource.Style.Platform_V14_AppCompat;
+			global::Lottie.Forms.Droid.Resource.Style.Platform_V14_AppCompat_Light = global::Neo.Gui.Droid.Resource.Style.Platform_V14_AppCompat_Light;
+			global::Lottie.Forms.Droid.Resource.Style.Platform_V21_AppCompat = global::Neo.Gui.Droid.Resource.Style.Platform_V21_AppCompat;
+			global::Lottie.Forms.Droid.Resource.Style.Platform_V21_AppCompat_Light = global::Neo.Gui.Droid.Resource.Style.Platform_V21_AppCompat_Light;
+			global::Lottie.Forms.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner = global::Neo.Gui.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::Lottie.Forms.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::Neo.Gui.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::Lottie.Forms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::Neo.Gui.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::Lottie.Forms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::Neo.Gui.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::Lottie.Forms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::Neo.Gui.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::Lottie.Forms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::Neo.Gui.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::Lottie.Forms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::Neo.Gui.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::Lottie.Forms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::Neo.Gui.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::Lottie.Forms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::Neo.Gui.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::Lottie.Forms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::Neo.Gui.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::Lottie.Forms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::Neo.Gui.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::Lottie.Forms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::Neo.Gui.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::Lottie.Forms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::Neo.Gui.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::Lottie.Forms.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::Neo.Gui.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::Lottie.Forms.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::Neo.Gui.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Body1 = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Body2 = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Button = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Caption = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Display1 = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Display2 = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Display3 = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Display4 = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Headline = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Inverse = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Large = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Medium = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Menu = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Notification = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Notification;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Info = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Info;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Info_Media = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Info_Media;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Line2 = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Line2;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Line2_Media = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Line2_Media;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Media = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Media;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Time = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Time;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Time_Media = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Time_Media;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Title = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Title;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Title_Media = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Title_Media;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Small = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Subhead = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Title = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Neo.Gui.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::Neo.Gui.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_Design_Counter = global::Neo.Gui.Droid.Resource.Style.TextAppearance_Design_Counter;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow = global::Neo.Gui.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_Design_Error = global::Neo.Gui.Droid.Resource.Style.TextAppearance_Design_Error;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_Design_Hint = global::Neo.Gui.Droid.Resource.Style.TextAppearance_Design_Hint;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message = global::Neo.Gui.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_Design_Tab = global::Neo.Gui.Droid.Resource.Style.TextAppearance_Design_Tab;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_MediaRouter_PrimaryText = global::Neo.Gui.Droid.Resource.Style.TextAppearance_MediaRouter_PrimaryText;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_MediaRouter_SecondaryText = global::Neo.Gui.Droid.Resource.Style.TextAppearance_MediaRouter_SecondaryText;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_MediaRouter_Title = global::Neo.Gui.Droid.Resource.Style.TextAppearance_MediaRouter_Title;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_StatusBar_EventContent = global::Neo.Gui.Droid.Resource.Style.TextAppearance_StatusBar_EventContent;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Info = global::Neo.Gui.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Info;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Line2 = global::Neo.Gui.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Line2;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Time = global::Neo.Gui.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Time;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Title = global::Neo.Gui.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Title;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Neo.Gui.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Neo.Gui.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Lottie.Forms.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::Neo.Gui.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_AppCompat = global::Neo.Gui.Droid.Resource.Style.Theme_AppCompat;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_AppCompat_CompactMenu = global::Neo.Gui.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_AppCompat_DayNight = global::Neo.Gui.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::Neo.Gui.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::Neo.Gui.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::Neo.Gui.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::Neo.Gui.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::Neo.Gui.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::Neo.Gui.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_AppCompat_Dialog = global::Neo.Gui.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert = global::Neo.Gui.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::Neo.Gui.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::Neo.Gui.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_AppCompat_Light = global::Neo.Gui.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::Neo.Gui.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_AppCompat_Light_Dialog = global::Neo.Gui.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::Neo.Gui.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::Neo.Gui.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::Neo.Gui.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::Neo.Gui.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_AppCompat_NoActionBar = global::Neo.Gui.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_Design = global::Neo.Gui.Droid.Resource.Style.Theme_Design;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_Design_BottomSheetDialog = global::Neo.Gui.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_Design_Light = global::Neo.Gui.Droid.Resource.Style.Theme_Design_Light;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::Neo.Gui.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_Design_Light_NoActionBar = global::Neo.Gui.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_Design_NoActionBar = global::Neo.Gui.Droid.Resource.Style.Theme_Design_NoActionBar;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_MediaRouter = global::Neo.Gui.Droid.Resource.Style.Theme_MediaRouter;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_MediaRouter_Light = global::Neo.Gui.Droid.Resource.Style.Theme_MediaRouter_Light;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel = global::Neo.Gui.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel;
+			global::Lottie.Forms.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel = global::Neo.Gui.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel;
+			global::Lottie.Forms.Droid.Resource.Style.ThemeOverlay_AppCompat = global::Neo.Gui.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::Lottie.Forms.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::Neo.Gui.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::Lottie.Forms.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark = global::Neo.Gui.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::Lottie.Forms.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::Neo.Gui.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Lottie.Forms.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::Neo.Gui.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::Lottie.Forms.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::Neo.Gui.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Lottie.Forms.Droid.Resource.Style.ThemeOverlay_AppCompat_Light = global::Neo.Gui.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::Lottie.Forms.Droid.Resource.Style.ThemeOverlay_MediaRouter_Dark = global::Neo.Gui.Droid.Resource.Style.ThemeOverlay_MediaRouter_Dark;
+			global::Lottie.Forms.Droid.Resource.Style.ThemeOverlay_MediaRouter_Light = global::Neo.Gui.Droid.Resource.Style.ThemeOverlay_MediaRouter_Light;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_ActionBar = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_ActionButton = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_ActionMode = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Button = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Button_Borderless = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Button_Colored = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Button_Small = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_ButtonBar = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_EditText = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_ImageButton = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Light_SearchView = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_ListMenuView = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_ListView = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_ListView_Menu = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_NotificationActionContainer = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_NotificationActionContainer;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_NotificationActionText = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_NotificationActionText;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_PopupMenu = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_PopupWindow = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_ProgressBar = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_RatingBar = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_SearchView = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_SeekBar = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Spinner = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Toolbar = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::Neo.Gui.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_Design_AppBarLayout = global::Neo.Gui.Droid.Resource.Style.Widget_Design_AppBarLayout;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_Design_BottomNavigationView = global::Neo.Gui.Droid.Resource.Style.Widget_Design_BottomNavigationView;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_Design_BottomSheet_Modal = global::Neo.Gui.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_Design_CollapsingToolbar = global::Neo.Gui.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_Design_CoordinatorLayout = global::Neo.Gui.Droid.Resource.Style.Widget_Design_CoordinatorLayout;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_Design_FloatingActionButton = global::Neo.Gui.Droid.Resource.Style.Widget_Design_FloatingActionButton;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_Design_NavigationView = global::Neo.Gui.Droid.Resource.Style.Widget_Design_NavigationView;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::Neo.Gui.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_Design_Snackbar = global::Neo.Gui.Droid.Resource.Style.Widget_Design_Snackbar;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_Design_TabLayout = global::Neo.Gui.Droid.Resource.Style.Widget_Design_TabLayout;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_Design_TextInputLayout = global::Neo.Gui.Droid.Resource.Style.Widget_Design_TextInputLayout;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton = global::Neo.Gui.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton;
+			global::Lottie.Forms.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton = global::Neo.Gui.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBar = global::Neo.Gui.Droid.Resource.Styleable.ActionBar;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBar_background = global::Neo.Gui.Droid.Resource.Styleable.ActionBar_background;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBar_backgroundSplit = global::Neo.Gui.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBar_backgroundStacked = global::Neo.Gui.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBar_contentInsetEnd = global::Neo.Gui.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::Neo.Gui.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBar_contentInsetLeft = global::Neo.Gui.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBar_contentInsetRight = global::Neo.Gui.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBar_contentInsetStart = global::Neo.Gui.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::Neo.Gui.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBar_customNavigationLayout = global::Neo.Gui.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBar_displayOptions = global::Neo.Gui.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBar_divider = global::Neo.Gui.Droid.Resource.Styleable.ActionBar_divider;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBar_elevation = global::Neo.Gui.Droid.Resource.Styleable.ActionBar_elevation;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBar_height = global::Neo.Gui.Droid.Resource.Styleable.ActionBar_height;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBar_hideOnContentScroll = global::Neo.Gui.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator = global::Neo.Gui.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBar_homeLayout = global::Neo.Gui.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBar_icon = global::Neo.Gui.Droid.Resource.Styleable.ActionBar_icon;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::Neo.Gui.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBar_itemPadding = global::Neo.Gui.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBar_logo = global::Neo.Gui.Droid.Resource.Styleable.ActionBar_logo;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBar_navigationMode = global::Neo.Gui.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBar_popupTheme = global::Neo.Gui.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBar_progressBarPadding = global::Neo.Gui.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBar_progressBarStyle = global::Neo.Gui.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBar_subtitle = global::Neo.Gui.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBar_subtitleTextStyle = global::Neo.Gui.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBar_title = global::Neo.Gui.Droid.Resource.Styleable.ActionBar_title;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBar_titleTextStyle = global::Neo.Gui.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBarLayout = global::Neo.Gui.Droid.Resource.Styleable.ActionBarLayout;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::Neo.Gui.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionMenuItemView = global::Neo.Gui.Droid.Resource.Styleable.ActionMenuItemView;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth = global::Neo.Gui.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionMenuView = global::Neo.Gui.Droid.Resource.Styleable.ActionMenuView;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionMode = global::Neo.Gui.Droid.Resource.Styleable.ActionMode;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionMode_background = global::Neo.Gui.Droid.Resource.Styleable.ActionMode_background;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionMode_backgroundSplit = global::Neo.Gui.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionMode_closeItemLayout = global::Neo.Gui.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionMode_height = global::Neo.Gui.Droid.Resource.Styleable.ActionMode_height;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionMode_subtitleTextStyle = global::Neo.Gui.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActionMode_titleTextStyle = global::Neo.Gui.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActivityChooserView = global::Neo.Gui.Droid.Resource.Styleable.ActivityChooserView;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::Neo.Gui.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::Lottie.Forms.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount = global::Neo.Gui.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::Lottie.Forms.Droid.Resource.Styleable.AlertDialog = global::Neo.Gui.Droid.Resource.Styleable.AlertDialog;
+			global::Lottie.Forms.Droid.Resource.Styleable.AlertDialog_android_layout = global::Neo.Gui.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::Lottie.Forms.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::Neo.Gui.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::Lottie.Forms.Droid.Resource.Styleable.AlertDialog_listItemLayout = global::Neo.Gui.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::Lottie.Forms.Droid.Resource.Styleable.AlertDialog_listLayout = global::Neo.Gui.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::Lottie.Forms.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::Neo.Gui.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::Lottie.Forms.Droid.Resource.Styleable.AlertDialog_showTitle = global::Neo.Gui.Droid.Resource.Styleable.AlertDialog_showTitle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::Neo.Gui.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppBarLayout = global::Neo.Gui.Droid.Resource.Styleable.AppBarLayout;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppBarLayout_android_background = global::Neo.Gui.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppBarLayout_elevation = global::Neo.Gui.Droid.Resource.Styleable.AppBarLayout_elevation;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppBarLayout_expanded = global::Neo.Gui.Droid.Resource.Styleable.AppBarLayout_expanded;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppBarLayoutStates = global::Neo.Gui.Droid.Resource.Styleable.AppBarLayoutStates;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::Neo.Gui.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::Neo.Gui.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppBarLayout_Layout = global::Neo.Gui.Droid.Resource.Styleable.AppBarLayout_Layout;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::Neo.Gui.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::Neo.Gui.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatImageView = global::Neo.Gui.Droid.Resource.Styleable.AppCompatImageView;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatImageView_android_src = global::Neo.Gui.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatImageView_srcCompat = global::Neo.Gui.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatSeekBar = global::Neo.Gui.Droid.Resource.Styleable.AppCompatSeekBar;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb = global::Neo.Gui.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatSeekBar_tickMark = global::Neo.Gui.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::Neo.Gui.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::Neo.Gui.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTextHelper = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTextHelper;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTextView = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTextView;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTextView_textAllCaps = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_actionBarSize = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_buttonStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_colorAccent = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_colorPrimary = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_controlBackground = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_dialogTheme = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_dividerVertical = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_editTextBackground = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_editTextColor = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_editTextStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_panelBackground = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_switchStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_windowActionBar = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::Lottie.Forms.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle = global::Neo.Gui.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::Lottie.Forms.Droid.Resource.Styleable.BottomNavigationView = global::Neo.Gui.Droid.Resource.Styleable.BottomNavigationView;
+			global::Lottie.Forms.Droid.Resource.Styleable.BottomNavigationView_elevation = global::Neo.Gui.Droid.Resource.Styleable.BottomNavigationView_elevation;
+			global::Lottie.Forms.Droid.Resource.Styleable.BottomNavigationView_itemBackground = global::Neo.Gui.Droid.Resource.Styleable.BottomNavigationView_itemBackground;
+			global::Lottie.Forms.Droid.Resource.Styleable.BottomNavigationView_itemIconTint = global::Neo.Gui.Droid.Resource.Styleable.BottomNavigationView_itemIconTint;
+			global::Lottie.Forms.Droid.Resource.Styleable.BottomNavigationView_itemTextColor = global::Neo.Gui.Droid.Resource.Styleable.BottomNavigationView_itemTextColor;
+			global::Lottie.Forms.Droid.Resource.Styleable.BottomNavigationView_menu = global::Neo.Gui.Droid.Resource.Styleable.BottomNavigationView_menu;
+			global::Lottie.Forms.Droid.Resource.Styleable.BottomSheetBehavior_Layout = global::Neo.Gui.Droid.Resource.Styleable.BottomSheetBehavior_Layout;
+			global::Lottie.Forms.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable = global::Neo.Gui.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable;
+			global::Lottie.Forms.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::Neo.Gui.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
+			global::Lottie.Forms.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::Neo.Gui.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
+			global::Lottie.Forms.Droid.Resource.Styleable.ButtonBarLayout = global::Neo.Gui.Droid.Resource.Styleable.ButtonBarLayout;
+			global::Lottie.Forms.Droid.Resource.Styleable.ButtonBarLayout_allowStacking = global::Neo.Gui.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::Lottie.Forms.Droid.Resource.Styleable.CardView = global::Neo.Gui.Droid.Resource.Styleable.CardView;
+			global::Lottie.Forms.Droid.Resource.Styleable.CardView_android_minHeight = global::Neo.Gui.Droid.Resource.Styleable.CardView_android_minHeight;
+			global::Lottie.Forms.Droid.Resource.Styleable.CardView_android_minWidth = global::Neo.Gui.Droid.Resource.Styleable.CardView_android_minWidth;
+			global::Lottie.Forms.Droid.Resource.Styleable.CardView_cardBackgroundColor = global::Neo.Gui.Droid.Resource.Styleable.CardView_cardBackgroundColor;
+			global::Lottie.Forms.Droid.Resource.Styleable.CardView_cardCornerRadius = global::Neo.Gui.Droid.Resource.Styleable.CardView_cardCornerRadius;
+			global::Lottie.Forms.Droid.Resource.Styleable.CardView_cardElevation = global::Neo.Gui.Droid.Resource.Styleable.CardView_cardElevation;
+			global::Lottie.Forms.Droid.Resource.Styleable.CardView_cardMaxElevation = global::Neo.Gui.Droid.Resource.Styleable.CardView_cardMaxElevation;
+			global::Lottie.Forms.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap = global::Neo.Gui.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
+			global::Lottie.Forms.Droid.Resource.Styleable.CardView_cardUseCompatPadding = global::Neo.Gui.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
+			global::Lottie.Forms.Droid.Resource.Styleable.CardView_contentPadding = global::Neo.Gui.Droid.Resource.Styleable.CardView_contentPadding;
+			global::Lottie.Forms.Droid.Resource.Styleable.CardView_contentPaddingBottom = global::Neo.Gui.Droid.Resource.Styleable.CardView_contentPaddingBottom;
+			global::Lottie.Forms.Droid.Resource.Styleable.CardView_contentPaddingLeft = global::Neo.Gui.Droid.Resource.Styleable.CardView_contentPaddingLeft;
+			global::Lottie.Forms.Droid.Resource.Styleable.CardView_contentPaddingRight = global::Neo.Gui.Droid.Resource.Styleable.CardView_contentPaddingRight;
+			global::Lottie.Forms.Droid.Resource.Styleable.CardView_contentPaddingTop = global::Neo.Gui.Droid.Resource.Styleable.CardView_contentPaddingTop;
+			global::Lottie.Forms.Droid.Resource.Styleable.CollapsingToolbarLayout = global::Neo.Gui.Droid.Resource.Styleable.CollapsingToolbarLayout;
+			global::Lottie.Forms.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::Neo.Gui.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::Lottie.Forms.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::Neo.Gui.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::Lottie.Forms.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::Neo.Gui.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::Lottie.Forms.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::Neo.Gui.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::Lottie.Forms.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::Neo.Gui.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::Lottie.Forms.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::Neo.Gui.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::Lottie.Forms.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::Neo.Gui.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::Lottie.Forms.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::Neo.Gui.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::Lottie.Forms.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::Neo.Gui.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::Lottie.Forms.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::Neo.Gui.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::Lottie.Forms.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::Neo.Gui.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
+			global::Lottie.Forms.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::Neo.Gui.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
+			global::Lottie.Forms.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::Neo.Gui.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::Lottie.Forms.Droid.Resource.Styleable.CollapsingToolbarLayout_title = global::Neo.Gui.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::Lottie.Forms.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::Neo.Gui.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::Lottie.Forms.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::Neo.Gui.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::Lottie.Forms.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout = global::Neo.Gui.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
+			global::Lottie.Forms.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::Neo.Gui.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
+			global::Lottie.Forms.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::Neo.Gui.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
+			global::Lottie.Forms.Droid.Resource.Styleable.ColorStateListItem = global::Neo.Gui.Droid.Resource.Styleable.ColorStateListItem;
+			global::Lottie.Forms.Droid.Resource.Styleable.ColorStateListItem_alpha = global::Neo.Gui.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::Lottie.Forms.Droid.Resource.Styleable.ColorStateListItem_android_alpha = global::Neo.Gui.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Lottie.Forms.Droid.Resource.Styleable.ColorStateListItem_android_color = global::Neo.Gui.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::Lottie.Forms.Droid.Resource.Styleable.CompoundButton = global::Neo.Gui.Droid.Resource.Styleable.CompoundButton;
+			global::Lottie.Forms.Droid.Resource.Styleable.CompoundButton_android_button = global::Neo.Gui.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::Lottie.Forms.Droid.Resource.Styleable.CompoundButton_buttonTint = global::Neo.Gui.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::Lottie.Forms.Droid.Resource.Styleable.CompoundButton_buttonTintMode = global::Neo.Gui.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::Lottie.Forms.Droid.Resource.Styleable.CoordinatorLayout = global::Neo.Gui.Droid.Resource.Styleable.CoordinatorLayout;
+			global::Lottie.Forms.Droid.Resource.Styleable.CoordinatorLayout_keylines = global::Neo.Gui.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::Lottie.Forms.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::Neo.Gui.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::Lottie.Forms.Droid.Resource.Styleable.CoordinatorLayout_Layout = global::Neo.Gui.Droid.Resource.Styleable.CoordinatorLayout_Layout;
+			global::Lottie.Forms.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::Neo.Gui.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::Lottie.Forms.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::Neo.Gui.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::Lottie.Forms.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::Neo.Gui.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::Lottie.Forms.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::Neo.Gui.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::Lottie.Forms.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::Neo.Gui.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::Lottie.Forms.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::Neo.Gui.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::Lottie.Forms.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::Neo.Gui.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Lottie.Forms.Droid.Resource.Styleable.DesignTheme = global::Neo.Gui.Droid.Resource.Styleable.DesignTheme;
+			global::Lottie.Forms.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::Neo.Gui.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
+			global::Lottie.Forms.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle = global::Neo.Gui.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.DesignTheme_textColorError = global::Neo.Gui.Droid.Resource.Styleable.DesignTheme_textColorError;
+			global::Lottie.Forms.Droid.Resource.Styleable.DrawerArrowToggle = global::Neo.Gui.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::Lottie.Forms.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::Neo.Gui.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::Lottie.Forms.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::Neo.Gui.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::Lottie.Forms.Droid.Resource.Styleable.DrawerArrowToggle_barLength = global::Neo.Gui.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::Lottie.Forms.Droid.Resource.Styleable.DrawerArrowToggle_color = global::Neo.Gui.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::Lottie.Forms.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize = global::Neo.Gui.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::Lottie.Forms.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::Neo.Gui.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::Lottie.Forms.Droid.Resource.Styleable.DrawerArrowToggle_spinBars = global::Neo.Gui.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::Lottie.Forms.Droid.Resource.Styleable.DrawerArrowToggle_thickness = global::Neo.Gui.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::Lottie.Forms.Droid.Resource.Styleable.FloatingActionButton = global::Neo.Gui.Droid.Resource.Styleable.FloatingActionButton;
+			global::Lottie.Forms.Droid.Resource.Styleable.FloatingActionButton_backgroundTint = global::Neo.Gui.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::Lottie.Forms.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::Neo.Gui.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::Lottie.Forms.Droid.Resource.Styleable.FloatingActionButton_borderWidth = global::Neo.Gui.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::Lottie.Forms.Droid.Resource.Styleable.FloatingActionButton_elevation = global::Neo.Gui.Droid.Resource.Styleable.FloatingActionButton_elevation;
+			global::Lottie.Forms.Droid.Resource.Styleable.FloatingActionButton_fabSize = global::Neo.Gui.Droid.Resource.Styleable.FloatingActionButton_fabSize;
+			global::Lottie.Forms.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::Neo.Gui.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::Lottie.Forms.Droid.Resource.Styleable.FloatingActionButton_rippleColor = global::Neo.Gui.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::Lottie.Forms.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding = global::Neo.Gui.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
+			global::Lottie.Forms.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::Neo.Gui.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
+			global::Lottie.Forms.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::Neo.Gui.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
+			global::Lottie.Forms.Droid.Resource.Styleable.ForegroundLinearLayout = global::Neo.Gui.Droid.Resource.Styleable.ForegroundLinearLayout;
+			global::Lottie.Forms.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::Neo.Gui.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
+			global::Lottie.Forms.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::Neo.Gui.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
+			global::Lottie.Forms.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::Neo.Gui.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::Lottie.Forms.Droid.Resource.Styleable.LinearLayoutCompat = global::Neo.Gui.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::Lottie.Forms.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::Neo.Gui.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::Lottie.Forms.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::Neo.Gui.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::Lottie.Forms.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity = global::Neo.Gui.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::Lottie.Forms.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation = global::Neo.Gui.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::Lottie.Forms.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::Neo.Gui.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::Lottie.Forms.Droid.Resource.Styleable.LinearLayoutCompat_divider = global::Neo.Gui.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::Lottie.Forms.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::Neo.Gui.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::Lottie.Forms.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::Neo.Gui.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::Lottie.Forms.Droid.Resource.Styleable.LinearLayoutCompat_showDividers = global::Neo.Gui.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::Lottie.Forms.Droid.Resource.Styleable.LinearLayoutCompat_Layout = global::Neo.Gui.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::Lottie.Forms.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::Neo.Gui.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::Lottie.Forms.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::Neo.Gui.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::Lottie.Forms.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::Neo.Gui.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::Lottie.Forms.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::Neo.Gui.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::Lottie.Forms.Droid.Resource.Styleable.ListPopupWindow = global::Neo.Gui.Droid.Resource.Styleable.ListPopupWindow;
+			global::Lottie.Forms.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::Neo.Gui.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::Lottie.Forms.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::Neo.Gui.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::Lottie.Forms.Droid.Resource.Styleable.LottieAnimationView = global::Neo.Gui.Droid.Resource.Styleable.LottieAnimationView;
+			global::Lottie.Forms.Droid.Resource.Styleable.LottieAnimationView_lottie_autoPlay = global::Neo.Gui.Droid.Resource.Styleable.LottieAnimationView_lottie_autoPlay;
+			global::Lottie.Forms.Droid.Resource.Styleable.LottieAnimationView_lottie_cacheStrategy = global::Neo.Gui.Droid.Resource.Styleable.LottieAnimationView_lottie_cacheStrategy;
+			global::Lottie.Forms.Droid.Resource.Styleable.LottieAnimationView_lottie_colorFilter = global::Neo.Gui.Droid.Resource.Styleable.LottieAnimationView_lottie_colorFilter;
+			global::Lottie.Forms.Droid.Resource.Styleable.LottieAnimationView_lottie_enableMergePathsForKitKatAndAbove = global::Neo.Gui.Droid.Resource.Styleable.LottieAnimationView_lottie_enableMergePathsForKitKatAndAbove;
+			global::Lottie.Forms.Droid.Resource.Styleable.LottieAnimationView_lottie_fileName = global::Neo.Gui.Droid.Resource.Styleable.LottieAnimationView_lottie_fileName;
+			global::Lottie.Forms.Droid.Resource.Styleable.LottieAnimationView_lottie_imageAssetsFolder = global::Neo.Gui.Droid.Resource.Styleable.LottieAnimationView_lottie_imageAssetsFolder;
+			global::Lottie.Forms.Droid.Resource.Styleable.LottieAnimationView_lottie_loop = global::Neo.Gui.Droid.Resource.Styleable.LottieAnimationView_lottie_loop;
+			global::Lottie.Forms.Droid.Resource.Styleable.LottieAnimationView_lottie_progress = global::Neo.Gui.Droid.Resource.Styleable.LottieAnimationView_lottie_progress;
+			global::Lottie.Forms.Droid.Resource.Styleable.LottieAnimationView_lottie_scale = global::Neo.Gui.Droid.Resource.Styleable.LottieAnimationView_lottie_scale;
+			global::Lottie.Forms.Droid.Resource.Styleable.MediaRouteButton = global::Neo.Gui.Droid.Resource.Styleable.MediaRouteButton;
+			global::Lottie.Forms.Droid.Resource.Styleable.MediaRouteButton_android_minHeight = global::Neo.Gui.Droid.Resource.Styleable.MediaRouteButton_android_minHeight;
+			global::Lottie.Forms.Droid.Resource.Styleable.MediaRouteButton_android_minWidth = global::Neo.Gui.Droid.Resource.Styleable.MediaRouteButton_android_minWidth;
+			global::Lottie.Forms.Droid.Resource.Styleable.MediaRouteButton_buttonTint = global::Neo.Gui.Droid.Resource.Styleable.MediaRouteButton_buttonTint;
+			global::Lottie.Forms.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable = global::Neo.Gui.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuGroup = global::Neo.Gui.Droid.Resource.Styleable.MenuGroup;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior = global::Neo.Gui.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuGroup_android_enabled = global::Neo.Gui.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuGroup_android_id = global::Neo.Gui.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuGroup_android_menuCategory = global::Neo.Gui.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuGroup_android_orderInCategory = global::Neo.Gui.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuGroup_android_visible = global::Neo.Gui.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuItem = global::Neo.Gui.Droid.Resource.Styleable.MenuItem;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuItem_actionLayout = global::Neo.Gui.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuItem_actionProviderClass = global::Neo.Gui.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuItem_actionViewClass = global::Neo.Gui.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::Neo.Gui.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuItem_android_checkable = global::Neo.Gui.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuItem_android_checked = global::Neo.Gui.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuItem_android_enabled = global::Neo.Gui.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuItem_android_icon = global::Neo.Gui.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuItem_android_id = global::Neo.Gui.Droid.Resource.Styleable.MenuItem_android_id;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuItem_android_menuCategory = global::Neo.Gui.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuItem_android_numericShortcut = global::Neo.Gui.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuItem_android_onClick = global::Neo.Gui.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuItem_android_orderInCategory = global::Neo.Gui.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuItem_android_title = global::Neo.Gui.Droid.Resource.Styleable.MenuItem_android_title;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuItem_android_titleCondensed = global::Neo.Gui.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuItem_android_visible = global::Neo.Gui.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuItem_showAsAction = global::Neo.Gui.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuView = global::Neo.Gui.Droid.Resource.Styleable.MenuView;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuView_android_headerBackground = global::Neo.Gui.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuView_android_horizontalDivider = global::Neo.Gui.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuView_android_itemBackground = global::Neo.Gui.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::Neo.Gui.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuView_android_itemTextAppearance = global::Neo.Gui.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuView_android_verticalDivider = global::Neo.Gui.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle = global::Neo.Gui.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuView_preserveIconSpacing = global::Neo.Gui.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::Lottie.Forms.Droid.Resource.Styleable.MenuView_subMenuArrow = global::Neo.Gui.Droid.Resource.Styleable.MenuView_subMenuArrow;
+			global::Lottie.Forms.Droid.Resource.Styleable.NavigationView = global::Neo.Gui.Droid.Resource.Styleable.NavigationView;
+			global::Lottie.Forms.Droid.Resource.Styleable.NavigationView_android_background = global::Neo.Gui.Droid.Resource.Styleable.NavigationView_android_background;
+			global::Lottie.Forms.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::Neo.Gui.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::Lottie.Forms.Droid.Resource.Styleable.NavigationView_android_maxWidth = global::Neo.Gui.Droid.Resource.Styleable.NavigationView_android_maxWidth;
+			global::Lottie.Forms.Droid.Resource.Styleable.NavigationView_elevation = global::Neo.Gui.Droid.Resource.Styleable.NavigationView_elevation;
+			global::Lottie.Forms.Droid.Resource.Styleable.NavigationView_headerLayout = global::Neo.Gui.Droid.Resource.Styleable.NavigationView_headerLayout;
+			global::Lottie.Forms.Droid.Resource.Styleable.NavigationView_itemBackground = global::Neo.Gui.Droid.Resource.Styleable.NavigationView_itemBackground;
+			global::Lottie.Forms.Droid.Resource.Styleable.NavigationView_itemIconTint = global::Neo.Gui.Droid.Resource.Styleable.NavigationView_itemIconTint;
+			global::Lottie.Forms.Droid.Resource.Styleable.NavigationView_itemTextAppearance = global::Neo.Gui.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::Lottie.Forms.Droid.Resource.Styleable.NavigationView_itemTextColor = global::Neo.Gui.Droid.Resource.Styleable.NavigationView_itemTextColor;
+			global::Lottie.Forms.Droid.Resource.Styleable.NavigationView_menu = global::Neo.Gui.Droid.Resource.Styleable.NavigationView_menu;
+			global::Lottie.Forms.Droid.Resource.Styleable.PopupWindow = global::Neo.Gui.Droid.Resource.Styleable.PopupWindow;
+			global::Lottie.Forms.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::Neo.Gui.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.PopupWindow_android_popupBackground = global::Neo.Gui.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::Lottie.Forms.Droid.Resource.Styleable.PopupWindow_overlapAnchor = global::Neo.Gui.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::Lottie.Forms.Droid.Resource.Styleable.PopupWindowBackgroundState = global::Neo.Gui.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::Lottie.Forms.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::Neo.Gui.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::Lottie.Forms.Droid.Resource.Styleable.RecycleListView = global::Neo.Gui.Droid.Resource.Styleable.RecycleListView;
+			global::Lottie.Forms.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::Neo.Gui.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
+			global::Lottie.Forms.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::Neo.Gui.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
+			global::Lottie.Forms.Droid.Resource.Styleable.RecyclerView = global::Neo.Gui.Droid.Resource.Styleable.RecyclerView;
+			global::Lottie.Forms.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability = global::Neo.Gui.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
+			global::Lottie.Forms.Droid.Resource.Styleable.RecyclerView_android_orientation = global::Neo.Gui.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::Lottie.Forms.Droid.Resource.Styleable.RecyclerView_layoutManager = global::Neo.Gui.Droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::Lottie.Forms.Droid.Resource.Styleable.RecyclerView_reverseLayout = global::Neo.Gui.Droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::Lottie.Forms.Droid.Resource.Styleable.RecyclerView_spanCount = global::Neo.Gui.Droid.Resource.Styleable.RecyclerView_spanCount;
+			global::Lottie.Forms.Droid.Resource.Styleable.RecyclerView_stackFromEnd = global::Neo.Gui.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::Lottie.Forms.Droid.Resource.Styleable.ScrimInsetsFrameLayout = global::Neo.Gui.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::Lottie.Forms.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::Neo.Gui.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::Lottie.Forms.Droid.Resource.Styleable.ScrollingViewBehavior_Layout = global::Neo.Gui.Droid.Resource.Styleable.ScrollingViewBehavior_Layout;
+			global::Lottie.Forms.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::Neo.Gui.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
+			global::Lottie.Forms.Droid.Resource.Styleable.SearchView = global::Neo.Gui.Droid.Resource.Styleable.SearchView;
+			global::Lottie.Forms.Droid.Resource.Styleable.SearchView_android_focusable = global::Neo.Gui.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::Lottie.Forms.Droid.Resource.Styleable.SearchView_android_imeOptions = global::Neo.Gui.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::Lottie.Forms.Droid.Resource.Styleable.SearchView_android_inputType = global::Neo.Gui.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::Lottie.Forms.Droid.Resource.Styleable.SearchView_android_maxWidth = global::Neo.Gui.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::Lottie.Forms.Droid.Resource.Styleable.SearchView_closeIcon = global::Neo.Gui.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::Lottie.Forms.Droid.Resource.Styleable.SearchView_commitIcon = global::Neo.Gui.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::Lottie.Forms.Droid.Resource.Styleable.SearchView_defaultQueryHint = global::Neo.Gui.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::Lottie.Forms.Droid.Resource.Styleable.SearchView_goIcon = global::Neo.Gui.Droid.Resource.Styleable.SearchView_goIcon;
+			global::Lottie.Forms.Droid.Resource.Styleable.SearchView_iconifiedByDefault = global::Neo.Gui.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::Lottie.Forms.Droid.Resource.Styleable.SearchView_layout = global::Neo.Gui.Droid.Resource.Styleable.SearchView_layout;
+			global::Lottie.Forms.Droid.Resource.Styleable.SearchView_queryBackground = global::Neo.Gui.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::Lottie.Forms.Droid.Resource.Styleable.SearchView_queryHint = global::Neo.Gui.Droid.Resource.Styleable.SearchView_queryHint;
+			global::Lottie.Forms.Droid.Resource.Styleable.SearchView_searchHintIcon = global::Neo.Gui.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::Lottie.Forms.Droid.Resource.Styleable.SearchView_searchIcon = global::Neo.Gui.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::Lottie.Forms.Droid.Resource.Styleable.SearchView_submitBackground = global::Neo.Gui.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::Lottie.Forms.Droid.Resource.Styleable.SearchView_suggestionRowLayout = global::Neo.Gui.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::Lottie.Forms.Droid.Resource.Styleable.SearchView_voiceIcon = global::Neo.Gui.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::Lottie.Forms.Droid.Resource.Styleable.SnackbarLayout = global::Neo.Gui.Droid.Resource.Styleable.SnackbarLayout;
+			global::Lottie.Forms.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth = global::Neo.Gui.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::Lottie.Forms.Droid.Resource.Styleable.SnackbarLayout_elevation = global::Neo.Gui.Droid.Resource.Styleable.SnackbarLayout_elevation;
+			global::Lottie.Forms.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::Neo.Gui.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::Lottie.Forms.Droid.Resource.Styleable.Spinner = global::Neo.Gui.Droid.Resource.Styleable.Spinner;
+			global::Lottie.Forms.Droid.Resource.Styleable.Spinner_android_dropDownWidth = global::Neo.Gui.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::Lottie.Forms.Droid.Resource.Styleable.Spinner_android_entries = global::Neo.Gui.Droid.Resource.Styleable.Spinner_android_entries;
+			global::Lottie.Forms.Droid.Resource.Styleable.Spinner_android_popupBackground = global::Neo.Gui.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::Lottie.Forms.Droid.Resource.Styleable.Spinner_android_prompt = global::Neo.Gui.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::Lottie.Forms.Droid.Resource.Styleable.Spinner_popupTheme = global::Neo.Gui.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::Lottie.Forms.Droid.Resource.Styleable.SwitchCompat = global::Neo.Gui.Droid.Resource.Styleable.SwitchCompat;
+			global::Lottie.Forms.Droid.Resource.Styleable.SwitchCompat_android_textOff = global::Neo.Gui.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::Lottie.Forms.Droid.Resource.Styleable.SwitchCompat_android_textOn = global::Neo.Gui.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::Lottie.Forms.Droid.Resource.Styleable.SwitchCompat_android_thumb = global::Neo.Gui.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::Lottie.Forms.Droid.Resource.Styleable.SwitchCompat_showText = global::Neo.Gui.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::Lottie.Forms.Droid.Resource.Styleable.SwitchCompat_splitTrack = global::Neo.Gui.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::Lottie.Forms.Droid.Resource.Styleable.SwitchCompat_switchMinWidth = global::Neo.Gui.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::Lottie.Forms.Droid.Resource.Styleable.SwitchCompat_switchPadding = global::Neo.Gui.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::Lottie.Forms.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance = global::Neo.Gui.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::Lottie.Forms.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding = global::Neo.Gui.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::Lottie.Forms.Droid.Resource.Styleable.SwitchCompat_thumbTint = global::Neo.Gui.Droid.Resource.Styleable.SwitchCompat_thumbTint;
+			global::Lottie.Forms.Droid.Resource.Styleable.SwitchCompat_thumbTintMode = global::Neo.Gui.Droid.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::Lottie.Forms.Droid.Resource.Styleable.SwitchCompat_track = global::Neo.Gui.Droid.Resource.Styleable.SwitchCompat_track;
+			global::Lottie.Forms.Droid.Resource.Styleable.SwitchCompat_trackTint = global::Neo.Gui.Droid.Resource.Styleable.SwitchCompat_trackTint;
+			global::Lottie.Forms.Droid.Resource.Styleable.SwitchCompat_trackTintMode = global::Neo.Gui.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::Lottie.Forms.Droid.Resource.Styleable.TabItem = global::Neo.Gui.Droid.Resource.Styleable.TabItem;
+			global::Lottie.Forms.Droid.Resource.Styleable.TabItem_android_icon = global::Neo.Gui.Droid.Resource.Styleable.TabItem_android_icon;
+			global::Lottie.Forms.Droid.Resource.Styleable.TabItem_android_layout = global::Neo.Gui.Droid.Resource.Styleable.TabItem_android_layout;
+			global::Lottie.Forms.Droid.Resource.Styleable.TabItem_android_text = global::Neo.Gui.Droid.Resource.Styleable.TabItem_android_text;
+			global::Lottie.Forms.Droid.Resource.Styleable.TabLayout = global::Neo.Gui.Droid.Resource.Styleable.TabLayout;
+			global::Lottie.Forms.Droid.Resource.Styleable.TabLayout_tabBackground = global::Neo.Gui.Droid.Resource.Styleable.TabLayout_tabBackground;
+			global::Lottie.Forms.Droid.Resource.Styleable.TabLayout_tabContentStart = global::Neo.Gui.Droid.Resource.Styleable.TabLayout_tabContentStart;
+			global::Lottie.Forms.Droid.Resource.Styleable.TabLayout_tabGravity = global::Neo.Gui.Droid.Resource.Styleable.TabLayout_tabGravity;
+			global::Lottie.Forms.Droid.Resource.Styleable.TabLayout_tabIndicatorColor = global::Neo.Gui.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::Lottie.Forms.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight = global::Neo.Gui.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::Lottie.Forms.Droid.Resource.Styleable.TabLayout_tabMaxWidth = global::Neo.Gui.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::Lottie.Forms.Droid.Resource.Styleable.TabLayout_tabMinWidth = global::Neo.Gui.Droid.Resource.Styleable.TabLayout_tabMinWidth;
+			global::Lottie.Forms.Droid.Resource.Styleable.TabLayout_tabMode = global::Neo.Gui.Droid.Resource.Styleable.TabLayout_tabMode;
+			global::Lottie.Forms.Droid.Resource.Styleable.TabLayout_tabPadding = global::Neo.Gui.Droid.Resource.Styleable.TabLayout_tabPadding;
+			global::Lottie.Forms.Droid.Resource.Styleable.TabLayout_tabPaddingBottom = global::Neo.Gui.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::Lottie.Forms.Droid.Resource.Styleable.TabLayout_tabPaddingEnd = global::Neo.Gui.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::Lottie.Forms.Droid.Resource.Styleable.TabLayout_tabPaddingStart = global::Neo.Gui.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::Lottie.Forms.Droid.Resource.Styleable.TabLayout_tabPaddingTop = global::Neo.Gui.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::Lottie.Forms.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor = global::Neo.Gui.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::Lottie.Forms.Droid.Resource.Styleable.TabLayout_tabTextAppearance = global::Neo.Gui.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::Lottie.Forms.Droid.Resource.Styleable.TabLayout_tabTextColor = global::Neo.Gui.Droid.Resource.Styleable.TabLayout_tabTextColor;
+			global::Lottie.Forms.Droid.Resource.Styleable.TextAppearance = global::Neo.Gui.Droid.Resource.Styleable.TextAppearance;
+			global::Lottie.Forms.Droid.Resource.Styleable.TextAppearance_android_shadowColor = global::Neo.Gui.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::Lottie.Forms.Droid.Resource.Styleable.TextAppearance_android_shadowDx = global::Neo.Gui.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::Lottie.Forms.Droid.Resource.Styleable.TextAppearance_android_shadowDy = global::Neo.Gui.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::Lottie.Forms.Droid.Resource.Styleable.TextAppearance_android_shadowRadius = global::Neo.Gui.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::Lottie.Forms.Droid.Resource.Styleable.TextAppearance_android_textColor = global::Neo.Gui.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::Lottie.Forms.Droid.Resource.Styleable.TextAppearance_android_textColorHint = global::Neo.Gui.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::Lottie.Forms.Droid.Resource.Styleable.TextAppearance_android_textSize = global::Neo.Gui.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::Lottie.Forms.Droid.Resource.Styleable.TextAppearance_android_textStyle = global::Neo.Gui.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::Lottie.Forms.Droid.Resource.Styleable.TextAppearance_android_typeface = global::Neo.Gui.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::Lottie.Forms.Droid.Resource.Styleable.TextAppearance_textAllCaps = global::Neo.Gui.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::Lottie.Forms.Droid.Resource.Styleable.TextInputLayout = global::Neo.Gui.Droid.Resource.Styleable.TextInputLayout;
+			global::Lottie.Forms.Droid.Resource.Styleable.TextInputLayout_android_hint = global::Neo.Gui.Droid.Resource.Styleable.TextInputLayout_android_hint;
+			global::Lottie.Forms.Droid.Resource.Styleable.TextInputLayout_android_textColorHint = global::Neo.Gui.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::Lottie.Forms.Droid.Resource.Styleable.TextInputLayout_counterEnabled = global::Neo.Gui.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
+			global::Lottie.Forms.Droid.Resource.Styleable.TextInputLayout_counterMaxLength = global::Neo.Gui.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
+			global::Lottie.Forms.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::Neo.Gui.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
+			global::Lottie.Forms.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance = global::Neo.Gui.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
+			global::Lottie.Forms.Droid.Resource.Styleable.TextInputLayout_errorEnabled = global::Neo.Gui.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::Lottie.Forms.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance = global::Neo.Gui.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::Lottie.Forms.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::Neo.Gui.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::Lottie.Forms.Droid.Resource.Styleable.TextInputLayout_hintEnabled = global::Neo.Gui.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
+			global::Lottie.Forms.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance = global::Neo.Gui.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::Lottie.Forms.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription = global::Neo.Gui.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription;
+			global::Lottie.Forms.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable = global::Neo.Gui.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable;
+			global::Lottie.Forms.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::Neo.Gui.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
+			global::Lottie.Forms.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint = global::Neo.Gui.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint;
+			global::Lottie.Forms.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::Neo.Gui.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
+			global::Lottie.Forms.Droid.Resource.Styleable.Toolbar = global::Neo.Gui.Droid.Resource.Styleable.Toolbar;
+			global::Lottie.Forms.Droid.Resource.Styleable.Toolbar_android_gravity = global::Neo.Gui.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::Lottie.Forms.Droid.Resource.Styleable.Toolbar_android_minHeight = global::Neo.Gui.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::Lottie.Forms.Droid.Resource.Styleable.Toolbar_buttonGravity = global::Neo.Gui.Droid.Resource.Styleable.Toolbar_buttonGravity;
+			global::Lottie.Forms.Droid.Resource.Styleable.Toolbar_collapseContentDescription = global::Neo.Gui.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::Lottie.Forms.Droid.Resource.Styleable.Toolbar_collapseIcon = global::Neo.Gui.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::Lottie.Forms.Droid.Resource.Styleable.Toolbar_contentInsetEnd = global::Neo.Gui.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::Lottie.Forms.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::Neo.Gui.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::Lottie.Forms.Droid.Resource.Styleable.Toolbar_contentInsetLeft = global::Neo.Gui.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::Lottie.Forms.Droid.Resource.Styleable.Toolbar_contentInsetRight = global::Neo.Gui.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::Lottie.Forms.Droid.Resource.Styleable.Toolbar_contentInsetStart = global::Neo.Gui.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::Lottie.Forms.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::Neo.Gui.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::Lottie.Forms.Droid.Resource.Styleable.Toolbar_logo = global::Neo.Gui.Droid.Resource.Styleable.Toolbar_logo;
+			global::Lottie.Forms.Droid.Resource.Styleable.Toolbar_logoDescription = global::Neo.Gui.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::Lottie.Forms.Droid.Resource.Styleable.Toolbar_maxButtonHeight = global::Neo.Gui.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::Lottie.Forms.Droid.Resource.Styleable.Toolbar_navigationContentDescription = global::Neo.Gui.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::Lottie.Forms.Droid.Resource.Styleable.Toolbar_navigationIcon = global::Neo.Gui.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::Lottie.Forms.Droid.Resource.Styleable.Toolbar_popupTheme = global::Neo.Gui.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::Lottie.Forms.Droid.Resource.Styleable.Toolbar_subtitle = global::Neo.Gui.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::Lottie.Forms.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance = global::Neo.Gui.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::Lottie.Forms.Droid.Resource.Styleable.Toolbar_subtitleTextColor = global::Neo.Gui.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::Lottie.Forms.Droid.Resource.Styleable.Toolbar_title = global::Neo.Gui.Droid.Resource.Styleable.Toolbar_title;
+			global::Lottie.Forms.Droid.Resource.Styleable.Toolbar_titleMargin = global::Neo.Gui.Droid.Resource.Styleable.Toolbar_titleMargin;
+			global::Lottie.Forms.Droid.Resource.Styleable.Toolbar_titleMarginBottom = global::Neo.Gui.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::Lottie.Forms.Droid.Resource.Styleable.Toolbar_titleMarginEnd = global::Neo.Gui.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::Lottie.Forms.Droid.Resource.Styleable.Toolbar_titleMarginStart = global::Neo.Gui.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::Lottie.Forms.Droid.Resource.Styleable.Toolbar_titleMarginTop = global::Neo.Gui.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::Lottie.Forms.Droid.Resource.Styleable.Toolbar_titleMargins = global::Neo.Gui.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::Lottie.Forms.Droid.Resource.Styleable.Toolbar_titleTextAppearance = global::Neo.Gui.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::Lottie.Forms.Droid.Resource.Styleable.Toolbar_titleTextColor = global::Neo.Gui.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::Lottie.Forms.Droid.Resource.Styleable.View = global::Neo.Gui.Droid.Resource.Styleable.View;
+			global::Lottie.Forms.Droid.Resource.Styleable.View_android_focusable = global::Neo.Gui.Droid.Resource.Styleable.View_android_focusable;
+			global::Lottie.Forms.Droid.Resource.Styleable.View_android_theme = global::Neo.Gui.Droid.Resource.Styleable.View_android_theme;
+			global::Lottie.Forms.Droid.Resource.Styleable.View_paddingEnd = global::Neo.Gui.Droid.Resource.Styleable.View_paddingEnd;
+			global::Lottie.Forms.Droid.Resource.Styleable.View_paddingStart = global::Neo.Gui.Droid.Resource.Styleable.View_paddingStart;
+			global::Lottie.Forms.Droid.Resource.Styleable.View_theme = global::Neo.Gui.Droid.Resource.Styleable.View_theme;
+			global::Lottie.Forms.Droid.Resource.Styleable.ViewBackgroundHelper = global::Neo.Gui.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::Lottie.Forms.Droid.Resource.Styleable.ViewBackgroundHelper_android_background = global::Neo.Gui.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::Lottie.Forms.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::Neo.Gui.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::Lottie.Forms.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::Neo.Gui.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::Lottie.Forms.Droid.Resource.Styleable.ViewStubCompat = global::Neo.Gui.Droid.Resource.Styleable.ViewStubCompat;
+			global::Lottie.Forms.Droid.Resource.Styleable.ViewStubCompat_android_id = global::Neo.Gui.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::Lottie.Forms.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId = global::Neo.Gui.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::Lottie.Forms.Droid.Resource.Styleable.ViewStubCompat_android_layout = global::Neo.Gui.Droid.Resource.Styleable.ViewStubCompat_android_layout;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Neo.Gui.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -678,6 +2805,33 @@ namespace Neo.Gui.Droid
 			
 			// aapt resource value: 0x7f0100fb
 			public const int logoDescription = 2130772219;
+			
+			// aapt resource value: 0x7f010156
+			public const int lottie_autoPlay = 2130772310;
+			
+			// aapt resource value: 0x7f01015b
+			public const int lottie_cacheStrategy = 2130772315;
+			
+			// aapt resource value: 0x7f01015c
+			public const int lottie_colorFilter = 2130772316;
+			
+			// aapt resource value: 0x7f01015a
+			public const int lottie_enableMergePathsForKitKatAndAbove = 2130772314;
+			
+			// aapt resource value: 0x7f010155
+			public const int lottie_fileName = 2130772309;
+			
+			// aapt resource value: 0x7f010158
+			public const int lottie_imageAssetsFolder = 2130772312;
+			
+			// aapt resource value: 0x7f010157
+			public const int lottie_loop = 2130772311;
+			
+			// aapt resource value: 0x7f010159
+			public const int lottie_progress = 2130772313;
+			
+			// aapt resource value: 0x7f01015d
+			public const int lottie_scale = 2130772317;
 			
 			// aapt resource value: 0x7f010136
 			public const int maxActionInlineWidth = 2130772278;
@@ -2715,43 +4869,49 @@ namespace Neo.Gui.Droid
 			public const int navigation_empty_icon = 2130837761;
 			
 			// aapt resource value: 0x7f020102
-			public const int notification_action_background = 2130837762;
+			public const int NeoIcon = 2130837762;
 			
 			// aapt resource value: 0x7f020103
-			public const int notification_bg = 2130837763;
+			public const int neologo = 2130837763;
 			
 			// aapt resource value: 0x7f020104
-			public const int notification_bg_low = 2130837764;
+			public const int notification_action_background = 2130837764;
 			
 			// aapt resource value: 0x7f020105
-			public const int notification_bg_low_normal = 2130837765;
+			public const int notification_bg = 2130837765;
 			
 			// aapt resource value: 0x7f020106
-			public const int notification_bg_low_pressed = 2130837766;
+			public const int notification_bg_low = 2130837766;
 			
 			// aapt resource value: 0x7f020107
-			public const int notification_bg_normal = 2130837767;
+			public const int notification_bg_low_normal = 2130837767;
 			
 			// aapt resource value: 0x7f020108
-			public const int notification_bg_normal_pressed = 2130837768;
+			public const int notification_bg_low_pressed = 2130837768;
 			
 			// aapt resource value: 0x7f020109
-			public const int notification_icon_background = 2130837769;
-			
-			// aapt resource value: 0x7f02010d
-			public const int notification_template_icon_bg = 2130837773;
-			
-			// aapt resource value: 0x7f02010e
-			public const int notification_template_icon_low_bg = 2130837774;
+			public const int notification_bg_normal = 2130837769;
 			
 			// aapt resource value: 0x7f02010a
-			public const int notification_tile_bg = 2130837770;
+			public const int notification_bg_normal_pressed = 2130837770;
 			
 			// aapt resource value: 0x7f02010b
-			public const int notify_panel_notification_icon_bg = 2130837771;
+			public const int notification_icon_background = 2130837771;
+			
+			// aapt resource value: 0x7f02010f
+			public const int notification_template_icon_bg = 2130837775;
+			
+			// aapt resource value: 0x7f020110
+			public const int notification_template_icon_low_bg = 2130837776;
 			
 			// aapt resource value: 0x7f02010c
-			public const int plusGreen = 2130837772;
+			public const int notification_tile_bg = 2130837772;
+			
+			// aapt resource value: 0x7f02010d
+			public const int notify_panel_notification_icon_bg = 2130837773;
+			
+			// aapt resource value: 0x7f02010e
+			public const int plusGreen = 2130837774;
 			
 			static Drawable()
 			{
@@ -2766,41 +4926,41 @@ namespace Neo.Gui.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f08009e
-			public const int action0 = 2131230878;
+			// aapt resource value: 0x7f0800a1
+			public const int action0 = 2131230881;
 			
-			// aapt resource value: 0x7f080064
-			public const int action_bar = 2131230820;
+			// aapt resource value: 0x7f080067
+			public const int action_bar = 2131230823;
 			
 			// aapt resource value: 0x7f080001
 			public const int action_bar_activity_content = 2131230721;
 			
-			// aapt resource value: 0x7f080063
-			public const int action_bar_container = 2131230819;
+			// aapt resource value: 0x7f080066
+			public const int action_bar_container = 2131230822;
 			
-			// aapt resource value: 0x7f08005f
-			public const int action_bar_root = 2131230815;
+			// aapt resource value: 0x7f080062
+			public const int action_bar_root = 2131230818;
 			
 			// aapt resource value: 0x7f080002
 			public const int action_bar_spinner = 2131230722;
 			
-			// aapt resource value: 0x7f080042
-			public const int action_bar_subtitle = 2131230786;
+			// aapt resource value: 0x7f080045
+			public const int action_bar_subtitle = 2131230789;
 			
-			// aapt resource value: 0x7f080041
-			public const int action_bar_title = 2131230785;
+			// aapt resource value: 0x7f080044
+			public const int action_bar_title = 2131230788;
 			
-			// aapt resource value: 0x7f08009b
-			public const int action_container = 2131230875;
+			// aapt resource value: 0x7f08009e
+			public const int action_container = 2131230878;
 			
-			// aapt resource value: 0x7f080065
-			public const int action_context_bar = 2131230821;
+			// aapt resource value: 0x7f080068
+			public const int action_context_bar = 2131230824;
 			
-			// aapt resource value: 0x7f0800a2
-			public const int action_divider = 2131230882;
+			// aapt resource value: 0x7f0800a5
+			public const int action_divider = 2131230885;
 			
-			// aapt resource value: 0x7f08009c
-			public const int action_image = 2131230876;
+			// aapt resource value: 0x7f08009f
+			public const int action_image = 2131230879;
 			
 			// aapt resource value: 0x7f080003
 			public const int action_menu_divider = 2131230723;
@@ -2808,311 +4968,314 @@ namespace Neo.Gui.Droid
 			// aapt resource value: 0x7f080004
 			public const int action_menu_presenter = 2131230724;
 			
-			// aapt resource value: 0x7f080061
-			public const int action_mode_bar = 2131230817;
+			// aapt resource value: 0x7f080064
+			public const int action_mode_bar = 2131230820;
 			
-			// aapt resource value: 0x7f080060
-			public const int action_mode_bar_stub = 2131230816;
+			// aapt resource value: 0x7f080063
+			public const int action_mode_bar_stub = 2131230819;
 			
-			// aapt resource value: 0x7f080043
-			public const int action_mode_close_button = 2131230787;
+			// aapt resource value: 0x7f080046
+			public const int action_mode_close_button = 2131230790;
 			
-			// aapt resource value: 0x7f08009d
-			public const int action_text = 2131230877;
+			// aapt resource value: 0x7f0800a0
+			public const int action_text = 2131230880;
 			
-			// aapt resource value: 0x7f0800ab
-			public const int actions = 2131230891;
-			
-			// aapt resource value: 0x7f080044
-			public const int activity_chooser_view_content = 2131230788;
-			
-			// aapt resource value: 0x7f08001e
-			public const int add = 2131230750;
-			
-			// aapt resource value: 0x7f080058
-			public const int alertTitle = 2131230808;
-			
-			// aapt resource value: 0x7f08003d
-			public const int all = 2131230781;
-			
-			// aapt resource value: 0x7f080023
-			public const int always = 2131230755;
-			
-			// aapt resource value: 0x7f08002f
-			public const int auto = 2131230767;
-			
-			// aapt resource value: 0x7f080020
-			public const int beginning = 2131230752;
-			
-			// aapt resource value: 0x7f080028
-			public const int bottom = 2131230760;
-			
-			// aapt resource value: 0x7f08004b
-			public const int buttonPanel = 2131230795;
-			
-			// aapt resource value: 0x7f08009f
-			public const int cancel_action = 2131230879;
-			
-			// aapt resource value: 0x7f080030
-			public const int center = 2131230768;
-			
-			// aapt resource value: 0x7f080031
-			public const int center_horizontal = 2131230769;
-			
-			// aapt resource value: 0x7f080032
-			public const int center_vertical = 2131230770;
-			
-			// aapt resource value: 0x7f08005b
-			public const int checkbox = 2131230811;
-			
-			// aapt resource value: 0x7f0800a7
-			public const int chronometer = 2131230887;
-			
-			// aapt resource value: 0x7f080039
-			public const int clip_horizontal = 2131230777;
-			
-			// aapt resource value: 0x7f08003a
-			public const int clip_vertical = 2131230778;
-			
-			// aapt resource value: 0x7f080024
-			public const int collapseActionView = 2131230756;
-			
-			// aapt resource value: 0x7f080075
-			public const int container = 2131230837;
-			
-			// aapt resource value: 0x7f08004e
-			public const int contentPanel = 2131230798;
-			
-			// aapt resource value: 0x7f080076
-			public const int coordinator = 2131230838;
-			
-			// aapt resource value: 0x7f080055
-			public const int custom = 2131230805;
-			
-			// aapt resource value: 0x7f080054
-			public const int customPanel = 2131230804;
-			
-			// aapt resource value: 0x7f080062
-			public const int decor_content_parent = 2131230818;
+			// aapt resource value: 0x7f0800ae
+			public const int actions = 2131230894;
 			
 			// aapt resource value: 0x7f080047
-			public const int default_activity_button = 2131230791;
+			public const int activity_chooser_view_content = 2131230791;
 			
-			// aapt resource value: 0x7f080078
-			public const int design_bottom_sheet = 2131230840;
+			// aapt resource value: 0x7f08001f
+			public const int add = 2131230751;
 			
-			// aapt resource value: 0x7f08007f
-			public const int design_menu_item_action_area = 2131230847;
+			// aapt resource value: 0x7f08005b
+			public const int alertTitle = 2131230811;
 			
-			// aapt resource value: 0x7f08007e
-			public const int design_menu_item_action_area_stub = 2131230846;
+			// aapt resource value: 0x7f08003e
+			public const int all = 2131230782;
 			
-			// aapt resource value: 0x7f08007d
-			public const int design_menu_item_text = 2131230845;
+			// aapt resource value: 0x7f080024
+			public const int always = 2131230756;
 			
-			// aapt resource value: 0x7f08007c
-			public const int design_navigation_view = 2131230844;
-			
-			// aapt resource value: 0x7f080012
-			public const int disableHome = 2131230738;
-			
-			// aapt resource value: 0x7f080066
-			public const int edit_query = 2131230822;
+			// aapt resource value: 0x7f080030
+			public const int auto = 2131230768;
 			
 			// aapt resource value: 0x7f080021
-			public const int end = 2131230753;
+			public const int beginning = 2131230753;
 			
-			// aapt resource value: 0x7f0800b1
-			public const int end_padder = 2131230897;
+			// aapt resource value: 0x7f080029
+			public const int bottom = 2131230761;
 			
-			// aapt resource value: 0x7f08002a
-			public const int enterAlways = 2131230762;
+			// aapt resource value: 0x7f08004e
+			public const int buttonPanel = 2131230798;
 			
-			// aapt resource value: 0x7f08002b
-			public const int enterAlwaysCollapsed = 2131230763;
+			// aapt resource value: 0x7f0800a2
+			public const int cancel_action = 2131230882;
 			
-			// aapt resource value: 0x7f08002c
-			public const int exitUntilCollapsed = 2131230764;
+			// aapt resource value: 0x7f080031
+			public const int center = 2131230769;
 			
-			// aapt resource value: 0x7f080045
-			public const int expand_activities_button = 2131230789;
-			
-			// aapt resource value: 0x7f08005a
-			public const int expanded_menu = 2131230810;
-			
-			// aapt resource value: 0x7f08003b
-			public const int fill = 2131230779;
-			
-			// aapt resource value: 0x7f08003c
-			public const int fill_horizontal = 2131230780;
+			// aapt resource value: 0x7f080032
+			public const int center_horizontal = 2131230770;
 			
 			// aapt resource value: 0x7f080033
-			public const int fill_vertical = 2131230771;
+			public const int center_vertical = 2131230771;
 			
-			// aapt resource value: 0x7f08003f
-			public const int @fixed = 2131230783;
+			// aapt resource value: 0x7f08005e
+			public const int checkbox = 2131230814;
+			
+			// aapt resource value: 0x7f0800aa
+			public const int chronometer = 2131230890;
+			
+			// aapt resource value: 0x7f08003a
+			public const int clip_horizontal = 2131230778;
+			
+			// aapt resource value: 0x7f08003b
+			public const int clip_vertical = 2131230779;
+			
+			// aapt resource value: 0x7f080025
+			public const int collapseActionView = 2131230757;
+			
+			// aapt resource value: 0x7f080078
+			public const int container = 2131230840;
+			
+			// aapt resource value: 0x7f080051
+			public const int contentPanel = 2131230801;
+			
+			// aapt resource value: 0x7f080079
+			public const int coordinator = 2131230841;
+			
+			// aapt resource value: 0x7f080058
+			public const int custom = 2131230808;
+			
+			// aapt resource value: 0x7f080057
+			public const int customPanel = 2131230807;
+			
+			// aapt resource value: 0x7f080065
+			public const int decor_content_parent = 2131230821;
+			
+			// aapt resource value: 0x7f08004a
+			public const int default_activity_button = 2131230794;
+			
+			// aapt resource value: 0x7f08007b
+			public const int design_bottom_sheet = 2131230843;
+			
+			// aapt resource value: 0x7f080082
+			public const int design_menu_item_action_area = 2131230850;
+			
+			// aapt resource value: 0x7f080081
+			public const int design_menu_item_action_area_stub = 2131230849;
+			
+			// aapt resource value: 0x7f080080
+			public const int design_menu_item_text = 2131230848;
+			
+			// aapt resource value: 0x7f08007f
+			public const int design_navigation_view = 2131230847;
+			
+			// aapt resource value: 0x7f080013
+			public const int disableHome = 2131230739;
+			
+			// aapt resource value: 0x7f080069
+			public const int edit_query = 2131230825;
+			
+			// aapt resource value: 0x7f080022
+			public const int end = 2131230754;
+			
+			// aapt resource value: 0x7f0800b4
+			public const int end_padder = 2131230900;
+			
+			// aapt resource value: 0x7f08002b
+			public const int enterAlways = 2131230763;
+			
+			// aapt resource value: 0x7f08002c
+			public const int enterAlwaysCollapsed = 2131230764;
+			
+			// aapt resource value: 0x7f08002d
+			public const int exitUntilCollapsed = 2131230765;
+			
+			// aapt resource value: 0x7f080048
+			public const int expand_activities_button = 2131230792;
+			
+			// aapt resource value: 0x7f08005d
+			public const int expanded_menu = 2131230813;
+			
+			// aapt resource value: 0x7f08003c
+			public const int fill = 2131230780;
+			
+			// aapt resource value: 0x7f08003d
+			public const int fill_horizontal = 2131230781;
+			
+			// aapt resource value: 0x7f080034
+			public const int fill_vertical = 2131230772;
+			
+			// aapt resource value: 0x7f080040
+			public const int @fixed = 2131230784;
 			
 			// aapt resource value: 0x7f080005
 			public const int home = 2131230725;
 			
-			// aapt resource value: 0x7f080013
-			public const int homeAsUp = 2131230739;
+			// aapt resource value: 0x7f080014
+			public const int homeAsUp = 2131230740;
+			
+			// aapt resource value: 0x7f08004c
+			public const int icon = 2131230796;
+			
+			// aapt resource value: 0x7f0800af
+			public const int icon_group = 2131230895;
+			
+			// aapt resource value: 0x7f080026
+			public const int ifRoom = 2131230758;
 			
 			// aapt resource value: 0x7f080049
-			public const int icon = 2131230793;
+			public const int image = 2131230793;
 			
-			// aapt resource value: 0x7f0800ac
-			public const int icon_group = 2131230892;
-			
-			// aapt resource value: 0x7f080025
-			public const int ifRoom = 2131230757;
-			
-			// aapt resource value: 0x7f080046
-			public const int image = 2131230790;
-			
-			// aapt resource value: 0x7f0800a8
-			public const int info = 2131230888;
+			// aapt resource value: 0x7f0800ab
+			public const int info = 2131230891;
 			
 			// aapt resource value: 0x7f080000
 			public const int item_touch_helper_previous_elevation = 2131230720;
 			
-			// aapt resource value: 0x7f080074
-			public const int largeLabel = 2131230836;
+			// aapt resource value: 0x7f080077
+			public const int largeLabel = 2131230839;
 			
-			// aapt resource value: 0x7f080034
-			public const int left = 2131230772;
+			// aapt resource value: 0x7f080035
+			public const int left = 2131230773;
 			
-			// aapt resource value: 0x7f0800ad
-			public const int line1 = 2131230893;
+			// aapt resource value: 0x7f0800b0
+			public const int line1 = 2131230896;
 			
-			// aapt resource value: 0x7f0800af
-			public const int line3 = 2131230895;
-			
-			// aapt resource value: 0x7f08000f
-			public const int listMode = 2131230735;
-			
-			// aapt resource value: 0x7f080048
-			public const int list_item = 2131230792;
-			
-			// aapt resource value: 0x7f0800b5
-			public const int masked = 2131230901;
-			
-			// aapt resource value: 0x7f0800a1
-			public const int media_actions = 2131230881;
-			
-			// aapt resource value: 0x7f080022
-			public const int middle = 2131230754;
-			
-			// aapt resource value: 0x7f08003e
-			public const int mini = 2131230782;
-			
-			// aapt resource value: 0x7f08008d
-			public const int mr_art = 2131230861;
-			
-			// aapt resource value: 0x7f080082
-			public const int mr_chooser_list = 2131230850;
-			
-			// aapt resource value: 0x7f080085
-			public const int mr_chooser_route_desc = 2131230853;
-			
-			// aapt resource value: 0x7f080083
-			public const int mr_chooser_route_icon = 2131230851;
-			
-			// aapt resource value: 0x7f080084
-			public const int mr_chooser_route_name = 2131230852;
-			
-			// aapt resource value: 0x7f080081
-			public const int mr_chooser_title = 2131230849;
-			
-			// aapt resource value: 0x7f08008a
-			public const int mr_close = 2131230858;
-			
-			// aapt resource value: 0x7f080090
-			public const int mr_control_divider = 2131230864;
-			
-			// aapt resource value: 0x7f080096
-			public const int mr_control_playback_ctrl = 2131230870;
-			
-			// aapt resource value: 0x7f080099
-			public const int mr_control_subtitle = 2131230873;
-			
-			// aapt resource value: 0x7f080098
-			public const int mr_control_title = 2131230872;
-			
-			// aapt resource value: 0x7f080097
-			public const int mr_control_title_container = 2131230871;
-			
-			// aapt resource value: 0x7f08008b
-			public const int mr_custom_control = 2131230859;
-			
-			// aapt resource value: 0x7f08008c
-			public const int mr_default_control = 2131230860;
-			
-			// aapt resource value: 0x7f080087
-			public const int mr_dialog_area = 2131230855;
-			
-			// aapt resource value: 0x7f080086
-			public const int mr_expandable_area = 2131230854;
-			
-			// aapt resource value: 0x7f08009a
-			public const int mr_group_expand_collapse = 2131230874;
-			
-			// aapt resource value: 0x7f08008e
-			public const int mr_media_main_control = 2131230862;
-			
-			// aapt resource value: 0x7f080089
-			public const int mr_name = 2131230857;
-			
-			// aapt resource value: 0x7f08008f
-			public const int mr_playback_control = 2131230863;
-			
-			// aapt resource value: 0x7f080088
-			public const int mr_title_bar = 2131230856;
-			
-			// aapt resource value: 0x7f080091
-			public const int mr_volume_control = 2131230865;
-			
-			// aapt resource value: 0x7f080092
-			public const int mr_volume_group_list = 2131230866;
-			
-			// aapt resource value: 0x7f080094
-			public const int mr_volume_item_icon = 2131230868;
-			
-			// aapt resource value: 0x7f080095
-			public const int mr_volume_slider = 2131230869;
-			
-			// aapt resource value: 0x7f080019
-			public const int multiply = 2131230745;
-			
-			// aapt resource value: 0x7f08007b
-			public const int navigation_header_container = 2131230843;
-			
-			// aapt resource value: 0x7f080026
-			public const int never = 2131230758;
-			
-			// aapt resource value: 0x7f080014
-			public const int none = 2131230740;
+			// aapt resource value: 0x7f0800b2
+			public const int line3 = 2131230898;
 			
 			// aapt resource value: 0x7f080010
-			public const int normal = 2131230736;
+			public const int listMode = 2131230736;
 			
-			// aapt resource value: 0x7f0800aa
-			public const int notification_background = 2131230890;
+			// aapt resource value: 0x7f08004b
+			public const int list_item = 2131230795;
+			
+			// aapt resource value: 0x7f08000f
+			public const int lottie_layer_name = 2131230735;
+			
+			// aapt resource value: 0x7f0800b8
+			public const int masked = 2131230904;
 			
 			// aapt resource value: 0x7f0800a4
-			public const int notification_main_column = 2131230884;
+			public const int media_actions = 2131230884;
 			
-			// aapt resource value: 0x7f0800a3
-			public const int notification_main_column_container = 2131230883;
+			// aapt resource value: 0x7f080023
+			public const int middle = 2131230755;
 			
-			// aapt resource value: 0x7f080037
-			public const int parallax = 2131230775;
+			// aapt resource value: 0x7f08003f
+			public const int mini = 2131230783;
 			
-			// aapt resource value: 0x7f08004d
-			public const int parentPanel = 2131230797;
+			// aapt resource value: 0x7f080090
+			public const int mr_art = 2131230864;
+			
+			// aapt resource value: 0x7f080085
+			public const int mr_chooser_list = 2131230853;
+			
+			// aapt resource value: 0x7f080088
+			public const int mr_chooser_route_desc = 2131230856;
+			
+			// aapt resource value: 0x7f080086
+			public const int mr_chooser_route_icon = 2131230854;
+			
+			// aapt resource value: 0x7f080087
+			public const int mr_chooser_route_name = 2131230855;
+			
+			// aapt resource value: 0x7f080084
+			public const int mr_chooser_title = 2131230852;
+			
+			// aapt resource value: 0x7f08008d
+			public const int mr_close = 2131230861;
+			
+			// aapt resource value: 0x7f080093
+			public const int mr_control_divider = 2131230867;
+			
+			// aapt resource value: 0x7f080099
+			public const int mr_control_playback_ctrl = 2131230873;
+			
+			// aapt resource value: 0x7f08009c
+			public const int mr_control_subtitle = 2131230876;
+			
+			// aapt resource value: 0x7f08009b
+			public const int mr_control_title = 2131230875;
+			
+			// aapt resource value: 0x7f08009a
+			public const int mr_control_title_container = 2131230874;
+			
+			// aapt resource value: 0x7f08008e
+			public const int mr_custom_control = 2131230862;
+			
+			// aapt resource value: 0x7f08008f
+			public const int mr_default_control = 2131230863;
+			
+			// aapt resource value: 0x7f08008a
+			public const int mr_dialog_area = 2131230858;
+			
+			// aapt resource value: 0x7f080089
+			public const int mr_expandable_area = 2131230857;
+			
+			// aapt resource value: 0x7f08009d
+			public const int mr_group_expand_collapse = 2131230877;
+			
+			// aapt resource value: 0x7f080091
+			public const int mr_media_main_control = 2131230865;
+			
+			// aapt resource value: 0x7f08008c
+			public const int mr_name = 2131230860;
+			
+			// aapt resource value: 0x7f080092
+			public const int mr_playback_control = 2131230866;
+			
+			// aapt resource value: 0x7f08008b
+			public const int mr_title_bar = 2131230859;
+			
+			// aapt resource value: 0x7f080094
+			public const int mr_volume_control = 2131230868;
+			
+			// aapt resource value: 0x7f080095
+			public const int mr_volume_group_list = 2131230869;
+			
+			// aapt resource value: 0x7f080097
+			public const int mr_volume_item_icon = 2131230871;
+			
+			// aapt resource value: 0x7f080098
+			public const int mr_volume_slider = 2131230872;
+			
+			// aapt resource value: 0x7f08001a
+			public const int multiply = 2131230746;
+			
+			// aapt resource value: 0x7f08007e
+			public const int navigation_header_container = 2131230846;
+			
+			// aapt resource value: 0x7f080027
+			public const int never = 2131230759;
+			
+			// aapt resource value: 0x7f080015
+			public const int none = 2131230741;
+			
+			// aapt resource value: 0x7f080011
+			public const int normal = 2131230737;
+			
+			// aapt resource value: 0x7f0800ad
+			public const int notification_background = 2131230893;
+			
+			// aapt resource value: 0x7f0800a7
+			public const int notification_main_column = 2131230887;
+			
+			// aapt resource value: 0x7f0800a6
+			public const int notification_main_column_container = 2131230886;
 			
 			// aapt resource value: 0x7f080038
-			public const int pin = 2131230776;
+			public const int parallax = 2131230776;
+			
+			// aapt resource value: 0x7f080050
+			public const int parentPanel = 2131230800;
+			
+			// aapt resource value: 0x7f080039
+			public const int pin = 2131230777;
 			
 			// aapt resource value: 0x7f080006
 			public const int progress_circular = 2131230726;
@@ -3120,140 +5283,143 @@ namespace Neo.Gui.Droid
 			// aapt resource value: 0x7f080007
 			public const int progress_horizontal = 2131230727;
 			
-			// aapt resource value: 0x7f08005d
-			public const int radio = 2131230813;
+			// aapt resource value: 0x7f080060
+			public const int radio = 2131230816;
 			
-			// aapt resource value: 0x7f080035
-			public const int right = 2131230773;
+			// aapt resource value: 0x7f080036
+			public const int right = 2131230774;
 			
-			// aapt resource value: 0x7f0800a9
-			public const int right_icon = 2131230889;
+			// aapt resource value: 0x7f0800ac
+			public const int right_icon = 2131230892;
 			
-			// aapt resource value: 0x7f0800a5
-			public const int right_side = 2131230885;
+			// aapt resource value: 0x7f0800a8
+			public const int right_side = 2131230888;
 			
-			// aapt resource value: 0x7f08001a
-			public const int screen = 2131230746;
-			
-			// aapt resource value: 0x7f08002d
-			public const int scroll = 2131230765;
-			
-			// aapt resource value: 0x7f080053
-			public const int scrollIndicatorDown = 2131230803;
-			
-			// aapt resource value: 0x7f08004f
-			public const int scrollIndicatorUp = 2131230799;
-			
-			// aapt resource value: 0x7f080050
-			public const int scrollView = 2131230800;
-			
-			// aapt resource value: 0x7f080040
-			public const int scrollable = 2131230784;
-			
-			// aapt resource value: 0x7f080068
-			public const int search_badge = 2131230824;
-			
-			// aapt resource value: 0x7f080067
-			public const int search_bar = 2131230823;
-			
-			// aapt resource value: 0x7f080069
-			public const int search_button = 2131230825;
-			
-			// aapt resource value: 0x7f08006e
-			public const int search_close_btn = 2131230830;
-			
-			// aapt resource value: 0x7f08006a
-			public const int search_edit_frame = 2131230826;
-			
-			// aapt resource value: 0x7f080070
-			public const int search_go_btn = 2131230832;
-			
-			// aapt resource value: 0x7f08006b
-			public const int search_mag_icon = 2131230827;
-			
-			// aapt resource value: 0x7f08006c
-			public const int search_plate = 2131230828;
-			
-			// aapt resource value: 0x7f08006d
-			public const int search_src_text = 2131230829;
-			
-			// aapt resource value: 0x7f080071
-			public const int search_voice_btn = 2131230833;
-			
-			// aapt resource value: 0x7f080072
-			public const int select_dialog_listview = 2131230834;
-			
-			// aapt resource value: 0x7f08005c
-			public const int shortcut = 2131230812;
-			
-			// aapt resource value: 0x7f080015
-			public const int showCustom = 2131230741;
-			
-			// aapt resource value: 0x7f080016
-			public const int showHome = 2131230742;
-			
-			// aapt resource value: 0x7f080017
-			public const int showTitle = 2131230743;
-			
-			// aapt resource value: 0x7f0800b2
-			public const int sliding_tabs = 2131230898;
-			
-			// aapt resource value: 0x7f080073
-			public const int smallLabel = 2131230835;
-			
-			// aapt resource value: 0x7f08007a
-			public const int snackbar_action = 2131230842;
-			
-			// aapt resource value: 0x7f080079
-			public const int snackbar_text = 2131230841;
+			// aapt resource value: 0x7f08001b
+			public const int screen = 2131230747;
 			
 			// aapt resource value: 0x7f08002e
-			public const int snap = 2131230766;
+			public const int scroll = 2131230766;
 			
-			// aapt resource value: 0x7f08004c
-			public const int spacer = 2131230796;
+			// aapt resource value: 0x7f080056
+			public const int scrollIndicatorDown = 2131230806;
+			
+			// aapt resource value: 0x7f080052
+			public const int scrollIndicatorUp = 2131230802;
+			
+			// aapt resource value: 0x7f080053
+			public const int scrollView = 2131230803;
+			
+			// aapt resource value: 0x7f080041
+			public const int scrollable = 2131230785;
+			
+			// aapt resource value: 0x7f08006b
+			public const int search_badge = 2131230827;
+			
+			// aapt resource value: 0x7f08006a
+			public const int search_bar = 2131230826;
+			
+			// aapt resource value: 0x7f08006c
+			public const int search_button = 2131230828;
+			
+			// aapt resource value: 0x7f080071
+			public const int search_close_btn = 2131230833;
+			
+			// aapt resource value: 0x7f08006d
+			public const int search_edit_frame = 2131230829;
+			
+			// aapt resource value: 0x7f080073
+			public const int search_go_btn = 2131230835;
+			
+			// aapt resource value: 0x7f08006e
+			public const int search_mag_icon = 2131230830;
+			
+			// aapt resource value: 0x7f08006f
+			public const int search_plate = 2131230831;
+			
+			// aapt resource value: 0x7f080070
+			public const int search_src_text = 2131230832;
+			
+			// aapt resource value: 0x7f080074
+			public const int search_voice_btn = 2131230836;
+			
+			// aapt resource value: 0x7f080075
+			public const int select_dialog_listview = 2131230837;
+			
+			// aapt resource value: 0x7f08005f
+			public const int shortcut = 2131230815;
+			
+			// aapt resource value: 0x7f080016
+			public const int showCustom = 2131230742;
+			
+			// aapt resource value: 0x7f080017
+			public const int showHome = 2131230743;
+			
+			// aapt resource value: 0x7f080018
+			public const int showTitle = 2131230744;
+			
+			// aapt resource value: 0x7f0800b5
+			public const int sliding_tabs = 2131230901;
+			
+			// aapt resource value: 0x7f080076
+			public const int smallLabel = 2131230838;
+			
+			// aapt resource value: 0x7f08007d
+			public const int snackbar_action = 2131230845;
+			
+			// aapt resource value: 0x7f08007c
+			public const int snackbar_text = 2131230844;
+			
+			// aapt resource value: 0x7f08002f
+			public const int snap = 2131230767;
+			
+			// aapt resource value: 0x7f08004f
+			public const int spacer = 2131230799;
 			
 			// aapt resource value: 0x7f080008
 			public const int split_action_bar = 2131230728;
 			
-			// aapt resource value: 0x7f08001b
-			public const int src_atop = 2131230747;
-			
 			// aapt resource value: 0x7f08001c
-			public const int src_in = 2131230748;
+			public const int src_atop = 2131230748;
 			
 			// aapt resource value: 0x7f08001d
-			public const int src_over = 2131230749;
+			public const int src_in = 2131230749;
 			
-			// aapt resource value: 0x7f080036
-			public const int start = 2131230774;
+			// aapt resource value: 0x7f08001e
+			public const int src_over = 2131230750;
 			
-			// aapt resource value: 0x7f0800a0
-			public const int status_bar_latest_event_content = 2131230880;
+			// aapt resource value: 0x7f080037
+			public const int start = 2131230775;
 			
-			// aapt resource value: 0x7f08005e
-			public const int submenuarrow = 2131230814;
+			// aapt resource value: 0x7f0800a3
+			public const int status_bar_latest_event_content = 2131230883;
 			
-			// aapt resource value: 0x7f08006f
-			public const int submit_area = 2131230831;
+			// aapt resource value: 0x7f080042
+			public const int strong = 2131230786;
 			
-			// aapt resource value: 0x7f080011
-			public const int tabMode = 2131230737;
+			// aapt resource value: 0x7f080061
+			public const int submenuarrow = 2131230817;
 			
-			// aapt resource value: 0x7f0800b0
-			public const int text = 2131230896;
+			// aapt resource value: 0x7f080072
+			public const int submit_area = 2131230834;
 			
-			// aapt resource value: 0x7f0800ae
-			public const int text2 = 2131230894;
+			// aapt resource value: 0x7f080012
+			public const int tabMode = 2131230738;
 			
-			// aapt resource value: 0x7f080052
-			public const int textSpacerNoButtons = 2131230802;
+			// aapt resource value: 0x7f0800b3
+			public const int text = 2131230899;
 			
-			// aapt resource value: 0x7f080051
-			public const int textSpacerNoTitle = 2131230801;
+			// aapt resource value: 0x7f0800b1
+			public const int text2 = 2131230897;
 			
-			// aapt resource value: 0x7f080080
-			public const int text_input_password_toggle = 2131230848;
+			// aapt resource value: 0x7f080055
+			public const int textSpacerNoButtons = 2131230805;
+			
+			// aapt resource value: 0x7f080054
+			public const int textSpacerNoTitle = 2131230804;
+			
+			// aapt resource value: 0x7f080083
+			public const int text_input_password_toggle = 2131230851;
 			
 			// aapt resource value: 0x7f08000c
 			public const int textinput_counter = 2131230732;
@@ -3261,29 +5427,29 @@ namespace Neo.Gui.Droid
 			// aapt resource value: 0x7f08000d
 			public const int textinput_error = 2131230733;
 			
-			// aapt resource value: 0x7f0800a6
-			public const int time = 2131230886;
+			// aapt resource value: 0x7f0800a9
+			public const int time = 2131230889;
 			
-			// aapt resource value: 0x7f08004a
-			public const int title = 2131230794;
+			// aapt resource value: 0x7f08004d
+			public const int title = 2131230797;
+			
+			// aapt resource value: 0x7f08005c
+			public const int titleDividerNoCustom = 2131230812;
+			
+			// aapt resource value: 0x7f08005a
+			public const int title_template = 2131230810;
+			
+			// aapt resource value: 0x7f0800b6
+			public const int toolbar = 2131230902;
+			
+			// aapt resource value: 0x7f08002a
+			public const int top = 2131230762;
 			
 			// aapt resource value: 0x7f080059
-			public const int titleDividerNoCustom = 2131230809;
+			public const int topPanel = 2131230809;
 			
-			// aapt resource value: 0x7f080057
-			public const int title_template = 2131230807;
-			
-			// aapt resource value: 0x7f0800b3
-			public const int toolbar = 2131230899;
-			
-			// aapt resource value: 0x7f080029
-			public const int top = 2131230761;
-			
-			// aapt resource value: 0x7f080056
-			public const int topPanel = 2131230806;
-			
-			// aapt resource value: 0x7f080077
-			public const int touch_outside = 2131230839;
+			// aapt resource value: 0x7f08007a
+			public const int touch_outside = 2131230842;
 			
 			// aapt resource value: 0x7f08000a
 			public const int transition_current_scene = 2131230730;
@@ -3294,23 +5460,26 @@ namespace Neo.Gui.Droid
 			// aapt resource value: 0x7f080009
 			public const int up = 2131230729;
 			
-			// aapt resource value: 0x7f080018
-			public const int useLogo = 2131230744;
+			// aapt resource value: 0x7f080019
+			public const int useLogo = 2131230745;
 			
 			// aapt resource value: 0x7f08000e
 			public const int view_offset_helper = 2131230734;
 			
-			// aapt resource value: 0x7f0800b4
-			public const int visible = 2131230900;
+			// aapt resource value: 0x7f0800b7
+			public const int visible = 2131230903;
 			
-			// aapt resource value: 0x7f080093
-			public const int volume_item_container = 2131230867;
+			// aapt resource value: 0x7f080096
+			public const int volume_item_container = 2131230870;
 			
-			// aapt resource value: 0x7f080027
-			public const int withText = 2131230759;
+			// aapt resource value: 0x7f080043
+			public const int weak = 2131230787;
 			
-			// aapt resource value: 0x7f08001f
-			public const int wrap_content = 2131230751;
+			// aapt resource value: 0x7f080028
+			public const int withText = 2131230760;
+			
+			// aapt resource value: 0x7f080020
+			public const int wrap_content = 2131230752;
 			
 			static Id()
 			{
@@ -3609,6 +5778,12 @@ namespace Neo.Gui.Droid
 		
 		public partial class String
 		{
+			
+			// aapt resource value: 0x7f09003f
+			public const int ApplicationName = 2131296319;
+			
+			// aapt resource value: 0x7f09003e
+			public const int Hello = 2131296318;
 			
 			// aapt resource value: 0x7f090015
 			public const int abc_action_bar_home_description = 2131296277;
@@ -6191,6 +8366,44 @@ namespace Neo.Gui.Droid
 			
 			// aapt resource value: 1
 			public const int ListPopupWindow_android_dropDownVerticalOffset = 1;
+			
+			public static int[] LottieAnimationView = new int[] {
+					2130772309,
+					2130772310,
+					2130772311,
+					2130772312,
+					2130772313,
+					2130772314,
+					2130772315,
+					2130772316,
+					2130772317};
+			
+			// aapt resource value: 1
+			public const int LottieAnimationView_lottie_autoPlay = 1;
+			
+			// aapt resource value: 6
+			public const int LottieAnimationView_lottie_cacheStrategy = 6;
+			
+			// aapt resource value: 7
+			public const int LottieAnimationView_lottie_colorFilter = 7;
+			
+			// aapt resource value: 5
+			public const int LottieAnimationView_lottie_enableMergePathsForKitKatAndAbove = 5;
+			
+			// aapt resource value: 0
+			public const int LottieAnimationView_lottie_fileName = 0;
+			
+			// aapt resource value: 3
+			public const int LottieAnimationView_lottie_imageAssetsFolder = 3;
+			
+			// aapt resource value: 2
+			public const int LottieAnimationView_lottie_loop = 2;
+			
+			// aapt resource value: 4
+			public const int LottieAnimationView_lottie_progress = 4;
+			
+			// aapt resource value: 8
+			public const int LottieAnimationView_lottie_scale = 8;
 			
 			public static int[] MediaRouteButton = new int[] {
 					16843071,

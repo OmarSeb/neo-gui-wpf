@@ -1,14 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Neo.Gui"
-             xmlns:controls="clr-namespace:Neo.Gui.XamarinViews.Controls;assembly=Neo.Gui.XamarinViews"
-             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              xmlns:xamarinViews="clr-namespace:Neo.Gui.XamarinViews;assembly=Neo.Gui.XamarinViews"
-             x:Class="Neo.Gui.HomeView"
-             prism:ViewModelLocator.AutowireViewModel="True" >
-    <ContentPage>
-        <StackLayout VerticalOptions="FillAndExpand">
+             x:Class="Neo.Gui.XamarinViews.MenuPage">
+    <StackLayout VerticalOptions="FillAndExpand">
             <ListView 
                 CachingStrategy="RecycleElement"
                 SeparatorColor="Transparent"
@@ -31,13 +26,7 @@
                         <BoxView Grid.ColumnSpan="3" 
                                  Grid.RowSpan="4"
                                  BackgroundColor="#03A9F4"/>
-                        <!--<controls:CircleImage
-                            Grid.Column="1"
-                            Grid.Row="1"
-                            HorizontalOptions="Start"
-                            VerticalOptions="End"
-                            Source="scott159.png"
-                            WidthRequest="75" HeightRequest="75"/>-->
+                      
                         <Label 
                             Grid.Column="1"
                             Grid.Row="2"
@@ -61,19 +50,4 @@
                 </ListView.ItemTemplate>
             </ListView>
         </StackLayout>
-    </ContentPage>
-    <!--<MasterDetailPage.Master >
-
-        <xamarinViews:MenuView/>
-    </MasterDetailPage.Master >
-    <MasterDetailPage.Detail>
-        <NavigationPage>
-            <x:Arguments>
-                <ContentPage Title="DETAIL">
-                    <Label Text="NEW DETAIL PAGE"></Label>
-                </ContentPage>
-            </x:Arguments>
-        </NavigationPage>
-    </MasterDetailPage.Detail>-->
-
-</MasterDetailPage>
+</ContentPage>

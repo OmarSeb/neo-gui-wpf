@@ -24,7 +24,7 @@ namespace Neo.Gui.XamarinViews
 
         private async void GetMainPage()
         {
-            await NavigationService.NavigateAsync("Navigation/HomeView");
+            await NavigationService.NavigateAsync("HomeView");
         }
 
         protected override void OnInitialized()
@@ -41,6 +41,8 @@ namespace Neo.Gui.XamarinViews
             Container.RegisterTypeForNavigation<NavigationPage>("Navigation");
             //Binding MVVM
             Container.RegisterTypeForNavigation<HomeView, HomeViewModel>();
+            Container.RegisterTypeForNavigation<MenuPage, HomeViewModel>();
+            Container.RegisterTypeForNavigation<Page2, HomeViewModel>();
         }
 
 

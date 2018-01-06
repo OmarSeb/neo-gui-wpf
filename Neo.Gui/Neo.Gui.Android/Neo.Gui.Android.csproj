@@ -77,6 +77,15 @@
     <Reference Include="GalaSoft.MvvmLight.Platform, Version=5.3.0.19037, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\MvvmLightLibs.5.3.0.0\lib\monoandroid1\GalaSoft.MvvmLight.Platform.dll</HintPath>
     </Reference>
+    <Reference Include="Lottie, Version=1.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Com.Airbnb.Android.Lottie.2.2.5.0\lib\MonoAndroid40\Lottie.dll</HintPath>
+    </Reference>
+    <Reference Include="Lottie.Forms, Version=1.0.6477.21484, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Com.Airbnb.Xamarin.Forms.Lottie.2.3.4\lib\MonoAndroid70\Lottie.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Lottie.Forms.Droid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Com.Airbnb.Xamarin.Forms.Lottie.2.3.4\lib\MonoAndroid70\Lottie.Forms.Droid.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AspNetCore.Hosting, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.AspNetCore.Hosting.2.0.0\lib\netstandard2.0\Microsoft.AspNetCore.Hosting.dll</HintPath>
     </Reference>
@@ -333,6 +342,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <AndroidAsset Include="Assets\gradientanimatedbackground.json" />
+    <AndroidAsset Include="Assets\lottielogo1.json" />
+    <AndroidAsset Include="Assets\video_cam.json" />
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
@@ -359,6 +371,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\plusGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\neologo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\NeoIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Android.Support.Animated.Vector.Drawable.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Animated.Vector.Drawable.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Animated.Vector.Drawable.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Animated.Vector.Drawable.targets')" />
