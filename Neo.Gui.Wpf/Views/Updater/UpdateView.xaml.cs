@@ -1,9 +1,9 @@
-﻿using Neo.Gui.Base.Dialogs.Interfaces;
-using Neo.Gui.Base.Dialogs.Results.Settings;
+﻿using Neo.Gui.Dialogs.Interfaces;
+using Neo.Gui.Dialogs.LoadParameters.Updater;
 
 namespace Neo.Gui.Wpf.Views.Updater
 {
-    public partial class UpdateView : IDialog<UpdateDialogResult>
+    public partial class UpdateView : IDialog<UpdateLoadParameters>
     {
         public UpdateView()
         {

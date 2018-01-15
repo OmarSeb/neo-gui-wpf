@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Linq;
-using System.Windows.Input;
 
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
-
-using Neo.Gui.Base.Controllers;
-using Neo.Gui.Base.Dialogs.Interfaces;
-using Neo.Gui.Base.Dialogs.Results.Wallets;
-using Neo.Gui.Base.Messages;
-using Neo.Gui.Base.Messaging.Interfaces;
-using Neo.Gui.Base.MVVM;
+using Neo.Gui.Dialogs.Interfaces;
+using Neo.Gui.Dialogs.LoadParameters.Wallets;
+using Neo.UI.Core.Controllers.Interfaces;
+using Neo.UI.Core.Messages;
+using Neo.UI.Core.Messaging.Interfaces;
 
 namespace Neo.Gui.ViewModels.Wallets
 {
@@ -19,31 +15,19 @@ namespace Neo.Gui.ViewModels.Wallets
         ILoadable,
         IUnloadable,
         IMessageHandler<WalletStatusMessage>,
-        IDialogViewModel<ClaimDialogResult>
+        IDialogViewModel<ClaimLoadParameters>
     {
-        private readonly IWalletController walletController;
-        private readonly IMessagePublisher messagePublisher;
+        #region Private Fields 
         private readonly IMessageSubscriber messageSubscriber;
+        private readonly IWalletController walletController;
 
         private Fixed8 availableGas = Fixed8.Zero;
         private Fixed8 unavailableGas = Fixed8.Zero;
 
         private bool claimEnabled;
-
-
-
-        public ClaimViewModel(
-            IWalletController walletController,
-            IMessagePublisher messagePublisher,
-            IMessageSubscriber messageSubscriber)
-        {
-            this.walletController = walletController;
-            this.messagePublisher = messagePublisher;
-            this.messageSubscriber = messageSubscriber;
-        }
+        #endregion
 
         #region Public Properties
-
         public Fixed8 AvailableGas
         {
             get => this.availableGas;
@@ -83,16 +67,25 @@ namespace Neo.Gui.ViewModels.Wallets
             }
         }
 
+        public RelayCommand ClaimCommand => new RelayCommand(this.Claim);
         #endregion Public Properties
 
-        public ICommand ClaimCommand => new RelayCommand(this.Claim);
+        #region Constructor 
+        public ClaimViewModel(
+            IMessageSubscriber messageSubscriber,
+            IWalletController walletController)
+        {
+            this.messageSubscriber = messageSubscriber;
+            this.walletController = walletController;
+        }
+        #endregion
 
         #region IDialogViewModel Implementation 
         public event EventHandler Close;
 
-        public event EventHandler<ClaimDialogResult> SetDialogResultAndClose;
-
-        public ClaimDialogResult DialogResult { get; set; }
+        public void OnDialogLoad(ClaimLoadParameters parameters)
+        {
+        }
         #endregion
 
         #region ILoadable implementation
@@ -111,6 +104,15 @@ namespace Neo.Gui.ViewModels.Wallets
         }
         #endregion
 
+        #region IMessageHandler implementation
+        public void HandleMessage(WalletStatusMessage message)
+        {
+            this.CalculateBonusUnavailable(message.Status.BlockchainStatus.Height + 1);
+        }
+
+        #endregion
+
+        #region Private Methods 
         private void CalculateBonusAvailable()
         {
             var bonusAvailable = this.walletController.CalculateBonus();
@@ -129,24 +131,10 @@ namespace Neo.Gui.ViewModels.Wallets
 
         private void Claim()
         {
-            var claims = this.walletController.GetUnclaimedCoins().Select(p => p.Reference).ToArray();
-
-            if (claims.Length == 0) return;
-
-            var transaction = this.walletController.MakeClaimTransaction(claims);
-
-            this.messagePublisher.Publish(new SignTransactionAndShowInformationMessage(transaction));
+            this.walletController.ClaimUtilityTokenAsset();
 
             this.Close(this, EventArgs.Empty);
         }
-
-        #region IMessageHandler implementation
-
-        public void HandleMessage(WalletStatusMessage message)
-        {
-            this.CalculateBonusUnavailable(message.Status.BlockchainStatus.Height + 1);
-        }
-
         #endregion
     }
 }

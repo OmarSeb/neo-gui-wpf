@@ -6,14 +6,12 @@ using System.Windows.Input;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 
-using Neo.Gui.Base.Dialogs.Interfaces;
-using Neo.Gui.Base.Dialogs.Results.Settings;
-using Neo.Gui.Base.Helpers;
-using Neo.Gui.Base.Managers;
-using Neo.Gui.Base.Messages;
-using Neo.Gui.Base.Messaging.Interfaces;
-
+using Neo.Gui.Dialogs.Interfaces;
+using Neo.Gui.Dialogs.LoadParameters.Updater;
+using Neo.Gui.Base.Managers.Interfaces;
 using Neo.Gui.Wpf.Properties;
+using Neo.UI.Core.Managers.Interfaces;
+using Neo.UI.Core.Services.Interfaces;
 
 namespace Neo.Gui.Wpf.Views.Updater
 {
@@ -25,7 +23,7 @@ namespace Neo.Gui.Wpf.Views.Updater
     /// DO NOT move this view model out of the WPF project unless the Windows-specific
     /// application updating logic has been abstracted out of this view model.
     /// </remarks>
-    public class UpdateViewModel : ViewModelBase, IDialogViewModel<UpdateDialogResult>
+    public class UpdateViewModel : ViewModelBase, IDialogViewModel<UpdateLoadParameters>
     {
         private const string OfficialWebsiteUrl = "https://neo.org/";
 
@@ -37,8 +35,7 @@ namespace Neo.Gui.Wpf.Views.Updater
         private readonly ICompressedFileManager compressedFileManager;
         private readonly IDirectoryManager directoryManager;
         private readonly IFileManager fileManager;
-        private readonly IProcessHelper processHelper;
-        private readonly IMessagePublisher messagePublisher;
+        private readonly IProcessManager processManager;
 
         private readonly Version latestVersion;
         private readonly string downloadUrl;
@@ -51,20 +48,18 @@ namespace Neo.Gui.Wpf.Views.Updater
             ICompressedFileManager compressedFileManager,
             IDirectoryManager directoryManager,
             IFileManager fileManager,
-            IProcessHelper processHelper,
-            IVersionHelper versionHelper,
-            IMessagePublisher messagePublisher)
+            IProcessManager processManager,
+            IVersionService versionService)
         {
             this.compressedFileManager = compressedFileManager;
             this.directoryManager = directoryManager;
             this.fileManager = fileManager;
-            this.processHelper = processHelper;
-            this.messagePublisher = messagePublisher;
+            this.processManager = processManager;
 
             // Setup update information
-            this.latestVersion = versionHelper.LatestVersion;
+            this.latestVersion = versionService.LatestVersion;
 
-            var latestReleaseInfo = versionHelper.GetLatestReleaseInfo();
+            var latestReleaseInfo = versionService.GetLatestReleaseInfo();
 
             if (latestReleaseInfo == null) return;
 
@@ -118,19 +113,19 @@ namespace Neo.Gui.Wpf.Views.Updater
         #region IDialogViewModel implementation 
         public event EventHandler Close;
 
-        public event EventHandler<UpdateDialogResult> SetDialogResultAndClose;
-
-        public UpdateDialogResult DialogResult { get; set; }
+        public void OnDialogLoad(UpdateLoadParameters parameters)
+        {
+        }
         #endregion
 
         private void GoToOfficialWebsite()
         {
-            this.processHelper.OpenInExternalBrowser(OfficialWebsiteUrl);
+            this.processManager.OpenInExternalBrowser(OfficialWebsiteUrl);
         }
 
         private void GoToDownloadPage()
         {
-            this.processHelper.OpenInExternalBrowser(this.downloadUrl);
+            this.processManager.OpenInExternalBrowser(this.downloadUrl);
         }
 
         #region Update Downloader Methods
@@ -180,7 +175,9 @@ namespace Neo.Gui.Wpf.Views.Updater
             this.fileManager.WriteAllBytes(UpdateFileName, Resources.UpdateBat);
 
             // Update application
-            this.messagePublisher.Publish(new UpdateApplicationMessage(UpdateFileName));
+            this.processManager.Run(UpdateFileName);
+
+            this.processManager.Exit();
 
             this.Close(this, EventArgs.Empty);
         }

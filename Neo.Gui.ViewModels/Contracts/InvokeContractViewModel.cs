@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using System.Text;
-using System.Windows.Input;
 
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
@@ -11,34 +10,31 @@ using Neo.IO.Json;
 using Neo.SmartContract;
 using Neo.VM;
 
-using Neo.Gui.Base.Dialogs.Results.Contracts;
-using Neo.Gui.Base.Dialogs.Interfaces;
-using Neo.Gui.Base.Managers;
-using Neo.Gui.Base.Services;
-using Neo.Gui.Base.Controllers;
-using Neo.Gui.Base.Dialogs.LoadParameters.Contracts;
-using Neo.Gui.Base.Messages;
-using Neo.Gui.Base.Messaging.Interfaces;
-
 using Neo.Gui.Globalization.Resources;
+
+using Neo.Gui.Dialogs.LoadParameters.Contracts;
+using Neo.Gui.Dialogs.Interfaces;
+using Neo.Gui.Base.Managers.Interfaces;
+using Neo.UI.Core.Controllers.Interfaces;
+using Neo.UI.Core.Managers.Interfaces;
+using Neo.UI.Core.Services.Interfaces;
 
 namespace Neo.Gui.ViewModels.Contracts
 {
-    public class InvokeContractViewModel : ViewModelBase,
-        ILoadableDialogViewModel<InvokeContractDialogResult, InvokeContractLoadParameters>
+    public class InvokeContractViewModel : 
+        ViewModelBase,
+        IDialogViewModel<InvokeContractLoadParameters>
     {
-        private static readonly Fixed8 NetworkFee = Fixed8.FromDecimal(0.001m);
-
+        #region Private Fields 
         private readonly IDialogManager dialogManager;
         private readonly IFileManager fileManager;
         private readonly IFileDialogService fileDialogService;
         private readonly IWalletController walletController;
-        private readonly IMessagePublisher messagePublisher;
 
         private InvocationTransaction transaction;
 
         private UInt160 scriptHash;
-        private ContractParameter[] parameters;
+        private ContractParameter[] contractParameters;
 
         private string scriptHashStr;
 
@@ -51,23 +47,9 @@ namespace Neo.Gui.ViewModels.Contracts
         private string fee;
         
         private bool invokeEnabled;
-
-        public InvokeContractViewModel(
-            IDialogManager dialogManager,
-            IFileManager fileManager,
-            IFileDialogService fileDialogService,
-            IWalletController walletController,
-            IMessagePublisher messagePublisher)
-        {
-            this.dialogManager = dialogManager;
-            this.fileManager = fileManager;
-            this.fileDialogService = fileDialogService;
-            this.walletController = walletController;
-            this.messagePublisher = messagePublisher;
-        }
+        #endregion
 
         #region Public Properties
-
         public string ScriptHash
         {
             get => this.scriptHashStr;
@@ -106,7 +88,6 @@ namespace Neo.Gui.ViewModels.Contracts
                 RaisePropertyChanged();
             }
         }
-
 
         public string CustomScript
         {
@@ -166,28 +147,35 @@ namespace Neo.Gui.ViewModels.Contracts
             }
         }
 
+        public RelayCommand GetContractCommand => new RelayCommand(this.GetContract);
+
+        public RelayCommand EditParametersCommand => new RelayCommand(this.EditParameters);
+
+        public RelayCommand LoadCommand => new RelayCommand(this.Load);
+
+        public RelayCommand TestCommand => new RelayCommand(this.Test);
+
+        public RelayCommand InvokeCommand => new RelayCommand(this.Invoke);
+
+        public RelayCommand CancelCommand => new RelayCommand(this.Cancel);
         #endregion Public Properties
 
-        #region Commands
-        public ICommand GetContractCommand => new RelayCommand(this.GetContract);
-
-        public ICommand EditParametersCommand => new RelayCommand(this.EditParameters);
-
-        public ICommand LoadCommand => new RelayCommand(this.Load);
-
-        public ICommand TestCommand => new RelayCommand(this.Test);
-
-        public ICommand InvokeCommand => new RelayCommand(this.Invoke);
-
-        public ICommand CancelCommand => new RelayCommand(this.Cancel);
-        #endregion Commands
+        #region Constructor 
+        public InvokeContractViewModel(
+            IDialogManager dialogManager,
+            IFileManager fileManager,
+            IFileDialogService fileDialogService,
+            IWalletController walletController)
+        {
+            this.dialogManager = dialogManager;
+            this.fileManager = fileManager;
+            this.fileDialogService = fileDialogService;
+            this.walletController = walletController;
+        }
+        #endregion
 
         #region ILoadableDialogViewModel implementation 
         public event EventHandler Close;
-
-        public event EventHandler<InvokeContractDialogResult> SetDialogResultAndClose;
-
-        public InvokeContractDialogResult DialogResult { get; private set; }
 
         public void OnDialogLoad(InvokeContractLoadParameters parameters)
         {
@@ -200,24 +188,7 @@ namespace Neo.Gui.ViewModels.Contracts
         }
         #endregion
 
-        private InvocationTransaction MakeTransaction()
-        {
-            if (this.transaction == null) return null;
-
-            var transactionFee = this.transaction.Gas.Equals(Fixed8.Zero) ? NetworkFee : Fixed8.Zero;
-
-            return this.walletController.MakeTransaction(new InvocationTransaction
-            {
-                Version = transaction.Version,
-                Script = transaction.Script,
-                Gas = transaction.Gas,
-                Attributes = transaction.Attributes,
-                Inputs = transaction.Inputs,
-                Outputs = transaction.Outputs
-            }, fee: transactionFee);
-        }
-
-
+        #region Private Methods
         private void GetContract()
         {
             this.scriptHash = UInt160.Parse(this.ScriptHash);
@@ -230,7 +201,7 @@ namespace Neo.Gui.ViewModels.Contracts
                 return;
             }
 
-            this.parameters = contractState.ParameterList.Select(p => new ContractParameter(p)).ToArray();
+            this.contractParameters = contractState.ParameterList.Select(p => new ContractParameter(p)).ToArray();
             this.ContractName = contractState.Name;
             this.ContractVersion = contractState.CodeVersion;
             this.ContractAuthor = contractState.Author;
@@ -242,26 +213,25 @@ namespace Neo.Gui.ViewModels.Contracts
             RaisePropertyChanged(nameof(this.ContractAuthor));
             RaisePropertyChanged(nameof(this.ContractParameters));
 
-            this.EditParametersEnabled = this.parameters.Length > 0;
+            this.EditParametersEnabled = this.contractParameters.Length > 0;
 
             UpdateCustomScript();
         }
 
         private void EditParameters()
         {
-            this.dialogManager.ShowDialog<ContractParametersEditorDialogResult, ContractParametersEditorLoadParameters>(
-                new ContractParametersEditorLoadParameters(this.parameters));
+            this.dialogManager.ShowDialog(new ContractParametersEditorLoadParameters(this.contractParameters));
 
             UpdateCustomScript();
         }
 
         private void UpdateCustomScript()
         {
-            if (this.parameters.Any(p => p.Value == null)) return;
+            if (this.contractParameters.Any(p => p.Value == null)) return;
 
             using (var builder = new ScriptBuilder())
             {
-                builder.EmitAppCall(this.scriptHash, this.parameters);
+                builder.EmitAppCall(this.scriptHash, this.contractParameters);
                 this.CustomScript = builder.ToArray().ToHexString();
             }
         }
@@ -338,7 +308,7 @@ namespace Neo.Gui.ViewModels.Contracts
 
                 this.transaction.Gas = this.transaction.Gas.Ceiling();
 
-                var transactionFee = this.transaction.Gas.Equals(Fixed8.Zero) ? NetworkFee : this.transaction.Gas;
+                var transactionFee = this.transaction.Gas.Equals(Fixed8.Zero) ? this.walletController.NetworkFee : this.transaction.Gas;
 
                 this.Fee = transactionFee + " gas";
                 this.InvokeEnabled = true;
@@ -353,11 +323,9 @@ namespace Neo.Gui.ViewModels.Contracts
         {
             if (!this.InvokeEnabled) return;
 
-            var tx = this.MakeTransaction();
+            if (this.transaction == null) return;
 
-            if (tx == null) return;
-
-            this.messagePublisher.Publish(new SignTransactionAndShowInformationMessage(tx));
+            this.walletController.InvokeContract(this.transaction);
 
             this.Close(this, EventArgs.Empty);
         }
@@ -368,5 +336,6 @@ namespace Neo.Gui.ViewModels.Contracts
 
             this.Close(this, EventArgs.Empty);
         }
+        #endregion
     }
 }

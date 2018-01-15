@@ -12,22 +12,19 @@ using Neo.IO.Json;
 using Neo.SmartContract;
 
 using Neo.Gui.Globalization.Resources;
-
-using Neo.Gui.Base.Controllers;
-using Neo.Gui.Base.Data;
-using Neo.Gui.Base.Dialogs.Interfaces;
-using Neo.Gui.Base.Dialogs.LoadParameters.Wallets;
-using Neo.Gui.Base.Dialogs.Results.Wallets;
-using Neo.Gui.Base.Managers;
-using Neo.Gui.Base.Services;
+using Neo.Gui.Dialogs.Interfaces;
+using Neo.Gui.Dialogs.LoadParameters.Wallets;
+using Neo.Gui.Dialogs.Results.Wallets;
+using Neo.Gui.Base.Managers.Interfaces;
+using Neo.UI.Core.Controllers.Interfaces;
+using Neo.UI.Core.Data;
 
 namespace Neo.Gui.ViewModels.Wallets
 {
-    public class TradeViewModel : ViewModelBase, IDialogViewModel<TradeDialogResult>
+    public class TradeViewModel : ViewModelBase, IDialogViewModel<TradeLoadParameters>
     {
         private readonly IDialogManager dialogManager;
         private readonly IWalletController walletController;
-        private readonly IDispatchService dispatchService;
 
         private string payToAddress;
         private string myRequest;
@@ -41,12 +38,10 @@ namespace Neo.Gui.ViewModels.Wallets
 
         public TradeViewModel(
             IDialogManager dialogManager,
-            IWalletController walletController,
-            IDispatchService dispatchService)
+            IWalletController walletController)
         {
             this.dialogManager = dialogManager;
             this.walletController = walletController;
-            this.dispatchService = dispatchService;
 
             this.Items = new ObservableCollection<TransactionOutputItem>();
         }
@@ -69,14 +64,14 @@ namespace Neo.Gui.ViewModels.Wallets
                 
                 try
                 {
-                    this.ScriptHash = this.walletController.ToScriptHash(this.PayToAddress);
+                    this.ScriptHash = this.walletController.AddressToScriptHash(this.PayToAddress);
                 }
                 catch (FormatException)
                 {
                     this.ScriptHash = null;
                 }
 
-                this.dispatchService.InvokeOnMainUIThread(() => this.Items.Clear());
+                this.Items.Clear();
             }
         }
 
@@ -166,9 +161,9 @@ namespace Neo.Gui.ViewModels.Wallets
         #region IDialogViewModel implementation 
         public event EventHandler Close;
 
-        public event EventHandler<TradeDialogResult> SetDialogResultAndClose;
-
-        public TradeDialogResult DialogResult { get; private set; }
+        public void OnDialogLoad(TradeLoadParameters parameters)
+        {
+        }
         #endregion
 
         public void UpdateInitiateButtonEnabled()
@@ -238,7 +233,7 @@ namespace Neo.Gui.ViewModels.Wallets
 
             outputs = outputs.Where(p => this.walletController.WalletContainsAccount(p.ScriptHash));
 
-            var dialogResult = this.dialogManager.ShowDialog<TradeVerificationDialogResult, TradeVerificationLoadParameters>(
+            var dialogResult = this.dialogManager.ShowDialog<TradeVerificationLoadParameters, TradeVerificationDialogResult>(
                 new TradeVerificationLoadParameters(outputs));
 
             this.MergeEnabled = dialogResult.TradeAccepted;
@@ -294,18 +289,18 @@ namespace Neo.Gui.ViewModels.Wallets
                 {
                     AssetId = UInt256.Parse(p["asset"].AsString()),
                     Value = Fixed8.Parse(p["value"].AsString()),
-                    ScriptHash = this.walletController.ToScriptHash(p["address"].AsString())
+                    ScriptHash = this.walletController.AddressToScriptHash(p["address"].AsString())
                 }).ToArray()
             };
         }
 
-        private JObject RequestToJson(ContractTransaction tx)
+        private JObject RequestToJson(Transaction tx)
         {
             var json = new JObject
             {
                 ["vin"] = tx.Inputs.Select(p => p.ToJson()).ToArray(),
                 ["vout"] = tx.Outputs.Select((p, i) => p.ToJson((ushort)i)).ToArray(),
-                ["change_address"] = this.walletController.ToAddress(this.walletController.GetChangeAddress())
+                ["change_address"] = this.walletController.ScriptHashToAddress(this.walletController.GetChangeAddress())
             };
             return json;
         }

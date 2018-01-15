@@ -8,29 +8,27 @@ using GalaSoft.MvvmLight.Command;
 
 using Neo.Core;
 using Neo.Cryptography.ECC;
-
-using Neo.Gui.Base.Controllers;
-using Neo.Gui.Base.Dialogs.Interfaces;
-using Neo.Gui.Base.Dialogs.Results;
-using Neo.Gui.Base.Dialogs.Results.Voting;
-using Neo.Gui.Base.Messages;
-using Neo.Gui.Base.Messaging.Interfaces;
+using Neo.Gui.Dialogs.Interfaces;
+using Neo.Gui.Dialogs.LoadParameters.Contracts;
+using Neo.Gui.Dialogs.LoadParameters.Voting;
+using Neo.Gui.Base.Managers.Interfaces;
+using Neo.UI.Core.Controllers.Interfaces;
 
 namespace Neo.Gui.ViewModels.Voting
 {
-    public class ElectionViewModel : ViewModelBase, IDialogViewModel<ElectionDialogResult>
+    public class ElectionViewModel : ViewModelBase, IDialogViewModel<ElectionLoadParameters>
     {
+        private readonly IDialogManager dialogManager;
         private readonly IWalletController walletController;
-        private readonly IMessagePublisher messagePublisher;
 
         private ECPoint selectedBookKeeper;
 
         public ElectionViewModel(
-            IWalletController walletController,
-            IMessagePublisher messagePublisher)
+            IDialogManager dialogManager,
+            IWalletController walletController)
         {
+            this.dialogManager = dialogManager;
             this.walletController = walletController;
-            this.messagePublisher = messagePublisher;
 
             // Load book keepers
             var bookKeepers = this.walletController.GetStandardAccounts()
@@ -64,9 +62,9 @@ namespace Neo.Gui.ViewModels.Voting
         #region IDialogViewModel implementation 
         public event EventHandler Close;
 
-        public event EventHandler<ElectionDialogResult> SetDialogResultAndClose;
-
-        public ElectionDialogResult DialogResult { get; private set; }
+        public void OnDialogLoad(ElectionLoadParameters parameters)
+        {
+        }
         #endregion
 
         private void Ok()
@@ -77,7 +75,8 @@ namespace Neo.Gui.ViewModels.Voting
 
             if (transaction == null) return;
 
-            this.messagePublisher.Publish(new InvokeContractMessage(transaction));
+            this.dialogManager.ShowDialog(new InvokeContractLoadParameters(transaction));
+
             this.Close(this, EventArgs.Empty);
         }
 

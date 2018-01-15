@@ -6,23 +6,22 @@ using System.Windows.Input;
 
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
-
-using Neo.Gui.Base.Controllers;
-using Neo.Gui.Base.Dialogs.Interfaces;
-using Neo.Gui.Base.Dialogs.Results;
-using Neo.Gui.Base.Dialogs.Results.Settings;
-using Neo.Gui.Base.Extensions;
-using Neo.Gui.Base.Helpers;
-using Neo.Gui.Base.Managers;
-using Neo.Gui.Base.Theming;
+using Neo.Gui.Dialogs;
+using Neo.Gui.Dialogs.Interfaces;
+using Neo.Gui.Dialogs.LoadParameters.Settings;
+using Neo.Gui.Base.Managers.Interfaces;
+using Neo.UI.Core.Controllers.Interfaces;
+using Neo.UI.Core.Extensions;
+using Neo.UI.Core.Managers.Interfaces;
+using Neo.UI.Core.Theming;
 
 namespace Neo.Gui.ViewModels.Settings
 {
-    public class SettingsViewModel : ViewModelBase, IDialogViewModel<SettingsDialogResult>
+    public class SettingsViewModel : ViewModelBase, IDialogViewModel<SettingsLoadParameters>
     {
         private readonly IDialogManager dialogManager;
         private readonly IWalletController walletController;
-        private readonly IProcessHelper processHelper;
+        private readonly IProcessManager processManager;
         private readonly ISettingsManager settingsManager;
         private readonly IThemeManager themeManager;
 
@@ -45,13 +44,13 @@ namespace Neo.Gui.ViewModels.Settings
         public SettingsViewModel(
             IDialogManager dialogManager,
             IWalletController walletController,
-            IProcessHelper processHelper,
+            IProcessManager processManager,
             ISettingsManager settingsManager,
             IThemeManager themeManager)
         {
             this.dialogManager = dialogManager;
             this.walletController = walletController;
-            this.processHelper = processHelper;
+            this.processManager = processManager;
             this.settingsManager = settingsManager;
             this.themeManager = themeManager;
 
@@ -277,9 +276,9 @@ namespace Neo.Gui.ViewModels.Settings
         #region IDialogViewModel implementation 
         public event EventHandler Close;
 
-        public event EventHandler<SettingsDialogResult> SetDialogResultAndClose;
-
-        public SettingsDialogResult DialogResult { get; private set; }
+        public void OnDialogLoad(SettingsLoadParameters parameters)
+        {
+        }
         #endregion
 
         private void Ok()
@@ -338,7 +337,7 @@ namespace Neo.Gui.ViewModels.Settings
             this.SaveAppearanceSettings();
 
             // Restart application
-            this.processHelper.Restart();
+            this.processManager.Restart();
         }
 
         private void ResetAppearanceSettingsToDefault()
@@ -380,7 +379,7 @@ namespace Neo.Gui.ViewModels.Settings
 
             // Export and save as JSON in settings
             var newThemeJson = Theme.ExportToJson(newTheme);
-            this.settingsManager.AppTheme = newThemeJson;
+            this.settingsManager.AppThemeJson = newThemeJson;
             this.settingsManager.Save();
 
             // Update settings' current values

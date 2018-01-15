@@ -1,9 +1,9 @@
-﻿using Neo.Gui.Base.Dialogs.Interfaces;
-using Neo.Gui.Base.Dialogs.Results.Wallets;
+﻿using Neo.Gui.Dialogs.Interfaces;
+using Neo.Gui.Dialogs.LoadParameters.Accounts;
 
 namespace Neo.Gui.Wpf.Views.Accounts
 {
-    public partial class ViewContractView : IDialog<ViewContractDialogResult>
+    public partial class ViewContractView : IDialog<ViewContractLoadParameters>
     {
         public ViewContractView()
         {

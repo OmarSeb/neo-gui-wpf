@@ -10,12 +10,12 @@ using GalaSoft.MvvmLight.Command;
 using Neo.Core;
 using Neo.SmartContract;
 
-using Neo.Gui.Base.Controllers;
-using Neo.Gui.Base.Dialogs.Results.Transactions;
 using Neo.Gui.Globalization.Resources;
-using Neo.Gui.Base.Managers;
-
-using Neo.UI.Base.Wrappers;
+using Neo.Gui.Dialogs.LoadParameters.Transactions;
+using Neo.Gui.Dialogs.Results.Transactions;
+using Neo.Gui.Base.Managers.Interfaces;
+using Neo.Gui.Wpf.Wrappers;
+using Neo.UI.Core.Controllers.Interfaces;
 
 namespace Neo.Gui.Wpf.Views.Development
 {
@@ -142,7 +142,7 @@ namespace Neo.Gui.Wpf.Views.Development
 
         private void SetupOutputs()
         {
-            var result = dialogManager.ShowDialog<PayToDialogResult>();
+            var result = dialogManager.ShowDialog<PayToLoadParameters, PayToDialogResult>();
 
             if (result.Output == null) return;
 

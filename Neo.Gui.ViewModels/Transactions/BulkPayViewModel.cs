@@ -7,22 +7,19 @@ using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 
 using Neo.Wallets;
-
-using Neo.Gui.Base.Controllers;
-using Neo.Gui.Base.Data;
-using Neo.Gui.Base.Dialogs.Interfaces;
-using Neo.Gui.Base.Dialogs.LoadParameters.Transactions;
-using Neo.Gui.Base.Dialogs.Results.Transactions;
-using Neo.Gui.Base.Extensions;
-using Neo.Gui.Base.Services;
+using Neo.Gui.Dialogs.Interfaces;
+using Neo.Gui.Dialogs.LoadParameters.Transactions;
+using Neo.Gui.Dialogs.Results.Transactions;
+using Neo.UI.Core.Controllers.Interfaces;
+using Neo.UI.Core.Data;
+using Neo.UI.Core.Extensions;
 
 namespace Neo.Gui.ViewModels.Transactions
 {
     public class BulkPayViewModel : ViewModelBase,
-        ILoadableDialogViewModel<BulkPayDialogResult, BulkPayLoadParameters>
+        IResultDialogViewModel<BulkPayLoadParameters, BulkPayDialogResult>
     {
         private readonly IWalletController walletController;
-        private readonly IDispatchService dispatchService;
 
         private bool assetSelectionEnabled;
 
@@ -31,11 +28,9 @@ namespace Neo.Gui.ViewModels.Transactions
         private string addressesAndAmounts;
         
         public BulkPayViewModel(
-            IWalletController walletController,
-            IDispatchService dispatchService)
+            IWalletController walletController)
         {
             this.walletController = walletController;
-            this.dispatchService = dispatchService;
 
             this.Assets = new ObservableCollection<AssetDescriptor>();
         }
@@ -72,8 +67,7 @@ namespace Neo.Gui.ViewModels.Transactions
             }
         }
 
-        public string AssetBalance => this.SelectedAsset == null ? string.Empty
-            : this.walletController.GetAvailable(this.SelectedAsset.AssetId).ToString();
+        public string AssetBalance => this.GetSelectedAssetBalance();
 
         public string AddressesAndAmounts
         {
@@ -98,54 +92,49 @@ namespace Neo.Gui.ViewModels.Transactions
 
         public event EventHandler<BulkPayDialogResult> SetDialogResultAndClose;
 
-        public BulkPayDialogResult DialogResult { get; private set; }
-        
         public void OnDialogLoad(BulkPayLoadParameters parameters)
         {
             var asset = parameters?.Asset;
 
-            this.dispatchService.InvokeOnMainUIThread(() =>
+            this.Assets.Clear();
+
+            if (asset != null)
             {
-                this.Assets.Clear();
-
-                if (asset != null)
+                this.Assets.Add(asset);
+                this.SelectedAsset = asset;
+                this.AssetSelectionEnabled = false;
+            }
+            else
+            {
+                // Add first-class assets to list
+                foreach (var assetId in this.walletController.FindUnspentCoins()
+                    .Select(p => p.Output.AssetId).Distinct())
                 {
-                    this.Assets.Add(asset);
-                    this.SelectedAsset = asset;
-                    this.AssetSelectionEnabled = false;
+                    this.Assets.Add(new AssetDescriptor(assetId));
                 }
-                else
+
+                // Add NEP-5 assets to list
+                var nep5WatchScriptHashes = this.walletController.GetNEP5WatchScriptHashes();
+
+                foreach (var assetId in nep5WatchScriptHashes)
                 {
-                    // Add first-class assets to list
-                    foreach (var assetId in this.walletController.FindUnspentCoins()
-                        .Select(p => p.Output.AssetId).Distinct())
+                    AssetDescriptor nep5Asset;
+                    try
                     {
-                        this.Assets.Add(new AssetDescriptor(assetId));
+                        nep5Asset = new AssetDescriptor(assetId);
+                    }
+                    catch (ArgumentException)
+                    {
+                        continue;
                     }
 
-                    // Add NEP-5 assets to list
-                    var nep5WatchScriptHashes = this.walletController.GetNEP5WatchScriptHashes();
-
-                    foreach (var assetId in nep5WatchScriptHashes)
-                    {
-                        AssetDescriptor nep5Asset;
-                        try
-                        {
-                            nep5Asset = new AssetDescriptor(assetId);
-                        }
-                        catch (ArgumentException)
-                        {
-                            continue;
-                        }
-
-                        this.Assets.Add(nep5Asset);
-                    }
-
-                    this.AssetSelectionEnabled = this.Assets.Any();
+                    this.Assets.Add(nep5Asset);
                 }
-            });
 
+                this.AssetSelectionEnabled = this.Assets.Any();
+            }
         }
+
         #endregion
 
         private void Ok()
@@ -157,6 +146,20 @@ namespace Neo.Gui.ViewModels.Transactions
             var result = new BulkPayDialogResult(outputs);
 
             this.SetDialogResultAndClose?.Invoke(this, result);
+        }
+
+        private string GetSelectedAssetBalance()
+        {
+            if (this.SelectedAsset == null) return null;
+
+            if (this.SelectedAsset.AssetId is UInt160 scriptHash)
+            {
+                return this.walletController.GetAvailable(scriptHash).ToString();
+            }
+            else
+            {
+                return this.walletController.GetAvailable((UInt256)this.SelectedAsset.AssetId).ToString();
+            }
         }
 
         private TransactionOutputItem[] GenerateOutputs()
@@ -176,7 +179,7 @@ namespace Neo.Gui.ViewModels.Transactions
                     AssetName = this.SelectedAsset.AssetName,
                     AssetId = this.SelectedAsset.AssetId,
                     Value = new BigDecimal(Fixed8.Parse(lineElements[1]).GetData(), 8),
-                    ScriptHash = this.walletController.ToScriptHash(lineElements[0])
+                    ScriptHash = this.walletController.AddressToScriptHash(lineElements[0])
                 };
             }).Where(p => p.Value.Value != 0).ToArray();
         }

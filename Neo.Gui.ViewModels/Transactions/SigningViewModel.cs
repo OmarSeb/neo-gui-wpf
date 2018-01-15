@@ -6,17 +6,17 @@ using GalaSoft.MvvmLight.Command;
 using Neo.Network;
 using Neo.SmartContract;
 
-using Neo.Gui.Base.Controllers;
-using Neo.Gui.Base.Dialogs.Interfaces;
-using Neo.Gui.Base.Dialogs.Results;
-using Neo.Gui.Base.Dialogs.Results.Transactions;
 using Neo.Gui.Globalization.Resources;
-using Neo.Gui.Base.Managers;
-using Neo.Gui.Base.Services;
+using Neo.Gui.Dialogs.Interfaces;
+using Neo.Gui.Dialogs.LoadParameters.Transactions;
+using Neo.Gui.Base.Managers.Interfaces;
+using Neo.UI.Core.Controllers.Interfaces;
+using Neo.UI.Core.Managers.Interfaces;
+using Neo.UI.Core.Services.Interfaces;
 
 namespace Neo.Gui.ViewModels.Transactions
 {
-    public class SigningViewModel : ViewModelBase, IDialogViewModel<SigningDialogResult>
+    public class SigningViewModel : ViewModelBase, IDialogViewModel<SigningLoadParameters>
     {
         private readonly IClipboardManager clipboardManager;
         private readonly IDialogManager dialogManager;
@@ -78,9 +78,9 @@ namespace Neo.Gui.ViewModels.Transactions
         #region IDialogViewModel implementation 
         public event EventHandler Close;
 
-        public event EventHandler<SigningDialogResult> SetDialogResultAndClose;
-
-        public SigningDialogResult DialogResult { get; private set; }
+        public void OnDialogLoad(SigningLoadParameters parameters)
+        {
+        }
         #endregion
 
         private void Sign()

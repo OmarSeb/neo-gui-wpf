@@ -1,9 +1,10 @@
 ﻿using System.ComponentModel;
-using Neo.Core;
-using Neo.Gui.Base.Converters;
-using Neo.Wallets;
 
-namespace Neo.UI.Base.Wrappers
+using Neo.Core;
+using Neo.Wallets;
+using Neo.UI.Core.Converters;
+
+namespace Neo.Gui.Wpf.Wrappers
 {
     internal class TransactionOutputWrapper
     {

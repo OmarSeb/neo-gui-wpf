@@ -8,23 +8,22 @@ using System.Windows;
 
 using Autofac;
 
-using Neo.Gui.Base;
-using Neo.Gui.Base.Controllers;
-using Neo.Gui.Base.Dialogs.Results.Home;
-using Neo.Gui.Base.Dialogs.Results.Settings;
-using Neo.Gui.Base.Messages;
-using Neo.Gui.Base.Messaging.Interfaces;
 using Neo.Gui.Globalization.Resources;
-using Neo.Gui.Base.Helpers;
-using Neo.Gui.Base.Managers;
-using Neo.Gui.Base.Services;
+
+using Neo.Gui.Base;
+using Neo.Gui.Dialogs.LoadParameters.Home;
+using Neo.Gui.Dialogs.LoadParameters.Updater;
+using Neo.Gui.Base.Managers.Interfaces;
 using Neo.Gui.Wpf.Controls;
 using Neo.Gui.Wpf.Extensions;
 using Neo.Gui.Wpf.Implementations.Managers;
 using Neo.Gui.Wpf.MarkupExtensions;
 using Neo.Gui.Wpf.Properties;
 using Neo.Gui.Wpf.RegistrationModules;
-
+using Neo.UI.Core;
+using Neo.UI.Core.Controllers.Interfaces;
+using Neo.UI.Core.Managers.Interfaces;
+using Neo.UI.Core.Services.Interfaces;
 using SplashScreen = Neo.Gui.Wpf.Views.SplashScreen;
 using ViewModelsRegistrationModule = Neo.Gui.ViewModels.ViewModelsRegistrationModule;
 using WpfProjectViewModelsRegistrationModule = Neo.Gui.Wpf.RegistrationModules.ViewModelsRegistrationModule;
@@ -34,7 +33,7 @@ namespace Neo.Gui.Wpf
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
-    public partial class App : IMessageHandler<ExitAppMessage>
+    public partial class App
     {
         private IWalletController walletController;
         
@@ -68,22 +67,16 @@ namespace Neo.Gui.Wpf
 
             var dialogManager = containerLifetimeScope.Resolve<IDialogManager>() as DialogManager;
             var dispatchService = containerLifetimeScope.Resolve<IDispatchService>();
-            var messagePublisher = containerLifetimeScope.Resolve<IMessagePublisher>();
-            var messageSubscriber = containerLifetimeScope.Resolve<IMessageSubscriber>();
             var themeManager = containerLifetimeScope.Resolve<IThemeManager>();
-            var versionHelper = containerLifetimeScope.Resolve<IVersionHelper>();
+            var versionHelper = containerLifetimeScope.Resolve<IVersionService>();
             this.walletController = containerLifetimeScope.Resolve<IWalletController>();
 
             Debug.Assert(
                 dialogManager != null &&
                 dispatchService != null &&
-                messagePublisher != null &&
-                messageSubscriber != null &&
                 themeManager != null &&
                 versionHelper != null &&
                 this.walletController != null);
-
-            messageSubscriber.Subscribe(this);
 
             TransactionOutputListBox.SetDialogManager(dialogManager);
 
@@ -102,7 +95,6 @@ namespace Neo.Gui.Wpf
                 });
 
                 Window window = null;
-                Version newerVersion = null;
                 try
                 {
                     if (versionHelper.UpdateIsRequired)
@@ -110,7 +102,7 @@ namespace Neo.Gui.Wpf
                         // Display update window
                         await dispatchService.InvokeOnMainUIThread(() =>
                         {
-                            window = dialogManager.CreateDialog<UpdateDialogResult>(result => {  }) as Window;
+                            window = dialogManager.CreateDialog<UpdateLoadParameters>(null) as Window;
                         });
                         return;
                     }
@@ -121,17 +113,9 @@ namespace Neo.Gui.Wpf
                     this.walletController.Initialize();
                     this.walletController.SetNEP5WatchScriptHashes(Settings.Default.NEP5Watched.ToArray());
 
-                    // Check if there a newer version is available
-                    var latestVersion = versionHelper.LatestVersion;
-                    var currentVersion = versionHelper.CurrentVersion;
-                    if (latestVersion != null && currentVersion != null && latestVersion > currentVersion)
-                    {
-                        newerVersion = latestVersion;
-                    }
-
                     await dispatchService.InvokeOnMainUIThread(() =>
                     {
-                        window = dialogManager.CreateDialog<HomeDialogResult>(result => { }) as Window;
+                        window = dialogManager.CreateDialog<HomeLoadParameters>(null) as Window;
                     });
                 }
                 finally
@@ -142,14 +126,6 @@ namespace Neo.Gui.Wpf
                     {
                         this.MainWindow = window;
                         this.MainWindow?.Show();
-                        
-                        if (newerVersion != null)
-                        {
-                            messagePublisher.Publish(new NewVersionAvailableMessage(newerVersion));
-                        }
-
-                        // Add current Neo network (MainNet / TestNet / PrivateNet)
-                        messagePublisher.Publish(new NeoNetworkIdentifiedMessage(Settings.Default.NeoNetwork.ToString()));
                         
                         // Close splash screen
                         splashScreen.Close();
@@ -194,8 +170,6 @@ namespace Neo.Gui.Wpf
             // Try running application as administrator to install root certificate
             try
             {
-                // TODO Stop this application instance
-
                 Process.Start(new ProcessStartInfo
                 {
                     FileName = Assembly.GetExecutingAssembly().Location,
@@ -203,6 +177,9 @@ namespace Neo.Gui.Wpf
                     Verb = "runas",
                     WorkingDirectory = Environment.CurrentDirectory
                 });
+
+                // Stop this application instance
+                Current.Shutdown();
             }
             catch (Win32Exception)
             {
@@ -214,7 +191,7 @@ namespace Neo.Gui.Wpf
         {
             var autoFacContainerBuilder = new ContainerBuilder();
 
-            autoFacContainerBuilder.RegisterModule<BaseRegistrationModule>();
+            autoFacContainerBuilder.RegisterModule<CoreRegistrationModule>();
             autoFacContainerBuilder.RegisterModule<WpfProjectViewModelsRegistrationModule>();
             autoFacContainerBuilder.RegisterModule<ViewModelsRegistrationModule>();
             autoFacContainerBuilder.RegisterModule<HelpersRegistrationModule>();
@@ -259,13 +236,6 @@ namespace Neo.Gui.Wpf
                 writer.WriteLine();
                 PrintErrorLogs(writer, ex.InnerException);
             }
-        }
-        #endregion
-
-        #region MessageHandler implementation 
-        public void HandleMessage(ExitAppMessage message)
-        {
-            Current.Shutdown();
         }
         #endregion
     }

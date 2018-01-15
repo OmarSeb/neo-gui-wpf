@@ -1,18 +1,16 @@
+using System.Collections.ObjectModel;
+
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 
-using Neo.Core;
-using Neo.VM;
-
-using Neo.Gui.Base.Collections;
-using Neo.Gui.Base.Controllers;
-using Neo.Gui.Base.Data;
-using Neo.Gui.Base.Messages;
-using Neo.Gui.Base.Messaging.Interfaces;
-using Neo.Gui.Base.MVVM;
 using Neo.Gui.Globalization.Resources;
-using Neo.Gui.Base.Helpers;
-using Neo.Gui.Base.Managers;
+using Neo.Gui.Dialogs;
+using Neo.Gui.Base.Managers.Interfaces;
+using Neo.UI.Core.Controllers.Interfaces;
+using Neo.UI.Core.Data;
+using Neo.UI.Core.Managers.Interfaces;
+using Neo.UI.Core.Messages;
+using Neo.UI.Core.Messaging.Interfaces;
 
 namespace Neo.Gui.ViewModels.Home
 {
@@ -20,23 +18,21 @@ namespace Neo.Gui.ViewModels.Home
         ViewModelBase,
         ILoadable,
         IUnloadable,
-        IMessageHandler<ClearAssetsMessage>,
+        IMessageHandler<CurrentWalletHasChangedMessage>,
         IMessageHandler<AssetAddedMessage>
     {
         #region Private Fields 
-        private static readonly UInt160 RecycleScriptHash = new[] { (byte)OpCode.PUSHT }.ToScriptHash();
-
         private readonly IDialogManager dialogManager;
-        private readonly IProcessHelper processHelper;
+        private readonly IMessageSubscriber messageSubscriber;
+        private readonly IProcessManager processManager;
         private readonly ISettingsManager settingsManager;
         private readonly IWalletController walletController;
-        private readonly IMessageSubscriber messageSubscriber;
-        private readonly IMessagePublisher messagePublisher;
+
         private AssetItem selectedAsset;
         #endregion
 
         #region Public Properties
-        public ConcurrentObservableCollection<AssetItem> Assets { get; private set; }
+        public ObservableCollection<AssetItem> Assets { get; }
 
         public AssetItem SelectedAsset
         {
@@ -87,20 +83,18 @@ namespace Neo.Gui.ViewModels.Home
         #region Constructor 
         public AssetsViewModel(
             IDialogManager dialogManager,
-            IProcessHelper processHelper,
-            ISettingsManager settingsManager,
-            IWalletController walletController,
             IMessageSubscriber messageSubscriber,
-            IMessagePublisher messagePublisher)
+            IProcessManager processManager,
+            ISettingsManager settingsManager,
+            IWalletController walletController)
         {
             this.dialogManager = dialogManager;
-            this.processHelper = processHelper;
+            this.messageSubscriber = messageSubscriber;
+            this.processManager = processManager;
             this.settingsManager = settingsManager;
             this.walletController = walletController;
-            this.messageSubscriber = messageSubscriber;
-            this.messagePublisher = messagePublisher;
 
-            this.Assets = new ConcurrentObservableCollection<AssetItem>();
+            this.Assets = new ObservableCollection<AssetItem>();
         }
         #endregion
 
@@ -119,7 +113,7 @@ namespace Neo.Gui.ViewModels.Home
         #endregion
 
         #region IMessageHandler implementation
-        public void HandleMessage(ClearAssetsMessage message)
+        public void HandleMessage(CurrentWalletHasChangedMessage message)
         {
             this.Assets.Clear();
         }
@@ -135,10 +129,9 @@ namespace Neo.Gui.ViewModels.Home
         {
             if (this.SelectedAsset == null) return;
 
-            var assetURLFormat = this.settingsManager.AddressURLFormat;
-            var url = string.Format(assetURLFormat, this.SelectedAsset.Name.Substring(2));
+            var url = string.Format(this.settingsManager.AssetURLFormat, this.SelectedAsset.Name.Substring(2));
 
-            this.processHelper.OpenInExternalBrowser(url);
+            this.processManager.OpenInExternalBrowser(url);
         }
 
         private void ViewCertificate()
@@ -153,7 +146,7 @@ namespace Neo.Gui.ViewModels.Home
             }
             else
             {
-                this.processHelper.Run(certificatePath);
+                this.processManager.Run(certificatePath);
             }
         }
 

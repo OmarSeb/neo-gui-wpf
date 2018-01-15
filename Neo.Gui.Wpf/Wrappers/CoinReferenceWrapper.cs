@@ -1,8 +1,9 @@
 ﻿using System.ComponentModel;
-using Neo.Core;
-using Neo.Gui.Base.Converters;
 
-namespace Neo.UI.Base.Wrappers
+using Neo.Core;
+using Neo.UI.Core.Converters;
+
+namespace Neo.Gui.Wpf.Wrappers
 {
     public class CoinReferenceWrapper
     {

@@ -1,6 +1,9 @@
 ﻿using Autofac;
-using Neo.Gui.Base.Managers;
+
+using Neo.Gui.Base.Managers.Interfaces;
+
 using Neo.Gui.Wpf.Implementations.Managers;
+using Neo.UI.Core.Managers.Interfaces;
 
 namespace Neo.Gui.Wpf.RegistrationModules
 {
@@ -8,8 +11,6 @@ namespace Neo.Gui.Wpf.RegistrationModules
     {
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterModule<FileManagersRegistrationModule>();
-
             builder
                 .RegisterType<ClipboardManager>()
                 .As<IClipboardManager>()

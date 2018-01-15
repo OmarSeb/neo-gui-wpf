@@ -3,18 +3,14 @@ using System.Windows.Input;
 
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
-
-using Neo.Wallets;
-
-using Neo.Gui.Base.Controllers;
-using Neo.Gui.Base.Dialogs.Interfaces;
-using Neo.Gui.Base.Dialogs.LoadParameters.Accounts;
-using Neo.Gui.Base.Dialogs.Results.Wallets;
+using Neo.Gui.Dialogs.Interfaces;
+using Neo.Gui.Dialogs.LoadParameters.Accounts;
+using Neo.UI.Core.Controllers.Interfaces;
 
 namespace Neo.Gui.ViewModels.Accounts
 {
     public class ViewPrivateKeyViewModel : ViewModelBase,
-        ILoadableDialogViewModel<ViewPrivateKeyDialogResult, ViewPrivateKeyLoadParameters>
+        IDialogViewModel<ViewPrivateKeyLoadParameters>
     {
         #region Private fields
 
@@ -47,37 +43,26 @@ namespace Neo.Gui.ViewModels.Accounts
         #region ILoadableDialogViewModel implementation 
         public event EventHandler Close;
 
-        public event EventHandler<ViewPrivateKeyDialogResult> SetDialogResultAndClose;
-
-        public ViewPrivateKeyDialogResult DialogResult { get; private set; }
-
         public void OnDialogLoad(ViewPrivateKeyLoadParameters parameters)
         {
-            if (parameters == null || parameters.Key == null || parameters.ScriptHash == null) return;
+            if (parameters == null || parameters.ScriptHash == null) return;
 
-            this.SetAccountInfo(parameters.Key, parameters.ScriptHash);
-        }
-        #endregion
+            var key = this.walletController.GetAccountKey(parameters.ScriptHash);
 
-        #region Private Methods 
-
-        private void SetAccountInfo(KeyPair key, UInt160 scriptHash)
-        {
-            this.Address = this.walletController.ToAddress(scriptHash);
+            this.Address = this.walletController.ScriptHashToAddress(parameters.ScriptHash);
             this.PublicKeyHex = key.PublicKey.EncodePoint(true).ToHexString();
             using (key.Decrypt())
             {
                 this.PrivateKeyHex = key.PrivateKey.ToHexString();
             }
             this.PrivateKeyWif = key.Export();
-            
+
             // Update properties
             RaisePropertyChanged(nameof(this.Address));
             RaisePropertyChanged(nameof(this.PublicKeyHex));
             RaisePropertyChanged(nameof(this.PrivateKeyHex));
             RaisePropertyChanged(nameof(this.PrivateKeyWif));
         }
-        
         #endregion
     }
 }

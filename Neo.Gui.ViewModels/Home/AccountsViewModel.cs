@@ -1,23 +1,19 @@
-﻿using System;
-using System.Collections.ObjectModel;
-using System.Windows.Input;
+﻿using System.Collections.ObjectModel;
 
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 
-using Neo.Gui.Base.Controllers;
-using Neo.Gui.Base.Data;
-using Neo.Gui.Base.Dialogs.LoadParameters.Accounts;
-using Neo.Gui.Base.Dialogs.LoadParameters.Voting;
-using Neo.Gui.Base.Dialogs.Results.Wallets;
-using Neo.Gui.Base.Dialogs.Results.Voting;
-using Neo.Gui.Base.Helpers;
-using Neo.Gui.Base.Managers;
-using Neo.Gui.Base.Messages;
-using Neo.Gui.Base.Messaging.Interfaces;
-using Neo.Gui.Base.MVVM;
-
 using Neo.Gui.Globalization.Resources;
+using Neo.Gui.Dialogs;
+using Neo.Gui.Dialogs.LoadParameters.Accounts;
+using Neo.Gui.Dialogs.LoadParameters.Voting;
+using Neo.Gui.Base.Managers.Interfaces;
+using Neo.UI.Core.Controllers.Interfaces;
+using Neo.UI.Core.Data;
+using Neo.UI.Core.Extensions;
+using Neo.UI.Core.Managers.Interfaces;
+using Neo.UI.Core.Messages;
+using Neo.UI.Core.Messaging.Interfaces;
 
 namespace Neo.Gui.ViewModels.Home
 {
@@ -26,23 +22,20 @@ namespace Neo.Gui.ViewModels.Home
         ILoadable,
         IUnloadable,
         IMessageHandler<CurrentWalletHasChangedMessage>,
-        IMessageHandler<ClearAccountsMessage>,
         IMessageHandler<AccountAddedMessage>
     {
         #region Private Fields 
         private readonly IWalletController walletController;
         private readonly IMessageSubscriber messageSubscriber;
         private readonly IClipboardManager clipboardManager;
-        private readonly IProcessHelper processHelper;
+        private readonly IProcessManager processManager;
         private readonly IDialogManager dialogManager;
         private readonly ISettingsManager settingsManager;
 
         private AccountItem selectedAccount;
         #endregion
 
-        #region Properties
-        public Action NotifyBalanceChangedAction { get; set; }
-
+        #region Public Properties
         public ObservableCollection<AccountItem> Accounts { get; }
 
         public AccountItem SelectedAccount
@@ -77,28 +70,31 @@ namespace Neo.Gui.ViewModels.Home
 
         public bool DeleteAccountEnabled => this.SelectedAccount != null;
 
-        #endregion Properties
+        public RelayCommand CreateNewAddressCommand => new RelayCommand(this.CreateNewAccount);
 
-        #region Commands
-        public ICommand CreateNewAddressCommand => new RelayCommand(this.CreateNewAccount);
+        public RelayCommand ImportWifPrivateKeyCommand => new RelayCommand(this.ImportWifPrivateKey);
 
-        public ICommand ImportWifPrivateKeyCommand => new RelayCommand(this.ImportWifPrivateKey);
-        public ICommand ImportFromCertificateCommand => new RelayCommand(this.ImportCertificate);
+        public RelayCommand ImportFromCertificateCommand => new RelayCommand(this.ImportCertificate);
 
-        public ICommand ImportWatchOnlyAddressCommand => new RelayCommand(this.ImportWatchOnlyAddress);
+        public RelayCommand ImportWatchOnlyAddressCommand => new RelayCommand(this.ImportWatchOnlyAddress);
 
-        public ICommand CreateMultiSignatureContractAddressCommand => new RelayCommand(this.CreateMultiSignatureContract);
-        public ICommand CreateLockContractAddressCommand => new RelayCommand(this.CreateLockAddress);
+        public RelayCommand CreateMultiSignatureContractAddressCommand => new RelayCommand(this.CreateMultiSignatureContract);
 
-        public ICommand CreateCustomContractAddressCommand => new RelayCommand(this.ImportCustomContract);
+        public RelayCommand CreateLockContractAddressCommand => new RelayCommand(this.CreateLockAddress);
 
-        public ICommand ViewPrivateKeyCommand => new RelayCommand(this.ViewPrivateKey);
-        public ICommand ViewContractCommand => new RelayCommand(this.ViewContract);
-        public ICommand ShowVotingDialogCommand => new RelayCommand(this.ShowVotingDialog);
-        public ICommand CopyAddressToClipboardCommand => new RelayCommand(this.CopyAddressToClipboard);
-        public ICommand DeleteAccountCommand => new RelayCommand(this.DeleteAccount);
+        public RelayCommand CreateCustomContractAddressCommand => new RelayCommand(this.ImportCustomContract);
 
-        public ICommand ViewSelectedAccountDetailsCommand => new RelayCommand(this.ViewSelectedAccountDetails);
+        public RelayCommand ViewPrivateKeyCommand => new RelayCommand(this.ViewPrivateKey);
+
+        public RelayCommand ViewContractCommand => new RelayCommand(this.ViewContract);
+
+        public RelayCommand ShowVotingDialogCommand => new RelayCommand(this.ShowVotingDialog);
+
+        public RelayCommand CopyAddressToClipboardCommand => new RelayCommand(this.CopyAddressToClipboard);
+
+        public RelayCommand DeleteAccountCommand => new RelayCommand(this.DeleteAccount);
+
+        public RelayCommand ViewSelectedAccountDetailsCommand => new RelayCommand(this.ViewSelectedAccountDetails);
         #endregion Command
         
         #region Constructor 
@@ -107,14 +103,14 @@ namespace Neo.Gui.ViewModels.Home
             IMessageSubscriber messageSubscriber, 
             IDialogManager dialogManager,
             IClipboardManager clipboardManager,
-            IProcessHelper processHelper,
+            IProcessManager processManager,
             ISettingsManager settingsManager)
         {
             this.walletController = walletController;
             this.messageSubscriber = messageSubscriber;
             this.dialogManager = dialogManager;
             this.clipboardManager = clipboardManager;
-            this.processHelper = processHelper;
+            this.processManager = processManager;
             this.settingsManager = settingsManager;
 
             this.Accounts = new ObservableCollection<AccountItem>();
@@ -124,12 +120,9 @@ namespace Neo.Gui.ViewModels.Home
         #region IMessageHandler implementation 
         public void HandleMessage(CurrentWalletHasChangedMessage message)
         {
-            RaisePropertyChanged(nameof(this.WalletIsOpen));
-        }
-
-        public void HandleMessage(ClearAccountsMessage message)
-        {
             this.Accounts.Clear();
+
+            RaisePropertyChanged(nameof(this.WalletIsOpen));
         }
 
         public void HandleMessage(AccountAddedMessage message)
@@ -155,77 +148,71 @@ namespace Neo.Gui.ViewModels.Home
         #region Private Methods 
         private void CreateNewAccount()
         {
-            this.walletController.CreateNewAccount();
+            this.walletController.CreateAccount();
         }
 
         private void ImportWifPrivateKey()
         {
-            this.dialogManager.ShowDialog<ImportPrivateKeyDialogResult>();
+            this.dialogManager.ShowDialog<ImportPrivateKeyLoadParameters>();
         }
 
         private void ImportCertificate()
         {
-            this.dialogManager.ShowDialog<ImportCertificateDialogResult>();
+            this.dialogManager.ShowDialog<ImportCertificateLoadParameters>();
         }
 
         private void ImportWatchOnlyAddress()
         {
-            var address = this.dialogManager.ShowInputDialog(Strings.ImportWatchOnlyAddress, Strings.Address);
+            var addresses = this.dialogManager.ShowInputDialog(Strings.ImportWatchOnlyAddress, Strings.Address);
 
-            if (string.IsNullOrEmpty(address)) return;
+            if (string.IsNullOrEmpty(addresses)) return;
 
-            this.walletController.ImportWatchOnlyAddress(address);
+            var addressArray = addresses.ToLines();
+
+            this.walletController.ImportWatchOnlyAddress(addressArray);
         }
 
         private void CreateMultiSignatureContract()
         {
-            this.dialogManager.ShowDialog<CreateMultiSigContractDialogResult>();
+            this.dialogManager.ShowDialog<CreateMultiSigContractLoadParameters>();
         }
 
         private void CreateLockAddress()
         {
-            this.dialogManager.ShowDialog<CreateLockAccountDialogResult>();
+            this.dialogManager.ShowDialog<CreateLockAccountLoadParameters>();
         }
 
         private void ImportCustomContract()
         {
-            this.dialogManager.ShowDialog<ImportCustomContractDialogResult>();
+            this.dialogManager.ShowDialog<ImportCustomContractLoadParameters>();
         }
 
         private void ViewPrivateKey()
         {
             if (!this.ViewPrivateKeyEnabled) return;
-
-            var selectedAccountKey = this.walletController.GetAccountKey(this.SelectedAccount.ScriptHash);
-            var selectedAccountScriptHash = this.SelectedAccount.ScriptHash;
-
-            this.dialogManager.ShowDialog<ViewPrivateKeyDialogResult, ViewPrivateKeyLoadParameters>(
-                new ViewPrivateKeyLoadParameters(selectedAccountScriptHash, selectedAccountKey));
+            
+            this.dialogManager.ShowDialog(new ViewPrivateKeyLoadParameters(this.SelectedAccount.ScriptHash));
         }
 
         private void ViewContract()
         {
             if (!this.ViewContractEnabled) return;
 
-            var selectedAccountContract = this.walletController.GetAccountContract(this.SelectedAccount.ScriptHash);
-
-            this.dialogManager.ShowDialog<ViewContractDialogResult, ViewContractLoadParameters>(
-                new ViewContractLoadParameters(selectedAccountContract));
+            this.dialogManager.ShowDialog(new ViewContractLoadParameters(this.SelectedAccount.ScriptHash.ToString()));
         }
 
         private void ShowVotingDialog()
         {
             if (!this.ShowVotingDialogEnabled) return;
 
-            this.dialogManager.ShowDialog<VotingDialogResult, VotingLoadParameters>(
-                new VotingLoadParameters(this.SelectedAccount.ScriptHash));
+            this.dialogManager.ShowDialog(new VotingLoadParameters(this.SelectedAccount.ScriptHash));
         }
 
         private void CopyAddressToClipboard()
         {
             if (this.SelectedAccount == null) return;
 
-            var selectedAccountAddress = this.walletController.ToAddress(this.SelectedAccount.ScriptHash);
+            var selectedAccountAddress = this.walletController.ScriptHashToAddress(this.SelectedAccount.ScriptHash);
 
             this.clipboardManager.SetText(selectedAccountAddress);
         }
@@ -248,7 +235,7 @@ namespace Neo.Gui.ViewModels.Home
 
             if (!deletedSuccessfully)
             {
-                // TODO Show error message
+                // TODO Show error message and create UnitTest for this feature.
 
                 return;
             }
@@ -260,12 +247,12 @@ namespace Neo.Gui.ViewModels.Home
         {
             if (this.SelectedAccount == null) return;
 
-            var selectedAccountAddress = this.walletController.ToAddress(this.SelectedAccount.ScriptHash);
+            var selectedAccountAddress = this.walletController.ScriptHashToAddress(this.SelectedAccount.ScriptHash);
 
             var url = string.Format(this.settingsManager.AddressURLFormat, selectedAccountAddress);
             
-            this.processHelper.OpenInExternalBrowser(url);
+            this.processManager.OpenInExternalBrowser(url);
         }
-        #endregion Account Menu Command Methods
+        #endregion 
     }
 }

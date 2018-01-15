@@ -1,38 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Windows.Input;
 
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
-
-using Neo.Gui.Base.Dialogs.Interfaces;
-using Neo.Gui.Base.Dialogs.Results.Wallets;
-using Neo.Gui.Base.Extensions;
-using Neo.Gui.Base.Messages;
-using Neo.Gui.Base.Messaging.Interfaces;
+using Neo.Gui.Dialogs.Interfaces;
+using Neo.Gui.Dialogs.LoadParameters.Accounts;
+using Neo.UI.Core.Controllers.Interfaces;
+using Neo.UI.Core.Extensions;
 
 namespace Neo.Gui.ViewModels.Accounts
 {
-    public class ImportPrivateKeyViewModel : ViewModelBase, IDialogViewModel<ImportPrivateKeyDialogResult>
+    public class ImportPrivateKeyViewModel : ViewModelBase, IDialogViewModel<ImportPrivateKeyLoadParameters>
     {
         #region Private Fields 
-        private readonly IMessagePublisher messagePublisher;
+        private readonly IWalletController walletController;
 
-        private string privateKeyWif;
+        private string privateKeysWif;
         #endregion
 
         #region Public Properties 
-        public bool OkEnabled => !string.IsNullOrEmpty(this.PrivateKeyWif);
+        public bool OkEnabled => !string.IsNullOrEmpty(this.PrivateKeysWif);
 
-        public string PrivateKeyWif
+        public string PrivateKeysWif
         {
-            get => this.privateKeyWif;
+            get => this.privateKeysWif;
             set
             {
-                if (this.privateKeyWif == value) return;
+                if (this.privateKeysWif == value) return;
 
-                this.privateKeyWif = value;
+                this.privateKeysWif = value;
                 RaisePropertyChanged();
 
                 // Update dependent properties
@@ -40,35 +36,25 @@ namespace Neo.Gui.ViewModels.Accounts
             }
         }
 
-        public IEnumerable<string> WifStrings
-        {
-            get
-            {
-                if (string.IsNullOrEmpty(this.PrivateKeyWif)) return new string[0];
+        public RelayCommand OkCommand => new RelayCommand(this.Ok);
 
-                return this.PrivateKeyWif.ToLines();
-            }
-        }
-
-        public ICommand OkCommand => new RelayCommand(this.Ok);
-
-        public ICommand CancelCommand => new RelayCommand(() => this.Close(this, EventArgs.Empty));
+        public RelayCommand CancelCommand => new RelayCommand(() => this.Close(this, EventArgs.Empty));
         #endregion
 
         #region Constructor 
         public ImportPrivateKeyViewModel(
-            IMessagePublisher messagePublisher)
+            IWalletController walletController)
         {
-            this.messagePublisher = messagePublisher;
+            this.walletController = walletController;
         }
         #endregion
 
         #region IDialogViewModel implementation 
         public event EventHandler Close;
 
-        public event EventHandler<ImportPrivateKeyDialogResult> SetDialogResultAndClose;
-
-        public ImportPrivateKeyDialogResult DialogResult { get; private set; }
+        public void OnDialogLoad(ImportPrivateKeyLoadParameters parameters)
+        {
+        }
         #endregion
 
         #region Private Methods 
@@ -76,7 +62,10 @@ namespace Neo.Gui.ViewModels.Accounts
         {
             if (!this.OkEnabled) return;
 
-            this.messagePublisher.Publish(new ImportPrivateKeyMessage(this.WifStrings.ToList()));
+            if (string.IsNullOrEmpty(this.PrivateKeysWif)) return;
+
+            var wifStrings = this.PrivateKeysWif.ToLines().Where(line => !string.IsNullOrEmpty(line));
+            this.walletController.ImportPrivateKeys(wifStrings);
 
             this.Close(this, EventArgs.Empty);
         }

@@ -8,12 +8,9 @@ using GalaSoft.MvvmLight.Command;
 
 using Neo.Network;
 using Neo.SmartContract;
-
-using Neo.Gui.Base.Controllers;
-using Neo.Gui.Base.Extensions;
 using Neo.Gui.Globalization.Resources;
-using Neo.Gui.Base.Managers;
-using Neo.Gui.Base.Services;
+using Neo.Gui.Base.Managers.Interfaces;
+using Neo.UI.Core.Controllers.Interfaces;
 
 namespace Neo.Gui.ViewModels.Development
 {
@@ -21,7 +18,6 @@ namespace Neo.Gui.ViewModels.Development
     {
         private readonly IDialogManager dialogManager;
         private readonly IWalletController walletController;
-        private readonly IDispatchService dispatchService;
 
         private ContractParametersContext context;
 
@@ -36,12 +32,10 @@ namespace Neo.Gui.ViewModels.Development
 
         public ContractParametersViewModel(
             IDialogManager dialogManager,
-            IWalletController walletController,
-            IDispatchService dispatchService)
+            IWalletController walletController)
         {
             this.dialogManager = dialogManager;
             this.walletController = walletController;
-            this.dispatchService = dispatchService;
 
             this.ScriptHashAddresses = new ObservableCollection<string>();
         }
@@ -58,7 +52,7 @@ namespace Neo.Gui.ViewModels.Development
 
                 if (string.IsNullOrEmpty(this.SelectedScriptHashAddress)) return emptyCollection;
 
-                var scriptHash = this.walletController.ToScriptHash(this.SelectedScriptHashAddress);
+                var scriptHash = this.walletController.AddressToScriptHash(this.SelectedScriptHashAddress);
 
                 if (scriptHash == null) return emptyCollection;
 
@@ -163,7 +157,7 @@ namespace Neo.Gui.ViewModels.Development
 
         public ICommand UpdateCommand => new RelayCommand(this.Update);
 
-        private async void Load()
+        private void Load()
         {
             var input = this.dialogManager.ShowInputDialog("ParametersContext", "ParametersContext");
 
@@ -179,14 +173,15 @@ namespace Neo.Gui.ViewModels.Development
                 return;
             }
 
-            await this.dispatchService.InvokeOnMainUIThread(() =>
-            {
-                this.ScriptHashAddresses.Clear();
-                this.CurrentValue = string.Empty;
-                this.NewValue = string.Empty;
+            this.ScriptHashAddresses.Clear();
+            this.CurrentValue = string.Empty;
+            this.NewValue = string.Empty;
 
-                this.ScriptHashAddresses.AddRange(context.ScriptHashes.Select(this.walletController.ToAddress));
-            });
+            foreach (var item in context.ScriptHashes.Select(
+                this.walletController.ScriptHashToAddress))
+            {
+                this.ScriptHashAddresses.Add(item);
+            }
 
             this.SelectedScriptHashAddress = null;
 

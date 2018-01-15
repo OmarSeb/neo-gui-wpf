@@ -1,6 +1,8 @@
-﻿using Neo.Gui.Base.Managers;
+﻿using Neo.Gui.Base.Managers.Interfaces;
+
 using Neo.Gui.Wpf.Extensions;
 using Neo.Gui.Wpf.Properties;
+using Neo.UI.Core.Managers.Interfaces;
 
 namespace Neo.Gui.Wpf.Implementations.Managers
 {
@@ -12,7 +14,7 @@ namespace Neo.Gui.Wpf.Implementations.Managers
             set => Settings.Default.LastWalletPath = value;
         }
 
-        public string AppTheme
+        public string AppThemeJson
         {
             get => Settings.Default.AppTheme;
             set => Settings.Default.AppTheme = value;
